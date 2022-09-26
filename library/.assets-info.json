@@ -1,0 +1,58 @@
+{
+  "C:\\Users\\Killa\\Snake Match\\assets\\Scenes.meta": {
+    "time": 1664198103787.798
+  },
+  "C:\\Users\\Killa\\Snake Match\\assets\\Scenes": {
+    "time": 1664198114420.0715,
+    "uuid": "c5485c8e-7ce2-4e81-b4a1-695dc5cf9cb7",
+    "missing": false
+  },
+  "C:\\Users\\Killa\\Snake Match\\assets\\Scenes\\GameScene.scene.meta": {
+    "time": 1664198111541.3213
+  },
+  "C:\\Users\\Killa\\Snake Match\\assets\\Scenes\\GameScene.scene": {
+    "time": 1664198223648.792,
+    "uuid": "72ae13ee-3597-4a6b-a57b-a9e1f291095b",
+    "missing": false
+  },
+  "C:\\Users\\Killa\\Snake Match\\assets\\Scripts.meta": {
+    "time": 1664198123802.813
+  },
+  "C:\\Users\\Killa\\Snake Match\\assets\\Scripts": {
+    "time": 1664198151035.816,
+    "uuid": "2f6631eb-76ec-4d86-82e9-925ae6f2eec3",
+    "missing": false
+  },
+  "C:\\Users\\Killa\\Snake Match\\assets\\Sprites.meta": {
+    "time": 1664198132404.6072
+  },
+  "C:\\Users\\Killa\\Snake Match\\assets\\Sprites": {
+    "time": 1664198147457.9414,
+    "uuid": "2ce0e418-e6ff-48f2-aa82-d33b9ed483e3",
+    "missing": false
+  },
+  "C:\\Users\\Killa\\Snake Match\\assets\\Sprites\\snake.jpg.meta": {
+    "time": 1663934516656.0212
+  },
+  "C:\\Users\\Killa\\Snake Match\\assets\\Sprites\\background.jpg.meta": {
+    "time": 1663934516656.0212
+  },
+  "C:\\Users\\Killa\\Snake Match\\assets\\Sprites\\snake.jpg": {
+    "time": 1663934516656.0212,
+    "uuid": "2f2cbc6a-1ad2-41cd-a30f-28ee7a699e94",
+    "missing": false
+  },
+  "C:\\Users\\Killa\\Snake Match\\assets\\Sprites\\background.jpg": {
+    "time": 1663934516656.0212,
+    "uuid": "1d5152c6-2471-4f65-9c00-650e792fe248",
+    "missing": false
+  },
+  "C:\\Users\\Killa\\Snake Match\\assets\\Scripts\\SnakeController.ts.meta": {
+    "time": 1663934516655.0237
+  },
+  "C:\\Users\\Killa\\Snake Match\\assets\\Scripts\\SnakeController.ts": {
+    "time": 1663936071625.265,
+    "uuid": "ba364725-2b1e-4d33-98f9-e4cc281bc309",
+    "missing": false
+  }
+}
