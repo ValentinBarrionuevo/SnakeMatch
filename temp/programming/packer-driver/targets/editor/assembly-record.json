@@ -1,5 +1,17 @@
 {
   "chunks": {
+    "3400147b1c3806e1fda7cf78992a810207164a8a": {
+      "imports": {
+        "cc": {
+          "resolved": {
+            "type": "chunk",
+            "id": "ca4374a3008ca85000d465787e739a302e4e4ac6"
+          },
+          "messages": []
+        }
+      },
+      "timestamp": 1664227629513
+    },
     "ca4374a3008ca85000d465787e739a302e4e4ac6": {
       "imports": {
         "__unresolved_0": {
@@ -178,21 +190,9 @@
           "messages": []
         }
       },
-      "timestamp": 1664227041632
+      "timestamp": 1664288479148
     },
-    "48925ed89f58b0eff72f0ddf69b47c4b5e8f623a": {
-      "imports": {
-        "__unresolved_0": {
-          "resolved": {
-            "type": "chunk",
-            "id": "3400147b1c3806e1fda7cf78992a810207164a8a"
-          },
-          "messages": []
-        }
-      },
-      "timestamp": 1664227629445
-    },
-    "3400147b1c3806e1fda7cf78992a810207164a8a": {
+    "d3c20f71319e8e853026914709e6c374f80e73f6": {
       "imports": {
         "cc": {
           "resolved": {
@@ -202,12 +202,56 @@
           "messages": []
         }
       },
-      "timestamp": 1664227629513
+      "timestamp": 1664290975744
+    },
+    "2a0f4d4d40ce1a20815b0bce0c8b074cfd907d97": {
+      "imports": {
+        "cc": {
+          "resolved": {
+            "type": "chunk",
+            "id": "ca4374a3008ca85000d465787e739a302e4e4ac6"
+          },
+          "messages": []
+        }
+      },
+      "timestamp": 1664291403577
+    },
+    "6324fd7f2a6a90bef45040fcb7ce34af0ba6a7d3": {
+      "imports": {
+        "__unresolved_0": {
+          "resolved": {
+            "type": "chunk",
+            "id": "2a0f4d4d40ce1a20815b0bce0c8b074cfd907d97"
+          },
+          "messages": []
+        },
+        "__unresolved_1": {
+          "resolved": {
+            "type": "chunk",
+            "id": "1c7fd763f6fa467527b8ec73d67d1740403be6fe"
+          },
+          "messages": []
+        }
+      },
+      "timestamp": 1664311540353
+    },
+    "1c7fd763f6fa467527b8ec73d67d1740403be6fe": {
+      "imports": {
+        "cc": {
+          "resolved": {
+            "type": "chunk",
+            "id": "ca4374a3008ca85000d465787e739a302e4e4ac6"
+          },
+          "messages": []
+        }
+      },
+      "timestamp": 1664311540383
     }
   },
   "entries": {
     "cce:/internal/x/cc": "ca4374a3008ca85000d465787e739a302e4e4ac6",
-    "cce:/internal/x/prerequisite-imports": "48925ed89f58b0eff72f0ddf69b47c4b5e8f623a",
-    "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/SnakeController.ts": "3400147b1c3806e1fda7cf78992a810207164a8a"
+    "cce:/internal/x/prerequisite-imports": "6324fd7f2a6a90bef45040fcb7ce34af0ba6a7d3",
+    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts": "2a0f4d4d40ce1a20815b0bce0c8b074cfd907d97",
+    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts": "1c7fd763f6fa467527b8ec73d67d1740403be6fe"
   }
 }

@@ -7,13 +7,29 @@ import {
   input,
   EventKeyboard,
   Input,
+  director,
+  find,
+  Prefab,
+  instantiate,
+  Scene,
+  randomRange,
+  physics,
+  
 } from "cc";
-const { ccclass } = _decorator;
+const { ccclass, property } = _decorator;
 
 type Balls = "green" | "blue" | "red" | "yellow";
 
 @ccclass("SnakeController")
 export class SnakeController extends Component {
+
+  @property(Prefab)
+  redPrefab: Prefab;
+
+  prePosX: number = 0;
+
+  prePosY: number = 0;
+
   private character: RigidBody2D = null;
 
   private firstMove: boolean = true;
@@ -23,6 +39,9 @@ export class SnakeController extends Component {
   private snakeInside: Array<Balls> = [];
 
   public onLoad(): void {
+    find("Canvas/button").active = false;
+
+    
     this.character = this.node.getComponent(RigidBody2D);
 
     this.character.linearVelocity = new Vec2(0, 0);
@@ -31,7 +50,10 @@ export class SnakeController extends Component {
   }
 
   public onDestroy(): void {
+
     input.off(Input.EventType.KEY_DOWN, this.onKeyDown, this);
+    find("Canvas/button").active = true;
+
   }
 
   private onKeyDown(event: EventKeyboard): void {
@@ -60,17 +82,56 @@ export class SnakeController extends Component {
           this.character.linearVelocity = new Vec2(this.velocity, 0);
           this.tileMove();
           break;
+        case KeyCode.KEY_F:
+          var prefad = instantiate(this.redPrefab)
+          prefad.parent = find("Canvas");
+          prefad.setPosition(this.prePosX, this.prePosY);
+          console.log("prefad");
+          break;
+
+
       }
     }
   }
 
+  public update(dt: number): void {
+    this.deathCheck();
+
+    this.prePosX = randomRange(-155, 155);
+    this.prePosY = randomRange(-305, 305);
+
+
+
+  }
+
+
   private tileMove(): void {
+
+
     this.firstMove = false;
     this.node.setPosition(
       Math.round(this.node.position.x / 30) * 30,
       Math.round(this.node.position.y / 30) * 30
     );
+    console.log(this.node.position);
   }
 
-  private eatBall(ball: Balls): void {}
+  private eatBall(ball: Balls): void { }
+
+  private deathCheck(): void {
+
+    if (this.node.position.x < -160 || this.node.position.x > 160 || this.node.position.y < -310 || this.node.position.y > 310) {
+      console.log("You died");
+      this.node.destroy();
+    }
+
+  }
+
+  private checkCollide(): void {
+
+  }
+
+
+
+
 }

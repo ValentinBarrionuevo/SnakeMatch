@@ -5,6 +5,13 @@
       "depends": [
         "4f9cb534-2952-40d3-a4ee-2c12e7477bd7",
         "68265336-fcba-4962-9f14-3ae36ffd1806@f9941",
+        "8db8ed12-6728-4450-b1ab-a70187bf2945@f9941",
+        "3eb4e92d-6c2f-49fa-b1f6-b15e4e8730c0",
+        "3ef9a4f9-0aea-40d1-8d9f-ae219a2e153b@f9941",
+        "3ef9a4f9-0aea-40d1-8d9f-ae219a2e153b@f9941",
+        "8db8ed12-6728-4450-b1ab-a70187bf2945@f9941",
+        "8db8ed12-6728-4450-b1ab-a70187bf2945@f9941",
+        "8db8ed12-6728-4450-b1ab-a70187bf2945@f9941",
         "8db8ed12-6728-4450-b1ab-a70187bf2945@f9941"
       ]
     }
@@ -66,6 +73,109 @@
     "value": {
       "depends": [
         "8db8ed12-6728-4450-b1ab-a70187bf2945@6c48a"
+      ]
+    }
+  },
+  "3ef9a4f9-0aea-40d1-8d9f-ae219a2e153b": {
+    "url": "db://assets/Sprites/button.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "3ef9a4f9-0aea-40d1-8d9f-ae219a2e153b@6c48a": {
+    "url": "db://assets/Sprites/button.png@6c48a",
+    "value": {
+      "depends": [
+        "3ef9a4f9-0aea-40d1-8d9f-ae219a2e153b"
+      ]
+    }
+  },
+  "3ef9a4f9-0aea-40d1-8d9f-ae219a2e153b@f9941": {
+    "url": "db://assets/Sprites/button.png@f9941",
+    "value": {
+      "depends": [
+        "3ef9a4f9-0aea-40d1-8d9f-ae219a2e153b@6c48a"
+      ]
+    }
+  },
+  "c523cea9-109b-44c6-a4b3-7af9587882ea": {
+    "url": "db://assets/Scripts/ButtonMethods.ts",
+    "value": {}
+  },
+  "93e9e550-8533-46b2-9a24-9df396582703": {
+    "url": "db://assets/Scenes/MainMenu.scene",
+    "value": {}
+  },
+  "ccf8fd25-bb4a-4256-a492-78f1fa0b3372": {
+    "url": "db://assets/Scenes/MainMenu.scene",
+    "value": {
+      "depends": [
+        "ccf8fd25-bb4a-4256-a492-78f1fa0b3372",
+        "68265336-fcba-4962-9f14-3ae36ffd1806@f9941",
+        "3ef9a4f9-0aea-40d1-8d9f-ae219a2e153b@f9941",
+        "3ef9a4f9-0aea-40d1-8d9f-ae219a2e153b@f9941"
+      ]
+    }
+  },
+  "7557c6c6-d0ab-4024-8624-bf9e330d6e97": {
+    "url": "db://assets/Prefab",
+    "value": {}
+  },
+  "040bf517-1e02-4611-bcc2-8f8d0c37b769": {
+    "url": "db://assets/Sprites/snake-001.jpg",
+    "value": {}
+  },
+  "040bf517-1e02-4611-bcc2-8f8d0c37b769@6c48a": {
+    "url": "db://assets/Sprites/snake-001.jpg@6c48a",
+    "value": {
+      "depends": [
+        "040bf517-1e02-4611-bcc2-8f8d0c37b769"
+      ]
+    }
+  },
+  "040bf517-1e02-4611-bcc2-8f8d0c37b769@f9941": {
+    "url": "db://assets/Sprites/snake-001.jpg@f9941",
+    "value": {
+      "depends": [
+        "040bf517-1e02-4611-bcc2-8f8d0c37b769@6c48a"
+      ]
+    }
+  },
+  "7f2ab68e-72ad-4733-95bf-c959a800562a": {
+    "url": "db://assets/Sprites/bolaroja.jpg",
+    "value": {
+      "depends": []
+    }
+  },
+  "7f2ab68e-72ad-4733-95bf-c959a800562a@6c48a": {
+    "url": "db://assets/Sprites/bolaroja.jpg@6c48a",
+    "value": {
+      "depends": [
+        "7f2ab68e-72ad-4733-95bf-c959a800562a"
+      ]
+    }
+  },
+  "7f2ab68e-72ad-4733-95bf-c959a800562a@f9941": {
+    "url": "db://assets/Sprites/bolaroja.jpg@f9941",
+    "value": {
+      "depends": [
+        "7f2ab68e-72ad-4733-95bf-c959a800562a@6c48a"
+      ]
+    }
+  },
+  "28a90323-8385-45ed-b6d4-62d64dde51a8": {
+    "url": "db://assets/Prefab/bolaroja.prefab",
+    "value": {}
+  },
+  "d21182f3-b7b1-4a78-a943-c39fa250d75d": {
+    "url": "db://assets/Prefab/bolaroja.prefab",
+    "value": {}
+  },
+  "3eb4e92d-6c2f-49fa-b1f6-b15e4e8730c0": {
+    "url": "db://assets/Prefab/bolaroja.prefab",
+    "value": {
+      "depends": [
+        "7f2ab68e-72ad-4733-95bf-c959a800562a@f9941"
       ]
     }
   }
