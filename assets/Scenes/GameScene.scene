@@ -310,7 +310,7 @@
     "_prefab": null,
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 2,
+      "x": 0,
       "y": 0,
       "z": 0
     },
@@ -327,7 +327,7 @@
       "y": 1,
       "z": 1
     },
-    "_layer": 4294967295,
+    "_layer": 33554432,
     "_euler": {
       "__type__": "cc.Vec3",
       "x": 0,
@@ -352,8 +352,8 @@
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
+      "x": 0.5,
+      "y": 0.5
     },
     "_id": "eebEM4pYVESpuETehxlSZb"
   },
@@ -419,7 +419,7 @@
       "y": 0
     },
     "_angularVelocity": 0,
-    "_fixedRotation": false,
+    "_fixedRotation": true,
     "_id": "e8T9KE739GF7lJc0zRFgIJ"
   },
   {
@@ -431,10 +431,7 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "redPrefab": {
-      "__uuid__": "3eb4e92d-6c2f-49fa-b1f6-b15e4e8730c0",
-      "__expectedType__": "cc.Prefab"
-    },
+    "redPrefab": null,
     "_id": "705AKuVRFN57J2uvJaVfC4"
   },
   {
@@ -449,7 +446,7 @@
     "tag": 0,
     "_group": 1,
     "_density": 1,
-    "_sensor": true,
+    "_sensor": false,
     "_friction": 0.2,
     "_restitution": 0,
     "_offset": {
@@ -462,7 +459,7 @@
       "width": 30,
       "height": 30
     },
-    "_id": "aect5qQfZCoa8ysLOtWILy"
+    "_id": "9ckt3V5kBGHp5LuDj3IGp2"
   },
   {
     "__type__": "cc.Node",
@@ -735,7 +732,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": 319.99999999999994,
+      "y": 325.49999999999994,
       "z": 0
     },
     "_lrot": {
@@ -868,8 +865,8 @@
     },
     "_size": {
       "__type__": "cc.Size",
-      "width": 360,
-      "height": 11
+      "width": 1,
+      "height": 1
     },
     "_id": "71wEGmP2lBWqFeCqMBydQX"
   },
@@ -900,7 +897,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": -320,
+      "y": -325.50000000000006,
       "z": 0
     },
     "_lrot": {
@@ -1064,8 +1061,8 @@
     "_prefab": null,
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": -180,
-      "y": -0.052499999999994884,
+      "x": -185.5,
+      "y": -5.684341886080802e-14,
       "z": 0
     },
     "_lrot": {
@@ -1229,8 +1226,8 @@
     "_prefab": null,
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 180,
-      "y": -0.052499999999994884,
+      "x": 185.5,
+      "y": -5.684341886080802e-14,
       "z": 0
     },
     "_lrot": {

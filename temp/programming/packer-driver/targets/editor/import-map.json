@@ -2,8 +2,8 @@
   "imports": {
     "cce:/internal/x/cc": "./chunks/ca/ca4374a3008ca85000d465787e739a302e4e4ac6.js",
     "cce:/internal/x/prerequisite-imports": "./chunks/63/6324fd7f2a6a90bef45040fcb7ce34af0ba6a7d3.js",
-    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts": "./chunks/2a/2a0f4d4d40ce1a20815b0bce0c8b074cfd907d97.js",
-    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts": "./chunks/94/943980fc50180e1db7fc5fa7355a13de820dda7c.js"
+    "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/ButtonMethods.ts": "./chunks/30/3049ffed80e47f3dd49bee722c22c590b7546128.js",
+    "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/SnakeController.ts": "./chunks/a6/a699f8f30c985a7a22a61224ec42050309440cd0.js"
   },
   "scopes": {
     "./chunks/ca/ca4374a3008ca85000d465787e739a302e4e4ac6.js": {
@@ -34,13 +34,13 @@
       "__unresolved_9": "cce:/internal/x/cc-fu/particle-2d"
     },
     "./chunks/63/6324fd7f2a6a90bef45040fcb7ce34af0ba6a7d3.js": {
-      "__unresolved_0": "./chunks/2a/2a0f4d4d40ce1a20815b0bce0c8b074cfd907d97.js",
-      "__unresolved_1": "./chunks/94/943980fc50180e1db7fc5fa7355a13de820dda7c.js"
+      "__unresolved_0": "./chunks/30/3049ffed80e47f3dd49bee722c22c590b7546128.js",
+      "__unresolved_1": "./chunks/a6/a699f8f30c985a7a22a61224ec42050309440cd0.js"
     },
-    "./chunks/94/943980fc50180e1db7fc5fa7355a13de820dda7c.js": {
+    "./chunks/a6/a699f8f30c985a7a22a61224ec42050309440cd0.js": {
       "cc": "./chunks/ca/ca4374a3008ca85000d465787e739a302e4e4ac6.js"
     },
-    "./chunks/2a/2a0f4d4d40ce1a20815b0bce0c8b074cfd907d97.js": {
+    "./chunks/30/3049ffed80e47f3dd49bee722c22c590b7546128.js": {
       "cc": "./chunks/ca/ca4374a3008ca85000d465787e739a302e4e4ac6.js"
     }
   }
