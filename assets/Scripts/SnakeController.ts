@@ -95,7 +95,7 @@ export class SnakeController extends Component {
   }
 
   public update(dt: number): void {
-    this.deathCheck();
+  //this.deathCheck();
 
     this.prePosX = randomRange(-155, 155);
     this.prePosY = randomRange(-305, 305);

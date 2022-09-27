@@ -3,7 +3,7 @@
     "cce:/internal/x/cc": "./chunks/ca/ca4374a3008ca85000d465787e739a302e4e4ac6.js",
     "cce:/internal/x/prerequisite-imports": "./chunks/63/6324fd7f2a6a90bef45040fcb7ce34af0ba6a7d3.js",
     "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts": "./chunks/2a/2a0f4d4d40ce1a20815b0bce0c8b074cfd907d97.js",
-    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts": "./chunks/1c/1c7fd763f6fa467527b8ec73d67d1740403be6fe.js"
+    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts": "./chunks/94/943980fc50180e1db7fc5fa7355a13de820dda7c.js"
   },
   "scopes": {
     "./chunks/ca/ca4374a3008ca85000d465787e739a302e4e4ac6.js": {
@@ -35,9 +35,9 @@
     },
     "./chunks/63/6324fd7f2a6a90bef45040fcb7ce34af0ba6a7d3.js": {
       "__unresolved_0": "./chunks/2a/2a0f4d4d40ce1a20815b0bce0c8b074cfd907d97.js",
-      "__unresolved_1": "./chunks/1c/1c7fd763f6fa467527b8ec73d67d1740403be6fe.js"
+      "__unresolved_1": "./chunks/94/943980fc50180e1db7fc5fa7355a13de820dda7c.js"
     },
-    "./chunks/1c/1c7fd763f6fa467527b8ec73d67d1740403be6fe.js": {
+    "./chunks/94/943980fc50180e1db7fc5fa7355a13de820dda7c.js": {
       "cc": "./chunks/ca/ca4374a3008ca85000d465787e739a302e4e4ac6.js"
     },
     "./chunks/2a/2a0f4d4d40ce1a20815b0bce0c8b074cfd907d97.js": {

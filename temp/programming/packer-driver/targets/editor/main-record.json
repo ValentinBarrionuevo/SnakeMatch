@@ -1,7 +1,7 @@
 {
   "modules": {
     "cce:/internal/x/cc": {
-      "mTimestamp": 10018.66660001874,
+      "mTimestamp": 5034.609999984503,
       "chunkId": "ca4374a3008ca85000d465787e739a302e4e4ac6",
       "imports": [
         {
@@ -535,7 +535,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 23071489.6101,
+      "mTimestamp": 5296.160299986601,
       "chunkId": "6324fd7f2a6a90bef45040fcb7ce34af0ba6a7d3",
       "imports": [
         {
@@ -639,10 +639,10 @@
     },
     "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts": {
       "mTimestamp": {
-        "mtime": 1664311538946.7065,
+        "mtime": 1664313905451.1375,
         "uuid": "b24c5641-ca34-4917-a30d-80fde2732bc3"
       },
-      "chunkId": "1c7fd763f6fa467527b8ec73d67d1740403be6fe",
+      "chunkId": "943980fc50180e1db7fc5fa7355a13de820dda7c",
       "imports": [
         {
           "value": "cc"
@@ -764,6 +764,58 @@
             "end": {
               "line": 1,
               "column": 52
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/asd.ts": {
+      "mTimestamp": {
+        "mtime": 1664314300527.366,
+        "uuid": "993da69f-f351-41ff-b399-f01d4af2dced"
+      },
+      "chunkId": "c7a2e49bff2b8935db69f70410d15122f81a242d",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 44
+            },
+            "end": {
+              "line": 1,
+              "column": 48
             }
           }
         }
