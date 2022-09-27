@@ -3,7 +3,9 @@
     "url": "db://assets/Scenes/GameScene.scene",
     "value": {
       "depends": [
-        "c77ecaa8-c936-46c4-a5b0-98692673ed87"
+        "4f9cb534-2952-40d3-a4ee-2c12e7477bd7",
+        "68265336-fcba-4962-9f14-3ae36ffd1806@f9941",
+        "8db8ed12-6728-4450-b1ab-a70187bf2945@f9941"
       ]
     }
   },

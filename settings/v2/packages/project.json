@@ -3,5 +3,15 @@
     "designResolution": {
       "width": 360
     }
-  }
+  },
+  "layer": [
+    {
+      "name": "Background",
+      "value": 1
+    },
+    {
+      "name": "Game",
+      "value": 2
+    }
+  ]
 }
