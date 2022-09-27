@@ -145,5 +145,13 @@
         "3ef9a4f9-0aea-40d1-8d9f-ae219a2e153b@6c48a"
       ]
     }
+  },
+  "13219755-4a5d-4d21-98be-2eb6c3a8ac52": {
+    "url": "db://assets/Scenes/scene-2d.scene",
+    "value": {
+      "depends": [
+        "c77ecaa8-c936-46c4-a5b0-98692673ed87"
+      ]
+    }
   }
 }

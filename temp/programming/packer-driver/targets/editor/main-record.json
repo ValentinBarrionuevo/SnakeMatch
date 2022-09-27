@@ -1,7 +1,7 @@
 {
   "modules": {
     "cce:/internal/x/cc": {
-      "mTimestamp": 8614.232600003481,
+      "mTimestamp": 5141.296799999895,
       "chunkId": "ca4374a3008ca85000d465787e739a302e4e4ac6",
       "imports": [
         {
@@ -535,11 +535,11 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 1641841.128700003,
+      "mTimestamp": 5401.612899999833,
       "chunkId": "6324fd7f2a6a90bef45040fcb7ce34af0ba6a7d3",
       "imports": [
         {
-          "value": "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/ButtonMethods.ts",
+          "value": "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts",
           "resolved": "__unresolved_0",
           "loc": {
             "start": {
@@ -548,21 +548,21 @@
             },
             "end": {
               "line": 5,
-              "column": 105
+              "column": 113
             }
           }
         },
         {
-          "value": "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/SnakeController.ts",
+          "value": "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts",
           "resolved": "__unresolved_1",
           "loc": {
             "start": {
               "line": 5,
-              "column": 121
+              "column": 129
             },
             "end": {
               "line": 5,
-              "column": 193
+              "column": 209
             }
           }
         }
@@ -572,14 +572,14 @@
         {
           "resolved": {
             "type": "module",
-            "url": "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/ButtonMethods.ts"
+            "url": "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/SnakeController.ts"
+            "url": "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts"
           },
           "messages": []
         }
@@ -660,6 +660,110 @@
             "end": {
               "line": 1,
               "column": 52
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts": {
+      "mTimestamp": {
+        "mtime": 1664314452914.4915,
+        "uuid": "c523cea9-109b-44c6-a4b3-7af9587882ea"
+      },
+      "chunkId": "2a0f4d4d40ce1a20815b0bce0c8b074cfd907d97",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 48
+            },
+            "end": {
+              "line": 1,
+              "column": 52
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts": {
+      "mTimestamp": {
+        "mtime": 1664315374159.5037,
+        "uuid": "b24c5641-ca34-4917-a30d-80fde2732bc3"
+      },
+      "chunkId": "943980fc50180e1db7fc5fa7355a13de820dda7c",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 17,
+              "column": 7
+            },
+            "end": {
+              "line": 17,
+              "column": 11
             }
           }
         }
