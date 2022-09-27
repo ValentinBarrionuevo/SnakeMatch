@@ -153,5 +153,9 @@
         "c77ecaa8-c936-46c4-a5b0-98692673ed87"
       ]
     }
+  },
+  "c77d4ec5-b15d-4103-aca6-1e42c5168c98": {
+    "url": "db://assets/Scripts/GameManager.ts",
+    "value": {}
   }
 }

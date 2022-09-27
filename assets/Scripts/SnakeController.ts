@@ -14,6 +14,10 @@ import {
   Scene,
   randomRange,
   physics,
+  BoxCollider2D,
+  Contact2DType,
+  PhysicsSystem2D,
+  IPhysics2DContact,
 } from "cc";
 const { ccclass, property } = _decorator;
 
@@ -28,13 +32,15 @@ export class SnakeController extends Component {
 
   prePosY: number = 0;
 
-  private character: RigidBody2D = null;
+  public character: RigidBody2D = null;
 
   private firstMove: boolean = true;
 
   private velocity: number = 5;
 
   private snakeInside: Array<Balls> = [];
+
+
 
   public onLoad(): void {
     find("Canvas/button").active = false;
@@ -44,11 +50,14 @@ export class SnakeController extends Component {
     this.character.linearVelocity = new Vec2(0, 0);
 
     input.on(Input.EventType.KEY_DOWN, this.onKeyDown, this);
+
   }
 
   public onDestroy(): void {
+
     input.off(Input.EventType.KEY_DOWN, this.onKeyDown, this);
     find("Canvas/button").active = true;
+
   }
 
   private onKeyDown(event: EventKeyboard): void {
@@ -92,7 +101,10 @@ export class SnakeController extends Component {
 
     this.prePosX = randomRange(-155, 155);
     this.prePosY = randomRange(-305, 305);
+
   }
+
+  
 
   private tileMove(): void {
     this.firstMove = false;
@@ -103,7 +115,7 @@ export class SnakeController extends Component {
     console.log(this.node.position);
   }
 
-  private eatBall(ball: Balls): void {}
+  private eatBall(ball: Balls): void { }
 
   private deathCheck(): void {
     if (
@@ -117,5 +129,5 @@ export class SnakeController extends Component {
     }
   }
 
-  private checkCollide(): void {}
+  private checkCollide(): void { }
 }
