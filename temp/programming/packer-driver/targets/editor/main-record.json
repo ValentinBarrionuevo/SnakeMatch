@@ -535,7 +535,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 4199827.3972,
+      "mTimestamp": 7117028.4396,
       "chunkId": "b04882f6528f528d23c15a1a07354592145c07ab",
       "imports": [
         {
@@ -764,10 +764,10 @@
     },
     "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts": {
       "mTimestamp": {
-        "mtime": 1664319016983.5637,
+        "mtime": 1664324223735.884,
         "uuid": "b24c5641-ca34-4917-a30d-80fde2732bc3"
       },
-      "chunkId": "6437e6a070e824d5f320e727eec786c7d87417a5",
+      "chunkId": "4161d8e67953713807285c069dc4ec36687f8d93",
       "imports": [
         {
           "value": "cc"
@@ -868,10 +868,10 @@
     },
     "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GameManager.ts": {
       "mTimestamp": {
-        "mtime": 1664319182312.4792,
+        "mtime": 1664324392946.9937,
         "uuid": "c77d4ec5-b15d-4103-aca6-1e42c5168c98"
       },
-      "chunkId": "0f5334f91529fbc2df18a01ab4cf8740bc5b8c12",
+      "chunkId": "ff98fa8a16064401fc92301c2c46d8c5f9698a97",
       "imports": [
         {
           "value": "cc"

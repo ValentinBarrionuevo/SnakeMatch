@@ -117,17 +117,6 @@ export class SnakeController extends Component {
 
   private eatBall(ball: Balls): void { }
 
-  private deathCheck(): void {
-    if (
-      this.node.position.x < -160 ||
-      this.node.position.x > 160 ||
-      this.node.position.y < -310 ||
-      this.node.position.y > 310
-    ) {
-      console.log("You died");
-      this.node.destroy();
-    }
-  }
 
   private checkCollide(): void { }
 }

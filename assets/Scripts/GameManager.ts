@@ -4,9 +4,13 @@ const { ccclass, property } = _decorator;
 @ccclass('GameManager')
 export class GameManager extends Component {
 
-    start() {
+    private destroyed: boolean = false;
 
-        PhysicsSystem2D.instance?.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
+    start() {
+        let collider = find("Canvas/Snake").getComponent(BoxCollider2D);
+        collider.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
+
+        //PhysicsSystem2D.instance?.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
 
     }
 
@@ -14,17 +18,14 @@ export class GameManager extends Component {
 
     }
 
-    private onBeginContact(selfCollider: BoxCollider2D, otherCollider: BoxCollider2D, contact: IPhysics2DContact | null) {
-        console.log(selfCollider);
-        if (selfCollider.node.name == "snake") {
-            console.log(otherCollider.node.name);
-            switch (otherCollider.node.name) {
-                case "borderTop":
-                case "borderBottom":
-                case "borderLeft":
-                case "borderRight":
+    private onBeginContact(firstCollider: BoxCollider2D, otherCollider: BoxCollider2D, contact: IPhysics2DContact | null) {
 
-                    selfCollider.node.destroy();
+        if (firstCollider.tag == 1) {
+            switch (otherCollider.tag) {
+                case 2:
+
+                    this.scheduleOnce(() => { firstCollider.node.destroy(); });
+
                     break;
 
             }
