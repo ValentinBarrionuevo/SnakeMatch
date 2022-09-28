@@ -3,8 +3,8 @@
     "cce:/internal/x/cc": "./chunks/90/909f786ffe128f06f5aa1b4e1e3fbbd65262915e.js",
     "cce:/internal/x/prerequisite-imports": "./chunks/34/341ab3341f38daa5d6eb502f45f16e9d150576f5.js",
     "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts": "./chunks/2a/2a0f4d4d40ce1a20815b0bce0c8b074cfd907d97.js",
-    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts": "./chunks/be/bea11a8b75f8d6db6a716bf89cdc276f27e11615.js",
-    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GameManager.ts": "./chunks/85/855012fc9c32e9cebcd348844d66ad3c1f702961.js"
+    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GameManager.ts": "./chunks/86/863799bdab3dffd2d5ba268f206f06d2624e3bc2.js",
+    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts": "./chunks/5e/5ef15c7c46b360cf48d308eae0c8bc2c7836be7a.js"
   },
   "scopes": {
     "./chunks/90/909f786ffe128f06f5aa1b4e1e3fbbd65262915e.js": {
@@ -30,13 +30,13 @@
     },
     "./chunks/34/341ab3341f38daa5d6eb502f45f16e9d150576f5.js": {
       "__unresolved_0": "./chunks/2a/2a0f4d4d40ce1a20815b0bce0c8b074cfd907d97.js",
-      "__unresolved_1": "./chunks/85/855012fc9c32e9cebcd348844d66ad3c1f702961.js",
-      "__unresolved_2": "./chunks/be/bea11a8b75f8d6db6a716bf89cdc276f27e11615.js"
+      "__unresolved_1": "./chunks/86/863799bdab3dffd2d5ba268f206f06d2624e3bc2.js",
+      "__unresolved_2": "./chunks/5e/5ef15c7c46b360cf48d308eae0c8bc2c7836be7a.js"
     },
-    "./chunks/be/bea11a8b75f8d6db6a716bf89cdc276f27e11615.js": {
+    "./chunks/5e/5ef15c7c46b360cf48d308eae0c8bc2c7836be7a.js": {
       "cc": "./chunks/90/909f786ffe128f06f5aa1b4e1e3fbbd65262915e.js"
     },
-    "./chunks/85/855012fc9c32e9cebcd348844d66ad3c1f702961.js": {
+    "./chunks/86/863799bdab3dffd2d5ba268f206f06d2624e3bc2.js": {
       "cc": "./chunks/90/909f786ffe128f06f5aa1b4e1e3fbbd65262915e.js"
     },
     "./chunks/2a/2a0f4d4d40ce1a20815b0bce0c8b074cfd907d97.js": {

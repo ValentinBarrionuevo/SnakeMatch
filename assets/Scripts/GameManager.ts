@@ -4,8 +4,6 @@ const { ccclass, property } = _decorator;
 @ccclass('GameManager')
 export class GameManager extends Component {
 
-    private destroyed: boolean = false;
-
     start() {
         let collider = find("Canvas/Snake").getComponent(BoxCollider2D);
         collider.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);

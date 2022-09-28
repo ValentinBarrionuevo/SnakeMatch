@@ -1,11 +1,11 @@
-debug: Tue, 27 Sep 2022 22:21:16 GMT
+debug: Wed, 28 Sep 2022 18:54:39 GMT
 debug: Project: C:\Users\Valentin\Desktop\SnakeMatch
 debug: Targets: editor,preview
 debug: Incremental file seems great.
 debug: Engine path: C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.6.0\resources\resources\3d\engine
 debug: Initializing target [Editor]
 debug: Loading cache
-debug: Loading cache costs 0.7597000000532717ms.
+debug: Loading cache costs 1.2838000059127808ms.
 debug: Engine features shipped in editor: base,gfx-webgl,gfx-webgl2,3d,animation,skeletal-animation,2d,ui,particle,particle-2d,physics-framework,physics-2d-framework,intersection-2d,primitive,profiler,occlusion-query,geometry-renderer,debug-renderer,audio,video,terrain,webview,tween,tiled-map,spine,dragon-bones,marionette,custom-pipeline
 debug: Our import map(foo:/bar): {
   "imports": {
@@ -14,7 +14,7 @@ debug: Our import map(foo:/bar): {
 }
 debug: Initializing target [Preview]
 debug: Loading cache
-debug: Loading cache costs 0.6463000001385808ms.
+debug: Loading cache costs 1.179299995303154ms.
 debug: Our import map(foo:/bar): {
   "imports": {
     "cc": "cce:/internal/x/cc"
@@ -46,12 +46,12 @@ debug: Our import map(foo:/bar): {
   }
 }
 debug: Pulling asset-db.
-debug: Fetch asset-db cost: 2.451999999815598ms.
+debug: Fetch asset-db cost: 2.5285999923944473ms.
 debug: Build iteration starts.
-Number of accumulated asset changes: 2
+Number of accumulated asset changes: 3
 Feature changed: false
 debug: Target(editor) build started.
-debug: Detected change: cce:/internal/x/cc. Last mtime: Wed Dec 31 1969 21:00:10 GMT-0300 (hora estándar de Argentina), Current mtime: Wed Dec 31 1969 21:00:05 GMT-0300 (hora estándar de Argentina)
+debug: Detected change: cce:/internal/x/cc. Last mtime: Wed Dec 31 1969 21:00:04 GMT-0300 (hora estándar de Argentina), Current mtime: Wed Dec 31 1969 21:00:05 GMT-0300 (hora estándar de Argentina)
 debug: Inspect cce:/internal/x/cc
 debug: Resolve cce:/internal/x/cc-fu/base from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/base.
 debug: Resolve cce:/internal/x/cc-fu/gfx-webgl from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/gfx-webgl.
@@ -78,19 +78,23 @@ debug: Resolve cce:/internal/x/cc-fu/tiled-map from cce:/internal/x/cc as extern
 debug: Resolve cce:/internal/x/cc-fu/spine from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/spine.
 debug: Resolve cce:/internal/x/cc-fu/dragon-bones from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/dragon-bones.
 debug: Resolve cce:/internal/x/cc-fu/custom-pipeline from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/custom-pipeline.
-debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Wed Dec 31 1969 21:00:12 GMT-0300 (hora estándar de Argentina), Current mtime: Wed Dec 31 1969 21:00:05 GMT-0300 (hora estándar de Argentina)
+debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Wed Dec 31 1969 21:00:05 GMT-0300 (hora estándar de Argentina), Current mtime: Wed Dec 31 1969 21:00:05 GMT-0300 (hora estándar de Argentina)
 debug: Inspect cce:/internal/x/prerequisite-imports
 debug: Resolve file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts.
 debug: Resolve cc from file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts as cce:/internal/x/cc.
 debug: Resolve cc from file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts as cce:/internal/x/cc.
 debug: Resolve cc from file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts as cce:/internal/x/cc.
+debug: Resolve file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GameManager.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GameManager.ts.
+debug: Resolve cc from file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GameManager.ts as cce:/internal/x/cc.
+debug: Resolve cc from file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GameManager.ts as cce:/internal/x/cc.
+debug: Resolve cc from file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GameManager.ts as cce:/internal/x/cc.
 debug: Resolve file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts.
 debug: Resolve cc from file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts as cce:/internal/x/cc.
 debug: Resolve cc from file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts as cce:/internal/x/cc.
 debug: Resolve cc from file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts as cce:/internal/x/cc.
-debug: Target(editor) ends with cost 55.22330000018701ms.
+debug: Target(editor) ends with cost 57.95650000870228ms.
 debug: Target(preview) build started.
-debug: Detected change: cce:/internal/x/cc. Last mtime: Wed Dec 31 1969 21:00:10 GMT-0300 (hora estándar de Argentina), Current mtime: Wed Dec 31 1969 21:00:05 GMT-0300 (hora estándar de Argentina)
+debug: Detected change: cce:/internal/x/cc. Last mtime: Wed Dec 31 1969 21:00:04 GMT-0300 (hora estándar de Argentina), Current mtime: Wed Dec 31 1969 21:00:05 GMT-0300 (hora estándar de Argentina)
 debug: Inspect cce:/internal/x/cc
 debug: Resolve cce:/internal/x/cc-fu/2d from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/2d.
 debug: Resolve cce:/internal/x/cc-fu/animation from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/animation.
@@ -111,31 +115,37 @@ debug: Resolve cce:/internal/x/cc-fu/tween from cce:/internal/x/cc as external d
 debug: Resolve cce:/internal/x/cc-fu/ui from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/ui.
 debug: Resolve cce:/internal/x/cc-fu/video from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/video.
 debug: Resolve cce:/internal/x/cc-fu/webview from cce:/internal/x/cc as external dependency cce:/internal/x/cc-fu/webview.
-debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Wed Dec 31 1969 21:00:12 GMT-0300 (hora estándar de Argentina), Current mtime: Wed Dec 31 1969 21:00:05 GMT-0300 (hora estándar de Argentina)
+debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Wed Dec 31 1969 21:00:05 GMT-0300 (hora estándar de Argentina), Current mtime: Wed Dec 31 1969 21:00:05 GMT-0300 (hora estándar de Argentina)
 debug: Inspect cce:/internal/x/prerequisite-imports
 debug: Resolve file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts.
 debug: Resolve cc from file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts as cce:/internal/x/cc.
 debug: Resolve cc from file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts as cce:/internal/x/cc.
 debug: Resolve cc from file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts as cce:/internal/x/cc.
+debug: Resolve file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GameManager.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GameManager.ts.
+debug: Resolve cc from file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GameManager.ts as cce:/internal/x/cc.
+debug: Resolve cc from file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GameManager.ts as cce:/internal/x/cc.
+debug: Resolve cc from file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GameManager.ts as cce:/internal/x/cc.
 debug: Resolve file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts.
 debug: Resolve cc from file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts as cce:/internal/x/cc.
 debug: Resolve cc from file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts as cce:/internal/x/cc.
 debug: Resolve cc from file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts as cce:/internal/x/cc.
-debug: Target(preview) ends with cost 49.672200000146404ms.
+debug: Target(preview) ends with cost 54.41090001165867ms.
 debug: Pulling asset-db.
-debug: Fetch asset-db cost: 7.238700000103563ms.
+debug: Fetch asset-db cost: 8.591399997472763ms.
 debug: Build iteration starts.
-Number of accumulated asset changes: 2
+Number of accumulated asset changes: 3
 Feature changed: false
 debug: Target(editor) build started.
 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Wed Dec 31 1969 21:00:05 GMT-0300 (hora estándar de Argentina), Current mtime: Wed Dec 31 1969 21:00:05 GMT-0300 (hora estándar de Argentina)
 debug: Inspect cce:/internal/x/prerequisite-imports
 debug: Resolve file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts.
+debug: Resolve file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GameManager.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GameManager.ts.
 debug: Resolve file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts.
-debug: Target(editor) ends with cost 15.499199999962002ms.
+debug: Target(editor) ends with cost 16.444600000977516ms.
 debug: Target(preview) build started.
 debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Wed Dec 31 1969 21:00:05 GMT-0300 (hora estándar de Argentina), Current mtime: Wed Dec 31 1969 21:00:05 GMT-0300 (hora estándar de Argentina)
 debug: Inspect cce:/internal/x/prerequisite-imports
 debug: Resolve file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts.
+debug: Resolve file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GameManager.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GameManager.ts.
 debug: Resolve file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts from cce:/internal/x/prerequisite-imports as file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts.
-debug: Target(preview) ends with cost 19.62349999998696ms.
+debug: Target(preview) ends with cost 16.338200002908707ms.

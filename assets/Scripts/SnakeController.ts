@@ -118,5 +118,4 @@ export class SnakeController extends Component {
   private eatBall(ball: Balls): void { }
 
 
-  private checkCollide(): void { }
 }
