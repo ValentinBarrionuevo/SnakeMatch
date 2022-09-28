@@ -18,19 +18,16 @@ import {
   Contact2DType,
   PhysicsSystem2D,
   IPhysics2DContact,
+  Node,
+  assetManager,
 } from "cc";
+import { GameManager } from "./GameManager";
 const { ccclass, property } = _decorator;
 
-type Balls = "green" | "blue" | "red" | "yellow";
+//type Balls = "pink" | "blue" | "red" | "yellow";
 
 @ccclass("SnakeController")
 export class SnakeController extends Component {
-  @property(Prefab)
-  redPrefab: Prefab;
-
-  prePosX: number = 0;
-
-  prePosY: number = 0;
 
   public character: RigidBody2D = null;
 
@@ -38,8 +35,13 @@ export class SnakeController extends Component {
 
   private velocity: number = 5;
 
-  private snakeInside: Array<Balls> = [];
+  private snakeInside: Array<Node> = [];
 
+  @property(Prefab)
+  bodyPrefab: Prefab;
+
+
+  //private balls: Array<Balls> = new Array<Balls>("red", "blue", "yellow", "pink");
 
 
   public onLoad(): void {
@@ -86,25 +88,15 @@ export class SnakeController extends Component {
           this.character.linearVelocity = new Vec2(this.velocity, 0);
           this.tileMove();
           break;
-        case KeyCode.KEY_F:
-          var prefad = instantiate(this.redPrefab);
-          prefad.parent = find("Canvas");
-          prefad.setPosition(this.prePosX, this.prePosY);
-          console.log("prefad");
-          break;
       }
     }
   }
 
   public update(dt: number): void {
-    //this.deathCheck();
-
-    this.prePosX = randomRange(-155, 155);
-    this.prePosY = randomRange(-305, 305);
 
   }
 
-  
+
 
   private tileMove(): void {
     this.firstMove = false;
@@ -115,7 +107,17 @@ export class SnakeController extends Component {
     console.log(this.node.position);
   }
 
-  private eatBall(ball: Balls): void { }
+
+  public eatBall(_ballTag: number): void {
+
+    var prefab = instantiate(this.bodyPrefab);
+    prefab.parent = find("Canvas/Snake");
+    prefab.setPosition(30, 30);
+
+    this.snakeInside.push(prefab);
+
+  }
+
 
 
 }

@@ -3,8 +3,8 @@
     "cce:/internal/x/cc": "./chunks/90/909f786ffe128f06f5aa1b4e1e3fbbd65262915e.js",
     "cce:/internal/x/prerequisite-imports": "./chunks/34/341ab3341f38daa5d6eb502f45f16e9d150576f5.js",
     "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts": "./chunks/2a/2a0f4d4d40ce1a20815b0bce0c8b074cfd907d97.js",
-    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GameManager.ts": "./chunks/86/863799bdab3dffd2d5ba268f206f06d2624e3bc2.js",
-    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts": "./chunks/5e/5ef15c7c46b360cf48d308eae0c8bc2c7836be7a.js"
+    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GameManager.ts": "./chunks/a0/a03760bb0a13a6a63ed1445ccbaca78c8ea45256.js",
+    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts": "./chunks/c4/c45e21a3d151146843d539db9b0644c2b302e29f.js"
   },
   "scopes": {
     "./chunks/90/909f786ffe128f06f5aa1b4e1e3fbbd65262915e.js": {
@@ -30,13 +30,15 @@
     },
     "./chunks/34/341ab3341f38daa5d6eb502f45f16e9d150576f5.js": {
       "__unresolved_0": "./chunks/2a/2a0f4d4d40ce1a20815b0bce0c8b074cfd907d97.js",
-      "__unresolved_1": "./chunks/86/863799bdab3dffd2d5ba268f206f06d2624e3bc2.js",
-      "__unresolved_2": "./chunks/5e/5ef15c7c46b360cf48d308eae0c8bc2c7836be7a.js"
+      "__unresolved_1": "./chunks/a0/a03760bb0a13a6a63ed1445ccbaca78c8ea45256.js",
+      "__unresolved_2": "./chunks/c4/c45e21a3d151146843d539db9b0644c2b302e29f.js"
     },
-    "./chunks/5e/5ef15c7c46b360cf48d308eae0c8bc2c7836be7a.js": {
+    "./chunks/c4/c45e21a3d151146843d539db9b0644c2b302e29f.js": {
       "cc": "./chunks/90/909f786ffe128f06f5aa1b4e1e3fbbd65262915e.js"
     },
-    "./chunks/86/863799bdab3dffd2d5ba268f206f06d2624e3bc2.js": {
+    "./chunks/a0/a03760bb0a13a6a63ed1445ccbaca78c8ea45256.js": {
+      "__unresolved_0": "./chunks/3a/3a1fd7b13056478820ebedd306d3446d1aa408cc.js",
+      "__unresolved_1": "./chunks/c4/c45e21a3d151146843d539db9b0644c2b302e29f.js",
       "cc": "./chunks/90/909f786ffe128f06f5aa1b4e1e3fbbd65262915e.js"
     },
     "./chunks/2a/2a0f4d4d40ce1a20815b0bce0c8b074cfd907d97.js": {

@@ -22,13 +22,23 @@
       },
       {
         "index": 2,
-        "name": "player"
+        "name": "head"
+      },
+      {
+        "index": 3,
+        "name": "balls"
+      },
+      {
+        "index": 4,
+        "name": "body"
       }
     ],
     "collisionMatrix": {
       "0": 0,
       "1": 4,
-      "2": 2
+      "2": 26,
+      "3": 4,
+      "4": 4
     }
   }
 }
