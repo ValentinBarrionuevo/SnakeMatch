@@ -15,7 +15,10 @@ export class GameManager extends Component {
     bluePrefab: Prefab;
 
     @property(Prefab)
-    pinkPrefab: Prefab ;
+    pinkPrefab: Prefab;
+
+    @property(Prefab)
+    bodyPrefab: Prefab;
 
     private randomPosX: number = 0;
     private randomPosY: number = 0;
@@ -29,7 +32,7 @@ export class GameManager extends Component {
 
         //PhysicsSystem2D.instance?.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
 
-        
+
 
 
     }
@@ -52,8 +55,8 @@ export class GameManager extends Component {
                 case 5:
                 case 6:
 
-                    find("Canvas/Snake").getComponent(SnakeController).eatBall(otherCollider.tag);
-
+                    //find("Canvas/Snake").getComponent(SnakeController).eatBall(otherCollider.tag);
+                    this.eatBall(otherCollider.tag);
                     this.scheduleOnce(() => { otherCollider.node.destroy(); });
                     this.spawned--;
 
@@ -61,6 +64,20 @@ export class GameManager extends Component {
 
             }
         }
+    }
+
+    private eatBall(_ballTag: number): void {
+
+        var prefabb = instantiate(this.redPrefab);
+        console.log(prefabb);
+
+        // da el error aca abajo, cualquier operacion a la variable prefab
+
+        console.log(prefabb.parent);
+        prefabb.setParent(find("Canvas"));
+       //
+        //this.snakeInside.push(prefab);
+
     }
 
     private spawnBall() {
@@ -78,6 +95,7 @@ export class GameManager extends Component {
                     case 1:
                         var prefab = instantiate(this.redPrefab);
                         prefab.parent = find("Canvas");
+                        console.log(prefab);
                         prefab.setPosition(this.randomPosX, this.randomPosY);
                         this.spawned++;
                         console.log("red");
