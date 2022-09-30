@@ -111,10 +111,16 @@ export class SnakeController extends Component {
   public eatBall(_ballTag: number): void {
 
     var prefab = instantiate(this.bodyPrefab);
-    prefab.parent = find("Canvas/Snake");
-    prefab.setPosition(30, 30);
 
-    this.snakeInside.push(prefab);
+    // da el error aca abajo, cualquier operacion a la variable prefab
+    // probe moviendo al game manager y lo mismo
+    // game manager, incluso cambiando el body prefab por redPrefab, tiraba el mismo error
+    // a pesar de que la generacion de las bolas funciona bien
+
+    //prefab.parent = find("Canvas/Snake");
+    //prefab.setPosition(30, 30);
+
+    //this.snakeInside.push(prefab);
 
   }
 
