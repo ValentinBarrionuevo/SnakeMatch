@@ -28,21 +28,18 @@ const { ccclass, property } = _decorator;
 
 @ccclass("SnakeController")
 export class SnakeController extends Component {
-
   public character: RigidBody2D = null;
 
   private firstMove: boolean = true;
 
   private velocity: number = 5;
 
-  private snakeInside: Array<Node> = [];
+  public snakeInside: Array<Node> = [];
 
   @property(Prefab)
   bodyPrefab: Prefab;
 
-
   //private balls: Array<Balls> = new Array<Balls>("red", "blue", "yellow", "pink");
-
 
   public onLoad(): void {
     find("Canvas/button").active = false;
@@ -52,14 +49,11 @@ export class SnakeController extends Component {
     this.character.linearVelocity = new Vec2(0, 0);
 
     input.on(Input.EventType.KEY_DOWN, this.onKeyDown, this);
-
   }
 
   public onDestroy(): void {
-
     input.off(Input.EventType.KEY_DOWN, this.onKeyDown, this);
     find("Canvas/button").active = true;
-
   }
 
   private onKeyDown(event: EventKeyboard): void {
@@ -90,13 +84,10 @@ export class SnakeController extends Component {
           break;
       }
     }
+    console.log(this.snakeInside);
   }
 
-  public update(dt: number): void {
-
-  }
-
-
+  public update(dt: number): void {}
 
   private tileMove(): void {
     this.firstMove = false;
@@ -104,12 +95,9 @@ export class SnakeController extends Component {
       Math.round(this.node.position.x / 30) * 30,
       Math.round(this.node.position.y / 30) * 30
     );
-    console.log(this.node.position);
   }
 
-
   public eatBall(_ballTag: number): void {
-
     var prefab = instantiate(this.bodyPrefab);
 
     // da el error aca abajo, cualquier operacion a la variable prefab
@@ -121,9 +109,5 @@ export class SnakeController extends Component {
     //prefab.setPosition(30, 30);
 
     //this.snakeInside.push(prefab);
-
   }
-
-
-
 }
