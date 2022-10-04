@@ -11,7 +11,7 @@
     "time": 1664226108545.9746
   },
   "C:\\Users\\agukp\\Snake Match\\assets\\Scenes\\GameScene.scene": {
-    "time": 1664837463348.893,
+    "time": 1664925389858.75,
     "uuid": "4f9cb534-2952-40d3-a4ee-2c12e7477bd7",
     "missing": false
   },
@@ -19,7 +19,7 @@
     "time": 1664226108546.4746
   },
   "C:\\Users\\agukp\\Snake Match\\assets\\Scripts": {
-    "time": 1664836858685.1821,
+    "time": 1664925618186.1145,
     "uuid": "35f29723-0d84-42ea-a386-d77e5f26744b",
     "missing": false
   },
@@ -27,7 +27,7 @@
     "time": 1664226108547.9753
   },
   "C:\\Users\\agukp\\Snake Match\\assets\\Scripts\\SnakeController.ts": {
-    "time": 1664837456946.2114,
+    "time": 1664924914436.2021,
     "uuid": "b24c5641-ca34-4917-a30d-80fde2732bc3",
     "missing": false
   },
@@ -35,7 +35,7 @@
     "time": 1664226108548.9758
   },
   "C:\\Users\\agukp\\Snake Match\\assets\\Sprites": {
-    "time": 1664482168518.1025,
+    "time": 1664922058423.7993,
     "uuid": "551e98be-3100-41d8-89ea-74b05c76309e",
     "missing": false
   },
@@ -45,14 +45,6 @@
   "C:\\Users\\agukp\\Snake Match\\assets\\Sprites\\background.jpg": {
     "time": 1664226108549.9756,
     "uuid": "68265336-fcba-4962-9f14-3ae36ffd1806",
-    "missing": false
-  },
-  "C:\\Users\\agukp\\Snake Match\\assets\\Sprites\\snake.jpg.meta": {
-    "time": 1664226108551.9756
-  },
-  "C:\\Users\\agukp\\Snake Match\\assets\\Sprites\\snake.jpg": {
-    "time": 1664226108551.4756,
-    "uuid": "8db8ed12-6728-4450-b1ab-a70187bf2945",
     "missing": false
   },
   "C:\\Users\\agukp\\Snake Match\\assets\\Prefab.meta": {
@@ -91,7 +83,7 @@
     "time": 1664482168512.603
   },
   "C:\\Users\\agukp\\Snake Match\\assets\\Scripts\\GameManager.ts": {
-    "time": 1664837075313.547,
+    "time": 1664925942313.9165,
     "uuid": "c77d4ec5-b15d-4103-aca6-1e42c5168c98",
     "missing": false
   },
@@ -131,7 +123,7 @@
     "missing": false
   },
   "C:\\Users\\agukp\\Snake Match\\assets\\Prefab\\ballRed.prefab": {
-    "time": 1664837018863.481,
+    "time": 1664925494055.17,
     "uuid": "f7187d7d-c998-4851-822a-c0f781a486f7",
     "missing": false
   },
@@ -175,12 +167,20 @@
     "uuid": "40c0db39-2543-4334-a369-7b6c1c9d6043",
     "missing": false
   },
-  "C:\\Users\\agukp\\Snake Match\\assets\\Scripts\\BallCommands.ts.meta": {
-    "time": 1664836858692.6821
+  "C:\\Users\\agukp\\Snake Match\\assets\\Sprites\\snakeBody.png.meta": {
+    "time": 1664922058461.8062
   },
-  "C:\\Users\\agukp\\Snake Match\\assets\\Scripts\\BallCommands.ts": {
-    "time": 1664837444528.105,
-    "uuid": "b717443b-0b95-46c4-9914-cfc2bd6e5bc6",
+  "C:\\Users\\agukp\\Snake Match\\assets\\Sprites\\snakeHead.png.meta": {
+    "time": 1664922058459.8054
+  },
+  "C:\\Users\\agukp\\Snake Match\\assets\\Sprites\\snakeHead.png": {
+    "time": 1664921796428.4817,
+    "uuid": "1a2513bc-5c5d-470b-98c9-c24413bc1501",
+    "missing": false
+  },
+  "C:\\Users\\agukp\\Snake Match\\assets\\Sprites\\snakeBody.png": {
+    "time": 1664922044447.3286,
+    "uuid": "5d2d00af-0af8-4c85-b2ac-15d4d7605074",
     "missing": false
   }
 }

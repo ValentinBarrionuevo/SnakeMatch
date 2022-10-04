@@ -5,20 +5,19 @@
       "depends": [
         "4f9cb534-2952-40d3-a4ee-2c12e7477bd7",
         "68265336-fcba-4962-9f14-3ae36ffd1806@f9941",
-        "8db8ed12-6728-4450-b1ab-a70187bf2945@f9941",
+        "1a2513bc-5c5d-470b-98c9-c24413bc1501@f9941",
         "2f766b69-1f8f-4272-a33e-57b4ae3a3be5",
         "3ef9a4f9-0aea-40d1-8d9f-ae219a2e153b@f9941",
         "3ef9a4f9-0aea-40d1-8d9f-ae219a2e153b@f9941",
-        "8db8ed12-6728-4450-b1ab-a70187bf2945@f9941",
-        "8db8ed12-6728-4450-b1ab-a70187bf2945@f9941",
-        "8db8ed12-6728-4450-b1ab-a70187bf2945@f9941",
-        "8db8ed12-6728-4450-b1ab-a70187bf2945@f9941",
+        "94301a91-e395-457d-9898-97b1863a4346@f9941",
+        "94301a91-e395-457d-9898-97b1863a4346@f9941",
+        "94301a91-e395-457d-9898-97b1863a4346@f9941",
+        "94301a91-e395-457d-9898-97b1863a4346@f9941",
         "f7187d7d-c998-4851-822a-c0f781a486f7",
         "1c82de25-98e8-4a71-8c74-601f2b1c793b",
         "ef8f54a3-3757-4246-869d-b2e0fe24e2ae",
         "83844e66-2dda-4e15-9bfe-8ef69e3e1b2f",
         "2f766b69-1f8f-4272-a33e-57b4ae3a3be5",
-        "f7187d7d-c998-4851-822a-c0f781a486f7",
         "4f9cb534-2952-40d3-a4ee-2c12e7477bd7"
       ]
     }
@@ -63,9 +62,7 @@
   },
   "8db8ed12-6728-4450-b1ab-a70187bf2945": {
     "url": "db://assets/Sprites/snake.jpg",
-    "value": {
-      "depends": []
-    }
+    "value": {}
   },
   "8db8ed12-6728-4450-b1ab-a70187bf2945@6c48a": {
     "url": "db://assets/Sprites/snake.jpg@6c48a",
@@ -172,8 +169,7 @@
     "url": "db://assets/Prefab/ballRed.prefab",
     "value": {
       "depends": [
-        "8ce68651-1033-4e39-b9e7-f79cb522f8dc@f9941",
-        "2f766b69-1f8f-4272-a33e-57b4ae3a3be5"
+        "8ce68651-1033-4e39-b9e7-f79cb522f8dc@f9941"
       ]
     }
   },
@@ -292,5 +288,69 @@
   "b717443b-0b95-46c4-9914-cfc2bd6e5bc6": {
     "url": "db://assets/Scripts/BallCommands.ts",
     "value": {}
+  },
+  "d79ddd01-be7d-4930-b9b9-2de25859f497": {
+    "url": "db://assets/Sprites/snake.png",
+    "value": {}
+  },
+  "d79ddd01-be7d-4930-b9b9-2de25859f497@6c48a": {
+    "url": "db://assets/Sprites/snake.png@6c48a",
+    "value": {
+      "depends": [
+        "d79ddd01-be7d-4930-b9b9-2de25859f497"
+      ]
+    }
+  },
+  "d79ddd01-be7d-4930-b9b9-2de25859f497@f9941": {
+    "url": "db://assets/Sprites/snake.png@f9941",
+    "value": {
+      "depends": [
+        "d79ddd01-be7d-4930-b9b9-2de25859f497@6c48a"
+      ]
+    }
+  },
+  "5d2d00af-0af8-4c85-b2ac-15d4d7605074": {
+    "url": "db://assets/Sprites/snakeBody.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "1a2513bc-5c5d-470b-98c9-c24413bc1501": {
+    "url": "db://assets/Sprites/snakeHead.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "1a2513bc-5c5d-470b-98c9-c24413bc1501@6c48a": {
+    "url": "db://assets/Sprites/snakeHead.png@6c48a",
+    "value": {
+      "depends": [
+        "1a2513bc-5c5d-470b-98c9-c24413bc1501"
+      ]
+    }
+  },
+  "5d2d00af-0af8-4c85-b2ac-15d4d7605074@6c48a": {
+    "url": "db://assets/Sprites/snakeBody.png@6c48a",
+    "value": {
+      "depends": [
+        "5d2d00af-0af8-4c85-b2ac-15d4d7605074"
+      ]
+    }
+  },
+  "1a2513bc-5c5d-470b-98c9-c24413bc1501@f9941": {
+    "url": "db://assets/Sprites/snakeHead.png@f9941",
+    "value": {
+      "depends": [
+        "1a2513bc-5c5d-470b-98c9-c24413bc1501@6c48a"
+      ]
+    }
+  },
+  "5d2d00af-0af8-4c85-b2ac-15d4d7605074@f9941": {
+    "url": "db://assets/Sprites/snakeBody.png@f9941",
+    "value": {
+      "depends": [
+        "5d2d00af-0af8-4c85-b2ac-15d4d7605074@6c48a"
+      ]
+    }
   }
 }

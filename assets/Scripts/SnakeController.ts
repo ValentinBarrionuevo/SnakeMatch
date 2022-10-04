@@ -62,11 +62,13 @@ export class SnakeController extends Component {
         case KeyCode.KEY_W:
         case KeyCode.ARROW_UP:
           this.character.linearVelocity = new Vec2(0, this.velocity);
+          this.node.angle = 0;
           this.tileMove();
           break;
         case KeyCode.KEY_S:
         case KeyCode.ARROW_DOWN:
           this.character.linearVelocity = new Vec2(0, -this.velocity);
+          this.node.angle = 180;
           this.tileMove();
           break;
       }
@@ -74,17 +76,18 @@ export class SnakeController extends Component {
       switch (event.keyCode) {
         case KeyCode.KEY_A:
         case KeyCode.ARROW_LEFT:
-          this.tileMove();
           this.character.linearVelocity = new Vec2(-this.velocity, 0);
+          this.node.angle = 90;
+          this.tileMove();
           break;
         case KeyCode.KEY_D:
         case KeyCode.ARROW_RIGHT:
           this.character.linearVelocity = new Vec2(this.velocity, 0);
+          this.node.angle = 270;
           this.tileMove();
           break;
       }
     }
-    console.log(this.snakeInside);
   }
 
   public update(dt: number): void {}
@@ -97,8 +100,9 @@ export class SnakeController extends Component {
     );
   }
 
-  public eatBall(_ballTag: number): void {
-    var prefab = instantiate(this.bodyPrefab);
+  public eatBall(ball: Node): void {
+    this.snakeInside.push(ball);
+    console.log(this.snakeInside);
 
     // da el error aca abajo, cualquier operacion a la variable prefab
     // probe moviendo al game manager y lo mismo

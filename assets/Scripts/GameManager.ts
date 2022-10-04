@@ -39,12 +39,8 @@ export class GameManager extends Component {
   start() {
     let collider = find("Canvas/Snake").getComponent(BoxCollider2D);
     collider.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
-
-    //PhysicsSystem2D.instance?.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
-  }
-
-  update(deltaTime: number) {
     this.spawnBall();
+    //PhysicsSystem2D.instance?.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
   }
 
   private onBeginContact(
@@ -64,65 +60,59 @@ export class GameManager extends Component {
         case 4:
         case 5:
         case 6:
-          //find("Canvas/Snake").getComponent(SnakeController).eatBall(otherCollider.tag);
           this.scheduleOnce(() => {
+            var prefab = instantiate(this.redPrefab);
+            find("Canvas").addChild(prefab);
+            find("Canvas/Snake").getComponent(SnakeController).eatBall(prefab);
             otherCollider.node.destroy();
           });
           this.spawned--;
+          if (this.spawned == 0) {
+            this.spawnBall();
+          }
           break;
       }
     }
   }
 
-  // private eatBall(ball: Node): void {
-  // var prefab = instantiate(this.bodyPrefab);
-  // console.log(prefab, ball);
-  // const canvas = find("Canvas");
-  // canvas.addChild(prefab);
-  // // prefab.parent = find("Canvas");
-  // ball.destroy();
-  // }
-
   private spawnBall(): void {
-    if (this.spawned == 0) {
-      console.log("enterSpawn");
-      for (var i = 0; i < 3; i++) {
-        var randomBall = 1;
+    console.log("enterSpawn");
+    for (var i = 0; i < 3; i++) {
+      var randomBall = 1;
 
-        this.randomPosX = Math.round(math.randomRangeInt(-150, 151) / 30) * 30;
-        this.randomPosY = Math.round(math.randomRangeInt(-300, 301) / 30) * 30;
+      this.randomPosX = Math.round(math.randomRangeInt(-150, 151) / 30) * 30;
+      this.randomPosY = Math.round(math.randomRangeInt(-300, 301) / 30) * 30;
 
-        switch (randomBall) {
-          case 1:
-            var prefab = instantiate(this.redPrefab);
-            console.log(prefab);
-            prefab.parent = find("Canvas");
-            prefab.setPosition(this.randomPosX, this.randomPosY);
-            this.spawned++;
-            console.log("red");
-            break;
-          case 2:
-            var prefab = instantiate(this.bluePrefab);
-            prefab.parent = find("Canvas");
-            prefab.setPosition(this.randomPosX, this.randomPosY);
-            this.spawned++;
-            console.log("blue");
-            break;
-          case 3:
-            var prefab = instantiate(this.yellowPrefab);
-            prefab.parent = find("Canvas");
-            prefab.setPosition(this.randomPosX, this.randomPosY);
-            this.spawned++;
-            console.log("yellow");
-            break;
-          case 4:
-            var prefab = instantiate(this.pinkPrefab);
-            prefab.parent = find("Canvas");
-            prefab.setPosition(this.randomPosX, this.randomPosY);
-            this.spawned++;
-            console.log("pink");
-            break;
-        }
+      switch (randomBall) {
+        case 1:
+          var prefab = instantiate(this.redPrefab);
+          console.log(prefab);
+          prefab.parent = find("Canvas");
+          prefab.setPosition(this.randomPosX, this.randomPosY);
+          this.spawned++;
+          console.log("red");
+          break;
+        case 2:
+          var prefab = instantiate(this.bluePrefab);
+          prefab.parent = find("Canvas");
+          prefab.setPosition(this.randomPosX, this.randomPosY);
+          this.spawned++;
+          console.log("blue");
+          break;
+        case 3:
+          var prefab = instantiate(this.yellowPrefab);
+          prefab.parent = find("Canvas");
+          prefab.setPosition(this.randomPosX, this.randomPosY);
+          this.spawned++;
+          console.log("yellow");
+          break;
+        case 4:
+          var prefab = instantiate(this.pinkPrefab);
+          prefab.parent = find("Canvas");
+          prefab.setPosition(this.randomPosX, this.randomPosY);
+          this.spawned++;
+          console.log("pink");
+          break;
       }
     }
   }

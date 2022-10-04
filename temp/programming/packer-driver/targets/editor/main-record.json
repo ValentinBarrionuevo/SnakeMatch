@@ -1,7 +1,7 @@
 {
   "modules": {
     "cce:/internal/x/cc": {
-      "mTimestamp": 10032.363200068474,
+      "mTimestamp": 15857.872700095177,
       "chunkId": "ca4374a3008ca85000d465787e739a302e4e4ac6",
       "imports": [
         {
@@ -535,11 +535,11 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 3627494.616100073,
-      "chunkId": "52c5783aa6cb269f6547b0da83ec062fe79b746b",
+      "mTimestamp": 4696567.156300068,
+      "chunkId": "b04882f6528f528d23c15a1a07354592145c07ab",
       "imports": [
         {
-          "value": "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/BallCommands.ts",
+          "value": "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/ButtonMethods.ts",
           "resolved": "__unresolved_0",
           "loc": {
             "start": {
@@ -548,62 +548,41 @@
             },
             "end": {
               "line": 5,
-              "column": 104
-            }
-          }
-        },
-        {
-          "value": "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/ButtonMethods.ts",
-          "resolved": "__unresolved_1",
-          "loc": {
-            "start": {
-              "line": 5,
-              "column": 120
-            },
-            "end": {
-              "line": 5,
-              "column": 190
+              "column": 105
             }
           }
         },
         {
           "value": "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/GameManager.ts",
-          "resolved": "__unresolved_2",
+          "resolved": "__unresolved_1",
           "loc": {
             "start": {
               "line": 5,
-              "column": 206
+              "column": 121
             },
             "end": {
               "line": 5,
-              "column": 274
+              "column": 189
             }
           }
         },
         {
           "value": "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/SnakeController.ts",
-          "resolved": "__unresolved_3",
+          "resolved": "__unresolved_2",
           "loc": {
             "start": {
               "line": 5,
-              "column": 290
+              "column": 205
             },
             "end": {
               "line": 5,
-              "column": 362
+              "column": 277
             }
           }
         }
       ],
       "type": "esm",
       "resolutions": [
-        {
-          "resolved": {
-            "type": "module",
-            "url": "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/BallCommands.ts"
-          },
-          "messages": []
-        },
         {
           "resolved": {
             "type": "module",
@@ -629,10 +608,10 @@
     },
     "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/SnakeController.ts": {
       "mTimestamp": {
-        "mtime": 1664837456946.2114,
+        "mtime": 1664924914436.2021,
         "uuid": "b24c5641-ca34-4917-a30d-80fde2732bc3"
       },
-      "chunkId": "fdfbeac569de760d0eca2d482dd058961a27d279",
+      "chunkId": "7a9c04feeaf0631ba557a167c59a280d759e82fd",
       "imports": [
         {
           "value": "cc"
@@ -733,11 +712,15 @@
     },
     "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/GameManager.ts": {
       "mTimestamp": {
-        "mtime": 1664837075313.547,
+        "mtime": 1664925942313.9165,
         "uuid": "c77d4ec5-b15d-4103-aca6-1e42c5168c98"
       },
-      "chunkId": "90de2d2af7acb53631cd930bf25608b727956b35",
+      "chunkId": "85f934ab741818f7d15e0b669529adcc95162e8e",
       "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
         {
           "value": "cc"
         },
@@ -756,80 +739,17 @@
               "column": 11
             }
           }
-        }
-      ],
-      "type": "esm",
-      "resolutions": [
-        {
-          "resolved": {
-            "type": "module",
-            "url": "cce:/internal/x/cc"
-          },
-          "messages": []
-        },
-        {
-          "resolved": {
-            "type": "module",
-            "url": "cce:/internal/x/cc"
-          },
-          "messages": []
-        },
-        {
-          "resolved": {
-            "type": "module",
-            "url": "cce:/internal/x/cc"
-          },
-          "messages": []
-        }
-      ]
-    },
-    "cce:/internal/code-quality/cr.mjs": {
-      "mTimestamp": 1664833834277,
-      "chunkId": "84741ad843cea9a440c5d8c2d379669b6551400d",
-      "imports": [],
-      "type": "esm",
-      "resolutions": []
-    },
-    "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/BallCommands.ts": {
-      "mTimestamp": {
-        "mtime": 1664837444528.105,
-        "uuid": "b717443b-0b95-46c4-9914-cfc2bd6e5bc6"
-      },
-      "chunkId": "b35b3cba91358df619ef5a9e865a9d5c25c8f630",
-      "imports": [
-        {
-          "value": "cce:/internal/code-quality/cr.mjs",
-          "resolved": "__unresolved_0"
-        },
-        {
-          "value": "cc"
-        },
-        {
-          "value": "cc"
-        },
-        {
-          "value": "cc",
-          "loc": {
-            "start": {
-              "line": 1,
-              "column": 71
-            },
-            "end": {
-              "line": 1,
-              "column": 75
-            }
-          }
         },
         {
           "value": "./SnakeController",
           "resolved": "__unresolved_1",
           "loc": {
             "start": {
-              "line": 2,
+              "line": 15,
               "column": 32
             },
             "end": {
-              "line": 2,
+              "line": 15,
               "column": 51
             }
           }
@@ -869,6 +789,65 @@
           "resolved": {
             "type": "module",
             "url": "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/SnakeController.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "cce:/internal/code-quality/cr.mjs": {
+      "mTimestamp": 1664921261486,
+      "chunkId": "84741ad843cea9a440c5d8c2d379669b6551400d",
+      "imports": [],
+      "type": "esm",
+      "resolutions": []
+    },
+    "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/BallCommands.ts": {
+      "mTimestamp": {
+        "mtime": 1664924913138.9727,
+        "uuid": "b717443b-0b95-46c4-9914-cfc2bd6e5bc6"
+      },
+      "chunkId": "daa8d80e1681efc84bff5500e2c44f8f121c6d29",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 71
+            },
+            "end": {
+              "line": 1,
+              "column": 75
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
           },
           "messages": []
         }
