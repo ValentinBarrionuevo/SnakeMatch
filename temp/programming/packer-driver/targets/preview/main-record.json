@@ -1,7 +1,7 @@
 {
   "modules": {
     "cce:/internal/x/cc": {
-      "mTimestamp": 15878.945600032806,
+      "mTimestamp": 13768.637799978256,
       "chunkId": "909f786ffe128f06f5aa1b4e1e3fbbd65262915e",
       "imports": [
         {
@@ -409,7 +409,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 4696668.880600095,
+      "mTimestamp": 327589.8165999651,
       "chunkId": "341ab3341f38daa5d6eb502f45f16e9d150576f5",
       "imports": [
         {
@@ -586,10 +586,10 @@
     },
     "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/GameManager.ts": {
       "mTimestamp": {
-        "mtime": 1664925942313.9165,
+        "mtime": 1665000279732.4436,
         "uuid": "c77d4ec5-b15d-4103-aca6-1e42c5168c98"
       },
-      "chunkId": "fd07b86d7fa848a1ecfe0e0a65a1782eb29e2601",
+      "chunkId": "7de0ce46a50c0d349d04a4a9035bafa7e92e9e1b",
       "imports": [
         {
           "value": "cce:/internal/code-quality/cr.mjs",
@@ -669,7 +669,7 @@
       ]
     },
     "cce:/internal/code-quality/cr.mjs": {
-      "mTimestamp": 1664921261486,
+      "mTimestamp": 1664999953506,
       "chunkId": "3a1fd7b13056478820ebedd306d3446d1aa408cc",
       "imports": [],
       "type": "esm",

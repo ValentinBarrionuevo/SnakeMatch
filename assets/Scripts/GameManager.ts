@@ -48,30 +48,27 @@ export class GameManager extends Component {
     otherCollider: BoxCollider2D,
     contact: IPhysics2DContact | null
   ) {
-    if (firstCollider.tag == 1) {
-      switch (otherCollider.tag) {
-        case 2:
-          this.scheduleOnce(() => {
-            firstCollider.node.destroy();
-          });
-
-          break;
-        case 3:
-        case 4:
-        case 5:
-        case 6:
-          this.scheduleOnce(() => {
-            var prefab = instantiate(this.redPrefab);
-            find("Canvas").addChild(prefab);
-            find("Canvas/Snake").getComponent(SnakeController).eatBall(prefab);
-            otherCollider.node.destroy();
-          });
-          this.spawned--;
-          if (this.spawned == 0) {
-            this.spawnBall();
-          }
-          break;
-      }
+    switch (otherCollider.tag) {
+      case 2:
+        this.scheduleOnce(() => {
+          firstCollider.node.destroy();
+        });
+        break;
+      case 3:
+      case 4:
+      case 5:
+      case 6:
+        this.scheduleOnce(() => {
+          var prefab = instantiate(this.redPrefab);
+          find("Canvas").addChild(prefab);
+          find("Canvas/Snake").getComponent(SnakeController).eatBall(prefab);
+          otherCollider.node.destroy();
+        });
+        this.spawned--;
+        if (this.spawned == 0) {
+          this.spawnBall();
+        }
+        break;
     }
   }
 
