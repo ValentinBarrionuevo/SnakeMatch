@@ -3,8 +3,8 @@
     "cce:/internal/x/cc": "./chunks/90/909f786ffe128f06f5aa1b4e1e3fbbd65262915e.js",
     "cce:/internal/x/prerequisite-imports": "./chunks/34/341ab3341f38daa5d6eb502f45f16e9d150576f5.js",
     "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/ButtonMethods.ts": "./chunks/30/3049ffed80e47f3dd49bee722c22c590b7546128.js",
-    "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/SnakeController.ts": "./chunks/84/84d9b6d6ae978d31050b462de4ceddb790743a8d.js",
-    "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/GameManager.ts": "./chunks/7d/7de0ce46a50c0d349d04a4a9035bafa7e92e9e1b.js"
+    "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/SnakeController.ts": "./chunks/b7/b7920a2766b26cf83c5e4bf29a98e53a7de22e34.js",
+    "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/GameManager.ts": "./chunks/83/83cf3f09fa6bbe59c15a4eaf4e10b3ae36a11611.js"
   },
   "scopes": {
     "./chunks/90/909f786ffe128f06f5aa1b4e1e3fbbd65262915e.js": {
@@ -30,15 +30,17 @@
     },
     "./chunks/34/341ab3341f38daa5d6eb502f45f16e9d150576f5.js": {
       "__unresolved_0": "./chunks/30/3049ffed80e47f3dd49bee722c22c590b7546128.js",
-      "__unresolved_1": "./chunks/7d/7de0ce46a50c0d349d04a4a9035bafa7e92e9e1b.js",
-      "__unresolved_2": "./chunks/84/84d9b6d6ae978d31050b462de4ceddb790743a8d.js"
+      "__unresolved_1": "./chunks/83/83cf3f09fa6bbe59c15a4eaf4e10b3ae36a11611.js",
+      "__unresolved_2": "./chunks/b7/b7920a2766b26cf83c5e4bf29a98e53a7de22e34.js"
     },
-    "./chunks/84/84d9b6d6ae978d31050b462de4ceddb790743a8d.js": {
+    "./chunks/b7/b7920a2766b26cf83c5e4bf29a98e53a7de22e34.js": {
+      "__unresolved_0": "./chunks/3a/3a1fd7b13056478820ebedd306d3446d1aa408cc.js",
+      "__unresolved_1": "./chunks/83/83cf3f09fa6bbe59c15a4eaf4e10b3ae36a11611.js",
       "cc": "./chunks/90/909f786ffe128f06f5aa1b4e1e3fbbd65262915e.js"
     },
-    "./chunks/7d/7de0ce46a50c0d349d04a4a9035bafa7e92e9e1b.js": {
+    "./chunks/83/83cf3f09fa6bbe59c15a4eaf4e10b3ae36a11611.js": {
       "__unresolved_0": "./chunks/3a/3a1fd7b13056478820ebedd306d3446d1aa408cc.js",
-      "__unresolved_1": "./chunks/84/84d9b6d6ae978d31050b462de4ceddb790743a8d.js",
+      "__unresolved_1": "./chunks/b7/b7920a2766b26cf83c5e4bf29a98e53a7de22e34.js",
       "cc": "./chunks/90/909f786ffe128f06f5aa1b4e1e3fbbd65262915e.js"
     },
     "./chunks/30/3049ffed80e47f3dd49bee722c22c590b7546128.js": {

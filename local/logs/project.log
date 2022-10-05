@@ -343,3 +343,4 @@ https://github.com/highlightjs/highlight.js/issues/2277
     at Node._onHierarchyChanged (http://localhost:7456/scripting/engine/bin/.cache/dev/preview/bundled/index.js:152560:55)
     at Node.setParent (http://localhost:7456/scripting/engine/bin/.cache/dev/preview/bundled/index.js:148338:16)
     at Node.setParent (http://localhost:7456/scripting/engine/bin/.cache/dev/preview/bundled/index.js:152521:41)' : ''
+2022-10-05T21:56:47.267Z - warn: Metrics: no valid info

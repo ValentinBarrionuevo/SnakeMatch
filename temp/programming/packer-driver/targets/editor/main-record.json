@@ -535,7 +535,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 327450.43149995804,
+      "mTimestamp": 7008634.611000061,
       "chunkId": "b04882f6528f528d23c15a1a07354592145c07ab",
       "imports": [
         {
@@ -608,11 +608,15 @@
     },
     "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/SnakeController.ts": {
       "mTimestamp": {
-        "mtime": 1664924914436.2021,
+        "mtime": 1665006135855.7256,
         "uuid": "b24c5641-ca34-4917-a30d-80fde2732bc3"
       },
-      "chunkId": "7a9c04feeaf0631ba557a167c59a280d759e82fd",
+      "chunkId": "c4eeefb26be5beff2bb5311ffcba87b280d9406e",
       "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
         {
           "value": "cc"
         },
@@ -631,6 +635,20 @@
               "column": 11
             }
           }
+        },
+        {
+          "value": "./GameManager",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 24,
+              "column": 28
+            },
+            "end": {
+              "line": 24,
+              "column": 43
+            }
+          }
         }
       ],
       "type": "esm",
@@ -638,7 +656,7 @@
         {
           "resolved": {
             "type": "module",
-            "url": "cce:/internal/x/cc"
+            "url": "cce:/internal/code-quality/cr.mjs"
           },
           "messages": []
         },
@@ -653,6 +671,20 @@
           "resolved": {
             "type": "module",
             "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/GameManager.ts"
           },
           "messages": []
         }
@@ -712,10 +744,10 @@
     },
     "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/GameManager.ts": {
       "mTimestamp": {
-        "mtime": 1665000279732.4436,
+        "mtime": 1665006957352.4548,
         "uuid": "c77d4ec5-b15d-4103-aca6-1e42c5168c98"
       },
-      "chunkId": "338bf11e166019da263a1f8b75226ed8b18a45c6",
+      "chunkId": "fe7b3f0dfe1d13f90258e47375e2631707e0e71b",
       "imports": [
         {
           "value": "cce:/internal/code-quality/cr.mjs",

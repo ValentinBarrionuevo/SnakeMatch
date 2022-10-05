@@ -40,7 +40,16 @@ export class GameManager extends Component {
     let collider = find("Canvas/Snake").getComponent(BoxCollider2D);
     collider.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
     this.spawnBall();
-    //PhysicsSystem2D.instance?.on(Contact2DType.BEGIN_CONTACT, this.onBeginContact, this);
+    PhysicsSystem2D.instance?.on(
+      Contact2DType.BEGIN_CONTACT,
+      this.onBeginContact,
+      this
+    );
+  }
+
+  // TODO Checkear si se fue, si esta sobre si misma o si esta sobre una pelota 
+  public checkGameState(): void {
+    console.log("checking");
   }
 
   private onBeginContact(
@@ -80,37 +89,37 @@ export class GameManager extends Component {
       this.randomPosX = Math.round(math.randomRangeInt(-150, 151) / 30) * 30;
       this.randomPosY = Math.round(math.randomRangeInt(-300, 301) / 30) * 30;
 
+      const newParent = find("Canvas/Balls");
+      console.log(newParent);
+      let prefab = null;
+      let ballType = null;
+
+      // TODO Sacar switch reemplazando con un array y randomizando el index
+      // Example:
+      // let rndmIndex = Math.random(todos los numeros)
+      // this.ballsArray[rndmIndex]
       switch (randomBall) {
         case 1:
-          var prefab = instantiate(this.redPrefab);
-          console.log(prefab);
-          prefab.parent = find("Canvas");
-          prefab.setPosition(this.randomPosX, this.randomPosY);
-          this.spawned++;
+          ballType = this.redPrefab;
           console.log("red");
           break;
         case 2:
-          var prefab = instantiate(this.bluePrefab);
-          prefab.parent = find("Canvas");
-          prefab.setPosition(this.randomPosX, this.randomPosY);
-          this.spawned++;
+          ballType = this.bluePrefab;
           console.log("blue");
           break;
         case 3:
-          var prefab = instantiate(this.yellowPrefab);
-          prefab.parent = find("Canvas");
-          prefab.setPosition(this.randomPosX, this.randomPosY);
-          this.spawned++;
+          ballType = this.yellowPrefab;
           console.log("yellow");
           break;
         case 4:
-          var prefab = instantiate(this.pinkPrefab);
-          prefab.parent = find("Canvas");
-          prefab.setPosition(this.randomPosX, this.randomPosY);
-          this.spawned++;
+          ballType = this.pinkPrefab;
           console.log("pink");
           break;
       }
+      prefab = instantiate(ballType);
+      this.spawned++;
+      newParent.addChild(prefab);
+      prefab.setPosition(this.randomPosX, this.randomPosY);
     }
   }
 }

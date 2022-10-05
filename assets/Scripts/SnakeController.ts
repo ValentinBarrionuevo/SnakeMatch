@@ -25,6 +25,7 @@ import { GameManager } from "./GameManager";
 const { ccclass, property } = _decorator;
 
 //type Balls = "pink" | "blue" | "red" | "yellow";
+type Direction = "UP" | "DOWN" | "LEFT" | "RIGHT";
 
 @ccclass("SnakeController")
 export class SnakeController extends Component {
@@ -32,7 +33,21 @@ export class SnakeController extends Component {
 
   private firstMove: boolean = true;
 
-  private velocity: number = 5;
+  private velocitySeconds: number = 1;
+  private direction: Direction;
+  private isGoingVertical: boolean;
+  private keyWhiteList: Array<KeyCode> = new Array(
+    KeyCode.KEY_W,
+    KeyCode.ARROW_UP,
+    KeyCode.KEY_S,
+    KeyCode.ARROW_DOWN,
+    KeyCode.KEY_A,
+    KeyCode.ARROW_LEFT,
+    KeyCode.KEY_D,
+    KeyCode.ARROW_RIGHT
+  );
+
+  private tileSize = 30;
 
   public snakeInside: Array<Node> = [];
 
@@ -46,8 +61,6 @@ export class SnakeController extends Component {
 
     this.character = this.node.getComponent(RigidBody2D);
 
-    this.character.linearVelocity = new Vec2(0, 0);
-
     input.on(Input.EventType.KEY_DOWN, this.onKeyDown, this);
   }
 
@@ -57,61 +70,68 @@ export class SnakeController extends Component {
   }
 
   private onKeyDown(event: EventKeyboard): void {
-    if (this.character.linearVelocity.x != 0 || this.firstMove) {
+    if (this.isGoingVertical == false || this.isGoingVertical == undefined) {
       switch (event.keyCode) {
         case KeyCode.KEY_W:
         case KeyCode.ARROW_UP:
-          this.character.linearVelocity = new Vec2(0, this.velocity);
-          this.node.angle = 0;
-          this.tileMove();
+          this.direction = "UP";
+          this.isGoingVertical = true;
           break;
         case KeyCode.KEY_S:
         case KeyCode.ARROW_DOWN:
-          this.character.linearVelocity = new Vec2(0, -this.velocity);
-          this.node.angle = 180;
-          this.tileMove();
-          break;
-      }
-    } else if (this.character.linearVelocity.y != 0 || this.firstMove) {
-      switch (event.keyCode) {
-        case KeyCode.KEY_A:
-        case KeyCode.ARROW_LEFT:
-          this.character.linearVelocity = new Vec2(-this.velocity, 0);
-          this.node.angle = 90;
-          this.tileMove();
-          break;
-        case KeyCode.KEY_D:
-        case KeyCode.ARROW_RIGHT:
-          this.character.linearVelocity = new Vec2(this.velocity, 0);
-          this.node.angle = 270;
-          this.tileMove();
+          this.direction = "DOWN";
+          this.isGoingVertical = true;
           break;
       }
     }
+    if (this.isGoingVertical == true || this.isGoingVertical == undefined) {
+      switch (event.keyCode) {
+        case KeyCode.KEY_A:
+        case KeyCode.ARROW_LEFT:
+          this.direction = "LEFT";
+          this.isGoingVertical = false;
+          break;
+        case KeyCode.KEY_D:
+        case KeyCode.ARROW_RIGHT:
+          this.direction = "RIGHT";
+          this.isGoingVertical = false;
+          break;
+      }
+    }
+    if (this.firstMove == true && this.keyWhiteList.includes(event.keyCode)) {
+      this.firstMove = false;
+      this.schedule(function () {
+        this.snakeMovement();
+      }, this.velocitySeconds);
+    }
   }
 
-  public update(dt: number): void {}
-
-  private tileMove(): void {
-    this.firstMove = false;
-    this.node.setPosition(
-      Math.round(this.node.position.x / 30) * 30,
-      Math.round(this.node.position.y / 30) * 30
-    );
+  private snakeMovement(): void {
+    const pos = this.node.getPosition();
+    switch (this.direction) {
+      case "UP":
+        pos.y += this.tileSize;
+        this.node.angle = 0;
+        break;
+      case "DOWN":
+        pos.y -= this.tileSize;
+        this.node.angle = 180;
+        break;
+      case "LEFT":
+        pos.x -= this.tileSize;
+        this.node.angle = 90;
+        break;
+      case "RIGHT":
+        pos.x += this.tileSize;
+        this.node.angle = 270;
+        break;
+    }
+    this.node.setPosition(pos);
+    find("Canvas").getComponent(GameManager).checkGameState();
   }
 
   public eatBall(ball: Node): void {
     this.snakeInside.push(ball);
     console.log(this.snakeInside);
-
-    // da el error aca abajo, cualquier operacion a la variable prefab
-    // probe moviendo al game manager y lo mismo
-    // game manager, incluso cambiando el body prefab por redPrefab, tiraba el mismo error
-    // a pesar de que la generacion de las bolas funciona bien
-
-    //prefab.parent = find("Canvas/Snake");
-    //prefab.setPosition(30, 30);
-
-    //this.snakeInside.push(prefab);
   }
 }
