@@ -1,7 +1,7 @@
 {
   "modules": {
     "cce:/internal/x/cc": {
-      "mTimestamp": 13768.637799978256,
+      "mTimestamp": 9134.932699918747,
       "chunkId": "909f786ffe128f06f5aa1b4e1e3fbbd65262915e",
       "imports": [
         {
@@ -409,7 +409,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 7008737.846600056,
+      "mTimestamp": 232171.80359995365,
       "chunkId": "341ab3341f38daa5d6eb502f45f16e9d150576f5",
       "imports": [
         {
@@ -482,10 +482,10 @@
     },
     "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/SnakeController.ts": {
       "mTimestamp": {
-        "mtime": 1665006135855.7256,
+        "mtime": 1665009107452.5627,
         "uuid": "b24c5641-ca34-4917-a30d-80fde2732bc3"
       },
-      "chunkId": "b7920a2766b26cf83c5e4bf29a98e53a7de22e34",
+      "chunkId": "c2c4daeddfb38d01b0dc8268beca744bd46e5b21",
       "imports": [
         {
           "value": "cce:/internal/code-quality/cr.mjs",
@@ -701,7 +701,7 @@
       ]
     },
     "cce:/internal/code-quality/cr.mjs": {
-      "mTimestamp": 1664999953506,
+      "mTimestamp": 1665008876877,
       "chunkId": "3a1fd7b13056478820ebedd306d3446d1aa408cc",
       "imports": [],
       "type": "esm",

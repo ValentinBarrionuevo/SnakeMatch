@@ -33,7 +33,7 @@ export class SnakeController extends Component {
 
   private firstMove: boolean = true;
 
-  private velocitySeconds: number = 1;
+  private velocitySeconds: number = 0.4;
   private direction: Direction;
   private isGoingVertical: boolean;
   private keyWhiteList: Array<KeyCode> = new Array(
