@@ -145,55 +145,75 @@
       ]
     }
   },
-  "c77d4ec5-b15d-4103-aca6-1e42c5168c98": {
-    "url": "db://assets/Scripts/GameManager.ts",
-    "value": {}
-  },
-  "ef8f54a3-3757-4246-869d-b2e0fe24e2ae": {
-    "url": "db://assets/Prefab/ballBlue.prefab",
-    "value": {
-      "depends": [
-        "94301a91-e395-457d-9898-97b1863a4346@f9941"
-      ]
-    }
-  },
-  "83844e66-2dda-4e15-9bfe-8ef69e3e1b2f": {
-    "url": "db://assets/Prefab/ballPink.prefab",
-    "value": {
-      "depends": [
-        "667dce28-d349-4f85-b00a-d934d8f90e09@f9941"
-      ]
-    }
-  },
-  "f7187d7d-c998-4851-822a-c0f781a486f7": {
-    "url": "db://assets/Prefab/ballRed.prefab",
-    "value": {
-      "depends": [
-        "8ce68651-1033-4e39-b9e7-f79cb522f8dc@f9941"
-      ]
-    }
-  },
-  "1c82de25-98e8-4a71-8c74-601f2b1c793b": {
-    "url": "db://assets/Prefab/ballYellow.prefab",
-    "value": {
-      "depends": [
-        "40c0db39-2543-4334-a369-7b6c1c9d6043@f9941"
-      ]
-    }
-  },
-  "2f766b69-1f8f-4272-a33e-57b4ae3a3be5": {
-    "url": "db://assets/Prefab/SnakeBody.prefab",
-    "value": {
-      "depends": [
-        "8db8ed12-6728-4450-b1ab-a70187bf2945@f9941"
-      ]
-    }
-  },
   "13219755-4a5d-4d21-98be-2eb6c3a8ac52": {
     "url": "db://assets/Scenes/scene-2d.scene",
     "value": {
       "depends": [
         "c77ecaa8-c936-46c4-a5b0-98692673ed87"
+      ]
+    }
+  },
+  "c77d4ec5-b15d-4103-aca6-1e42c5168c98": {
+    "url": "db://assets/Scripts/GameManager.ts",
+    "value": {}
+  },
+  "80129a0f-2d13-427c-a88b-61b550477cb7": {
+    "url": "db://assets/Sprites/bolaAmarilla.jpg",
+    "value": {}
+  },
+  "196e993f-c43e-4a3f-8d09-a153f5c498a8": {
+    "url": "db://assets/Sprites/bolaAzul.jpg",
+    "value": {}
+  },
+  "23e44e1e-9a89-4add-a6b9-ce19e0cf2843": {
+    "url": "db://assets/Sprites/bolaPink.jpg",
+    "value": {}
+  },
+  "80129a0f-2d13-427c-a88b-61b550477cb7@6c48a": {
+    "url": "db://assets/Sprites/bolaAmarilla.jpg@6c48a",
+    "value": {
+      "depends": [
+        "80129a0f-2d13-427c-a88b-61b550477cb7"
+      ]
+    }
+  },
+  "196e993f-c43e-4a3f-8d09-a153f5c498a8@6c48a": {
+    "url": "db://assets/Sprites/bolaAzul.jpg@6c48a",
+    "value": {
+      "depends": [
+        "196e993f-c43e-4a3f-8d09-a153f5c498a8"
+      ]
+    }
+  },
+  "23e44e1e-9a89-4add-a6b9-ce19e0cf2843@6c48a": {
+    "url": "db://assets/Sprites/bolaPink.jpg@6c48a",
+    "value": {
+      "depends": [
+        "23e44e1e-9a89-4add-a6b9-ce19e0cf2843"
+      ]
+    }
+  },
+  "80129a0f-2d13-427c-a88b-61b550477cb7@f9941": {
+    "url": "db://assets/Sprites/bolaAmarilla.jpg@f9941",
+    "value": {
+      "depends": [
+        "80129a0f-2d13-427c-a88b-61b550477cb7@6c48a"
+      ]
+    }
+  },
+  "196e993f-c43e-4a3f-8d09-a153f5c498a8@f9941": {
+    "url": "db://assets/Sprites/bolaAzul.jpg@f9941",
+    "value": {
+      "depends": [
+        "196e993f-c43e-4a3f-8d09-a153f5c498a8@6c48a"
+      ]
+    }
+  },
+  "23e44e1e-9a89-4add-a6b9-ce19e0cf2843@f9941": {
+    "url": "db://assets/Sprites/bolaPink.jpg@f9941",
+    "value": {
+      "depends": [
+        "23e44e1e-9a89-4add-a6b9-ce19e0cf2843@6c48a"
       ]
     }
   },
@@ -221,11 +241,11 @@
       "depends": []
     }
   },
-  "94301a91-e395-457d-9898-97b1863a4346@6c48a": {
-    "url": "db://assets/Sprites/ballBlue.jpg@6c48a",
+  "40c0db39-2543-4334-a369-7b6c1c9d6043@6c48a": {
+    "url": "db://assets/Sprites/ballYellow.jpg@6c48a",
     "value": {
       "depends": [
-        "94301a91-e395-457d-9898-97b1863a4346"
+        "40c0db39-2543-4334-a369-7b6c1c9d6043"
       ]
     }
   },
@@ -237,11 +257,11 @@
       ]
     }
   },
-  "40c0db39-2543-4334-a369-7b6c1c9d6043@6c48a": {
-    "url": "db://assets/Sprites/ballYellow.jpg@6c48a",
+  "94301a91-e395-457d-9898-97b1863a4346@6c48a": {
+    "url": "db://assets/Sprites/ballBlue.jpg@6c48a",
     "value": {
       "depends": [
-        "40c0db39-2543-4334-a369-7b6c1c9d6043"
+        "94301a91-e395-457d-9898-97b1863a4346"
       ]
     }
   },
@@ -250,6 +270,14 @@
     "value": {
       "depends": [
         "8ce68651-1033-4e39-b9e7-f79cb522f8dc"
+      ]
+    }
+  },
+  "40c0db39-2543-4334-a369-7b6c1c9d6043@f9941": {
+    "url": "db://assets/Sprites/ballYellow.jpg@f9941",
+    "value": {
+      "depends": [
+        "40c0db39-2543-4334-a369-7b6c1c9d6043@6c48a"
       ]
     }
   },
@@ -277,35 +305,51 @@
       ]
     }
   },
-  "40c0db39-2543-4334-a369-7b6c1c9d6043@f9941": {
-    "url": "db://assets/Sprites/ballYellow.jpg@f9941",
+  "b3c10ab5-f190-473c-81b5-0e07be6bafb3": {
+    "url": "db://assets/Prefab/ballRed.prefab",
+    "value": {}
+  },
+  "069b0830-79b0-4cc8-8fe2-d6acad83e73b": {
+    "url": "db://assets/Prefab/ballBlue.prefab",
+    "value": {}
+  },
+  "f7187d7d-c998-4851-822a-c0f781a486f7": {
+    "url": "db://assets/Prefab/ballRed.prefab",
     "value": {
       "depends": [
-        "40c0db39-2543-4334-a369-7b6c1c9d6043@6c48a"
+        "8ce68651-1033-4e39-b9e7-f79cb522f8dc@f9941"
       ]
     }
   },
-  "b717443b-0b95-46c4-9914-cfc2bd6e5bc6": {
-    "url": "db://assets/Scripts/BallCommands.ts",
-    "value": {}
-  },
-  "d79ddd01-be7d-4930-b9b9-2de25859f497": {
-    "url": "db://assets/Sprites/snake.png",
-    "value": {}
-  },
-  "d79ddd01-be7d-4930-b9b9-2de25859f497@6c48a": {
-    "url": "db://assets/Sprites/snake.png@6c48a",
+  "ef8f54a3-3757-4246-869d-b2e0fe24e2ae": {
+    "url": "db://assets/Prefab/ballBlue.prefab",
     "value": {
       "depends": [
-        "d79ddd01-be7d-4930-b9b9-2de25859f497"
+        "94301a91-e395-457d-9898-97b1863a4346@f9941"
       ]
     }
   },
-  "d79ddd01-be7d-4930-b9b9-2de25859f497@f9941": {
-    "url": "db://assets/Sprites/snake.png@f9941",
+  "1c82de25-98e8-4a71-8c74-601f2b1c793b": {
+    "url": "db://assets/Prefab/ballYellow.prefab",
     "value": {
       "depends": [
-        "d79ddd01-be7d-4930-b9b9-2de25859f497@6c48a"
+        "40c0db39-2543-4334-a369-7b6c1c9d6043@f9941"
+      ]
+    }
+  },
+  "83844e66-2dda-4e15-9bfe-8ef69e3e1b2f": {
+    "url": "db://assets/Prefab/ballPink.prefab",
+    "value": {
+      "depends": [
+        "667dce28-d349-4f85-b00a-d934d8f90e09@f9941"
+      ]
+    }
+  },
+  "2f766b69-1f8f-4272-a33e-57b4ae3a3be5": {
+    "url": "db://assets/Prefab/SnakeBody.prefab",
+    "value": {
+      "depends": [
+        "8db8ed12-6728-4450-b1ab-a70187bf2945@f9941"
       ]
     }
   },
