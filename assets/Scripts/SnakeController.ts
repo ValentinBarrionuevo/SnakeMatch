@@ -2,24 +2,17 @@ import {
   _decorator,
   Component,
   RigidBody2D,
-  Vec2,
   KeyCode,
   input,
   EventKeyboard,
   Input,
-  director,
   find,
   Prefab,
-  instantiate,
-  Scene,
-  randomRange,
-  physics,
-  BoxCollider2D,
-  Contact2DType,
-  PhysicsSystem2D,
-  IPhysics2DContact,
   Node,
-  assetManager,
+  instantiate,
+  Sprite,
+  Color,
+  Vec3,
 } from "cc";
 import { GameManager } from "./GameManager";
 const { ccclass, property } = _decorator;
@@ -33,7 +26,7 @@ export class SnakeController extends Component {
 
   private firstMove: boolean = true;
 
-  private velocitySeconds: number = 0.4;
+  private velocitySeconds: number = 0.8;
   private direction: Direction;
   private isGoingVertical: boolean;
   private keyWhiteList: Array<KeyCode> = new Array(
@@ -100,7 +93,7 @@ export class SnakeController extends Component {
     }
     if (this.firstMove == true && this.keyWhiteList.includes(event.keyCode)) {
       this.firstMove = false;
-      this.schedule(function () {
+      this.schedule(() => {
         this.snakeMovement();
       }, this.velocitySeconds);
     }
@@ -130,8 +123,15 @@ export class SnakeController extends Component {
     find("Canvas").getComponent(GameManager).checkGameState();
   }
 
-  public eatBall(ball: Node): void {
-    this.snakeInside.push(ball);
-    console.log(this.snakeInside);
+  public eatBall(ball: string): void {
+    const prefab = instantiate(this.bodyPrefab);
+    find("Canvas/Snake").addChild(prefab);
+
+    const newBody =
+      find("Canvas/Snake").children[find("Canvas/Snake").children.length - 1];
+
+    newBody.getComponent(Sprite).setEntityColor(new Color(0, 0, 0, 1));
+    newBody.setPosition(new Vec3(0, 0, 0));
+    console.log(ball);
   }
 }

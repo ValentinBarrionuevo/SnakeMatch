@@ -3,7 +3,7 @@
     "time": 1664226108543.4746
   },
   "C:\\Users\\agukp\\Snake Match\\assets\\Scenes": {
-    "time": 1664314799006.2568,
+    "time": 1664560702615.9033,
     "uuid": "cfe81fa7-2026-4f8d-9c37-8ac047012f4d",
     "missing": false
   },
@@ -11,7 +11,7 @@
     "time": 1664226108545.9746
   },
   "C:\\Users\\agukp\\Snake Match\\assets\\Scenes\\GameScene.scene": {
-    "time": 1664315351731.1804,
+    "time": 1665529623026.6885,
     "uuid": "4f9cb534-2952-40d3-a4ee-2c12e7477bd7",
     "missing": false
   },
@@ -19,7 +19,7 @@
     "time": 1664226108546.4746
   },
   "C:\\Users\\agukp\\Snake Match\\assets\\Scripts": {
-    "time": 1664314799007.257,
+    "time": 1665523626929.6611,
     "uuid": "35f29723-0d84-42ea-a386-d77e5f26744b",
     "missing": false
   },
@@ -27,7 +27,7 @@
     "time": 1664226108547.9753
   },
   "C:\\Users\\agukp\\Snake Match\\assets\\Scripts\\SnakeController.ts": {
-    "time": 1664315087491.5813,
+    "time": 1665529771093.364,
     "uuid": "b24c5641-ca34-4917-a30d-80fde2732bc3",
     "missing": false
   },
@@ -35,7 +35,7 @@
     "time": 1664226108548.9758
   },
   "C:\\Users\\agukp\\Snake Match\\assets\\Sprites": {
-    "time": 1664314452919.4932,
+    "time": 1664922058423.7993,
     "uuid": "551e98be-3100-41d8-89ea-74b05c76309e",
     "missing": false
   },
@@ -62,12 +62,12 @@
     "time": 1664314452914.9917
   },
   "C:\\Users\\agukp\\Snake Match\\assets\\Prefab": {
-    "time": 1664314452907.4902,
+    "time": 1664482168509.101,
     "uuid": "7557c6c6-d0ab-4024-8624-bf9e330d6e97",
     "missing": false
   },
   "C:\\Users\\agukp\\Snake Match\\assets\\Scripts\\ButtonMethods.ts": {
-    "time": 1664314452914.4915,
+    "time": 1664560890133.8425,
     "uuid": "c523cea9-109b-44c6-a4b3-7af9587882ea",
     "missing": false
   },
@@ -286,5 +286,109 @@
     "time": 1665000625444.6172,
     "uuid": "5d2d00af-0af8-4c85-b2ac-15d4d7605074",
     "missing": false
+  },
+  "C:\\Users\\agukp\\Snake Match\\assets\\Scripts\\GameManager.ts": {
+    "time": 1665528872517.0085,
+    "uuid": "c77d4ec5-b15d-4103-aca6-1e42c5168c98",
+    "missing": false
+  },
+  "C:\\Users\\agukp\\Snake Match\\assets\\Scripts\\GameManager.ts.meta": {
+    "time": 1664482168512.603
+  },
+  "C:\\Users\\agukp\\Snake Match\\assets\\Prefab\\ballBlue.prefab": {
+    "time": 1664482168505.0989,
+    "uuid": "ef8f54a3-3757-4246-869d-b2e0fe24e2ae",
+    "missing": false
+  },
+  "C:\\Users\\agukp\\Snake Match\\assets\\Prefab\\ballPink.prefab": {
+    "time": 1664482168506.1016,
+    "uuid": "83844e66-2dda-4e15-9bfe-8ef69e3e1b2f",
+    "missing": false
+  },
+  "C:\\Users\\agukp\\Snake Match\\assets\\Prefab\\ballRed.prefab": {
+    "time": 1665006109423.052,
+    "uuid": "f7187d7d-c998-4851-822a-c0f781a486f7",
+    "missing": false
+  },
+  "C:\\Users\\agukp\\Snake Match\\assets\\Prefab\\ballYellow.prefab": {
+    "time": 1664482168508.601,
+    "uuid": "1c82de25-98e8-4a71-8c74-601f2b1c793b",
+    "missing": false
+  },
+  "C:\\Users\\agukp\\Snake Match\\assets\\Prefab\\SnakeBody.prefab": {
+    "time": 1665529615751.402,
+    "uuid": "2f766b69-1f8f-4272-a33e-57b4ae3a3be5",
+    "missing": false
+  },
+  "C:\\Users\\agukp\\Snake Match\\assets\\Scenes\\scene-2d.scene": {
+    "time": 1664482168510.6013,
+    "uuid": "13219755-4a5d-4d21-98be-2eb6c3a8ac52",
+    "missing": false
+  },
+  "C:\\Users\\agukp\\Snake Match\\assets\\Sprites\\ballBlue.jpg": {
+    "time": 1664482168514.1033,
+    "uuid": "94301a91-e395-457d-9898-97b1863a4346",
+    "missing": false
+  },
+  "C:\\Users\\agukp\\Snake Match\\assets\\Sprites\\ballPink.jpg": {
+    "time": 1664482168515.102,
+    "uuid": "667dce28-d349-4f85-b00a-d934d8f90e09",
+    "missing": false
+  },
+  "C:\\Users\\agukp\\Snake Match\\assets\\Sprites\\ballRed.jpg": {
+    "time": 1664482168516.6023,
+    "uuid": "8ce68651-1033-4e39-b9e7-f79cb522f8dc",
+    "missing": false
+  },
+  "C:\\Users\\agukp\\Snake Match\\assets\\Sprites\\ballYellow.jpg": {
+    "time": 1664482168517.6025,
+    "uuid": "40c0db39-2543-4334-a369-7b6c1c9d6043",
+    "missing": false
+  },
+  "C:\\Users\\agukp\\Snake Match\\assets\\Sprites\\snakeBody.png": {
+    "time": 1664922044447.3286,
+    "uuid": "5d2d00af-0af8-4c85-b2ac-15d4d7605074",
+    "missing": false
+  },
+  "C:\\Users\\agukp\\Snake Match\\assets\\Sprites\\snakeHead.png": {
+    "time": 1664921796428.4817,
+    "uuid": "1a2513bc-5c5d-470b-98c9-c24413bc1501",
+    "missing": false
+  },
+  "C:\\Users\\agukp\\Snake Match\\assets\\Prefab\\ballRed.prefab.meta": {
+    "time": 1664482168507.601
+  },
+  "C:\\Users\\agukp\\Snake Match\\assets\\Prefab\\ballPink.prefab.meta": {
+    "time": 1664482168506.6006
+  },
+  "C:\\Users\\agukp\\Snake Match\\assets\\Prefab\\ballYellow.prefab.meta": {
+    "time": 1664482168509.101
+  },
+  "C:\\Users\\agukp\\Snake Match\\assets\\Prefab\\ballBlue.prefab.meta": {
+    "time": 1664482168505.6013
+  },
+  "C:\\Users\\agukp\\Snake Match\\assets\\Prefab\\SnakeBody.prefab.meta": {
+    "time": 1664482168504.1377
+  },
+  "C:\\Users\\agukp\\Snake Match\\assets\\Scenes\\scene-2d.scene.meta": {
+    "time": 1664482168511.1013
+  },
+  "C:\\Users\\agukp\\Snake Match\\assets\\Sprites\\ballBlue.jpg.meta": {
+    "time": 1664482168514.6035
+  },
+  "C:\\Users\\agukp\\Snake Match\\assets\\Sprites\\ballRed.jpg.meta": {
+    "time": 1664482168517.1025
+  },
+  "C:\\Users\\agukp\\Snake Match\\assets\\Sprites\\ballPink.jpg.meta": {
+    "time": 1664482168516.1023
+  },
+  "C:\\Users\\agukp\\Snake Match\\assets\\Sprites\\ballYellow.jpg.meta": {
+    "time": 1664482168518.1025
+  },
+  "C:\\Users\\agukp\\Snake Match\\assets\\Sprites\\snakeBody.png.meta": {
+    "time": 1664922058461.8062
+  },
+  "C:\\Users\\agukp\\Snake Match\\assets\\Sprites\\snakeHead.png.meta": {
+    "time": 1664922058459.8054
   }
 }
