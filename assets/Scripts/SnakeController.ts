@@ -11,18 +11,20 @@ import {
   Node,
   instantiate,
   Sprite,
-  Color,
   Vec3,
+  SpriteFrame,
 } from "cc";
 import { GameManager } from "./GameManager";
 const { ccclass, property } = _decorator;
 
-//type Balls = "pink" | "blue" | "red" | "yellow";
 type Direction = "UP" | "DOWN" | "LEFT" | "RIGHT";
 
 @ccclass("SnakeController")
 export class SnakeController extends Component {
   public character: RigidBody2D = null;
+
+  @property(SpriteFrame)
+  private spriteArray: Array<SpriteFrame> = new Array<SpriteFrame>(4);
 
   private firstMove: boolean = true;
 
@@ -47,14 +49,13 @@ export class SnakeController extends Component {
   @property(Prefab)
   bodyPrefab: Prefab;
 
-  //private balls: Array<Balls> = new Array<Balls>("red", "blue", "yellow", "pink");
-
   public onLoad(): void {
     find("Canvas/button").active = false;
 
     this.character = this.node.getComponent(RigidBody2D);
 
     input.on(Input.EventType.KEY_DOWN, this.onKeyDown, this);
+
   }
 
   public onDestroy(): void {
@@ -123,15 +124,15 @@ export class SnakeController extends Component {
     find("Canvas").getComponent(GameManager).checkGameState();
   }
 
-  public eatBall(ball: string): void {
+  public eatBall(ball: number): void {
     const prefab = instantiate(this.bodyPrefab);
     find("Canvas/Snake").addChild(prefab);
 
     const newBody =
       find("Canvas/Snake").children[find("Canvas/Snake").children.length - 1];
 
-    newBody.getComponent(Sprite).setEntityColor(new Color(0, 0, 0, 1));
-    newBody.setPosition(new Vec3(0, 0, 0));
     console.log(ball);
+    newBody.getComponent(Sprite).spriteFrame = this.spriteArray[ball];
+    newBody.setPosition(new Vec3(0, 0, 0));
   }
 }

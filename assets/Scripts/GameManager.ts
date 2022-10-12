@@ -12,32 +12,17 @@ const { ccclass, property } = _decorator;
 
 @ccclass("GameManager")
 export class GameManager extends Component {
-  @property(Prefab)
-  redPrefab: Prefab;
 
   @property(Prefab)
-  yellowPrefab: Prefab;
+  private balls: Array<Prefab> = new Array<Prefab>(4);
 
-  @property(Prefab)
-  bluePrefab: Prefab;
 
-  @property(Prefab)
-  pinkPrefab: Prefab;
+  private spawnedArray: Array<number> = [];
 
-  @property(Prefab)
-  bodyPrefab: Prefab;
-
-  private ballsArray: Array<Prefab> = [];
 
   start() {
-    this.ballsArray = new Array<Prefab>(
-      this.redPrefab,
-      this.yellowPrefab,
-      this.bluePrefab,
-      this.pinkPrefab
-    );
     this.spawnBall();
-    console.log(this.ballsArray);
+    console.log(this.balls);
   }
 
   // TODO Checkear si se fue, si esta sobre si misma
@@ -51,9 +36,14 @@ export class GameManager extends Component {
         Math.round(child.position.x) == snakePos.x &&
         Math.round(child.position.y) == snakePos.y
       );
+
+
     });
     if (hijo.length > 0) {
-      find("Canvas/Snake/Head").getComponent(SnakeController).eatBall(hijo[0].name);
+      console.log(hijo[0]);
+      let index = find("Canvas/Balls").children.indexOf(hijo[0]);
+      find("Canvas/Snake/Head").getComponent(SnakeController).eatBall(this.spawnedArray[index]);
+      this.spawnedArray.splice(index, 1);
       hijo[0].destroy();
       this.scheduleOnce(() => {
         if (find("Canvas/Balls").children.length == 0) {
@@ -74,7 +64,9 @@ export class GameManager extends Component {
       let prefab = null;
 
       let rndmIndex = math.randomRangeInt(0, 4);
-      prefab = instantiate(this.ballsArray[rndmIndex]);
+      prefab = instantiate(this.balls[rndmIndex]);
+      this.spawnedArray.push(rndmIndex);
+
 
       newParent.addChild(prefab);
       prefab.setPosition(randomPosX, randomPosY);
