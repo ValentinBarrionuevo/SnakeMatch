@@ -8,11 +8,11 @@ import {
   Input,
   find,
   Prefab,
-  Node,
   instantiate,
   Sprite,
   Vec3,
   SpriteFrame,
+  Vec2,
 } from "cc";
 import { GameManager } from "./GameManager";
 const { ccclass, property } = _decorator;
@@ -26,11 +26,16 @@ export class SnakeController extends Component {
   @property(SpriteFrame)
   private spriteArray: Array<SpriteFrame> = new Array<SpriteFrame>(4);
 
-  private firstMove: boolean = true;
+  @property(Prefab)
+  bodyPrefab: Prefab;
 
+  private firstMove: boolean = true;
   private velocitySeconds: number = 0.8;
   private direction: Direction;
   private isGoingVertical: boolean;
+
+  private tileSize = 30;
+
   private keyWhiteList: Array<KeyCode> = new Array(
     KeyCode.KEY_W,
     KeyCode.ARROW_UP,
@@ -42,20 +47,12 @@ export class SnakeController extends Component {
     KeyCode.ARROW_RIGHT
   );
 
-  private tileSize = 30;
-
-  public snakeInside: Array<Node> = [];
-
-  @property(Prefab)
-  bodyPrefab: Prefab;
-
   public onLoad(): void {
     find("Canvas/button").active = false;
 
     this.character = this.node.getComponent(RigidBody2D);
 
     input.on(Input.EventType.KEY_DOWN, this.onKeyDown, this);
-
   }
 
   public onDestroy(): void {
@@ -121,6 +118,43 @@ export class SnakeController extends Component {
         break;
     }
     this.node.setPosition(pos);
+
+    for (let i = 0; i < find("Canvas/Snake").children.length - 1; i++) {
+      const prev = find("Canvas/Snake").children[i];
+      const prevPos: Vec3 = prev.getPosition();
+      const next = find("Canvas/Snake").children[i + 1];
+      let nextPos: Vec3 = next.getPosition();
+
+      console.log("prevPos", prevPos, "nextPos", nextPos);
+
+      const diffX = nextPos.x - prevPos.x;
+      const diffY = nextPos.y - prevPos.y;
+
+      // Preguntarle a milton/cesar/ema
+      nextPos.x += diffX * -1;
+      nextPos.y += diffY * -1;
+
+      console.log("diffX", diffX, "diffY", diffY);
+
+      // if (diffY > 0) {
+      //   nextPos.y = prevPos.y + this.tileSize;
+      //   next.angle = 0;
+      // } else if (diffY < 0) {
+      //   nextPos.y = prevPos.y - this.tileSize;
+      //   next.angle = 180;
+      // }
+      // if (diffX > 0) {
+      //   nextPos.x = prevPos.x + this.tileSize;
+      //   next.angle = 90;
+      // } else if (diffX < 0) {
+      //   nextPos.x = prevPos.x - this.tileSize;
+      //   next.angle = 270;
+      // }
+
+      nextPos = new Vec3(Math.round(nextPos.x), Math.round(nextPos.y), 0);
+      console.log("nextPos", nextPos);
+      next.setPosition(nextPos)
+    }
     find("Canvas").getComponent(GameManager).checkGameState();
   }
 
@@ -130,9 +164,11 @@ export class SnakeController extends Component {
 
     const newBody =
       find("Canvas/Snake").children[find("Canvas/Snake").children.length - 1];
-
-    console.log(ball);
     newBody.getComponent(Sprite).spriteFrame = this.spriteArray[ball];
-    newBody.setPosition(new Vec3(0, 0, 0));
+    let pos = find("Canvas/Snake/Head").getPosition();
+    pos = new Vec3(Math.round(pos.x), Math.round(pos.y), 0);
+
+    newBody.setPosition(pos);
+    console.log(newBody.position);
   }
 }
