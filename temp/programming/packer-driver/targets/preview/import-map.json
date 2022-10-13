@@ -4,7 +4,7 @@
     "cce:/internal/x/prerequisite-imports": "./chunks/34/341ab3341f38daa5d6eb502f45f16e9d150576f5.js",
     "file:///C:/Users/Killa/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts": "./chunks/47/47f23a4a216db105a8b1a3e48bec34eb2824f482.js",
     "file:///C:/Users/Killa/Desktop/SnakeMatch/assets/Scripts/GameManager.ts": "./chunks/9d/9d5f92bff515bded6cf2d3f6cb4fd65403abd724.js",
-    "file:///C:/Users/Killa/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts": "./chunks/ec/ec658559228472e920bdea7c3df82d934168e02c.js"
+    "file:///C:/Users/Killa/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts": "./chunks/2a/2a667523d2ef4c49b13d5dbf4946cbed0db49aa7.js"
   },
   "scopes": {
     "./chunks/90/909f786ffe128f06f5aa1b4e1e3fbbd65262915e.js": {
@@ -31,16 +31,16 @@
     "./chunks/34/341ab3341f38daa5d6eb502f45f16e9d150576f5.js": {
       "__unresolved_0": "./chunks/47/47f23a4a216db105a8b1a3e48bec34eb2824f482.js",
       "__unresolved_1": "./chunks/9d/9d5f92bff515bded6cf2d3f6cb4fd65403abd724.js",
-      "__unresolved_2": "./chunks/ec/ec658559228472e920bdea7c3df82d934168e02c.js"
+      "__unresolved_2": "./chunks/2a/2a667523d2ef4c49b13d5dbf4946cbed0db49aa7.js"
     },
-    "./chunks/ec/ec658559228472e920bdea7c3df82d934168e02c.js": {
+    "./chunks/2a/2a667523d2ef4c49b13d5dbf4946cbed0db49aa7.js": {
       "__unresolved_0": "./chunks/3a/3a1fd7b13056478820ebedd306d3446d1aa408cc.js",
       "__unresolved_1": "./chunks/9d/9d5f92bff515bded6cf2d3f6cb4fd65403abd724.js",
       "cc": "./chunks/90/909f786ffe128f06f5aa1b4e1e3fbbd65262915e.js"
     },
     "./chunks/9d/9d5f92bff515bded6cf2d3f6cb4fd65403abd724.js": {
       "__unresolved_0": "./chunks/3a/3a1fd7b13056478820ebedd306d3446d1aa408cc.js",
-      "__unresolved_1": "./chunks/ec/ec658559228472e920bdea7c3df82d934168e02c.js",
+      "__unresolved_1": "./chunks/2a/2a667523d2ef4c49b13d5dbf4946cbed0db49aa7.js",
       "cc": "./chunks/90/909f786ffe128f06f5aa1b4e1e3fbbd65262915e.js"
     },
     "./chunks/47/47f23a4a216db105a8b1a3e48bec34eb2824f482.js": {

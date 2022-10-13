@@ -535,7 +535,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 88873.63339999318,
+      "mTimestamp": 412812.57419998944,
       "chunkId": "b04882f6528f528d23c15a1a07354592145c07ab",
       "imports": [
         {
@@ -1023,10 +1023,10 @@
     },
     "file:///C:/Users/Killa/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts": {
       "mTimestamp": {
-        "mtime": 1665668211917.0034,
+        "mtime": 1665668531894.4324,
         "uuid": "b24c5641-ca34-4917-a30d-80fde2732bc3"
       },
-      "chunkId": "05be53c0bc7910000d73a1823c87dae1c8f814a7",
+      "chunkId": "22821b9db30565aa146c702dfb9ae98360bc5601",
       "imports": [
         {
           "value": "cce:/internal/code-quality/cr.mjs",
@@ -1042,11 +1042,11 @@
           "value": "cc",
           "loc": {
             "start": {
-              "line": 16,
+              "line": 15,
               "column": 7
             },
             "end": {
-              "line": 16,
+              "line": 15,
               "column": 11
             }
           }
@@ -1056,11 +1056,11 @@
           "resolved": "__unresolved_1",
           "loc": {
             "start": {
-              "line": 17,
+              "line": 16,
               "column": 28
             },
             "end": {
-              "line": 17,
+              "line": 16,
               "column": 43
             }
           }

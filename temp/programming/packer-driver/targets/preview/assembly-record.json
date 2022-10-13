@@ -100,7 +100,7 @@
         "__unresolved_1": {
           "resolved": {
             "type": "chunk",
-            "id": "ec658559228472e920bdea7c3df82d934168e02c"
+            "id": "2a667523d2ef4c49b13d5dbf4946cbed0db49aa7"
           },
           "messages": []
         },
@@ -275,14 +275,14 @@
         "__unresolved_2": {
           "resolved": {
             "type": "chunk",
-            "id": "ec658559228472e920bdea7c3df82d934168e02c"
+            "id": "2a667523d2ef4c49b13d5dbf4946cbed0db49aa7"
           },
           "messages": []
         }
       },
-      "timestamp": 1665668213065
+      "timestamp": 1665668536964
     },
-    "ec658559228472e920bdea7c3df82d934168e02c": {
+    "2a667523d2ef4c49b13d5dbf4946cbed0db49aa7": {
       "imports": {
         "__unresolved_0": {
           "resolved": {
@@ -306,7 +306,7 @@
           "messages": []
         }
       },
-      "timestamp": 1665668213146
+      "timestamp": 1665668537015
     }
   },
   "entries": {
@@ -314,6 +314,6 @@
     "cce:/internal/x/prerequisite-imports": "341ab3341f38daa5d6eb502f45f16e9d150576f5",
     "file:///C:/Users/Killa/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts": "47f23a4a216db105a8b1a3e48bec34eb2824f482",
     "file:///C:/Users/Killa/Desktop/SnakeMatch/assets/Scripts/GameManager.ts": "9d5f92bff515bded6cf2d3f6cb4fd65403abd724",
-    "file:///C:/Users/Killa/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts": "ec658559228472e920bdea7c3df82d934168e02c"
+    "file:///C:/Users/Killa/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts": "2a667523d2ef4c49b13d5dbf4946cbed0db49aa7"
   }
 }

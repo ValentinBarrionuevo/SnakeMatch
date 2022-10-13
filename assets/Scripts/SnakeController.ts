@@ -12,7 +12,6 @@ import {
   Sprite,
   Vec3,
   SpriteFrame,
-
 } from "cc";
 import { GameManager } from "./GameManager";
 const { ccclass, property } = _decorator;
@@ -99,7 +98,7 @@ export class SnakeController extends Component {
 
   private snakeMovement(): void {
     const pos = this.node.getPosition();
-    const oldPos = {x:pos.x, y:pos.y};
+    const oldPos = { x: pos.x, y: pos.y };
 
     switch (this.direction) {
       case "UP":
@@ -122,11 +121,12 @@ export class SnakeController extends Component {
     this.node.setPosition(pos);
 
     for (let i = 1; i < find("Canvas/Snake").children.length; i++) {
-      const snekPart = find("Canvas/Snake").children[i];
-      const auxOldX = snekPart.position.x
-      const auxOldY = snekPart.position.y
+      const aux = find("Canvas/Snake").children.length - i;
+      const snekPart = find("Canvas/Snake").children[aux];
+      const auxOldX = snekPart.position.x;
+      const auxOldY = snekPart.position.y;
 
-      snekPart.setPosition(oldPos.x,oldPos.y,0)
+      snekPart.setPosition(oldPos.x, oldPos.y, 0);
 
       oldPos.x = auxOldX;
       oldPos.y = auxOldY;
