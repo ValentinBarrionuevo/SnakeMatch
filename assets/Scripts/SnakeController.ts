@@ -12,7 +12,7 @@ import {
   Sprite,
   Vec3,
   SpriteFrame,
-  Vec2,
+
 } from "cc";
 import { GameManager } from "./GameManager";
 const { ccclass, property } = _decorator;
@@ -99,6 +99,8 @@ export class SnakeController extends Component {
 
   private snakeMovement(): void {
     const pos = this.node.getPosition();
+    const oldPos = {x:pos.x, y:pos.y};
+
     switch (this.direction) {
       case "UP":
         pos.y += this.tileSize;
@@ -119,41 +121,15 @@ export class SnakeController extends Component {
     }
     this.node.setPosition(pos);
 
-    for (let i = 0; i < find("Canvas/Snake").children.length - 1; i++) {
-      const prev = find("Canvas/Snake").children[i];
-      const prevPos: Vec3 = prev.getPosition();
-      const next = find("Canvas/Snake").children[i + 1];
-      let nextPos: Vec3 = next.getPosition();
+    for (let i = 1; i < find("Canvas/Snake").children.length; i++) {
+      const snekPart = find("Canvas/Snake").children[i];
+      const auxOldX = snekPart.position.x
+      const auxOldY = snekPart.position.y
 
-      console.log("prevPos", prevPos, "nextPos", nextPos);
+      snekPart.setPosition(oldPos.x,oldPos.y,0)
 
-      const diffX = nextPos.x - prevPos.x;
-      const diffY = nextPos.y - prevPos.y;
-
-      // Preguntarle a milton/cesar/ema
-      nextPos.x += diffX * -1;
-      nextPos.y += diffY * -1;
-
-      console.log("diffX", diffX, "diffY", diffY);
-
-      // if (diffY > 0) {
-      //   nextPos.y = prevPos.y + this.tileSize;
-      //   next.angle = 0;
-      // } else if (diffY < 0) {
-      //   nextPos.y = prevPos.y - this.tileSize;
-      //   next.angle = 180;
-      // }
-      // if (diffX > 0) {
-      //   nextPos.x = prevPos.x + this.tileSize;
-      //   next.angle = 90;
-      // } else if (diffX < 0) {
-      //   nextPos.x = prevPos.x - this.tileSize;
-      //   next.angle = 270;
-      // }
-
-      nextPos = new Vec3(Math.round(nextPos.x), Math.round(nextPos.y), 0);
-      console.log("nextPos", nextPos);
-      next.setPosition(nextPos)
+      oldPos.x = auxOldX;
+      oldPos.y = auxOldY;
     }
     find("Canvas").getComponent(GameManager).checkGameState();
   }
