@@ -12,17 +12,13 @@ const { ccclass, property } = _decorator;
 
 @ccclass("GameManager")
 export class GameManager extends Component {
-
   @property(Prefab)
   private balls: Array<Prefab> = new Array<Prefab>(4);
 
-
   private spawnedArray: Array<number> = [];
-
 
   start() {
     this.spawnBall();
-    console.log(this.balls);
   }
 
   // TODO Checkear si se fue, si esta sobre si misma
@@ -36,25 +32,21 @@ export class GameManager extends Component {
         Math.round(child.position.x) == snakePos.x &&
         Math.round(child.position.y) == snakePos.y
       );
-
-
     });
     if (hijo.length > 0) {
       console.log(hijo[0]);
       let index = find("Canvas/Balls").children.indexOf(hijo[0]);
-      find("Canvas/Snake/Head").getComponent(SnakeController).eatBall(this.spawnedArray[index]);
+      find("Canvas/Snake/Head")
+        .getComponent(SnakeController)
+        .eatBall(this.spawnedArray[index]);
       this.spawnedArray.splice(index, 1);
       hijo[0].destroy();
-      this.scheduleOnce(() => {
-        if (find("Canvas/Balls").children.length == 0) {
-          this.spawnBall();
-        }
-      }, 0.01);
+      this.spawnBall();
     }
   }
 
   private spawnBall(): void {
-    for (var i = 0; i < 2; i++) {
+    while (this.spawnedArray.length < 3) {
       var randomPosX: number =
         Math.round(math.randomRangeInt(-150, 151) / 30) * 30;
       var randomPosY: number =
@@ -66,7 +58,6 @@ export class GameManager extends Component {
       let rndmIndex = math.randomRangeInt(0, 4);
       prefab = instantiate(this.balls[rndmIndex]);
       this.spawnedArray.push(rndmIndex);
-
 
       newParent.addChild(prefab);
       prefab.setPosition(randomPosX, randomPosY);

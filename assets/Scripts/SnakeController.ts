@@ -12,6 +12,8 @@ import {
   Sprite,
   Vec3,
   SpriteFrame,
+  Node,
+  EventTouch,
 } from "cc";
 import { GameManager } from "./GameManager";
 const { ccclass, property } = _decorator;
@@ -29,9 +31,11 @@ export class SnakeController extends Component {
   bodyPrefab: Prefab;
 
   private firstMove: boolean = true;
-  private velocitySeconds: number = 0.8;
+  private velocitySeconds: number = 0.4;
   private direction: Direction;
   private isGoingVertical: boolean;
+
+  private snakeInside: Array<Node> = new Array();
 
   private tileSize = 30;
 
@@ -45,6 +49,7 @@ export class SnakeController extends Component {
     KeyCode.KEY_D,
     KeyCode.ARROW_RIGHT
   );
+  private _touchStartPos: import("cc").math.Vec2;
 
   public onLoad(): void {
     find("Canvas/button").active = false;
@@ -52,11 +57,56 @@ export class SnakeController extends Component {
     this.character = this.node.getComponent(RigidBody2D);
 
     input.on(Input.EventType.KEY_DOWN, this.onKeyDown, this);
+    input.on(Input.EventType.TOUCH_START, this.touchStart, this);
+    input.on(Input.EventType.TOUCH_END, this.touchEnd, this);
   }
 
   public onDestroy(): void {
     input.off(Input.EventType.KEY_DOWN, this.onKeyDown, this);
+    input.off(Input.EventType.TOUCH_START, this.touchStart, this);
+    input.off(Input.EventType.TOUCH_END, this.touchEnd, this);
     find("Canvas/button").active = true;
+  }
+
+  public touchStart(e: EventTouch): void {
+    this._touchStartPos = e.getLocation();
+  }
+
+  public touchEnd(e: EventTouch): void {
+    if (!this._touchStartPos) {
+      return;
+    }
+
+    const start = this._touchStartPos;
+    const end = e.getLocation();
+    this._touchStartPos = null;
+
+    const dx = end.x - start.x;
+    const dy = end.y - start.y;
+    const length = Math.sqrt(dx * dx + dy * dy);
+    this.isGoingVertical = Math.abs(dy) < Math.abs(dx);
+
+    if (length < 60) {
+      return;
+    }
+    if (this.isGoingVertical == false || this.isGoingVertical == undefined) {
+      if (dy > 0) {
+        this.direction = "UP";
+      } else {
+        this.direction = "DOWN";
+      }
+    }
+    if (this.isGoingVertical == true || this.isGoingVertical == undefined) {
+      if (dx > 0) {
+        this.direction = "RIGHT";
+      } else {
+        this.direction = "LEFT";
+      }
+    }
+    if (this.firstMove == true) {
+      this.firstMove = false;
+      this.startTicker();
+    }
   }
 
   private onKeyDown(event: EventKeyboard): void {
@@ -90,10 +140,14 @@ export class SnakeController extends Component {
     }
     if (this.firstMove == true && this.keyWhiteList.includes(event.keyCode)) {
       this.firstMove = false;
-      this.schedule(() => {
-        this.snakeMovement();
-      }, this.velocitySeconds);
+      this.startTicker();
     }
+  }
+
+  private startTicker(): void {
+    this.schedule(() => {
+      this.snakeMovement();
+    }, this.velocitySeconds);
   }
 
   private snakeMovement(): void {
@@ -120,12 +174,11 @@ export class SnakeController extends Component {
     }
     this.node.setPosition(pos);
 
-    for (let i = 1; i < find("Canvas/Snake").children.length; i++) {
-      const aux = find("Canvas/Snake").children.length - i;
-      const snekPart = find("Canvas/Snake").children[aux];
+    for (let i = this.snakeInside.length - 1; i >= 0; i--) {
+      const snekPart = this.snakeInside[i];
+
       const auxOldX = snekPart.position.x;
       const auxOldY = snekPart.position.y;
-
       snekPart.setPosition(oldPos.x, oldPos.y, 0);
 
       oldPos.x = auxOldX;
@@ -135,16 +188,38 @@ export class SnakeController extends Component {
   }
 
   public eatBall(ball: number): void {
-    const prefab = instantiate(this.bodyPrefab);
-    find("Canvas/Snake").addChild(prefab);
+    const part = this.spawnBody(ball);
+    if (this.snakeInside.length >= 3) {
+      this.matchCheck(part);
+    }
+  }
 
-    const newBody =
-      find("Canvas/Snake").children[find("Canvas/Snake").children.length - 1];
-    newBody.getComponent(Sprite).spriteFrame = this.spriteArray[ball];
+  private matchCheck(part: Node): void {
+    const index = this.snakeInside.indexOf(part);
+    const type1 = part.getComponent(Sprite).spriteFrame.name;
+    const type2 =
+      this.snakeInside[index - 1].getComponent(Sprite).spriteFrame.name;
+    const type3 =
+      this.snakeInside[index - 2].getComponent(Sprite).spriteFrame.name;
+
+    if (type1 == type2 && type2 == type3) {
+      part.destroy();
+      this.snakeInside[index - 1].destroy();
+      this.snakeInside[index - 2].destroy();
+
+      this.snakeInside.splice(index - 2, 3);
+    }
+  }
+
+  private spawnBody(color: number): Node {
+    const snekPart: Node = instantiate(this.bodyPrefab);
+    find("Canvas/Snake").addChild(snekPart);
+    this.snakeInside.push(snekPart);
+
+    snekPart.getComponent(Sprite).spriteFrame = this.spriteArray[color];
     let pos = find("Canvas/Snake/Head").getPosition();
     pos = new Vec3(Math.round(pos.x), Math.round(pos.y), 0);
-
-    newBody.setPosition(pos);
-    console.log(newBody.position);
+    snekPart.setPosition(pos);
+    return snekPart;
   }
 }
