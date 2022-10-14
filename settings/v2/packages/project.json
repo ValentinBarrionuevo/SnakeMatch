@@ -1,7 +1,8 @@
 {
   "general": {
     "designResolution": {
-      "width": 360
+      "width": 360,
+      "fitHeight": true
     }
   },
   "layer": [

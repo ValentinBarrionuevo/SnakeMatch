@@ -6,6 +6,9 @@ import {
   Prefab,
   math,
   Vec2,
+  input,
+  Input,
+  director,
 } from "cc";
 import { SnakeController } from "./SnakeController";
 const { ccclass, property } = _decorator;
@@ -16,6 +19,20 @@ export class GameManager extends Component {
   private balls: Array<Prefab> = new Array<Prefab>(4);
 
   private spawnedArray: Array<number> = [];
+
+  public destroyed: boolean = false;
+
+  onLoad() {
+    find("Canvas/Snake/Head").getComponent(SnakeController)
+    input.on(Input.EventType.TOUCH_START, this.restart, this);
+
+  }
+
+  private restart(): void {
+    if (this.destroyed) {
+      director.loadScene("GameScene");
+    }
+  }
 
   start() {
     this.spawnBall();

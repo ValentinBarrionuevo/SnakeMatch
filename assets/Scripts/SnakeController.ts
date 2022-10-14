@@ -14,6 +14,8 @@ import {
   SpriteFrame,
   Node,
   EventTouch,
+  AudioSource,
+  assert,
 } from "cc";
 import { GameManager } from "./GameManager";
 const { ccclass, property } = _decorator;
@@ -31,13 +33,15 @@ export class SnakeController extends Component {
   bodyPrefab: Prefab;
 
   private firstMove: boolean = true;
-  private velocitySeconds: number = 0.4;
+  private velocitySeconds: number = 0.8;
   private direction: Direction;
   private isGoingVertical: boolean;
 
   private snakeInside: Array<Node> = new Array();
 
   private tileSize = 30;
+
+  private audioSource: AudioSource = null!;
 
   private keyWhiteList: Array<KeyCode> = new Array(
     KeyCode.KEY_W,
@@ -59,6 +63,11 @@ export class SnakeController extends Component {
     input.on(Input.EventType.KEY_DOWN, this.onKeyDown, this);
     input.on(Input.EventType.TOUCH_START, this.touchStart, this);
     input.on(Input.EventType.TOUCH_END, this.touchEnd, this);
+
+    const audioSource = this.getComponent(AudioSource)!;
+    assert(audioSource);
+    this.audioSource = audioSource;
+
   }
 
   public onDestroy(): void {
@@ -92,6 +101,7 @@ export class SnakeController extends Component {
     if (this.isGoingVertical == false || this.isGoingVertical == undefined) {
       if (dy > 0) {
         this.direction = "UP";
+
       } else {
         this.direction = "DOWN";
       }
@@ -172,7 +182,10 @@ export class SnakeController extends Component {
         this.node.angle = 270;
         break;
     }
+
     this.node.setPosition(pos);
+    console.log(this.node.position)
+    this.deathCheck(pos);
 
     for (let i = this.snakeInside.length - 1; i >= 0; i--) {
       const snekPart = this.snakeInside[i];
@@ -187,7 +200,25 @@ export class SnakeController extends Component {
     find("Canvas").getComponent(GameManager).checkGameState();
   }
 
+  private deathCheck(pos: Vec3): void {
+
+    if (pos.x > 150 || pos.x < -150) {
+
+      find("Canvas").getComponent(GameManager).destroyed = true;
+      this.node.destroy();
+      return;
+    }
+
+    if (pos.y > 310 || pos.y < -310) {
+      this.node.destroy();
+      return;
+    }
+
+  }
+
   public eatBall(ball: number): void {
+    this.audioSource.play();
+
     const part = this.spawnBody(ball);
     if (this.snakeInside.length >= 3) {
       this.matchCheck(part);

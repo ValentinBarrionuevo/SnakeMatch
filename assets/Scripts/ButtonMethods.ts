@@ -1,9 +1,13 @@
-import { _decorator, Component, director } from "cc";
+import { _decorator, Component, director, Button } from "cc";
 const { ccclass } = _decorator;
 
 @ccclass("ButtonMethods")
 export class ButtonMethods extends Component {
-  restart() {
+
+
+  public restart() {
     director.loadScene("GameScene");
   }
 }
+
+
