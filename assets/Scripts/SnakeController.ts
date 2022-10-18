@@ -33,7 +33,7 @@ export class SnakeController extends Component {
   bodyPrefab: Prefab;
 
   private firstMove: boolean = true;
-  private velocitySeconds: number = 0.8;
+  private velocitySeconds: number = 0.4;
   private direction: Direction;
   private isGoingVertical: boolean;
 
@@ -217,7 +217,7 @@ export class SnakeController extends Component {
   }
 
   public eatBall(ball: number): void {
-    this.audioSource.play();
+    //this.audioSource.play();
 
     const part = this.spawnBody(ball);
     if (this.snakeInside.length >= 3) {

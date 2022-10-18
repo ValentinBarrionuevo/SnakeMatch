@@ -22,6 +22,8 @@
         "83844e66-2dda-4e15-9bfe-8ef69e3e1b2f",
         "f7187d7d-c998-4851-822a-c0f781a486f7",
         "1c82de25-98e8-4a71-8c74-601f2b1c793b",
+        "742ddff0-eb02-4cf8-8934-05e09a32846a",
+        "73ea69a0-fb49-41dd-a36a-b08ae381f0f8",
         "4f9cb534-2952-40d3-a4ee-2c12e7477bd7"
       ]
     }
@@ -764,6 +766,66 @@
     "url": "db://assets/Sounds/crunch.wav",
     "value": {
       "depends": []
+    }
+  },
+  "74deb6d4-682c-47ba-8c39-2a38cf578c05": {
+    "url": "db://assets/Sprites/void.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "74deb6d4-682c-47ba-8c39-2a38cf578c05@6c48a": {
+    "url": "db://assets/Sprites/void.png@6c48a",
+    "value": {
+      "depends": [
+        "74deb6d4-682c-47ba-8c39-2a38cf578c05"
+      ]
+    }
+  },
+  "74deb6d4-682c-47ba-8c39-2a38cf578c05@f9941": {
+    "url": "db://assets/Sprites/void.png@f9941",
+    "value": {
+      "depends": [
+        "74deb6d4-682c-47ba-8c39-2a38cf578c05@6c48a"
+      ]
+    }
+  },
+  "742ddff0-eb02-4cf8-8934-05e09a32846a": {
+    "url": "db://assets/Prefab/voidPrefab.prefab",
+    "value": {
+      "depends": [
+        "74deb6d4-682c-47ba-8c39-2a38cf578c05@f9941"
+      ]
+    }
+  },
+  "84f66f5c-d934-4a3b-9232-3c4bdf017f18": {
+    "url": "db://assets/Sprites/coin.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "84f66f5c-d934-4a3b-9232-3c4bdf017f18@6c48a": {
+    "url": "db://assets/Sprites/coin.png@6c48a",
+    "value": {
+      "depends": [
+        "84f66f5c-d934-4a3b-9232-3c4bdf017f18"
+      ]
+    }
+  },
+  "84f66f5c-d934-4a3b-9232-3c4bdf017f18@f9941": {
+    "url": "db://assets/Sprites/coin.png@f9941",
+    "value": {
+      "depends": [
+        "84f66f5c-d934-4a3b-9232-3c4bdf017f18@6c48a"
+      ]
+    }
+  },
+  "73ea69a0-fb49-41dd-a36a-b08ae381f0f8": {
+    "url": "db://assets/Prefab/coinPrefab.prefab",
+    "value": {
+      "depends": [
+        "84f66f5c-d934-4a3b-9232-3c4bdf017f18@f9941"
+      ]
     }
   }
 }
