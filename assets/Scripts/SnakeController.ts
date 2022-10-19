@@ -183,7 +183,7 @@ export class SnakeController extends Component {
     }
 
     this.node.setPosition(pos);
-    console.log(this.node.position)
+    //console.log(this.node.position)
     this.deathCheck(pos);
 
     for (let i = this.snakeInside.length - 1; i >= 0; i--) {

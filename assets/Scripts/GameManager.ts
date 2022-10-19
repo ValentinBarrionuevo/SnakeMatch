@@ -71,6 +71,10 @@ export class GameManager extends Component {
     this.checkCoins(snakePos);
     this.checkBalls(snakePos);
 
+    while (this.spawnedArray.length < 3) {
+      this.spawnByType(this.ball);
+    }
+
   }
 
 
@@ -113,7 +117,7 @@ export class GameManager extends Component {
       );
     });
     if (hijo.length > 0) {
-      console.log(hijo[0]);
+      //console.log(hijo[0]);
       let index = find("Canvas/Balls").children.indexOf(hijo[0]);
       find("Canvas/Snake/Head")
         .getComponent(SnakeController)
@@ -124,8 +128,14 @@ export class GameManager extends Component {
 
       find("Canvas/UI/Points").getComponent(Label).string = (this.points).toString();
 
-      this.spawnByType(this.ball);
-      this.spawnByType(this.void);
+      while (this.spawnedArray.length < 3) {
+        this.spawnByType(this.ball);
+      }
+
+      while (find("Canvas/Coins").children.length < 2) {
+        this.spawnByType(this.coin);
+      }
+
 
     }
   }
@@ -140,7 +150,6 @@ export class GameManager extends Component {
 
     let pos: Vec2 = this.generateRandomPos();
 
-    console.log(pos);
 
     if (!this.checkSpawn(pos.x, pos.y)) {
 
@@ -149,12 +158,18 @@ export class GameManager extends Component {
       switch (type) {
         case this.ball:
           newParent = find("Canvas/Balls");
+          console.log(pos, "ball");
+
           break;
         case this.void:
           newParent = find("Canvas/Voids");
+          console.log(pos, "void");
+
           break;
         case this.coin:
           newParent = find("Canvas/Coins");
+          console.log(pos, "coins");
+
           break;
       }
 
@@ -165,6 +180,9 @@ export class GameManager extends Component {
         let rndmIndex = math.randomRangeInt(0, 4);
         node.getComponent(Sprite).spriteFrame = this.sprites[rndmIndex];
         this.spawnedArray.push(rndmIndex);
+
+        console.log(rndmIndex)
+        console.log(node, "node ball")
 
       }
     }
