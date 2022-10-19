@@ -9,7 +9,6 @@ import {
   input,
   Input,
   director,
-  Vec3,
   Label,
   Node,
   SpriteFrame,
@@ -67,77 +66,72 @@ export class GameManager extends Component {
       Math.round(find("Canvas/Snake/Head").getPosition().y)
     );
 
-    this.checkVoids(snakePos);
-    this.checkCoins(snakePos);
-    this.checkBalls(snakePos);
+    this.checkCol(snakePos, this.ball);
+    this.checkCol(snakePos, this.coin);
+    this.checkCol(snakePos, this.void);
 
     while (this.spawnedArray.length < 3) {
       this.spawnByType(this.ball);
     }
-
   }
 
+  private checkCol(snakePos: Vec2, type: Prefab) {
 
-  private checkVoids(snakePos: Vec2): void {
-    let voids = find("Canvas/Voids").children.filter((child) => {
+    let parent = null;
+    let array = null;
+
+    switch (type) {
+      case this.ball:
+        parent = find("Canvas/Balls")
+        array = this.check(parent, snakePos);
+        if (array.length > 0) {
+          //console.log(hijo[0]);
+          let index = find("Canvas/Balls").children.indexOf(array[0]);
+          find("Canvas/Snake/Head")
+            .getComponent(SnakeController)
+            .eatBall(this.spawnedArray[index]);
+          this.spawnedArray.splice(index, 1);
+          array[0].destroy();
+          this.points += 100 * this.multiplier;
+
+          find("Canvas/UI/Points").getComponent(Label).string = (this.points).toString();
+
+          while (this.spawnedArray.length < 3) {
+            this.spawnByType(this.ball);
+          }
+          while (find("Canvas/Coins").children.length < 2) {
+            this.spawnByType(this.coin);
+          }
+        }
+        break;
+      case this.coin:
+        parent = find("Canvas/Coins")
+        array = this.check(parent, snakePos)
+        if (array.length > 0) {
+          array[0].destroy();
+          this.points += 500 * this.multiplier;
+          this.coins += 1;
+          find("Canvas/UI/Coins").getComponent(Label).string = "x" + (this.coins).toString();
+          find("Canvas/UI/Points").getComponent(Label).string = (this.points).toString();
+        }
+        break;
+      case this.void:
+        parent = find("Canvas/Voids")
+        array = this.check(parent, snakePos)
+        if (array.length > 0) {
+          find("Canvas/Snake").destroy();
+        }
+        break;
+    }
+  }
+
+  private check(parent: Node, snakePos: Vec2): Array<Node> {
+    return parent.children.filter((child) => {
       return (
         Math.round(child.position.x) == snakePos.x &&
         Math.round(child.position.y) == snakePos.y
       );
     });
-
-    if (voids.length > 0) {
-      find("Canvas/Snake").destroy();
-    }
-  }
-
-  private checkCoins(snakePos: Vec2): void {
-    let coin = find("Canvas/Coins").children.filter((child) => {
-      return (
-        Math.round(child.position.x) == snakePos.x &&
-        Math.round(child.position.y) == snakePos.y
-      );
-    });
-
-    if (coin.length > 0) {
-      coin[0].destroy();
-      this.points += 500 * this.multiplier;
-      this.coins += 1;
-      find("Canvas/UI/Coins").getComponent(Label).string = "x" + (this.coins).toString();
-      find("Canvas/UI/Points").getComponent(Label).string = (this.points).toString();
-    }
-  }
-
-  private checkBalls(snakePos: Vec2): void {
-
-    let hijo = find("Canvas/Balls").children.filter((child) => {
-      return (
-        Math.round(child.position.x) == snakePos.x &&
-        Math.round(child.position.y) == snakePos.y
-      );
-    });
-    if (hijo.length > 0) {
-      //console.log(hijo[0]);
-      let index = find("Canvas/Balls").children.indexOf(hijo[0]);
-      find("Canvas/Snake/Head")
-        .getComponent(SnakeController)
-        .eatBall(this.spawnedArray[index]);
-      this.spawnedArray.splice(index, 1);
-      hijo[0].destroy();
-      this.points += 100 * this.multiplier;
-
-      find("Canvas/UI/Points").getComponent(Label).string = (this.points).toString();
-
-      while (this.spawnedArray.length < 3) {
-        this.spawnByType(this.ball);
-      }
-
-      while (find("Canvas/Coins").children.length < 2) {
-        this.spawnByType(this.coin);
-      }
-
-
-    }
   }
 
   private generateRandomPos(): Vec2 {
