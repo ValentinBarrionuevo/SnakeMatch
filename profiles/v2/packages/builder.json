@@ -6,33 +6,27 @@
     "polyfills": {
       "asyncFunctions": true
     },
-    "name": "SnakeMatch",
-    "outputName": "SnakeMatch",
+    "outputName": "android",
     "mainBundleCompressionType": "merge_dep",
     "platform": "android",
-    "startScene": "ccf8fd25-bb4a-4256-a492-78f1fa0b3372",
     "scenes": [
       {
         "url": "db://assets/Scenes/GameScene.scene",
         "uuid": "4f9cb534-2952-40d3-a4ee-2c12e7477bd7",
         "inBundle": false
-      },
-      {
-        "url": "db://assets/Scenes/MainMenu.scene",
-        "uuid": "ccf8fd25-bb4a-4256-a492-78f1fa0b3372",
-        "inBundle": false
       }
-    ]
+    ],
+    "name": "SnakeMatch"
   },
   "BuildTaskManager": {
     "taskMap": {
-      "1665784115130": {
+      "1665706401672": {
         "type": "build",
-        "id": "1665784115130",
+        "id": "1665706401672",
         "progress": 1,
         "state": "success",
         "stage": "build",
-        "message": "14-10-2022 18:48 Build success in 7801 ms!",
+        "message": "13-10-2022 21:14 Build success in 64512 ms!",
         "options": {
           "name": "SnakeMatch",
           "platform": "android",
@@ -51,8 +45,8 @@
           "replaceSplashScreen": false,
           "compressTexture": true,
           "packAutoAtlas": true,
-          "startScene": "ccf8fd25-bb4a-4256-a492-78f1fa0b3372",
-          "outputName": "android-001",
+          "startScene": "4f9cb534-2952-40d3-a4ee-2c12e7477bd7",
+          "outputName": "android",
           "scenes": [
             {
               "url": "db://assets/Scenes/GameScene.scene",
@@ -63,28 +57,36 @@
               "url": "db://assets/Scenes/MainMenu.scene",
               "uuid": "ccf8fd25-bb4a-4256-a492-78f1fa0b3372",
               "inBundle": false
+            },
+            {
+              "url": "db://assets/Scenes/scene-2d.scene",
+              "uuid": "13219755-4a5d-4d21-98be-2eb6c3a8ac52",
+              "inBundle": false
             }
           ],
           "android": [],
           "packages": {
             "android": {
-              "packageName": "com.asteroids.snakematch",
+              "packageName": "com.cocos.android",
               "orientation": {
                 "portrait": true,
                 "upsideDown": false,
                 "landscapeRight": false,
                 "landscapeLeft": false
               },
-              "apiLevel": 31,
+              "apiLevel": 33,
               "appABIs": [
-                "arm64-v8a"
+                "arm64-v8a",
+                "x86_64",
+                "x86",
+                "armeabi-v7a"
               ],
               "useDebugKeystore": true,
               "keystorePath": "",
               "keystorePassword": "",
               "keystoreAlias": "",
               "keystoreAliasPassword": "",
-              "appBundle": false,
+              "appBundle": true,
               "androidInstant": false,
               "remoteUrl": "",
               "sdkPath": "",
@@ -98,13 +100,13 @@
               "__version__": "1.0.1"
             },
             "cocos-service": {
-              "configID": "a0ac36",
+              "configID": "1db8fc",
               "services": [],
               "__version__": "3.0.4"
             },
             "native": {
               "encrypted": false,
-              "xxteaKey": "b7swrA16dE+6iVOs",
+              "xxteaKey": "dbRC0Cu3hDOIrGCr",
               "compressZip": false,
               "JobSystem": "none",
               "__version__": "1.0.2"
@@ -112,7 +114,7 @@
           },
           "__version__": "1.3.3"
         },
-        "time": "14-10-2022 18:48",
+        "time": "13-10-2022 21:13",
         "dirty": false
       }
     }

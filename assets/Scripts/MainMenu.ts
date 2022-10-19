@@ -1,22 +1,13 @@
-import { _decorator, Component, Node, input, Input, director } from 'cc';
+import { _decorator, Component, Node, input, Input, director } from "cc";
 const { ccclass, property } = _decorator;
 
-@ccclass('MainMenu')
+@ccclass("MainMenu")
 export class MainMenu extends Component {
+  onLoad() {
+    input.on(Input.EventType.TOUCH_START, this.startGame, this);
+  }
 
-    onLoad() {
-        input.on(Input.EventType.TOUCH_START, this.startGame, this);
-    }
-
-    startGame() {
-
-        director.loadScene("GameScene");
-
-
-
-    }
-
-
-
+  startGame() {
+    director.loadScene("GameScene");
+  }
 }
-

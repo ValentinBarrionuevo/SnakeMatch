@@ -34,7 +34,7 @@ export class SnakeController extends Component {
   bodyPrefab: Prefab;
 
   private firstMove: boolean = true;
-  private velocitySeconds: number = 0.4;
+  private velocitySeconds: number = 1;
   private direction: Direction;
   private isGoingVertical: boolean;
 
@@ -66,7 +66,6 @@ export class SnakeController extends Component {
     const audioSource = this.getComponent(AudioSource)!;
     assert(audioSource);
     this.audioSource = audioSource;
-
   }
 
   public onDestroy(): void {
@@ -100,7 +99,6 @@ export class SnakeController extends Component {
     if (this.isGoingVertical == false || this.isGoingVertical == undefined) {
       if (dy > 0) {
         this.direction = "UP";
-
       } else {
         this.direction = "DOWN";
       }
@@ -155,13 +153,12 @@ export class SnakeController extends Component {
 
   private startTicker(): void {
     this.schedule(() => {
-      this.snakeMovement();
+      this.headMovement();
     }, this.velocitySeconds);
   }
 
-  private snakeMovement(): void {
+  private headMovement(): void {
     const pos = this.node.getPosition();
-    const oldPos = { x: pos.x, y: pos.y };
 
     switch (this.direction) {
       case "UP":
@@ -183,8 +180,14 @@ export class SnakeController extends Component {
     }
 
     this.node.setPosition(pos);
-    //console.log(this.node.position)
     this.deathCheck(pos);
+
+    find("Canvas").getComponent(GameManager).checkGameState();
+  }
+
+  private bodyMovement(): void {
+    const pos = this.node.getPosition();
+    const oldPos = { x: pos.x, y: pos.y };
 
     for (let i = this.snakeInside.length - 1; i >= 0; i--) {
       const snekPart = this.snakeInside[i];
@@ -196,13 +199,10 @@ export class SnakeController extends Component {
       oldPos.x = auxOldX;
       oldPos.y = auxOldY;
     }
-    find("Canvas").getComponent(GameManager).checkGameState();
   }
 
   private deathCheck(pos: Vec3): void {
-
     if (pos.x > 150 || pos.x < -150) {
-
       find("Canvas").getComponent(GameManager).destroyed = true;
       this.node.destroy();
       return;
@@ -212,7 +212,6 @@ export class SnakeController extends Component {
       this.node.destroy();
       return;
     }
-
   }
 
   public eatBall(ball: number): void {
@@ -222,6 +221,7 @@ export class SnakeController extends Component {
     if (this.snakeInside.length >= 3) {
       this.matchCheck(part);
     }
+    this.bodyMovement();
   }
 
   private matchCheck(part: Node): void {
@@ -242,9 +242,9 @@ export class SnakeController extends Component {
       let gameManager = find("Canvas").getComponent(GameManager);
 
       gameManager.multiplier += gameManager.multiplier;
-      gameManager.points += (800 * gameManager.multiplier);
-      find("Canvas/UI/Multiplier").getComponent(Label).string = "x" + gameManager.multiplier;
-
+      gameManager.points += 800 * gameManager.multiplier;
+      find("Canvas/UI/Multiplier").getComponent(Label).string =
+        "x" + gameManager.multiplier;
     }
   }
 

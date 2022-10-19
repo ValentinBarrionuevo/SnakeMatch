@@ -40,9 +40,8 @@ export class GameManager extends Component {
   public multiplier: number = 1;
   private coins: number = 0;
 
-
   onLoad() {
-    find("Canvas/Snake/Head").getComponent(SnakeController)
+    find("Canvas/Snake/Head").getComponent(SnakeController);
     find("Canvas/UI/button").active = false;
     input.on(Input.EventType.TOUCH_START, this.restart, this);
   }
@@ -61,7 +60,6 @@ export class GameManager extends Component {
 
   // TODO Checkear si esta sobre si misma
   public checkGameState(): void {
-
     let snakePos = new Vec2(
       Math.round(find("Canvas/Snake/Head").getPosition().x),
       Math.round(find("Canvas/Snake/Head").getPosition().y)
@@ -76,7 +74,6 @@ export class GameManager extends Component {
     }
 
   }
-
 
   private checkVoids(snakePos: Vec2): void {
     let voids = find("Canvas/Voids").children.filter((child) => {
@@ -103,13 +100,14 @@ export class GameManager extends Component {
       coin[0].destroy();
       this.points += 500 * this.multiplier;
       this.coins += 1;
-      find("Canvas/UI/Coins").getComponent(Label).string = "x" + (this.coins).toString();
-      find("Canvas/UI/Points").getComponent(Label).string = (this.points).toString();
+      find("Canvas/UI/Coins").getComponent(Label).string =
+        "x" + this.coins.toString();
+      find("Canvas/UI/Points").getComponent(Label).string =
+        this.points.toString();
     }
   }
 
   private checkBalls(snakePos: Vec2): void {
-
     let hijo = find("Canvas/Balls").children.filter((child) => {
       return (
         Math.round(child.position.x) == snakePos.x &&
@@ -126,7 +124,8 @@ export class GameManager extends Component {
       hijo[0].destroy();
       this.points += 100 * this.multiplier;
 
-      find("Canvas/UI/Points").getComponent(Label).string = (this.points).toString();
+      find("Canvas/UI/Points").getComponent(Label).string =
+        this.points.toString();
 
       while (this.spawnedArray.length < 3) {
         this.spawnByType(this.ball);
@@ -141,18 +140,17 @@ export class GameManager extends Component {
   }
 
   private generateRandomPos(): Vec2 {
-    return (new Vec2(
+    return new Vec2(
       Math.round(math.randomRangeInt(-150, 151) / 30) * 30,
-      Math.round(math.randomRangeInt(-240, 241) / 30) * 30));
+      Math.round(math.randomRangeInt(-240, 241) / 30) * 30
+    );
   }
 
   private spawnByType(type: Prefab): void {
-
     let pos: Vec2 = this.generateRandomPos();
 
 
     if (!this.checkSpawn(pos.x, pos.y)) {
-
       let newParent = null;
 
       switch (type) {
@@ -176,17 +174,11 @@ export class GameManager extends Component {
       const node = this.spawn(type, newParent, pos);
 
       if (type == this.ball) {
-
         let rndmIndex = math.randomRangeInt(0, 4);
         node.getComponent(Sprite).spriteFrame = this.sprites[rndmIndex];
         this.spawnedArray.push(rndmIndex);
-
-        console.log(rndmIndex)
-        console.log(node, "node ball")
-
       }
     }
-
   }
 
   private spawn(type: Prefab, parent: Node, pos: Vec2): Node {
@@ -201,27 +193,27 @@ export class GameManager extends Component {
     return prefab;
   }
 
-
   private checkSpawn(randomPosX: number, randomPosY: number): boolean {
-
     if (
       this.posChecker(randomPosX, randomPosY, find("Canvas/Snake").children) ||
       this.posChecker(randomPosX, randomPosY, find("Canvas/Coins").children) ||
       this.posChecker(randomPosX, randomPosY, find("Canvas/Voids").children) ||
       this.posChecker(randomPosX, randomPosY, find("Canvas/Balls").children)
     ) {
-      return true
+      return true;
     }
 
     return false;
   }
 
   private posChecker(posX: number, posY: number, target: Array<Node>): boolean {
-    return target.filter((child: Node) => {
-      return (
-        Math.round(child.position.x) == posX &&
-        Math.round(child.position.y) == posY
-      );
-    }).length > 0;
+    return (
+      target.filter((child: Node) => {
+        return (
+          Math.round(child.position.x) == posX &&
+          Math.round(child.position.y) == posY
+        );
+      }).length > 0
+    );
   }
 }
