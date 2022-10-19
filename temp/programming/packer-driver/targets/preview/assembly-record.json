@@ -214,7 +214,7 @@
       "imports": {},
       "timestamp": 1666117537471
     },
-    "1c2ba2f6efa9af4fd2ef1d760c6e9b696c4be723": {
+    "6aa964553baf1f7430ba33f97043186f8291ed7e": {
       "imports": {
         "__unresolved_0": {
           "resolved": {
@@ -226,7 +226,7 @@
         "__unresolved_1": {
           "resolved": {
             "type": "chunk",
-            "id": "3c345d753b9324d9a50b771506068fbf1f535984"
+            "id": "f9b96d150e5ed83f52c40e920be9c3c5aa4d55f0"
           },
           "messages": []
         },
@@ -238,7 +238,7 @@
           "messages": []
         }
       },
-      "timestamp": 1666118385686
+      "timestamp": 1666141107596
     },
     "e690d8d21c3264f88cef1049bc05ae341c5f161a": {
       "imports": {
@@ -252,7 +252,7 @@
         "__unresolved_1": {
           "resolved": {
             "type": "chunk",
-            "id": "3c345d753b9324d9a50b771506068fbf1f535984"
+            "id": "6aa964553baf1f7430ba33f97043186f8291ed7e"
           },
           "messages": []
         },
@@ -266,14 +266,14 @@
         "__unresolved_3": {
           "resolved": {
             "type": "chunk",
-            "id": "1c2ba2f6efa9af4fd2ef1d760c6e9b696c4be723"
+            "id": "f9b96d150e5ed83f52c40e920be9c3c5aa4d55f0"
           },
           "messages": []
         }
       },
-      "timestamp": 1666122326623
+      "timestamp": 1666141247385
     },
-    "3c345d753b9324d9a50b771506068fbf1f535984": {
+    "f9b96d150e5ed83f52c40e920be9c3c5aa4d55f0": {
       "imports": {
         "__unresolved_0": {
           "resolved": {
@@ -285,7 +285,7 @@
         "__unresolved_1": {
           "resolved": {
             "type": "chunk",
-            "id": "1c2ba2f6efa9af4fd2ef1d760c6e9b696c4be723"
+            "id": "6aa964553baf1f7430ba33f97043186f8291ed7e"
           },
           "messages": []
         },
@@ -297,7 +297,7 @@
           "messages": []
         }
       },
-      "timestamp": 1666122326706
+      "timestamp": 1666141247432
     }
   },
   "entries": {
@@ -305,7 +305,7 @@
     "cce:/internal/x/prerequisite-imports": "e690d8d21c3264f88cef1049bc05ae341c5f161a",
     "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts": "92fd57f85e53a92bb4d7c944bb282a0dca3096b8",
     "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/MainMenu.ts": "320b05c1ac00d445cfa71d081e4268412ff49453",
-    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts": "1c2ba2f6efa9af4fd2ef1d760c6e9b696c4be723",
-    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GameManager.ts": "3c345d753b9324d9a50b771506068fbf1f535984"
+    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GameManager.ts": "6aa964553baf1f7430ba33f97043186f8291ed7e",
+    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts": "f9b96d150e5ed83f52c40e920be9c3c5aa4d55f0"
   }
 }

@@ -409,7 +409,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 4795225.022000015,
+      "mTimestamp": 23716408.973399997,
       "chunkId": "e690d8d21c3264f88cef1049bc05ae341c5f161a",
       "imports": [
         {
@@ -659,10 +659,10 @@
     },
     "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts": {
       "mTimestamp": {
-        "mtime": 1666117979913.0706,
+        "mtime": 1666141117664.08,
         "uuid": "b24c5641-ca34-4917-a30d-80fde2732bc3"
       },
-      "chunkId": "1c2ba2f6efa9af4fd2ef1d760c6e9b696c4be723",
+      "chunkId": "f9b96d150e5ed83f52c40e920be9c3c5aa4d55f0",
       "imports": [
         {
           "value": "cce:/internal/code-quality/cr.mjs",
@@ -678,11 +678,11 @@
           "value": "cc",
           "loc": {
             "start": {
-              "line": 19,
+              "line": 20,
               "column": 7
             },
             "end": {
-              "line": 19,
+              "line": 20,
               "column": 11
             }
           }
@@ -692,11 +692,11 @@
           "resolved": "__unresolved_1",
           "loc": {
             "start": {
-              "line": 20,
+              "line": 21,
               "column": 28
             },
             "end": {
-              "line": 20,
+              "line": 21,
               "column": 43
             }
           }
@@ -795,10 +795,10 @@
     },
     "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GameManager.ts": {
       "mTimestamp": {
-        "mtime": 1666122325303.6091,
+        "mtime": 1666140956053.7595,
         "uuid": "c77d4ec5-b15d-4103-aca6-1e42c5168c98"
       },
-      "chunkId": "3c345d753b9324d9a50b771506068fbf1f535984",
+      "chunkId": "6aa964553baf1f7430ba33f97043186f8291ed7e",
       "imports": [
         {
           "value": "cce:/internal/code-quality/cr.mjs",
@@ -814,11 +814,11 @@
           "value": "cc",
           "loc": {
             "start": {
-              "line": 12,
+              "line": 15,
               "column": 7
             },
             "end": {
-              "line": 12,
+              "line": 15,
               "column": 11
             }
           }
@@ -828,11 +828,11 @@
           "resolved": "__unresolved_1",
           "loc": {
             "start": {
-              "line": 13,
+              "line": 16,
               "column": 32
             },
             "end": {
-              "line": 13,
+              "line": 16,
               "column": 51
             }
           }

@@ -9,6 +9,9 @@ import {
   input,
   Input,
   director,
+  Vec3,
+  Label,
+  Node,
 } from "cc";
 import { SnakeController } from "./SnakeController";
 const { ccclass, property } = _decorator;
@@ -29,10 +32,13 @@ export class GameManager extends Component {
   public destroyed: boolean = false;
 
   public points: number = 0;
+  public multiplier: number = 1;
+  private coins: number = 0;
 
 
   onLoad() {
     find("Canvas/Snake/Head").getComponent(SnakeController)
+    find("Canvas/UI/button").active = false;
     input.on(Input.EventType.TOUCH_START, this.restart, this);
   }
 
@@ -45,24 +51,25 @@ export class GameManager extends Component {
   start() {
     this.spawnBall();
     this.spawnCoin();
+    this.spawnVoid();
   }
 
-  // TODO Checkear si se fue, si esta sobre si misma
+  // TODO Checkear si esta sobre si misma
   public checkGameState(): void {
-
-    this.spawnVoid();
 
     let snakePos = new Vec2(
       Math.round(find("Canvas/Snake/Head").getPosition().x),
       Math.round(find("Canvas/Snake/Head").getPosition().y)
     );
-    let hijo = find("Canvas/Balls").children.filter((child) => {
-      return (
-        Math.round(child.position.x) == snakePos.x &&
-        Math.round(child.position.y) == snakePos.y
-      );
-    });
 
+    this.checkVoids(snakePos);
+    this.checkCoins(snakePos);
+    this.checkBalls(snakePos);
+
+  }
+
+
+  private checkVoids(snakePos: Vec2): void {
     let voids = find("Canvas/Voids").children.filter((child) => {
       return (
         Math.round(child.position.x) == snakePos.x &&
@@ -70,21 +77,36 @@ export class GameManager extends Component {
       );
     });
 
-    let coins = find("Canvas/Coins").children.filter((child) => {
+    if (voids.length > 0) {
+      find("Canvas/Snake").destroy();
+    }
+  }
+
+  private checkCoins(snakePos: Vec2): void {
+    let coin = find("Canvas/Coins").children.filter((child) => {
       return (
         Math.round(child.position.x) == snakePos.x &&
         Math.round(child.position.y) == snakePos.y
       );
     });
 
-    if (coins.length > 0) {
-      coins[0].destroy();
+    if (coin.length > 0) {
+      coin[0].destroy();
+      this.points += 500 * this.multiplier;
+      this.coins += 1;
+      find("Canvas/UI/Coins").getComponent(Label).string = "x" + (this.coins).toString();
+      find("Canvas/UI/Points").getComponent(Label).string = (this.points).toString();
     }
+  }
 
-    if (voids.length > 0) {
-      find("Canvas/Snake").destroy();
-    }
+  private checkBalls(snakePos: Vec2): void {
 
+    let hijo = find("Canvas/Balls").children.filter((child) => {
+      return (
+        Math.round(child.position.x) == snakePos.x &&
+        Math.round(child.position.y) == snakePos.y
+      );
+    });
     if (hijo.length > 0) {
       console.log(hijo[0]);
       let index = find("Canvas/Balls").children.indexOf(hijo[0]);
@@ -93,6 +115,10 @@ export class GameManager extends Component {
         .eatBall(this.spawnedArray[index]);
       this.spawnedArray.splice(index, 1);
       hijo[0].destroy();
+      this.points += 100 * this.multiplier;
+
+      find("Canvas/UI/Points").getComponent(Label).string = (this.points).toString();
+
       this.spawnBall();
       this.spawnCoin();
 
@@ -106,31 +132,9 @@ export class GameManager extends Component {
       var randomPosX: number =
         Math.round(math.randomRangeInt(-150, 151) / 30) * 30;
       var randomPosY: number =
-        Math.round(math.randomRangeInt(-300, 301) / 30) * 30;
-      let snakePos = new Vec2(
-        Math.round(find("Canvas/Snake/Head").getPosition().x),
-        Math.round(find("Canvas/Snake/Head").getPosition().y)
-      );
+        Math.round(math.randomRangeInt(-240, 241) / 30) * 30;
 
-      let ball = find("Canvas/Balls").children.filter((child) => {
-        return (
-          Math.round(child.position.x) == randomPosX &&
-          Math.round(child.position.y) == randomPosY ||
-          snakePos.x == randomPosX &&
-          snakePos.y == randomPosY
-        );
-      });
-
-      let voids = find("Canvas/Voids").children.filter((child) => {
-        return (
-          Math.round(child.position.x) == randomPosX &&
-          Math.round(child.position.y) == randomPosY ||
-          snakePos.x == randomPosX &&
-          snakePos.y == randomPosY
-        );
-      });
-
-      if (ball.length <= 0 || voids.length <= 0) {
+      if (!this.checkSpawn(randomPosX, randomPosY)) {
 
         const newParent = find("Canvas/Voids");
         let prefab = null;
@@ -151,41 +155,9 @@ export class GameManager extends Component {
       var randomPosX: number =
         Math.round(math.randomRangeInt(-150, 151) / 30) * 30;
       var randomPosY: number =
-        Math.round(math.randomRangeInt(-300, 301) / 30) * 30;
+        Math.round(math.randomRangeInt(-240, 241) / 30) * 30;
 
-      let snakePos = new Vec2(
-        Math.round(find("Canvas/Snake/Head").getPosition().x),
-        Math.round(find("Canvas/Snake/Head").getPosition().y)
-      );
-
-      let ball = find("Canvas/Balls").children.filter((child) => {
-        return (
-          Math.round(child.position.x) == randomPosX &&
-          Math.round(child.position.y) == randomPosY ||
-          snakePos.x == randomPosX &&
-          snakePos.y == randomPosY
-        );
-      });
-
-      let voids = find("Canvas/Voids").children.filter((child) => {
-        return (
-          Math.round(child.position.x) == randomPosX &&
-          Math.round(child.position.y) == randomPosY ||
-          snakePos.x == randomPosX &&
-          snakePos.y == randomPosY
-        );
-      });
-
-      let coins = find("Canvas/Coins").children.filter((child) => {
-        return (
-          Math.round(child.position.x) == randomPosX &&
-          Math.round(child.position.y) == randomPosY ||
-          snakePos.x == randomPosX &&
-          snakePos.y == randomPosY
-        );
-      });
-
-      if (ball.length <= 0 || voids.length <= 0 || coins.length <= 0) {
+      if (!this.checkSpawn(randomPosX, randomPosY)) {
 
 
         const newParent = find("Canvas/Coins");
@@ -200,42 +172,17 @@ export class GameManager extends Component {
     }
   }
 
+
   private spawnBall(): void {
 
     while (this.spawnedArray.length < 3) {
 
-
-
       var randomPosX: number =
         Math.round(math.randomRangeInt(-150, 151) / 30) * 30;
       var randomPosY: number =
-        Math.round(math.randomRangeInt(-300, 301) / 30) * 30;
+        Math.round(math.randomRangeInt(-240, 241) / 30) * 30;
 
-      let snakePos = new Vec2(
-        Math.round(find("Canvas/Snake/Head").getPosition().x),
-        Math.round(find("Canvas/Snake/Head").getPosition().y)
-      );
-
-      let ball = find("Canvas/Balls").children.filter((child) => {
-        return (
-          Math.round(child.position.x) == randomPosX &&
-          Math.round(child.position.y) == randomPosY ||
-          snakePos.x == randomPosX &&
-          snakePos.y == randomPosY
-        );
-      });
-
-      let voids = find("Canvas/Voids").children.filter((child) => {
-        return (
-          Math.round(child.position.x) == randomPosX &&
-          Math.round(child.position.y) == randomPosY ||
-          snakePos.x == randomPosX &&
-          snakePos.y == randomPosY
-        );
-      });
-
-      if (ball.length <= 0 || voids.length <= 0) {
-
+      if (!this.checkSpawn(randomPosX, randomPosY)) {
 
         const newParent = find("Canvas/Balls");
         let prefab = null;
@@ -248,11 +195,29 @@ export class GameManager extends Component {
         prefab.setPosition(randomPosX, randomPosY);
 
       }
-
-
-
-
-
     }
+  }
+
+  private checkSpawn(randomPosX: number, randomPosY: number): boolean {
+
+    if (
+      this.posChecker(randomPosX, randomPosY, find("Canvas/Snake").children) ||
+      this.posChecker(randomPosX, randomPosY, find("Canvas/Coins").children) ||
+      this.posChecker(randomPosX, randomPosY, find("Canvas/Voids").children) ||
+      this.posChecker(randomPosX, randomPosY, find("Canvas/Balls").children)
+    ) {
+      return true
+    }
+
+    return false;
+  }
+
+  private posChecker(posX: number, posY: number, target: Array<Node>): boolean {
+    return target.filter((child: Node) => {
+      return (
+        Math.round(child.position.x) == posX &&
+        Math.round(child.position.y) == posY
+      );
+    }).length > 0;
   }
 }

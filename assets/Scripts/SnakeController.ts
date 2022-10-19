@@ -16,6 +16,7 @@ import {
   EventTouch,
   AudioSource,
   assert,
+  Label,
 } from "cc";
 import { GameManager } from "./GameManager";
 const { ccclass, property } = _decorator;
@@ -56,8 +57,6 @@ export class SnakeController extends Component {
   private _touchStartPos: import("cc").math.Vec2;
 
   public onLoad(): void {
-    find("Canvas/button").active = false;
-
     this.character = this.node.getComponent(RigidBody2D);
 
     input.on(Input.EventType.KEY_DOWN, this.onKeyDown, this);
@@ -74,7 +73,7 @@ export class SnakeController extends Component {
     input.off(Input.EventType.KEY_DOWN, this.onKeyDown, this);
     input.off(Input.EventType.TOUCH_START, this.touchStart, this);
     input.off(Input.EventType.TOUCH_END, this.touchEnd, this);
-    find("Canvas/button").active = true;
+    find("Canvas/UI/button").active = true;
   }
 
   public touchStart(e: EventTouch): void {
@@ -209,7 +208,7 @@ export class SnakeController extends Component {
       return;
     }
 
-    if (pos.y > 310 || pos.y < -310) {
+    if (pos.y > 241 || pos.y < -241) {
       this.node.destroy();
       return;
     }
@@ -239,6 +238,13 @@ export class SnakeController extends Component {
       this.snakeInside[index - 2].destroy();
 
       this.snakeInside.splice(index - 2, 3);
+
+      let gameManager = find("Canvas").getComponent(GameManager);
+
+      gameManager.multiplier += gameManager.multiplier;
+      gameManager.points += (800 * gameManager.multiplier);
+      find("Canvas/UI/Multiplier").getComponent(Label).string = "x" + gameManager.multiplier;
+
     }
   }
 
