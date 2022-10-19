@@ -31,6 +31,8 @@ export class GameManager extends Component {
   @property(Prefab)
   private ball: Prefab;
 
+  private snake: Prefab = null;
+
   private spawnedArray: Array<number> = [];
 
   public destroyed: boolean = false;
@@ -69,6 +71,8 @@ export class GameManager extends Component {
     this.checkCol(snakePos, this.ball);
     this.checkCol(snakePos, this.coin);
     this.checkCol(snakePos, this.void);
+    this.checkCol(snakePos, this.snake);
+
 
     while (this.spawnedArray.length < 3) {
       this.spawnByType(this.ball);
@@ -85,7 +89,6 @@ export class GameManager extends Component {
         parent = find("Canvas/Balls")
         array = this.check(parent, snakePos);
         if (array.length > 0) {
-          //console.log(hijo[0]);
           let index = find("Canvas/Balls").children.indexOf(array[0]);
           find("Canvas/Snake/Head")
             .getComponent(SnakeController)
@@ -122,6 +125,13 @@ export class GameManager extends Component {
           find("Canvas/Snake").destroy();
         }
         break;
+      case this.snake:
+        parent = find("Canvas/Snake")
+        array = this.check(parent, snakePos)
+        if (array.length > 1) {
+          find("Canvas/Snake").destroy();
+        }
+
     }
   }
 
@@ -152,32 +162,21 @@ export class GameManager extends Component {
       switch (type) {
         case this.ball:
           newParent = find("Canvas/Balls");
-          console.log(pos, "ball");
-
           break;
         case this.void:
           newParent = find("Canvas/Voids");
-          console.log(pos, "void");
-
           break;
         case this.coin:
           newParent = find("Canvas/Coins");
-          console.log(pos, "coins");
-
           break;
       }
 
       const node = this.spawn(type, newParent, pos);
 
       if (type == this.ball) {
-
         let rndmIndex = math.randomRangeInt(0, 4);
         node.getComponent(Sprite).spriteFrame = this.sprites[rndmIndex];
         this.spawnedArray.push(rndmIndex);
-
-        console.log(rndmIndex)
-        console.log(node, "node ball")
-
       }
     }
 
