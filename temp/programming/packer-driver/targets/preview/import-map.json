@@ -4,8 +4,8 @@
     "cce:/internal/x/prerequisite-imports": "./chunks/e6/e690d8d21c3264f88cef1049bc05ae341c5f161a.js",
     "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts": "./chunks/92/92fd57f85e53a92bb4d7c944bb282a0dca3096b8.js",
     "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/MainMenu.ts": "./chunks/32/320b05c1ac00d445cfa71d081e4268412ff49453.js",
-    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GameManager.ts": "./chunks/6a/6aa964553baf1f7430ba33f97043186f8291ed7e.js",
-    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts": "./chunks/f9/f9b96d150e5ed83f52c40e920be9c3c5aa4d55f0.js"
+    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts": "./chunks/f9/f9b96d150e5ed83f52c40e920be9c3c5aa4d55f0.js",
+    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GameManager.ts": "./chunks/c5/c51e8391c369ee1bef1d620d3e24f4c569994048.js"
   },
   "scopes": {
     "./chunks/90/909f786ffe128f06f5aa1b4e1e3fbbd65262915e.js": {
@@ -31,16 +31,16 @@
     },
     "./chunks/e6/e690d8d21c3264f88cef1049bc05ae341c5f161a.js": {
       "__unresolved_0": "./chunks/92/92fd57f85e53a92bb4d7c944bb282a0dca3096b8.js",
-      "__unresolved_1": "./chunks/6a/6aa964553baf1f7430ba33f97043186f8291ed7e.js",
+      "__unresolved_1": "./chunks/c5/c51e8391c369ee1bef1d620d3e24f4c569994048.js",
       "__unresolved_2": "./chunks/32/320b05c1ac00d445cfa71d081e4268412ff49453.js",
       "__unresolved_3": "./chunks/f9/f9b96d150e5ed83f52c40e920be9c3c5aa4d55f0.js"
     },
     "./chunks/f9/f9b96d150e5ed83f52c40e920be9c3c5aa4d55f0.js": {
       "__unresolved_0": "./chunks/3a/3a1fd7b13056478820ebedd306d3446d1aa408cc.js",
-      "__unresolved_1": "./chunks/6a/6aa964553baf1f7430ba33f97043186f8291ed7e.js",
+      "__unresolved_1": "./chunks/c5/c51e8391c369ee1bef1d620d3e24f4c569994048.js",
       "cc": "./chunks/90/909f786ffe128f06f5aa1b4e1e3fbbd65262915e.js"
     },
-    "./chunks/6a/6aa964553baf1f7430ba33f97043186f8291ed7e.js": {
+    "./chunks/c5/c51e8391c369ee1bef1d620d3e24f4c569994048.js": {
       "__unresolved_0": "./chunks/3a/3a1fd7b13056478820ebedd306d3446d1aa408cc.js",
       "__unresolved_1": "./chunks/f9/f9b96d150e5ed83f52c40e920be9c3c5aa4d55f0.js",
       "cc": "./chunks/90/909f786ffe128f06f5aa1b4e1e3fbbd65262915e.js"

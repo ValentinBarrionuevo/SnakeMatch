@@ -1269,19 +1269,19 @@
     "__prefab": null,
     "spriteArray": [
       {
-        "__uuid__": "aed9f1b6-ba94-4693-beb9-777795e891cd@f9941",
+        "__uuid__": "90ddc7e9-d68e-4562-ba48-0e6dda6be1a1@f9941",
         "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "4d1fdf5a-c8c0-4602-91d3-cbb17f5b12cc@f9941",
+        "__uuid__": "f5392916-fdbc-4c13-86e2-27379960bf8b@f9941",
         "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "dabd44d3-6e50-43b6-938f-bf6b3d0720aa@f9941",
+        "__uuid__": "5b879615-5b5d-4864-bf8d-7b89a8a39331@f9941",
         "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "6bdec228-c304-4093-ba9a-dd60546f019a@f9941",
+        "__uuid__": "7559aa24-dcc5-4b24-b28b-3ec7c6e0283b@f9941",
         "__expectedType__": "cc.SpriteFrame"
       }
     ],
@@ -2053,22 +2053,22 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "balls": [
+    "sprites": [
       {
-        "__uuid__": "ef8f54a3-3757-4246-869d-b2e0fe24e2ae",
-        "__expectedType__": "cc.Prefab"
+        "__uuid__": "aed9f1b6-ba94-4693-beb9-777795e891cd@f9941",
+        "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "83844e66-2dda-4e15-9bfe-8ef69e3e1b2f",
-        "__expectedType__": "cc.Prefab"
+        "__uuid__": "4d1fdf5a-c8c0-4602-91d3-cbb17f5b12cc@f9941",
+        "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "f7187d7d-c998-4851-822a-c0f781a486f7",
-        "__expectedType__": "cc.Prefab"
+        "__uuid__": "dabd44d3-6e50-43b6-938f-bf6b3d0720aa@f9941",
+        "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "1c82de25-98e8-4a71-8c74-601f2b1c793b",
-        "__expectedType__": "cc.Prefab"
+        "__uuid__": "6bdec228-c304-4093-ba9a-dd60546f019a@f9941",
+        "__expectedType__": "cc.SpriteFrame"
       }
     ],
     "void": {
@@ -2077,6 +2077,10 @@
     },
     "coin": {
       "__uuid__": "73ea69a0-fb49-41dd-a36a-b08ae381f0f8",
+      "__expectedType__": "cc.Prefab"
+    },
+    "ball": {
+      "__uuid__": "f7187d7d-c998-4851-822a-c0f781a486f7",
       "__expectedType__": "cc.Prefab"
     },
     "_id": "9dPWpq27pOVadWvQX1U/NL"

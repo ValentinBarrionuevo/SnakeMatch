@@ -104,7 +104,7 @@
     "missing": false
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Prefab": {
-    "time": 1666122089293.5925,
+    "time": 1666210338840.598,
     "uuid": "7557c6c6-d0ab-4024-8624-bf9e330d6e97",
     "missing": false
   },
@@ -152,7 +152,7 @@
     "time": 1664226108547.9753
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Scenes\\GameScene.scene": {
-    "time": 1666137775390.2405,
+    "time": 1666210944972.6038,
     "uuid": "4f9cb534-2952-40d3-a4ee-2c12e7477bd7",
     "missing": false
   },
@@ -187,16 +187,8 @@
     "time": 1664318805761.8342
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Scripts\\GameManager.ts": {
-    "time": 1666140956053.7595,
+    "time": 1666210906167.5461,
     "uuid": "c77d4ec5-b15d-4103-aca6-1e42c5168c98",
-    "missing": false
-  },
-  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Prefab\\ballRed.prefab.meta": {
-    "time": 1664395308766.2625
-  },
-  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Prefab\\ballRed.prefab": {
-    "time": 1666137723938.3628,
-    "uuid": "f7187d7d-c998-4851-822a-c0f781a486f7",
     "missing": false
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Prefab\\ballBlue.prefab.meta": {
@@ -437,6 +429,14 @@
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\back.png": {
     "time": 1665717220060.532,
     "uuid": "8ea7c1b5-5860-4d6b-afbf-ff11ed036a90",
+    "missing": false
+  },
+  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Prefab\\ball.prefab.meta": {
+    "time": 1666210338844.5999
+  },
+  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Prefab\\ball.prefab": {
+    "time": 1666210339198.6797,
+    "uuid": "f7187d7d-c998-4851-822a-c0f781a486f7",
     "missing": false
   }
 }

@@ -12,20 +12,25 @@ import {
   Vec3,
   Label,
   Node,
+  SpriteFrame,
+  Sprite,
 } from "cc";
 import { SnakeController } from "./SnakeController";
 const { ccclass, property } = _decorator;
 
 @ccclass("GameManager")
 export class GameManager extends Component {
-  @property(Prefab)
-  private balls: Array<Prefab> = new Array<Prefab>(4);
+  @property(SpriteFrame)
+  private sprites: Array<SpriteFrame> = new Array<SpriteFrame>(4);
 
   @property(Prefab)
   private void: Prefab;
 
   @property(Prefab)
   private coin: Prefab;
+
+  @property(Prefab)
+  private ball: Prefab;
 
   private spawnedArray: Array<number> = [];
 
@@ -49,9 +54,9 @@ export class GameManager extends Component {
   }
 
   start() {
-    this.spawnBall();
-    this.spawnCoin();
-    this.spawnVoid();
+    this.spawnByType(this.ball);
+    this.spawnByType(this.void);
+    this.spawnByType(this.coin);
   }
 
   // TODO Checkear si esta sobre si misma
@@ -119,84 +124,65 @@ export class GameManager extends Component {
 
       find("Canvas/UI/Points").getComponent(Label).string = (this.points).toString();
 
-      this.spawnBall();
-      this.spawnCoin();
+      this.spawnByType(this.ball);
+      this.spawnByType(this.void);
 
     }
   }
 
-  private spawnVoid(): void {
+  private generateRandomPos(): Vec2 {
+    return (new Vec2(
+      Math.round(math.randomRangeInt(-150, 151) / 30) * 30,
+      Math.round(math.randomRangeInt(-240, 241) / 30) * 30));
+  }
 
-    while (find("Canvas/Voids").children.length < 1) {
+  private spawnByType(type: Prefab): void {
 
-      var randomPosX: number =
-        Math.round(math.randomRangeInt(-150, 151) / 30) * 30;
-      var randomPosY: number =
-        Math.round(math.randomRangeInt(-240, 241) / 30) * 30;
+    let pos: Vec2 = this.generateRandomPos();
 
-      if (!this.checkSpawn(randomPosX, randomPosY)) {
+    console.log(pos);
 
-        const newParent = find("Canvas/Voids");
-        let prefab = null;
+    if (!this.checkSpawn(pos.x, pos.y)) {
 
-        prefab = instantiate(this.void);
+      let newParent = null;
 
-        newParent.addChild(prefab);
-        prefab.setPosition(randomPosX, randomPosY);
-
+      switch (type) {
+        case this.ball:
+          newParent = find("Canvas/Balls");
+          break;
+        case this.void:
+          newParent = find("Canvas/Voids");
+          break;
+        case this.coin:
+          newParent = find("Canvas/Coins");
+          break;
       }
-    }
-  }
 
-  private spawnCoin(): void {
+      const node = this.spawn(type, newParent, pos);
 
-    while (find("Canvas/Coins").children.length < 2) {
-
-      var randomPosX: number =
-        Math.round(math.randomRangeInt(-150, 151) / 30) * 30;
-      var randomPosY: number =
-        Math.round(math.randomRangeInt(-240, 241) / 30) * 30;
-
-      if (!this.checkSpawn(randomPosX, randomPosY)) {
-
-
-        const newParent = find("Canvas/Coins");
-        let prefab = null;
-
-        prefab = instantiate(this.coin);
-
-        newParent.addChild(prefab);
-        prefab.setPosition(randomPosX, randomPosY);
-
-      }
-    }
-  }
-
-
-  private spawnBall(): void {
-
-    while (this.spawnedArray.length < 3) {
-
-      var randomPosX: number =
-        Math.round(math.randomRangeInt(-150, 151) / 30) * 30;
-      var randomPosY: number =
-        Math.round(math.randomRangeInt(-240, 241) / 30) * 30;
-
-      if (!this.checkSpawn(randomPosX, randomPosY)) {
-
-        const newParent = find("Canvas/Balls");
-        let prefab = null;
+      if (type == this.ball) {
 
         let rndmIndex = math.randomRangeInt(0, 4);
-        prefab = instantiate(this.balls[rndmIndex]);
+        node.getComponent(Sprite).spriteFrame = this.sprites[rndmIndex];
         this.spawnedArray.push(rndmIndex);
-
-        newParent.addChild(prefab);
-        prefab.setPosition(randomPosX, randomPosY);
 
       }
     }
+
   }
+
+  private spawn(type: Prefab, parent: Node, pos: Vec2): Node {
+    let prefab = null;
+
+    prefab = instantiate(type);
+
+    parent.addChild(prefab);
+
+    prefab.setPosition(pos.x, pos.y);
+
+    return prefab;
+  }
+
 
   private checkSpawn(randomPosX: number, randomPosY: number): boolean {
 
