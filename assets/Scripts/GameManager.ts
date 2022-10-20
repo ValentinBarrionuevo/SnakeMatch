@@ -31,6 +31,9 @@ export class GameManager extends Component {
   @property(Prefab)
   private ball: Prefab;
 
+  @property(Prefab)
+  private bomb: Prefab;
+
   private snake: Prefab = null;
 
   private spawnedArray: Array<number> = [];
@@ -41,8 +44,10 @@ export class GameManager extends Component {
   public multiplier: number = 1;
   private coins: number = 0;
 
+  private justAte: boolean = false;
+
   onLoad() {
-    find("Canvas/Snake/Head").getComponent(SnakeController);
+    //find("Canvas/Snake/Head").getComponent(SnakeController);
     find("Canvas/UI/button").active = false;
     input.on(Input.EventType.TOUCH_START, this.restart, this);
   }
@@ -55,11 +60,12 @@ export class GameManager extends Component {
 
   start() {
     this.spawnByType(this.ball);
+    this.spawnByType(this.ball);
+    this.spawnByType(this.ball);
     this.spawnByType(this.void);
     this.spawnByType(this.coin);
   }
 
-  // TODO Checkear si esta sobre si misma
   public checkGameState(): void {
     let snakePos = new Vec2(
       Math.round(find("Canvas/Snake/Head").getPosition().x),
@@ -69,7 +75,13 @@ export class GameManager extends Component {
     this.checkCol(snakePos, this.ball);
     this.checkCol(snakePos, this.coin);
     this.checkCol(snakePos, this.void);
+    this.checkCol(snakePos, this.bomb);
     this.checkCol(snakePos, this.snake);
+
+
+    if (this.justAte == true) {
+      this.justAte = false
+    }
 
 
     while (this.spawnedArray.length < 3) {
@@ -93,15 +105,23 @@ export class GameManager extends Component {
             .eatBall(this.spawnedArray[index]);
           this.spawnedArray.splice(index, 1);
           array[0].destroy();
-          this.points += 100 * this.multiplier;
 
+          this.points += 100 * this.multiplier;
           find("Canvas/UI/Points").getComponent(Label).string = (this.points).toString();
+
+          this.justAte = true;
+
 
           while (this.spawnedArray.length < 3) {
             this.spawnByType(this.ball);
           }
           while (find("Canvas/Coins").children.length < 2) {
             this.spawnByType(this.coin);
+          }
+
+          const prob = math.randomRangeInt(0, 11);
+          if (prob >= 1 && prob <= 3) {
+            this.spawnByType(this.bomb);
           }
         }
         break;
@@ -124,12 +144,21 @@ export class GameManager extends Component {
         }
         break;
       case this.snake:
-        parent = find("Canvas/Snake")
-        array = this.check(parent, snakePos)
-        if (array.length > 1) {
-          find("Canvas/Snake").destroy();
+        if (!this.justAte) {
+          parent = find("Canvas/Snake")
+          array = this.check(parent, snakePos)
+          if (array.length > 1) {
+            find("Canvas/Snake").destroy();
+          }
         }
-
+        break;
+      case this.bomb:
+        parent = find("Canvas/Bombs")
+        array = this.check(parent, snakePos)
+        if (array.length > 0) {
+          array[0].destroy();
+          find("Canvas/Snake/Head").getComponent(SnakeController).eatBomb();
+        }
     }
   }
 
@@ -165,6 +194,8 @@ export class GameManager extends Component {
         case this.coin:
           newParent = find("Canvas/Coins");
           break;
+        case this.bomb:
+          newParent = find("Canvas/Bombs");
       }
 
       const node = this.spawn(type, newParent, pos);
@@ -179,13 +210,9 @@ export class GameManager extends Component {
 
   private spawn(type: Prefab, parent: Node, pos: Vec2): Node {
     let prefab = null;
-
     prefab = instantiate(type);
-
     parent.addChild(prefab);
-
     prefab.setPosition(pos.x, pos.y);
-
     return prefab;
   }
 
@@ -198,7 +225,6 @@ export class GameManager extends Component {
     ) {
       return true;
     }
-
     return false;
   }
 

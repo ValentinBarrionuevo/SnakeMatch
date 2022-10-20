@@ -41,7 +41,7 @@ export class SnakeController extends Component {
   private blockMove: boolean = false;
   // private oldPos: any;
 
-  private snakeInside: Array<Node> = new Array();
+  public snakeInside: Array<Node> = new Array();
 
   private tileSize = 30;
 
@@ -203,7 +203,7 @@ export class SnakeController extends Component {
     if (!this.blockMove) {
       for (let i = 0; i < this.snakeInside.length; i++) {
         const snekPart = this.snakeInside[i];
-        console.log(i, snekPart.getComponent(Sprite).spriteFrame.name, oldPos);
+        //console.log(i, snekPart.getComponent(Sprite).spriteFrame.name, oldPos);
 
         const auxOldX = snekPart.position.x;
         const auxOldY = snekPart.position.y;
@@ -276,5 +276,25 @@ export class SnakeController extends Component {
     snekPart.active = false;
     this.blockMove = true;
     return snekPart;
+  }
+
+  public eatBomb(): void {
+    let lastAte = this.snakeInside[0];
+
+    let filtered = this.snakeInside.filter((child) => {
+      return (child.getComponent(Sprite).spriteFrame.name ==
+        lastAte.getComponent(Sprite).spriteFrame.name);
+    });
+
+    for (let i = 0; i < filtered.length; i++) {
+      const index = this.snakeInside.indexOf(filtered[i]);
+      this.snakeInside[index].destroy();
+      this.snakeInside.splice(index, 1);
+    }
+
+    find("Canvas/UI/Points").getComponent(Label).string =
+      (find("Canvas").getComponent(GameManager).points +=
+        ((filtered.length * 300) *
+          find("Canvas").getComponent(GameManager).multiplier)).toString();
   }
 }

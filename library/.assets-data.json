@@ -25,6 +25,7 @@
         "742ddff0-eb02-4cf8-8934-05e09a32846a",
         "73ea69a0-fb49-41dd-a36a-b08ae381f0f8",
         "f7187d7d-c998-4851-822a-c0f781a486f7",
+        "f875f17d-ee50-4cab-9716-5988ed42e476",
         "4f9cb534-2952-40d3-a4ee-2c12e7477bd7"
       ]
     }
@@ -106,10 +107,9 @@
         "f87a4d25-7c8b-4111-a597-e9e8a592fbc7@f9941",
         "763b96ac-4e87-4545-8dbc-a80576e95950@f9941",
         "5491902c-da7e-4aec-aaa2-114a1854a52e@f9941",
-        "40861894-b3fe-487d-bf96-314d57688017@f9941",
-        "04f90899-670a-40f1-bc5b-6a4fb813399a@f9941",
         "e53b2665-7d8e-478b-b185-78de111822cb@f9941",
-        "e53b2665-7d8e-478b-b185-78de111822cb@f9941"
+        "40861894-b3fe-487d-bf96-314d57688017@f9941",
+        "04f90899-670a-40f1-bc5b-6a4fb813399a@f9941"
       ]
     }
   },
@@ -399,50 +399,8 @@
       ]
     }
   },
-  "f09b5678-bd90-41cf-8536-5d4d7e32d332": {
-    "url": "db://assets/Sounds",
-    "value": {}
-  },
-  "1230ca0a-1ade-4e2a-b078-a710b41bbe20": {
-    "url": "db://assets/Scripts/MainMenu.ts",
-    "value": {}
-  },
-  "73ea69a0-fb49-41dd-a36a-b08ae381f0f8": {
-    "url": "db://assets/Prefab/coinPrefab.prefab",
-    "value": {
-      "depends": [
-        "84f66f5c-d934-4a3b-9232-3c4bdf017f18@f9941"
-      ]
-    }
-  },
-  "742ddff0-eb02-4cf8-8934-05e09a32846a": {
-    "url": "db://assets/Prefab/voidPrefab.prefab",
-    "value": {
-      "depends": [
-        "74deb6d4-682c-47ba-8c39-2a38cf578c05@f9941"
-      ]
-    }
-  },
-  "baf4cd63-f444-45f7-9c99-41a5a922680c": {
-    "url": "db://assets/Sounds/crunch.wav",
-    "value": {
-      "depends": []
-    }
-  },
   "763b96ac-4e87-4545-8dbc-a80576e95950": {
     "url": "db://assets/Sprites/ads.png",
-    "value": {
-      "depends": []
-    }
-  },
-  "40861894-b3fe-487d-bf96-314d57688017": {
-    "url": "db://assets/Sprites/adSpace.png",
-    "value": {
-      "depends": []
-    }
-  },
-  "8ea7c1b5-5860-4d6b-afbf-ff11ed036a90": {
-    "url": "db://assets/Sprites/back.png",
     "value": {
       "depends": []
     }
@@ -453,42 +411,10 @@
       "depends": []
     }
   },
-  "40861894-b3fe-487d-bf96-314d57688017@6c48a": {
-    "url": "db://assets/Sprites/adSpace.png@6c48a",
-    "value": {
-      "depends": [
-        "40861894-b3fe-487d-bf96-314d57688017"
-      ]
-    }
-  },
-  "763b96ac-4e87-4545-8dbc-a80576e95950@6c48a": {
-    "url": "db://assets/Sprites/ads.png@6c48a",
-    "value": {
-      "depends": [
-        "763b96ac-4e87-4545-8dbc-a80576e95950"
-      ]
-    }
-  },
-  "40861894-b3fe-487d-bf96-314d57688017@f9941": {
-    "url": "db://assets/Sprites/adSpace.png@f9941",
-    "value": {
-      "depends": [
-        "40861894-b3fe-487d-bf96-314d57688017@6c48a"
-      ]
-    }
-  },
   "aed9f1b6-ba94-4693-beb9-777795e891cd": {
     "url": "db://assets/Sprites/ballBlue.png",
     "value": {
       "depends": []
-    }
-  },
-  "763b96ac-4e87-4545-8dbc-a80576e95950@f9941": {
-    "url": "db://assets/Sprites/ads.png@f9941",
-    "value": {
-      "depends": [
-        "763b96ac-4e87-4545-8dbc-a80576e95950@6c48a"
-      ]
     }
   },
   "4d1fdf5a-c8c0-4602-91d3-cbb17f5b12cc": {
@@ -503,55 +429,19 @@
       "depends": []
     }
   },
-  "04f90899-670a-40f1-bc5b-6a4fb813399a@6c48a": {
-    "url": "db://assets/Sprites/background.png@6c48a",
-    "value": {
-      "depends": [
-        "04f90899-670a-40f1-bc5b-6a4fb813399a"
-      ]
-    }
-  },
-  "8ea7c1b5-5860-4d6b-afbf-ff11ed036a90@6c48a": {
-    "url": "db://assets/Sprites/back.png@6c48a",
-    "value": {
-      "depends": [
-        "8ea7c1b5-5860-4d6b-afbf-ff11ed036a90"
-      ]
-    }
-  },
-  "04f90899-670a-40f1-bc5b-6a4fb813399a@f9941": {
-    "url": "db://assets/Sprites/background.png@f9941",
-    "value": {
-      "depends": [
-        "04f90899-670a-40f1-bc5b-6a4fb813399a@6c48a"
-      ]
-    }
-  },
-  "8ea7c1b5-5860-4d6b-afbf-ff11ed036a90@f9941": {
-    "url": "db://assets/Sprites/back.png@f9941",
-    "value": {
-      "depends": [
-        "8ea7c1b5-5860-4d6b-afbf-ff11ed036a90@6c48a"
-      ]
-    }
-  },
-  "6bdec228-c304-4093-ba9a-dd60546f019a": {
-    "url": "db://assets/Sprites/ballYellow.png",
-    "value": {
-      "depends": []
-    }
-  },
-  "84f66f5c-d934-4a3b-9232-3c4bdf017f18": {
-    "url": "db://assets/Sprites/coin.png",
-    "value": {
-      "depends": []
-    }
-  },
   "aed9f1b6-ba94-4693-beb9-777795e891cd@6c48a": {
     "url": "db://assets/Sprites/ballBlue.png@6c48a",
     "value": {
       "depends": [
         "aed9f1b6-ba94-4693-beb9-777795e891cd"
+      ]
+    }
+  },
+  "04f90899-670a-40f1-bc5b-6a4fb813399a@6c48a": {
+    "url": "db://assets/Sprites/background.png@6c48a",
+    "value": {
+      "depends": [
+        "04f90899-670a-40f1-bc5b-6a4fb813399a"
       ]
     }
   },
@@ -563,12 +453,34 @@
       ]
     }
   },
+  "763b96ac-4e87-4545-8dbc-a80576e95950@6c48a": {
+    "url": "db://assets/Sprites/ads.png@6c48a",
+    "value": {
+      "depends": [
+        "763b96ac-4e87-4545-8dbc-a80576e95950"
+      ]
+    }
+  },
   "dabd44d3-6e50-43b6-938f-bf6b3d0720aa@6c48a": {
     "url": "db://assets/Sprites/ballRed.png@6c48a",
     "value": {
       "depends": [
         "dabd44d3-6e50-43b6-938f-bf6b3d0720aa"
       ]
+    }
+  },
+  "4d1fdf5a-c8c0-4602-91d3-cbb17f5b12cc@f9941": {
+    "url": "db://assets/Sprites/ballPink.png@f9941",
+    "value": {
+      "depends": [
+        "4d1fdf5a-c8c0-4602-91d3-cbb17f5b12cc@6c48a"
+      ]
+    }
+  },
+  "6bdec228-c304-4093-ba9a-dd60546f019a": {
+    "url": "db://assets/Sprites/ballYellow.png",
+    "value": {
+      "depends": []
     }
   },
   "aed9f1b6-ba94-4693-beb9-777795e891cd@f9941": {
@@ -585,16 +497,30 @@
       "depends": []
     }
   },
-  "4d1fdf5a-c8c0-4602-91d3-cbb17f5b12cc@f9941": {
-    "url": "db://assets/Sprites/ballPink.png@f9941",
+  "763b96ac-4e87-4545-8dbc-a80576e95950@f9941": {
+    "url": "db://assets/Sprites/ads.png@f9941",
     "value": {
       "depends": [
-        "4d1fdf5a-c8c0-4602-91d3-cbb17f5b12cc@6c48a"
+        "763b96ac-4e87-4545-8dbc-a80576e95950@6c48a"
+      ]
+    }
+  },
+  "04f90899-670a-40f1-bc5b-6a4fb813399a@f9941": {
+    "url": "db://assets/Sprites/background.png@f9941",
+    "value": {
+      "depends": [
+        "04f90899-670a-40f1-bc5b-6a4fb813399a@6c48a"
       ]
     }
   },
   "5491902c-da7e-4aec-aaa2-114a1854a52e": {
     "url": "db://assets/Sprites/mute.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "e53b2665-7d8e-478b-b185-78de111822cb": {
+    "url": "db://assets/Sprites/play.png",
     "value": {
       "depends": []
     }
@@ -607,52 +533,8 @@
       ]
     }
   },
-  "e53b2665-7d8e-478b-b185-78de111822cb": {
-    "url": "db://assets/Sprites/play.png",
-    "value": {
-      "depends": []
-    }
-  },
-  "84f66f5c-d934-4a3b-9232-3c4bdf017f18@6c48a": {
-    "url": "db://assets/Sprites/coin.png@6c48a",
-    "value": {
-      "depends": [
-        "84f66f5c-d934-4a3b-9232-3c4bdf017f18"
-      ]
-    }
-  },
-  "6bdec228-c304-4093-ba9a-dd60546f019a@6c48a": {
-    "url": "db://assets/Sprites/ballYellow.png@6c48a",
-    "value": {
-      "depends": [
-        "6bdec228-c304-4093-ba9a-dd60546f019a"
-      ]
-    }
-  },
-  "84f66f5c-d934-4a3b-9232-3c4bdf017f18@f9941": {
-    "url": "db://assets/Sprites/coin.png@f9941",
-    "value": {
-      "depends": [
-        "84f66f5c-d934-4a3b-9232-3c4bdf017f18@6c48a"
-      ]
-    }
-  },
   "f87a4d25-7c8b-4111-a597-e9e8a592fbc7": {
     "url": "db://assets/Sprites/shop.png",
-    "value": {
-      "depends": []
-    }
-  },
-  "6bdec228-c304-4093-ba9a-dd60546f019a@f9941": {
-    "url": "db://assets/Sprites/ballYellow.png@f9941",
-    "value": {
-      "depends": [
-        "6bdec228-c304-4093-ba9a-dd60546f019a@6c48a"
-      ]
-    }
-  },
-  "4d00d437-503e-4a03-bc29-18ef6ac4938f": {
-    "url": "db://assets/Sprites/snake.jpg",
     "value": {
       "depends": []
     }
@@ -673,12 +555,34 @@
       ]
     }
   },
+  "6bdec228-c304-4093-ba9a-dd60546f019a@6c48a": {
+    "url": "db://assets/Sprites/ballYellow.png@6c48a",
+    "value": {
+      "depends": [
+        "6bdec228-c304-4093-ba9a-dd60546f019a"
+      ]
+    }
+  },
   "a35717f7-37c1-4d4e-99fa-cf982b0c9aae@6c48a": {
     "url": "db://assets/Sprites/logo.png@6c48a",
     "value": {
       "depends": [
         "a35717f7-37c1-4d4e-99fa-cf982b0c9aae"
       ]
+    }
+  },
+  "5491902c-da7e-4aec-aaa2-114a1854a52e@f9941": {
+    "url": "db://assets/Sprites/mute.png@f9941",
+    "value": {
+      "depends": [
+        "5491902c-da7e-4aec-aaa2-114a1854a52e@6c48a"
+      ]
+    }
+  },
+  "4d00d437-503e-4a03-bc29-18ef6ac4938f": {
+    "url": "db://assets/Sprites/snake.jpg",
+    "value": {
+      "depends": []
     }
   },
   "e53b2665-7d8e-478b-b185-78de111822cb@f9941": {
@@ -689,18 +593,18 @@
       ]
     }
   },
+  "6bdec228-c304-4093-ba9a-dd60546f019a@f9941": {
+    "url": "db://assets/Sprites/ballYellow.png@f9941",
+    "value": {
+      "depends": [
+        "6bdec228-c304-4093-ba9a-dd60546f019a@6c48a"
+      ]
+    }
+  },
   "90ddc7e9-d68e-4562-ba48-0e6dda6be1a1": {
     "url": "db://assets/Sprites/snakeBodyBlue.png",
     "value": {
       "depends": []
-    }
-  },
-  "5491902c-da7e-4aec-aaa2-114a1854a52e@f9941": {
-    "url": "db://assets/Sprites/mute.png@f9941",
-    "value": {
-      "depends": [
-        "5491902c-da7e-4aec-aaa2-114a1854a52e@6c48a"
-      ]
     }
   },
   "f5392916-fdbc-4c13-86e2-27379960bf8b": {
@@ -721,14 +625,6 @@
     "url": "db://assets/Sprites/snakeBodyRed.png",
     "value": {
       "depends": []
-    }
-  },
-  "4d00d437-503e-4a03-bc29-18ef6ac4938f@6c48a": {
-    "url": "db://assets/Sprites/snake.jpg@6c48a",
-    "value": {
-      "depends": [
-        "4d00d437-503e-4a03-bc29-18ef6ac4938f"
-      ]
     }
   },
   "f87a4d25-7c8b-4111-a597-e9e8a592fbc7@6c48a": {
@@ -753,41 +649,11 @@
       "depends": []
     }
   },
-  "90ddc7e9-d68e-4562-ba48-0e6dda6be1a1@6c48a": {
-    "url": "db://assets/Sprites/snakeBodyBlue.png@6c48a",
+  "4d00d437-503e-4a03-bc29-18ef6ac4938f@6c48a": {
+    "url": "db://assets/Sprites/snake.jpg@6c48a",
     "value": {
       "depends": [
-        "90ddc7e9-d68e-4562-ba48-0e6dda6be1a1"
-      ]
-    }
-  },
-  "4d00d437-503e-4a03-bc29-18ef6ac4938f@f9941": {
-    "url": "db://assets/Sprites/snake.jpg@f9941",
-    "value": {
-      "depends": [
-        "4d00d437-503e-4a03-bc29-18ef6ac4938f@6c48a"
-      ]
-    }
-  },
-  "74deb6d4-682c-47ba-8c39-2a38cf578c05": {
-    "url": "db://assets/Sprites/void.png",
-    "value": {
-      "depends": []
-    }
-  },
-  "f5392916-fdbc-4c13-86e2-27379960bf8b@6c48a": {
-    "url": "db://assets/Sprites/snakeBodyPink.png@6c48a",
-    "value": {
-      "depends": [
-        "f5392916-fdbc-4c13-86e2-27379960bf8b"
-      ]
-    }
-  },
-  "90ddc7e9-d68e-4562-ba48-0e6dda6be1a1@f9941": {
-    "url": "db://assets/Sprites/snakeBodyBlue.png@f9941",
-    "value": {
-      "depends": [
-        "90ddc7e9-d68e-4562-ba48-0e6dda6be1a1@6c48a"
+        "4d00d437-503e-4a03-bc29-18ef6ac4938f"
       ]
     }
   },
@@ -799,11 +665,27 @@
       ]
     }
   },
-  "f5392916-fdbc-4c13-86e2-27379960bf8b@f9941": {
-    "url": "db://assets/Sprites/snakeBodyPink.png@f9941",
+  "90ddc7e9-d68e-4562-ba48-0e6dda6be1a1@6c48a": {
+    "url": "db://assets/Sprites/snakeBodyBlue.png@6c48a",
     "value": {
       "depends": [
-        "f5392916-fdbc-4c13-86e2-27379960bf8b@6c48a"
+        "90ddc7e9-d68e-4562-ba48-0e6dda6be1a1"
+      ]
+    }
+  },
+  "f5392916-fdbc-4c13-86e2-27379960bf8b@6c48a": {
+    "url": "db://assets/Sprites/snakeBodyPink.png@6c48a",
+    "value": {
+      "depends": [
+        "f5392916-fdbc-4c13-86e2-27379960bf8b"
+      ]
+    }
+  },
+  "4d00d437-503e-4a03-bc29-18ef6ac4938f@f9941": {
+    "url": "db://assets/Sprites/snake.jpg@f9941",
+    "value": {
+      "depends": [
+        "4d00d437-503e-4a03-bc29-18ef6ac4938f@6c48a"
       ]
     }
   },
@@ -815,11 +697,19 @@
       ]
     }
   },
-  "74deb6d4-682c-47ba-8c39-2a38cf578c05@6c48a": {
-    "url": "db://assets/Sprites/void.png@6c48a",
+  "90ddc7e9-d68e-4562-ba48-0e6dda6be1a1@f9941": {
+    "url": "db://assets/Sprites/snakeBodyBlue.png@f9941",
     "value": {
       "depends": [
-        "74deb6d4-682c-47ba-8c39-2a38cf578c05"
+        "90ddc7e9-d68e-4562-ba48-0e6dda6be1a1@6c48a"
+      ]
+    }
+  },
+  "f5392916-fdbc-4c13-86e2-27379960bf8b@f9941": {
+    "url": "db://assets/Sprites/snakeBodyPink.png@f9941",
+    "value": {
+      "depends": [
+        "f5392916-fdbc-4c13-86e2-27379960bf8b@6c48a"
       ]
     }
   },
@@ -831,6 +721,68 @@
       ]
     }
   },
+  "7559aa24-dcc5-4b24-b28b-3ec7c6e0283b@f9941": {
+    "url": "db://assets/Sprites/snakeBodyYellow.png@f9941",
+    "value": {
+      "depends": [
+        "7559aa24-dcc5-4b24-b28b-3ec7c6e0283b@6c48a"
+      ]
+    }
+  },
+  "40861894-b3fe-487d-bf96-314d57688017": {
+    "url": "db://assets/Sprites/adSpace.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "40861894-b3fe-487d-bf96-314d57688017@6c48a": {
+    "url": "db://assets/Sprites/adSpace.png@6c48a",
+    "value": {
+      "depends": [
+        "40861894-b3fe-487d-bf96-314d57688017"
+      ]
+    }
+  },
+  "40861894-b3fe-487d-bf96-314d57688017@f9941": {
+    "url": "db://assets/Sprites/adSpace.png@f9941",
+    "value": {
+      "depends": [
+        "40861894-b3fe-487d-bf96-314d57688017@6c48a"
+      ]
+    }
+  },
+  "358a5a62-a69f-40f2-aa52-f3e3acc19021": {
+    "url": "db://assets/Scripts/Responsive.ts",
+    "value": {}
+  },
+  "1230ca0a-1ade-4e2a-b078-a710b41bbe20": {
+    "url": "db://assets/Scripts/MainMenu.ts",
+    "value": {}
+  },
+  "f09b5678-bd90-41cf-8536-5d4d7e32d332": {
+    "url": "db://assets/Sounds",
+    "value": {}
+  },
+  "baf4cd63-f444-45f7-9c99-41a5a922680c": {
+    "url": "db://assets/Sounds/crunch.wav",
+    "value": {
+      "depends": []
+    }
+  },
+  "74deb6d4-682c-47ba-8c39-2a38cf578c05": {
+    "url": "db://assets/Sprites/void.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "74deb6d4-682c-47ba-8c39-2a38cf578c05@6c48a": {
+    "url": "db://assets/Sprites/void.png@6c48a",
+    "value": {
+      "depends": [
+        "74deb6d4-682c-47ba-8c39-2a38cf578c05"
+      ]
+    }
+  },
   "74deb6d4-682c-47ba-8c39-2a38cf578c05@f9941": {
     "url": "db://assets/Sprites/void.png@f9941",
     "value": {
@@ -839,11 +791,93 @@
       ]
     }
   },
-  "7559aa24-dcc5-4b24-b28b-3ec7c6e0283b@f9941": {
-    "url": "db://assets/Sprites/snakeBodyYellow.png@f9941",
+  "742ddff0-eb02-4cf8-8934-05e09a32846a": {
+    "url": "db://assets/Prefab/voidPrefab.prefab",
     "value": {
       "depends": [
-        "7559aa24-dcc5-4b24-b28b-3ec7c6e0283b@6c48a"
+        "74deb6d4-682c-47ba-8c39-2a38cf578c05@f9941"
+      ]
+    }
+  },
+  "84f66f5c-d934-4a3b-9232-3c4bdf017f18": {
+    "url": "db://assets/Sprites/coin.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "84f66f5c-d934-4a3b-9232-3c4bdf017f18@6c48a": {
+    "url": "db://assets/Sprites/coin.png@6c48a",
+    "value": {
+      "depends": [
+        "84f66f5c-d934-4a3b-9232-3c4bdf017f18"
+      ]
+    }
+  },
+  "84f66f5c-d934-4a3b-9232-3c4bdf017f18@f9941": {
+    "url": "db://assets/Sprites/coin.png@f9941",
+    "value": {
+      "depends": [
+        "84f66f5c-d934-4a3b-9232-3c4bdf017f18@6c48a"
+      ]
+    }
+  },
+  "73ea69a0-fb49-41dd-a36a-b08ae381f0f8": {
+    "url": "db://assets/Prefab/coinPrefab.prefab",
+    "value": {
+      "depends": [
+        "84f66f5c-d934-4a3b-9232-3c4bdf017f18@f9941"
+      ]
+    }
+  },
+  "8ea7c1b5-5860-4d6b-afbf-ff11ed036a90": {
+    "url": "db://assets/Sprites/back.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "8ea7c1b5-5860-4d6b-afbf-ff11ed036a90@6c48a": {
+    "url": "db://assets/Sprites/back.png@6c48a",
+    "value": {
+      "depends": [
+        "8ea7c1b5-5860-4d6b-afbf-ff11ed036a90"
+      ]
+    }
+  },
+  "8ea7c1b5-5860-4d6b-afbf-ff11ed036a90@f9941": {
+    "url": "db://assets/Sprites/back.png@f9941",
+    "value": {
+      "depends": [
+        "8ea7c1b5-5860-4d6b-afbf-ff11ed036a90@6c48a"
+      ]
+    }
+  },
+  "7864642f-2414-47e9-b273-7dfe7a59076d": {
+    "url": "db://assets/Sprites/bomb.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "7864642f-2414-47e9-b273-7dfe7a59076d@6c48a": {
+    "url": "db://assets/Sprites/bomb.png@6c48a",
+    "value": {
+      "depends": [
+        "7864642f-2414-47e9-b273-7dfe7a59076d"
+      ]
+    }
+  },
+  "7864642f-2414-47e9-b273-7dfe7a59076d@f9941": {
+    "url": "db://assets/Sprites/bomb.png@f9941",
+    "value": {
+      "depends": [
+        "7864642f-2414-47e9-b273-7dfe7a59076d@6c48a"
+      ]
+    }
+  },
+  "f875f17d-ee50-4cab-9716-5988ed42e476": {
+    "url": "db://assets/Prefab/bombPrefab.prefab",
+    "value": {
+      "depends": [
+        "7864642f-2414-47e9-b273-7dfe7a59076d@f9941"
       ]
     }
   }
