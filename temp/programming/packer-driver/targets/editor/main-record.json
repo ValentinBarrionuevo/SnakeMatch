@@ -1,7 +1,7 @@
 {
   "modules": {
     "cce:/internal/x/cc": {
-      "mTimestamp": 13035.84090000391,
+      "mTimestamp": 11922.78220000863,
       "chunkId": "ca4374a3008ca85000d465787e739a302e4e4ac6",
       "imports": [
         {
@@ -535,11 +535,7 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-<<<<<<< Updated upstream
-      "mTimestamp": 4847329.3687000275,
-=======
-      "mTimestamp": 3834660.5008000135,
->>>>>>> Stashed changes
+      "mTimestamp": 5310331.669100016,
       "chunkId": "52c5783aa6cb269f6547b0da83ec062fe79b746b",
       "imports": [
         {
@@ -633,170 +629,10 @@
     },
     "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/SnakeController.ts": {
       "mTimestamp": {
-        "mtime": 1666211838242.5205,
+        "mtime": 1666234132913.9888,
         "uuid": "b24c5641-ca34-4917-a30d-80fde2732bc3"
       },
-<<<<<<< Updated upstream
-      "chunkId": "a699f8f30c985a7a22a61224ec42050309440cd0",
-      "imports": [
-        {
-          "value": "cc"
-        },
-        {
-          "value": "cc"
-        },
-        {
-          "value": "cc",
-          "loc": {
-            "start": {
-              "line": 17,
-              "column": 7
-            },
-            "end": {
-              "line": 17,
-              "column": 11
-            }
-          }
-        }
-      ],
-      "type": "esm",
-      "resolutions": [
-        {
-          "resolved": {
-            "type": "module",
-            "url": "cce:/internal/x/cc"
-          },
-          "messages": []
-        },
-        {
-          "resolved": {
-            "type": "module",
-            "url": "cce:/internal/x/cc"
-          },
-          "messages": []
-        },
-        {
-          "resolved": {
-            "type": "module",
-            "url": "cce:/internal/x/cc"
-          },
-          "messages": []
-        }
-      ]
-    },
-    "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/ButtonMethods.ts": {
-      "mTimestamp": {
-        "mtime": 1664314452914.4915,
-        "uuid": "c523cea9-109b-44c6-a4b3-7af9587882ea"
-      },
-      "chunkId": "3049ffed80e47f3dd49bee722c22c590b7546128",
-      "imports": [
-        {
-          "value": "cc"
-        },
-        {
-          "value": "cc"
-        },
-        {
-          "value": "cc",
-          "loc": {
-            "start": {
-              "line": 1,
-              "column": 48
-            },
-            "end": {
-              "line": 1,
-              "column": 52
-            }
-          }
-        }
-      ],
-      "type": "esm",
-      "resolutions": [
-        {
-          "resolved": {
-            "type": "module",
-            "url": "cce:/internal/x/cc"
-          },
-          "messages": []
-        },
-        {
-          "resolved": {
-            "type": "module",
-            "url": "cce:/internal/x/cc"
-          },
-          "messages": []
-        },
-        {
-          "resolved": {
-            "type": "module",
-            "url": "cce:/internal/x/cc"
-          },
-          "messages": []
-        }
-      ]
-    },
-    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts": {
-      "mTimestamp": {
-        "mtime": 1665776544095.716,
-        "uuid": "c523cea9-109b-44c6-a4b3-7af9587882ea"
-      },
-      "chunkId": "92fd57f85e53a92bb4d7c944bb282a0dca3096b8",
-      "imports": [
-        {
-          "value": "cc"
-        },
-        {
-          "value": "cc"
-        },
-        {
-          "value": "cc",
-          "loc": {
-            "start": {
-              "line": 1,
-              "column": 56
-            },
-            "end": {
-              "line": 1,
-              "column": 60
-            }
-          }
-        }
-      ],
-      "type": "esm",
-      "resolutions": [
-        {
-          "resolved": {
-            "type": "module",
-            "url": "cce:/internal/x/cc"
-          },
-          "messages": []
-        },
-        {
-          "resolved": {
-            "type": "module",
-            "url": "cce:/internal/x/cc"
-          },
-          "messages": []
-        },
-        {
-          "resolved": {
-            "type": "module",
-            "url": "cce:/internal/x/cc"
-          },
-          "messages": []
-        }
-      ]
-    },
-    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts": {
-      "mTimestamp": {
-        "mtime": 1666211223652.281,
-        "uuid": "b24c5641-ca34-4917-a30d-80fde2732bc3"
-      },
-      "chunkId": "9de2518b0ab25a88dfc81e8b7ec856e18cf0f56c",
-=======
-      "chunkId": "7e6c0cf9cffe6cac5a28e840e83d492c80201430",
->>>>>>> Stashed changes
+      "chunkId": "0386aa539c231ec51523894106eaa4c2691c381b",
       "imports": [
         {
           "value": "cce:/internal/code-quality/cr.mjs",
@@ -812,11 +648,11 @@
           "value": "cc",
           "loc": {
             "start": {
-              "line": 20,
+              "line": 21,
               "column": 7
             },
             "end": {
-              "line": 20,
+              "line": 21,
               "column": 11
             }
           }
@@ -826,11 +662,11 @@
           "resolved": "__unresolved_1",
           "loc": {
             "start": {
-              "line": 21,
+              "line": 22,
               "column": 28
             },
             "end": {
-              "line": 21,
+              "line": 22,
               "column": 43
             }
           }
@@ -877,7 +713,7 @@
     },
     "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/ButtonMethods.ts": {
       "mTimestamp": {
-        "mtime": 1666211605507.0618,
+        "mtime": 1666212022818.3186,
         "uuid": "c523cea9-109b-44c6-a4b3-7af9587882ea"
       },
       "chunkId": "cbb44ab928d1545706e2a81339368484cae26f14",
@@ -929,17 +765,10 @@
     },
     "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/GameManager.ts": {
       "mTimestamp": {
-<<<<<<< Updated upstream
-        "mtime": 1666211829289.412,
+        "mtime": 1666234414354.5503,
         "uuid": "c77d4ec5-b15d-4103-aca6-1e42c5168c98"
       },
-      "chunkId": "7f5c8def228aed5dadb05a2da6cb14f8a7bc2dcb",
-=======
-        "mtime": 1666211600157.7864,
-        "uuid": "c77d4ec5-b15d-4103-aca6-1e42c5168c98"
-      },
-      "chunkId": "ecbd516e1e7f26c889cf7fee74e20fa7b9c7b492",
->>>>>>> Stashed changes
+      "chunkId": "14d17385ff9c6b58646e07941a85f21501d167cb",
       "imports": [
         {
           "value": "cce:/internal/code-quality/cr.mjs",
@@ -1019,7 +848,7 @@
       ]
     },
     "cce:/internal/code-quality/cr.mjs": {
-      "mTimestamp": 1666208006193,
+      "mTimestamp": 1666229105566,
       "chunkId": "84741ad843cea9a440c5d8c2d379669b6551400d",
       "imports": [],
       "type": "esm",
@@ -1079,7 +908,7 @@
     },
     "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/MainMenu.ts": {
       "mTimestamp": {
-        "mtime": 1666211602311.5276,
+        "mtime": 1666212022820.8188,
         "uuid": "1230ca0a-1ade-4e2a-b078-a710b41bbe20"
       },
       "chunkId": "1bf4b4e5be1d6c9d3de417a94c8e14b74fad2f5b",

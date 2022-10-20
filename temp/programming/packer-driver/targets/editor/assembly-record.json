@@ -10,71 +10,31 @@
           "messages": []
         }
       },
-<<<<<<< Updated upstream
-      "timestamp": 1664314465020
-    },
-    "a699f8f30c985a7a22a61224ec42050309440cd0": {
-      "imports": {
-        "cc": {
-          "resolved": {
-            "type": "chunk",
-            "id": "ca4374a3008ca85000d465787e739a302e4e4ac6"
-          },
-          "messages": []
-        }
-      },
-      "timestamp": 1664315088806
-    },
-    "85061acf5bcbc6f15a53f2829aec337c9aef7429": {
-      "imports": {
-        "cc": {
-          "resolved": {
-            "type": "chunk",
-            "id": "ca4374a3008ca85000d465787e739a302e4e4ac6"
-          },
-          "messages": []
-        }
-      },
-      "timestamp": 1664318805800
-    },
-    "78cc1de56dbdfe63c17154b69925969bfb18369c": {
-      "imports": {
-        "cc": {
-          "resolved": {
-            "type": "chunk",
-            "id": "ca4374a3008ca85000d465787e739a302e4e4ac6"
-          },
-          "messages": []
-        }
-      },
-      "timestamp": 1665774716235
-    },
-    "92fd57f85e53a92bb4d7c944bb282a0dca3096b8": {
-      "imports": {
-        "cc": {
-          "resolved": {
-            "type": "chunk",
-            "id": "ca4374a3008ca85000d465787e739a302e4e4ac6"
-          },
-          "messages": []
-        }
-      },
-      "timestamp": 1665776584128
-    },
-    "320b05c1ac00d445cfa71d081e4268412ff49453": {
-      "imports": {
-        "cc": {
-          "resolved": {
-            "type": "chunk",
-            "id": "ca4374a3008ca85000d465787e739a302e4e4ac6"
-          },
-          "messages": []
-        }
-      },
-      "timestamp": 1665776859273
-=======
       "timestamp": 1664924919984
->>>>>>> Stashed changes
+    },
+    "cbb44ab928d1545706e2a81339368484cae26f14": {
+      "imports": {
+        "cc": {
+          "resolved": {
+            "type": "chunk",
+            "id": "ca4374a3008ca85000d465787e739a302e4e4ac6"
+          },
+          "messages": []
+        }
+      },
+      "timestamp": 1666212100748
+    },
+    "1bf4b4e5be1d6c9d3de417a94c8e14b74fad2f5b": {
+      "imports": {
+        "cc": {
+          "resolved": {
+            "type": "chunk",
+            "id": "ca4374a3008ca85000d465787e739a302e4e4ac6"
+          },
+          "messages": []
+        }
+      },
+      "timestamp": 1666212100944
     },
     "ca4374a3008ca85000d465787e739a302e4e4ac6": {
       "imports": {
@@ -254,14 +214,13 @@
           "messages": []
         }
       },
-      "timestamp": 1666208019319
+      "timestamp": 1666229117558
     },
     "84741ad843cea9a440c5d8c2d379669b6551400d": {
       "imports": {},
-      "timestamp": 1666208019370
+      "timestamp": 1666229117611
     },
-<<<<<<< Updated upstream
-    "9de2518b0ab25a88dfc81e8b7ec856e18cf0f56c": {
+    "0386aa539c231ec51523894106eaa4c2691c381b": {
       "imports": {
         "__unresolved_0": {
           "resolved": {
@@ -273,7 +232,7 @@
         "__unresolved_1": {
           "resolved": {
             "type": "chunk",
-            "id": "7f5c8def228aed5dadb05a2da6cb14f8a7bc2dcb"
+            "id": "14d17385ff9c6b58646e07941a85f21501d167cb"
           },
           "messages": []
         },
@@ -285,98 +244,7 @@
           "messages": []
         }
       },
-      "timestamp": 1666211224320
-    },
-    "52c5783aa6cb269f6547b0da83ec062fe79b746b": {
-=======
-    "cbb44ab928d1545706e2a81339368484cae26f14": {
->>>>>>> Stashed changes
-      "imports": {
-        "cc": {
-          "resolved": {
-            "type": "chunk",
-<<<<<<< Updated upstream
-            "id": "92fd57f85e53a92bb4d7c944bb282a0dca3096b8"
-          },
-          "messages": []
-        },
-        "__unresolved_1": {
-          "resolved": {
-            "type": "chunk",
-            "id": "7f5c8def228aed5dadb05a2da6cb14f8a7bc2dcb"
-          },
-          "messages": []
-        },
-        "__unresolved_2": {
-          "resolved": {
-            "type": "chunk",
-            "id": "320b05c1ac00d445cfa71d081e4268412ff49453"
-          },
-          "messages": []
-        },
-        "__unresolved_3": {
-          "resolved": {
-            "type": "chunk",
-            "id": "9de2518b0ab25a88dfc81e8b7ec856e18cf0f56c"
-=======
-            "id": "ca4374a3008ca85000d465787e739a302e4e4ac6"
->>>>>>> Stashed changes
-          },
-          "messages": []
-        }
-      },
-<<<<<<< Updated upstream
-      "timestamp": 1666211830119
-    },
-    "7f5c8def228aed5dadb05a2da6cb14f8a7bc2dcb": {
-=======
-      "timestamp": 1666211637090
-    },
-    "ecbd516e1e7f26c889cf7fee74e20fa7b9c7b492": {
->>>>>>> Stashed changes
-      "imports": {
-        "__unresolved_0": {
-          "resolved": {
-            "type": "chunk",
-            "id": "84741ad843cea9a440c5d8c2d379669b6551400d"
-          },
-          "messages": []
-        },
-        "__unresolved_1": {
-          "resolved": {
-            "type": "chunk",
-<<<<<<< Updated upstream
-            "id": "9de2518b0ab25a88dfc81e8b7ec856e18cf0f56c"
-=======
-            "id": "7e6c0cf9cffe6cac5a28e840e83d492c80201430"
->>>>>>> Stashed changes
-          },
-          "messages": []
-        },
-        "cc": {
-          "resolved": {
-            "type": "chunk",
-            "id": "ca4374a3008ca85000d465787e739a302e4e4ac6"
-          },
-          "messages": []
-        }
-      },
-<<<<<<< Updated upstream
-      "timestamp": 1666211830203
-=======
-      "timestamp": 1666211637178
-    },
-    "1bf4b4e5be1d6c9d3de417a94c8e14b74fad2f5b": {
-      "imports": {
-        "cc": {
-          "resolved": {
-            "type": "chunk",
-            "id": "ca4374a3008ca85000d465787e739a302e4e4ac6"
-          },
-          "messages": []
-        }
-      },
-      "timestamp": 1666211637294
+      "timestamp": 1666234133861
     },
     "52c5783aa6cb269f6547b0da83ec062fe79b746b": {
       "imports": {
@@ -390,7 +258,7 @@
         "__unresolved_1": {
           "resolved": {
             "type": "chunk",
-            "id": "ecbd516e1e7f26c889cf7fee74e20fa7b9c7b492"
+            "id": "14d17385ff9c6b58646e07941a85f21501d167cb"
           },
           "messages": []
         },
@@ -404,14 +272,14 @@
         "__unresolved_3": {
           "resolved": {
             "type": "chunk",
-            "id": "7e6c0cf9cffe6cac5a28e840e83d492c80201430"
+            "id": "0386aa539c231ec51523894106eaa4c2691c381b"
           },
           "messages": []
         }
       },
-      "timestamp": 1666211840813
+      "timestamp": 1666234415857
     },
-    "7e6c0cf9cffe6cac5a28e840e83d492c80201430": {
+    "14d17385ff9c6b58646e07941a85f21501d167cb": {
       "imports": {
         "__unresolved_0": {
           "resolved": {
@@ -423,7 +291,7 @@
         "__unresolved_1": {
           "resolved": {
             "type": "chunk",
-            "id": "ecbd516e1e7f26c889cf7fee74e20fa7b9c7b492"
+            "id": "0386aa539c231ec51523894106eaa4c2691c381b"
           },
           "messages": []
         },
@@ -435,23 +303,15 @@
           "messages": []
         }
       },
-      "timestamp": 1666211840911
->>>>>>> Stashed changes
+      "timestamp": 1666234415959
     }
   },
   "entries": {
     "cce:/internal/x/cc": "ca4374a3008ca85000d465787e739a302e4e4ac6",
     "cce:/internal/x/prerequisite-imports": "52c5783aa6cb269f6547b0da83ec062fe79b746b",
-<<<<<<< Updated upstream
-    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts": "92fd57f85e53a92bb4d7c944bb282a0dca3096b8",
-    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/MainMenu.ts": "320b05c1ac00d445cfa71d081e4268412ff49453",
-    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts": "9de2518b0ab25a88dfc81e8b7ec856e18cf0f56c",
-    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GameManager.ts": "7f5c8def228aed5dadb05a2da6cb14f8a7bc2dcb"
-=======
     "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/ButtonMethods.ts": "cbb44ab928d1545706e2a81339368484cae26f14",
-    "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/GameManager.ts": "ecbd516e1e7f26c889cf7fee74e20fa7b9c7b492",
     "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/MainMenu.ts": "1bf4b4e5be1d6c9d3de417a94c8e14b74fad2f5b",
-    "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/SnakeController.ts": "7e6c0cf9cffe6cac5a28e840e83d492c80201430"
->>>>>>> Stashed changes
+    "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/SnakeController.ts": "0386aa539c231ec51523894106eaa4c2691c381b",
+    "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/GameManager.ts": "14d17385ff9c6b58646e07941a85f21501d167cb"
   }
 }

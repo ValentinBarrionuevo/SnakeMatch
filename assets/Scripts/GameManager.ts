@@ -72,7 +72,6 @@ export class GameManager extends Component {
     while (this.spawnedArray.length < 3) {
       this.spawnByType(this.ball);
     }
-
   }
 
   private checkVoids(snakePos: Vec2): void {
@@ -134,8 +133,6 @@ export class GameManager extends Component {
       while (find("Canvas/Coins").children.length < 2) {
         this.spawnByType(this.coin);
       }
-
-
     }
   }
 
@@ -149,24 +146,23 @@ export class GameManager extends Component {
   private spawnByType(type: Prefab): void {
     let pos: Vec2 = this.generateRandomPos();
 
-
     if (!this.checkSpawn(pos.x, pos.y)) {
       let newParent = null;
 
       switch (type) {
         case this.ball:
           newParent = find("Canvas/Balls");
-          console.log(pos, "ball");
+          // console.log(pos, "ball");
 
           break;
         case this.void:
           newParent = find("Canvas/Voids");
-          console.log(pos, "void");
+          // console.log(pos, "void");
 
           break;
         case this.coin:
           newParent = find("Canvas/Coins");
-          console.log(pos, "coins");
+          // console.log(pos, "coins");
 
           break;
       }

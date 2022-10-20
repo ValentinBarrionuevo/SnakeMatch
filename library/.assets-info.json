@@ -3,7 +3,7 @@
     "time": 1664226108543.4746
   },
   "C:\\Users\\agukp\\Snake Match\\assets\\Scenes": {
-    "time": 1666211204328.533,
+    "time": 1666212011984.7742,
     "uuid": "cfe81fa7-2026-4f8d-9c37-8ac047012f4d",
     "missing": false
   },
@@ -11,7 +11,7 @@
     "time": 1664226108545.9746
   },
   "C:\\Users\\agukp\\Snake Match\\assets\\Scenes\\GameScene.scene": {
-    "time": 1666211957662.8408,
+    "time": 1666234067817.4656,
     "uuid": "4f9cb534-2952-40d3-a4ee-2c12e7477bd7",
     "missing": false
   },
@@ -19,7 +19,7 @@
     "time": 1664226108546.4746
   },
   "C:\\Users\\agukp\\Snake Match\\assets\\Scripts": {
-    "time": 1666211204330.0332,
+    "time": 1666212022821.8186,
     "uuid": "35f29723-0d84-42ea-a386-d77e5f26744b",
     "missing": false
   },
@@ -27,7 +27,7 @@
     "time": 1664226108547.9753
   },
   "C:\\Users\\agukp\\Snake Match\\assets\\Scripts\\SnakeController.ts": {
-    "time": 1666211838242.5205,
+    "time": 1666234132913.9888,
     "uuid": "b24c5641-ca34-4917-a30d-80fde2732bc3",
     "missing": false
   },
@@ -59,7 +59,7 @@
     "missing": false
   },
   "C:\\Users\\agukp\\Snake Match\\assets\\Scripts\\ButtonMethods.ts": {
-    "time": 1666211605507.0618,
+    "time": 1666212022818.3186,
     "uuid": "c523cea9-109b-44c6-a4b3-7af9587882ea",
     "missing": false
   },
@@ -121,11 +121,7 @@
     "missing": false
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Scripts\\SnakeController.ts": {
-<<<<<<< Updated upstream
-    "time": 1666211223652.281,
-=======
     "time": 1665089840754.6663,
->>>>>>> Stashed changes
     "uuid": "b24c5641-ca34-4917-a30d-80fde2732bc3",
     "missing": false
   },
@@ -148,11 +144,7 @@
     "time": 1664226108547.9753
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Scenes\\GameScene.scene": {
-<<<<<<< Updated upstream
-    "time": 1666211986328.7485,
-=======
     "time": 1665084976761.348,
->>>>>>> Stashed changes
     "uuid": "4f9cb534-2952-40d3-a4ee-2c12e7477bd7",
     "missing": false
   },
@@ -164,7 +156,7 @@
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\background.jpg": {
     "time": 1664226108549.9756,
     "uuid": "68265336-fcba-4962-9f14-3ae36ffd1806",
-    "missing": false
+    "missing": true
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\button.png": {
     "time": 1664314452918.9922,
@@ -195,11 +187,7 @@
     "time": 1664318805761.8342
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Scripts\\GameManager.ts": {
-<<<<<<< Updated upstream
-    "time": 1666211829289.412,
-=======
     "time": 1665090556755.1875,
->>>>>>> Stashed changes
     "uuid": "c77d4ec5-b15d-4103-aca6-1e42c5168c98",
     "missing": false
   },
@@ -218,22 +206,22 @@
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\ballYellow.jpg": {
     "time": 1664394427378.2075,
     "uuid": "40c0db39-2543-4334-a369-7b6c1c9d6043",
-    "missing": false
+    "missing": true
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\ballBlue.jpg": {
     "time": 1664394451461.5376,
     "uuid": "94301a91-e395-457d-9898-97b1863a4346",
-    "missing": false
+    "missing": true
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\ballPink.jpg": {
     "time": 1664394470605.264,
     "uuid": "667dce28-d349-4f85-b00a-d934d8f90e09",
-    "missing": false
+    "missing": true
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\ballRed.jpg": {
     "time": 1664314452917.4924,
     "uuid": "8ce68651-1033-4e39-b9e7-f79cb522f8dc",
-    "missing": false
+    "missing": true
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Prefab\\ballRed.prefab.meta": {
     "time": 1664395308766.2625
@@ -292,7 +280,7 @@
     "missing": false
   },
   "C:\\Users\\agukp\\Snake Match\\assets\\Scripts\\GameManager.ts": {
-    "time": 1666211600157.7864,
+    "time": 1666234414354.5503,
     "uuid": "c77d4ec5-b15d-4103-aca6-1e42c5168c98",
     "missing": false
   },
@@ -367,7 +355,7 @@
     "missing": false
   },
   "C:\\Users\\agukp\\Snake Match\\assets\\Scripts\\MainMenu.ts": {
-    "time": 1666211602311.5276,
+    "time": 1666212022820.8188,
     "uuid": "1230ca0a-1ade-4e2a-b078-a710b41bbe20",
     "missing": false
   },

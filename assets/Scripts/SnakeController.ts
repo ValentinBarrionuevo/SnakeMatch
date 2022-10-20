@@ -17,6 +17,7 @@ import {
   AudioSource,
   assert,
   Label,
+  Vec2,
 } from "cc";
 import { GameManager } from "./GameManager";
 const { ccclass, property } = _decorator;
@@ -34,9 +35,11 @@ export class SnakeController extends Component {
   bodyPrefab: Prefab;
 
   private firstMove: boolean = true;
-  private velocitySeconds: number = 1;
+  private velocitySeconds: number = 0.4;
   private direction: Direction;
   private isGoingVertical: boolean;
+  private blockMove: boolean = false;
+  // private oldPos: any;
 
   private snakeInside: Array<Node> = new Array();
 
@@ -55,6 +58,7 @@ export class SnakeController extends Component {
     KeyCode.ARROW_RIGHT
   );
   private _touchStartPos: import("cc").math.Vec2;
+  headPos: { x: number; y: number };
 
   public onLoad(): void {
     this.character = this.node.getComponent(RigidBody2D);
@@ -145,6 +149,8 @@ export class SnakeController extends Component {
           break;
       }
     }
+    // console.log(event.keyCode, this.direction);
+
     if (this.firstMove == true && this.keyWhiteList.includes(event.keyCode)) {
       this.firstMove = false;
       this.startTicker();
@@ -159,6 +165,7 @@ export class SnakeController extends Component {
 
   private headMovement(): void {
     const pos = this.node.getPosition();
+    this.headPos = { x: pos.x, y: pos.y };
 
     switch (this.direction) {
       case "UP":
@@ -180,24 +187,34 @@ export class SnakeController extends Component {
     }
 
     this.node.setPosition(pos);
+    this.bodyMovement();
+
     this.deathCheck(pos);
 
     find("Canvas").getComponent(GameManager).checkGameState();
   }
 
   private bodyMovement(): void {
-    const pos = this.node.getPosition();
-    const oldPos = { x: pos.x, y: pos.y };
+    if (this.snakeInside.length < 1) {
+      return;
+    }
+    let oldPos = this.headPos;
 
-    for (let i = this.snakeInside.length - 1; i >= 0; i--) {
-      const snekPart = this.snakeInside[i];
+    if (!this.blockMove) {
+      for (let i = 0; i < this.snakeInside.length; i++) {
+        const snekPart = this.snakeInside[i];
+        console.log(i, snekPart.getComponent(Sprite).spriteFrame.name, oldPos);
 
-      const auxOldX = snekPart.position.x;
-      const auxOldY = snekPart.position.y;
-      snekPart.setPosition(oldPos.x, oldPos.y, 0);
+        const auxOldX = snekPart.position.x;
+        const auxOldY = snekPart.position.y;
+        snekPart.setPosition(oldPos.x, oldPos.y, 0);
 
-      oldPos.x = auxOldX;
-      oldPos.y = auxOldY;
+        oldPos.x = auxOldX;
+        oldPos.y = auxOldY;
+      }
+    } else {
+      this.snakeInside[0].active = true;
+      this.blockMove = false;
     }
   }
 
@@ -221,23 +238,22 @@ export class SnakeController extends Component {
     if (this.snakeInside.length >= 3) {
       this.matchCheck(part);
     }
-    this.bodyMovement();
   }
 
   private matchCheck(part: Node): void {
     const index = this.snakeInside.indexOf(part);
     const type1 = part.getComponent(Sprite).spriteFrame.name;
     const type2 =
-      this.snakeInside[index - 1].getComponent(Sprite).spriteFrame.name;
+      this.snakeInside[index + 1].getComponent(Sprite).spriteFrame.name;
     const type3 =
-      this.snakeInside[index - 2].getComponent(Sprite).spriteFrame.name;
+      this.snakeInside[index + 2].getComponent(Sprite).spriteFrame.name;
 
     if (type1 == type2 && type2 == type3) {
       part.destroy();
-      this.snakeInside[index - 1].destroy();
-      this.snakeInside[index - 2].destroy();
+      this.snakeInside[index + 1].destroy();
+      this.snakeInside[index + 2].destroy();
 
-      this.snakeInside.splice(index - 2, 3);
+      this.snakeInside.splice(index, 3);
 
       let gameManager = find("Canvas").getComponent(GameManager);
 
@@ -251,12 +267,14 @@ export class SnakeController extends Component {
   private spawnBody(color: number): Node {
     const snekPart: Node = instantiate(this.bodyPrefab);
     find("Canvas/Snake").addChild(snekPart);
-    this.snakeInside.push(snekPart);
+    this.snakeInside.unshift(snekPart);
 
     snekPart.getComponent(Sprite).spriteFrame = this.spriteArray[color];
     let pos = find("Canvas/Snake/Head").getPosition();
     pos = new Vec3(Math.round(pos.x), Math.round(pos.y), 0);
     snekPart.setPosition(pos);
+    snekPart.active = false;
+    this.blockMove = true;
     return snekPart;
   }
 }
