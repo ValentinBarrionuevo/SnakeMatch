@@ -409,7 +409,11 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
+<<<<<<< HEAD
       "mTimestamp": 5310494.719200015,
+=======
+      "mTimestamp": 6980246.452000022,
+>>>>>>> 9901d5cb57bc2e77a1b1d6861f27c8456123338b
       "chunkId": "e690d8d21c3264f88cef1049bc05ae341c5f161a",
       "imports": [
         {
@@ -639,10 +643,16 @@
     },
     "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/GameManager.ts": {
       "mTimestamp": {
+<<<<<<< HEAD
         "mtime": 1666234414354.5503,
         "uuid": "c77d4ec5-b15d-4103-aca6-1e42c5168c98"
       },
       "chunkId": "ab8084ab8735a94b536c285d8132bbd91e65d1de",
+=======
+        "mtime": 1666213944047.4263,
+        "uuid": "b24c5641-ca34-4917-a30d-80fde2732bc3"
+      },
+      "chunkId": "aaed81fcaa796742b2e572957d3560a6964719ea",
       "imports": [
         {
           "value": "cce:/internal/code-quality/cr.mjs",
@@ -658,11 +668,148 @@
           "value": "cc",
           "loc": {
             "start": {
-              "line": 17,
+              "line": 20,
               "column": 7
             },
             "end": {
-              "line": 17,
+              "line": 20,
+              "column": 11
+            }
+          }
+        },
+        {
+          "value": "./GameManager",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 21,
+              "column": 28
+            },
+            "end": {
+              "line": 21,
+              "column": 43
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GameManager.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/collisionController.ts": {
+      "mTimestamp": {
+        "mtime": 1664318805758.8337,
+        "uuid": "c77d4ec5-b15d-4103-aca6-1e42c5168c98"
+      },
+      "chunkId": "85061acf5bcbc6f15a53f2829aec337c9aef7429",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 44
+            },
+            "end": {
+              "line": 1,
+              "column": 48
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GameManager.ts": {
+      "mTimestamp": {
+        "mtime": 1666213952452.2031,
+        "uuid": "c77d4ec5-b15d-4103-aca6-1e42c5168c98"
+      },
+      "chunkId": "c6f1d80f21645fce246fd947ce4b65165c7f5f5b",
+>>>>>>> 9901d5cb57bc2e77a1b1d6861f27c8456123338b
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 16,
+              "column": 7
+            },
+            "end": {
+              "line": 16,
               "column": 11
             }
           }
@@ -672,11 +819,11 @@
           "resolved": "__unresolved_1",
           "loc": {
             "start": {
-              "line": 18,
+              "line": 17,
               "column": 32
             },
             "end": {
-              "line": 18,
+              "line": 17,
               "column": 51
             }
           }
