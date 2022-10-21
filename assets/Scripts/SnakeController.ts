@@ -96,22 +96,25 @@ export class SnakeController extends Component {
     const dy = end.y - start.y;
     const length = Math.sqrt(dx * dx + dy * dy);
     this.isGoingVertical = Math.abs(dy) < Math.abs(dx);
-
     if (length < 60) {
       return;
     }
     if (this.isGoingVertical == false || this.isGoingVertical == undefined) {
-      if (dy > 0) {
-        this.direction = "UP";
-      } else {
-        this.direction = "DOWN";
+      if (this.direction == "RIGHT" || this.direction == "LEFT" || this.direction == undefined) {
+        if (dy > 0) {
+          this.direction = "UP";
+        } else {
+          this.direction = "DOWN";
+        }
       }
     }
     if (this.isGoingVertical == true || this.isGoingVertical == undefined) {
-      if (dx > 0) {
-        this.direction = "RIGHT";
-      } else {
-        this.direction = "LEFT";
+      if (this.direction == "UP" || this.direction == "DOWN" || this.direction == undefined) {
+        if (dx > 0) {
+          this.direction = "RIGHT";
+        } else {
+          this.direction = "LEFT";
+        }
       }
     }
     if (this.firstMove == true) {
