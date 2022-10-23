@@ -76,7 +76,9 @@ export class SnakeController extends Component {
     input.off(Input.EventType.KEY_DOWN, this.onKeyDown, this);
     input.off(Input.EventType.TOUCH_START, this.touchStart, this);
     input.off(Input.EventType.TOUCH_END, this.touchEnd, this);
-    find("Canvas/UI/button").active = true;
+    find("Canvas/UI/Death").active = true;
+
+    // find("Canvas/UI/button").active = true;
   }
 
   public touchStart(e: EventTouch): void {
@@ -223,7 +225,7 @@ export class SnakeController extends Component {
 
   private deathCheck(pos: Vec3): void {
     if (pos.x > 150 || pos.x < -150) {
-      find("Canvas").getComponent(GameManager).destroyed = true;
+
       this.node.destroy();
       return;
     }

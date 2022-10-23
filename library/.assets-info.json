@@ -104,7 +104,7 @@
     "missing": false
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Prefab": {
-    "time": 1666302916058.9453,
+    "time": 1666558768170.3364,
     "uuid": "7557c6c6-d0ab-4024-8624-bf9e330d6e97",
     "missing": false
   },
@@ -114,12 +114,12 @@
     "missing": false
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Scripts": {
-    "time": 1666294565616.085,
+    "time": 1666554044008.9465,
     "uuid": "35f29723-0d84-42ea-a386-d77e5f26744b",
     "missing": false
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites": {
-    "time": 1666302869745.0925,
+    "time": 1666553669984.1885,
     "uuid": "551e98be-3100-41d8-89ea-74b05c76309e",
     "missing": false
   },
@@ -129,7 +129,7 @@
     "missing": false
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Scripts\\SnakeController.ts": {
-    "time": 1666389691011.2874,
+    "time": 1666555840562.634,
     "uuid": "b24c5641-ca34-4917-a30d-80fde2732bc3",
     "missing": false
   },
@@ -152,12 +152,12 @@
     "time": 1664226108547.9753
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Scenes\\GameScene.scene": {
-    "time": 1666388271488.516,
+    "time": 1666558783992.0906,
     "uuid": "4f9cb534-2952-40d3-a4ee-2c12e7477bd7",
     "missing": false
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Scenes\\MainMenu.scene": {
-    "time": 1666302226190.3625,
+    "time": 1666558507164.5642,
     "uuid": "ccf8fd25-bb4a-4256-a492-78f1fa0b3372",
     "missing": false
   },
@@ -187,7 +187,7 @@
     "time": 1664318805761.8342
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Scripts\\GameManager.ts": {
-    "time": 1666308392821.1536,
+    "time": 1666558674679.285,
     "uuid": "c77d4ec5-b15d-4103-aca6-1e42c5168c98",
     "missing": false
   },
@@ -371,7 +371,7 @@
     "time": 1665776655258.8652
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Scripts\\MainMenu.ts": {
-    "time": 1666302190924.4175,
+    "time": 1666556936724.334,
     "uuid": "1230ca0a-1ade-4e2a-b078-a710b41bbe20",
     "missing": false
   },
@@ -453,6 +453,30 @@
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Prefab\\bombPrefab.prefab": {
     "time": 1666302916061.9465,
     "uuid": "f875f17d-ee50-4cab-9716-5988ed42e476",
+    "missing": false
+  },
+  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\pause.png.meta": {
+    "time": 1666553670025.1987
+  },
+  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\pause.png": {
+    "time": 1666553666495.348,
+    "uuid": "df2de824-8a2c-4b26-86e8-c556e780739f",
+    "missing": false
+  },
+  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Scripts\\UIController.ts.meta": {
+    "time": 1666554044009.9468
+  },
+  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Scripts\\UIController.ts": {
+    "time": 1666555946911.5986,
+    "uuid": "38209e2a-e51b-4553-a158-b90ee3e7cc54",
+    "missing": false
+  },
+  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Prefab\\rndmPrefab.prefab.meta": {
+    "time": 1666558768174.3374
+  },
+  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Prefab\\rndmPrefab.prefab": {
+    "time": 1666558768507.2603,
+    "uuid": "9bb5723f-e5e6-4521-9cfc-7c04a884d744",
     "missing": false
   }
 }

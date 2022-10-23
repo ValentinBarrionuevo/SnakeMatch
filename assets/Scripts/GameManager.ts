@@ -34,6 +34,9 @@ export class GameManager extends Component {
   @property(Prefab)
   private bomb: Prefab;
 
+  @property(Prefab)
+  private rndmBall: Prefab;
+
   private snake: Prefab = null;
 
   private spawnedArray: Array<number> = [];
@@ -47,23 +50,15 @@ export class GameManager extends Component {
   private justAte: boolean = false;
 
   onLoad() {
-    //find("Canvas/Snake/Head").getComponent(SnakeController);
-    find("Canvas/UI/button").active = false;
-    input.on(Input.EventType.TOUCH_START, this.restart, this);
   }
-
-  private restart(): void {
-    if (this.destroyed) {
-      director.loadScene("GameScene");
-    }
-  }
-
   start() {
     this.spawnByType(this.ball);
     this.spawnByType(this.ball);
     this.spawnByType(this.ball);
     this.spawnByType(this.void);
     this.spawnByType(this.coin);
+    this.spawnByType(this.rndmBall);
+
   }
 
   public checkGameState(): void {
@@ -76,14 +71,12 @@ export class GameManager extends Component {
     this.checkCol(snakePos, this.coin);
     this.checkCol(snakePos, this.void);
     this.checkCol(snakePos, this.bomb);
+    this.checkCol(snakePos, this.rndmBall);
     this.checkCol(snakePos, this.snake);
-
 
     if (this.justAte == true) {
       this.justAte = false
     }
-
-
     while (this.spawnedArray.length < 3) {
       this.spawnByType(this.ball);
     }
@@ -159,6 +152,19 @@ export class GameManager extends Component {
           array[0].destroy();
           find("Canvas/Snake/Head").getComponent(SnakeController).eatBomb();
         }
+        break;
+      case this.rndmBall:
+        parent = find("Canvas/Random")
+        array = this.check(parent, snakePos)
+        if (array.length > 0) {
+          array[0].destroy();
+          this.spawnedArray.splice(0)
+          find("Canvas/Balls").destroyAllChildren();
+
+          this.spawnByType(this.ball);
+          this.spawnByType(this.ball);
+          this.spawnByType(this.ball);
+        }
     }
   }
 
@@ -196,6 +202,10 @@ export class GameManager extends Component {
           break;
         case this.bomb:
           newParent = find("Canvas/Bombs");
+          break;
+        case this.rndmBall:
+          newParent = find("Canvas/Random");
+          break;
       }
 
       const node = this.spawn(type, newParent, pos);

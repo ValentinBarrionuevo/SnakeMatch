@@ -7,6 +7,13 @@
         "8ea7c1b5-5860-4d6b-afbf-ff11ed036a90@f9941",
         "e53b2665-7d8e-478b-b185-78de111822cb@f9941",
         "e53b2665-7d8e-478b-b185-78de111822cb@f9941",
+        "f87a4d25-7c8b-4111-a597-e9e8a592fbc7@f9941",
+        "e53b2665-7d8e-478b-b185-78de111822cb@f9941",
+        "e53b2665-7d8e-478b-b185-78de111822cb@f9941",
+        "df2de824-8a2c-4b26-86e8-c556e780739f@f9941",
+        "e53b2665-7d8e-478b-b185-78de111822cb@f9941",
+        "e53b2665-7d8e-478b-b185-78de111822cb@f9941",
+        "df2de824-8a2c-4b26-86e8-c556e780739f@f9941",
         "1a2513bc-5c5d-470b-98c9-c24413bc1501@f9941",
         "90ddc7e9-d68e-4562-ba48-0e6dda6be1a1@f9941",
         "f5392916-fdbc-4c13-86e2-27379960bf8b@f9941",
@@ -26,6 +33,7 @@
         "73ea69a0-fb49-41dd-a36a-b08ae381f0f8",
         "f7187d7d-c998-4851-822a-c0f781a486f7",
         "f875f17d-ee50-4cab-9716-5988ed42e476",
+        "9bb5723f-e5e6-4521-9cfc-7c04a884d744",
         "4f9cb534-2952-40d3-a4ee-2c12e7477bd7"
       ]
     }
@@ -878,6 +886,40 @@
     "value": {
       "depends": [
         "7864642f-2414-47e9-b273-7dfe7a59076d@f9941"
+      ]
+    }
+  },
+  "df2de824-8a2c-4b26-86e8-c556e780739f": {
+    "url": "db://assets/Sprites/pause.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "df2de824-8a2c-4b26-86e8-c556e780739f@6c48a": {
+    "url": "db://assets/Sprites/pause.png@6c48a",
+    "value": {
+      "depends": [
+        "df2de824-8a2c-4b26-86e8-c556e780739f"
+      ]
+    }
+  },
+  "df2de824-8a2c-4b26-86e8-c556e780739f@f9941": {
+    "url": "db://assets/Sprites/pause.png@f9941",
+    "value": {
+      "depends": [
+        "df2de824-8a2c-4b26-86e8-c556e780739f@6c48a"
+      ]
+    }
+  },
+  "38209e2a-e51b-4553-a158-b90ee3e7cc54": {
+    "url": "db://assets/Scripts/UIController.ts",
+    "value": {}
+  },
+  "9bb5723f-e5e6-4521-9cfc-7c04a884d744": {
+    "url": "db://assets/Prefab/rndmPrefab.prefab",
+    "value": {
+      "depends": [
+        "5491902c-da7e-4aec-aaa2-114a1854a52e@f9941"
       ]
     }
   }

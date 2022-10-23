@@ -1,41 +1,54 @@
-import { _decorator, Component, Node, input, Input, director, EventTouch, find } from "cc";
+import { _decorator, Component, Node, input, Input, director, EventTouch, find, Sprite, SpriteFrame, Vec2, AudioSource, assert } from "cc";
 const { ccclass, property } = _decorator;
 
 @ccclass("MainMenu")
 export class MainMenu extends Component {
 
-  private _touchStartPos: import("cc").math.Vec2;
+  private audioSource: AudioSource = null!;
 
+  private play: Node;
+  private mute: Node;
+  private shop: Node;
+  private ads: Node;
 
   onLoad() {
-    input.on(Input.EventType.TOUCH_START, this.touchStart, this);
-    input.on(Input.EventType.TOUCH_END, this.touchEnd, this);
+    this.play = find("Canvas/background/Play")
+    this.mute = find("Canvas/background/Mute")
+    this.shop = find("Canvas/background/Shop")
+    this.ads = find("Canvas/background/Ads")
 
-    const play = find("Canvas/background/play");
-    console.log(play);
+    this.play.on(Input.EventType.TOUCH_END, this.touchStart, this);
+    this.mute.on(Input.EventType.TOUCH_END, this.touchStart, this);
+    this.shop.on(Input.EventType.TOUCH_END, this.touchStart, this);
+    this.ads.on(Input.EventType.TOUCH_END, this.touchStart, this);
+
+    const audioSource = this.getComponent(AudioSource)!;
+    assert(audioSource);
+    this.audioSource = audioSource;
   }
+
 
   public touchStart(e: EventTouch): void {
-    this._touchStartPos = e.getLocation();
-  }
+    console.log(e.target.name)
 
-  public touchEnd(e: EventTouch): void {
-    if (!this._touchStartPos) {
-      return;
+    switch (e.target.name) {
+      case "Play":
+        director.loadScene("GameScene");
+        break;
+      case "Mute":
+        this.muteAll();
+        break;
+      case "Shop":
+        director.loadScene("Shop");
+        break;
+      case "Ads":
+        find("Canvas/background/adSpace").active = false;
+        break;
     }
-
-    const end = e.getLocation();
-    this._touchStartPos = null;
-
-    if (end.x > 0) {
-
-
-
-    }
-
   }
 
-  startGame() {
-    director.loadScene("GameScene");
+  private muteAll() {
+    this.audioSource.enabled = !this.audioSource.enabled;
   }
+
 }
