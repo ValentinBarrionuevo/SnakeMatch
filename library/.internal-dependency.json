@@ -1,5 +1,17 @@
 {
   "path": {
+    "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\effects\\builtin-billboard.effect": [
+      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\vert.chunk",
+      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\builtin\\internal\\particle-common.chunk",
+      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\builtin\\uniforms\\cc-global.chunk",
+      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\builtin\\uniforms\\cc-local.chunk",
+      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\common\\math\\transform.chunk",
+      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\tinted-fs.chunk",
+      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\legacy\\output.chunk",
+      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\common\\color\\gamma.chunk",
+      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\common\\debug\\debug-view-define.chunk",
+      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\no-tint-fs.chunk"
+    ],
     "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\effects\\builtin-camera-texture.effect": [
       "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\camera-texture-vs.chunk",
       "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\legacy\\input.chunk",
@@ -26,18 +38,6 @@
       "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\sprite-vs.chunk",
       "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\sprite-fs.chunk"
     ],
-    "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\effects\\builtin-billboard.effect": [
-      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\vert.chunk",
-      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\builtin\\internal\\particle-common.chunk",
-      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\builtin\\uniforms\\cc-global.chunk",
-      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\builtin\\uniforms\\cc-local.chunk",
-      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\common\\math\\transform.chunk",
-      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\tinted-fs.chunk",
-      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\legacy\\output.chunk",
-      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\common\\color\\gamma.chunk",
-      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\common\\debug\\debug-view-define.chunk",
-      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\no-tint-fs.chunk"
-    ],
     "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\effects\\builtin-debug-renderer.effect": [
       "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\debug-renderer-vs.chunk",
       "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\builtin\\uniforms\\cc-global.chunk",
@@ -59,17 +59,17 @@
       "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\triangle-vs.chunk",
       "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\triangle-fs.chunk"
     ],
-    "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\effects\\builtin-graphics.effect": [
-      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\vs.chunk",
-      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\builtin\\uniforms\\cc-global.chunk",
-      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\builtin\\uniforms\\cc-local.chunk",
-      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\fs.chunk"
-    ],
     "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\effects\\builtin-occlusion-query.effect": [
       "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\occlusion-query-vs.chunk",
       "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\builtin\\uniforms\\cc-global.chunk",
       "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\builtin\\uniforms\\cc-world-bound.chunk",
       "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\occlusion-query-fs.chunk"
+    ],
+    "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\effects\\builtin-graphics.effect": [
+      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\vs.chunk",
+      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\builtin\\uniforms\\cc-global.chunk",
+      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\builtin\\uniforms\\cc-local.chunk",
+      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\fs.chunk"
     ],
     "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\effects\\builtin-particle-gpu.effect": [
       "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\builtin\\internal\\particle-vs-gpu.chunk",
@@ -633,15 +633,6 @@
       "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\shadow-caster-fs.chunk",
       "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\shading-entries\\main-functions\\render-to-shadowmap\\fs.chunk"
     ],
-    "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\effects\\editor\\grid-2d.effect": [
-      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\grid-vs.chunk",
-      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\builtin\\uniforms\\cc-local.chunk",
-      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\builtin\\uniforms\\cc-global.chunk",
-      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\grid-fs.chunk",
-      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\legacy\\output.chunk",
-      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\common\\color\\gamma.chunk",
-      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\common\\debug\\debug-view-define.chunk"
-    ],
     "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\effects\\editor\\gizmo.effect": [
       "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\gizmo-vs.chunk",
       "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\builtin\\uniforms\\cc-local.chunk",
@@ -655,6 +646,15 @@
       "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\line-fs.chunk",
       "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\sprite-vs.chunk",
       "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\sprite-fs.chunk"
+    ],
+    "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\effects\\editor\\grid-2d.effect": [
+      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\grid-vs.chunk",
+      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\builtin\\uniforms\\cc-local.chunk",
+      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\builtin\\uniforms\\cc-global.chunk",
+      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\grid-fs.chunk",
+      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\legacy\\output.chunk",
+      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\common\\color\\gamma.chunk",
+      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\common\\debug\\debug-view-define.chunk"
     ],
     "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\effects\\editor\\grid-stroke.effect": [
       "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\grid-vs.chunk",
@@ -1099,17 +1099,17 @@
       "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\splash-screen-vs.chunk",
       "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\chunks\\splash-screen-fs.chunk"
     ],
-    "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\default_fonts\\builtin-bitmap\\OpenSans-Bold.fnt": [
-      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\default_fonts\\builtin-bitmap\\OpenSans-Bold_0.png"
-    ],
     "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\default_fonts\\builtin-bitmap\\OpenSans-BoldItalic.fnt": [
       "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\default_fonts\\builtin-bitmap\\OpenSans-BoldItalic_0.png"
     ],
-    "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\default_fonts\\builtin-bitmap\\OpenSans-Regular.fnt": [
-      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\default_fonts\\builtin-bitmap\\OpenSans-Regular_0.png"
+    "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\default_fonts\\builtin-bitmap\\OpenSans-Bold.fnt": [
+      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\default_fonts\\builtin-bitmap\\OpenSans-Bold_0.png"
     ],
     "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\default_fonts\\builtin-bitmap\\OpenSans-Italic.fnt": [
       "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\default_fonts\\builtin-bitmap\\OpenSans-Italic_0.png"
+    ],
+    "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\default_fonts\\builtin-bitmap\\OpenSans-Regular.fnt": [
+      "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\default_fonts\\builtin-bitmap\\OpenSans-Regular_0.png"
     ],
     "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\default_ui\\atom.plist": [
       "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\default_ui\\atom.png"
