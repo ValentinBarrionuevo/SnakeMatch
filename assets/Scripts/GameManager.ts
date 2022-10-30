@@ -38,6 +38,9 @@ export class GameManager extends Component {
   private rndmBall: Prefab;
 
   private snake: Prefab = null;
+  
+  private movementCount: number;
+  private movementsNeededVoid: number = 50;
 
   private spawnedArray: Array<number> = [];
 
@@ -49,16 +52,13 @@ export class GameManager extends Component {
 
   private justAte: boolean = false;
 
-  onLoad() {
-  }
+  onLoad() {}
   start() {
     this.spawnByType(this.ball);
     this.spawnByType(this.ball);
     this.spawnByType(this.ball);
-    this.spawnByType(this.void);
     this.spawnByType(this.coin);
     this.spawnByType(this.rndmBall);
-
   }
 
   public checkGameState(): void {
@@ -74,8 +74,14 @@ export class GameManager extends Component {
     this.checkCol(snakePos, this.rndmBall);
     this.checkCol(snakePos, this.snake);
 
+    this.movementCount =
+      find("Canvas/Snake/Head").getComponent(SnakeController).movementCount;
+
+    if (this.movementCount % this.movementsNeededVoid == 0) {
+      this.spawnByType(this.void);
+    }
     if (this.justAte == true) {
-      this.justAte = false
+      this.justAte = false;
     }
     while (this.spawnedArray.length < 3) {
       this.spawnByType(this.ball);
@@ -83,13 +89,12 @@ export class GameManager extends Component {
   }
 
   private checkCol(snakePos: Vec2, type: Prefab) {
-
     let parent = null;
     let array = null;
 
     switch (type) {
       case this.ball:
-        parent = find("Canvas/Balls")
+        parent = find("Canvas/Balls");
         array = this.check(parent, snakePos);
         if (array.length > 0) {
           let index = find("Canvas/Balls").children.indexOf(array[0]);
@@ -100,10 +105,10 @@ export class GameManager extends Component {
           array[0].destroy();
 
           this.points += 100 * this.multiplier;
-          find("Canvas/UI/Points").getComponent(Label).string = (this.points).toString();
+          find("Canvas/UI/Points").getComponent(Label).string =
+            this.points.toString();
 
           this.justAte = true;
-
 
           while (this.spawnedArray.length < 3) {
             this.spawnByType(this.ball);
@@ -119,46 +124,48 @@ export class GameManager extends Component {
         }
         break;
       case this.coin:
-        parent = find("Canvas/Coins")
-        array = this.check(parent, snakePos)
+        parent = find("Canvas/Coins");
+        array = this.check(parent, snakePos);
         if (array.length > 0) {
           array[0].destroy();
           this.points += 500 * this.multiplier;
           this.coins += 1;
-          find("Canvas/UI/Coins").getComponent(Label).string = "x" + (this.coins).toString();
-          find("Canvas/UI/Points").getComponent(Label).string = (this.points).toString();
+          find("Canvas/UI/Coins").getComponent(Label).string =
+            "x" + this.coins.toString();
+          find("Canvas/UI/Points").getComponent(Label).string =
+            this.points.toString();
         }
         break;
       case this.void:
-        parent = find("Canvas/Voids")
-        array = this.check(parent, snakePos)
+        parent = find("Canvas/Voids");
+        array = this.check(parent, snakePos);
         if (array.length > 0) {
           find("Canvas/Snake").destroy();
         }
         break;
       case this.snake:
         if (!this.justAte) {
-          parent = find("Canvas/Snake")
-          array = this.check(parent, snakePos)
+          parent = find("Canvas/Snake");
+          array = this.check(parent, snakePos);
           if (array.length > 1) {
             find("Canvas/Snake").destroy();
           }
         }
         break;
       case this.bomb:
-        parent = find("Canvas/Bombs")
-        array = this.check(parent, snakePos)
+        parent = find("Canvas/Bombs");
+        array = this.check(parent, snakePos);
         if (array.length > 0) {
           array[0].destroy();
           find("Canvas/Snake/Head").getComponent(SnakeController).eatBomb();
         }
         break;
       case this.rndmBall:
-        parent = find("Canvas/Random")
-        array = this.check(parent, snakePos)
+        parent = find("Canvas/Random");
+        array = this.check(parent, snakePos);
         if (array.length > 0) {
           array[0].destroy();
-          this.spawnedArray.splice(0)
+          this.spawnedArray.splice(0);
           find("Canvas/Balls").destroyAllChildren();
 
           this.spawnByType(this.ball);

@@ -17,8 +17,6 @@ import {
   AudioSource,
   assert,
   Label,
-  Vec2,
-  Scheduler,
 } from "cc";
 import { GameManager } from "./GameManager";
 const { ccclass, property } = _decorator;
@@ -33,16 +31,19 @@ export class SnakeController extends Component {
   private spriteArray: Array<SpriteFrame> = new Array<SpriteFrame>(4);
 
   @property(Prefab)
-  bodyPrefab: Prefab;
+  private bodyPrefab: Prefab;
+
+  private velocitySeconds: number = 0.4;
+  public movementCount: number = 0;
 
   private firstMove: boolean = true;
-  private velocitySeconds: number = 0.4;
   private direction: Direction;
   private isGoingVertical: boolean;
   private blockMove: boolean = false;
-  // private oldPos: any;
 
   public snakeInside: Array<Node> = new Array();
+  private snakePositions: Array<{ x: number; y: number }>;
+  private headPos: Vec3;
 
   private tileSize = 30;
 
@@ -59,7 +60,6 @@ export class SnakeController extends Component {
     KeyCode.ARROW_RIGHT
   );
   private _touchStartPos: import("cc").math.Vec2;
-  private headPos: Vec3;
 
   public onLoad(): void {
     this.character = this.node.getComponent(RigidBody2D);
@@ -78,8 +78,6 @@ export class SnakeController extends Component {
     input.off(Input.EventType.TOUCH_START, this.touchStart, this);
     input.off(Input.EventType.TOUCH_END, this.touchEnd, this);
     find("Canvas/UI/Death").active = true;
-
-    // find("Canvas/UI/button").active = true;
   }
 
   public touchStart(e: EventTouch): void {
@@ -163,7 +161,6 @@ export class SnakeController extends Component {
           break;
       }
     }
-    // console.log(event.keyCode, this.direction);
 
     if (this.firstMove == true && this.keyWhiteList.includes(event.keyCode)) {
       this.firstMove = false;
@@ -199,30 +196,26 @@ export class SnakeController extends Component {
         break;
     }
     this.node.setPosition(pos);
-    this.savePositions("movement");
+    this.movementCount++;
+    this.savePositions();
     this.bodyMovement();
 
     this.deathCheck(pos);
 
     find("Canvas").getComponent(GameManager).checkGameState();
   }
-  private snakePositions: Array<{ x: number; y: number }>;
 
-  private savePositions(launcher: string): void {
+  private savePositions(): void {
     if (this.snakeInside.length < 1) {
       return;
     }
 
     this.snakePositions = [{ x: this.headPos.x, y: this.headPos.y }];
-    let index = 0;
     for (let snakePart of this.snakeInside) {
-      // console.log(snakePart,this.snakeInside);
-      index++;
       this.snakePositions.push({
         x: snakePart.getPosition().clone().x,
         y: snakePart.getPosition().clone().y,
       });
-      console.log(index, launcher, "Position", this.snakePositions[index]);
     }
   }
 
@@ -230,24 +223,11 @@ export class SnakeController extends Component {
     if (this.snakeInside.length < 1) {
       return;
     }
-    // let oldPos = this.headPos;
-
     if (!this.blockMove || adjust) {
       for (let i = 0; i < this.snakeInside.length; i++) {
         const newPos = this.snakePositions[i];
         this.snakeInside[i].setPosition(new Vec3(newPos.x, newPos.y, 0));
       }
-      // for (let i = 0; i < this.snakeInside.length; i++) {
-      //   const snekPart = this.snakeInside[i];
-      //   //console.log(i, snekPart.getComponent(Sprite).spriteFrame.name, oldPos);
-
-      //   const auxOldX = snekPart.position.x;
-      //   const auxOldY = snekPart.position.y;
-      //   snekPart.setPosition(oldPos.x, oldPos.y, 0);
-
-      //   oldPos.x = auxOldX;
-      //   oldPos.y = auxOldY;
-      // }
     } else {
       this.snakeInside[0].active = true;
       this.blockMove = false;
@@ -287,8 +267,6 @@ export class SnakeController extends Component {
 
     const condition = type1 == type2 && type2 == type3;
     if (condition) {
-      console.log("MATCH 3!!!");
-
       part.destroy();
       this.snakeInside[1].destroy();
       this.snakeInside[2].destroy();
@@ -302,14 +280,11 @@ export class SnakeController extends Component {
       // find("Canvas/UI/Multiplier").getComponent(Label).string =
       //   "x" + gameManager.multiplier;
 
-      console.log("Head pos", this.node.getPosition().clone());
-
       for (let i = 0; i < this.snakeInside.length; i++) {
         const newPos = this.snakePositions[i];
         this.snakeInside[i].setPosition(new Vec3(newPos.x, newPos.y, 0));
-        console.log("NEW POS", newPos);
       }
-      this.savePositions("Match");
+      this.savePositions();
     }
     return condition;
   }
@@ -347,7 +322,7 @@ export class SnakeController extends Component {
       const newPos = this.snakePositions[i];
       this.snakeInside[i].setPosition(new Vec3(newPos.x, newPos.y, 0));
     }
-    this.savePositions("bomb");
+    this.savePositions();
 
     find("Canvas/UI/Points").getComponent(Label).string = (find(
       "Canvas"
