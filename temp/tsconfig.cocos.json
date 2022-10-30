@@ -6,8 +6,8 @@
     "strict": true,
     "types": [
       "./temp/declarations/cc.custom-macro",
-      "./temp/declarations/cc",
       "./temp/declarations/jsb",
+      "./temp/declarations/cc",
       "./temp/declarations/cc.env"
     ],
     "paths": {
@@ -15,7 +15,7 @@
         "C:\\CocosDashboard_1.2.2\\resources\\.editors\\Creator\\3.6.0\\resources\\resources\\3d\\engine\\editor\\assets\\*"
       ],
       "db://assets/*": [
-        "C:\\Users\\luisi\\Desktop\\SnakeMatch\\assets\\*"
+        "C:\\Users\\Agu\\Desktop\\SnakeMatch\\assets\\*"
       ]
     },
     "experimentalDecorators": true,

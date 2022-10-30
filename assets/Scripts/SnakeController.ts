@@ -199,7 +199,7 @@ export class SnakeController extends Component {
         break;
     }
     this.node.setPosition(pos);
-    this.savePositions();
+    this.savePositions("movement");
     this.bodyMovement();
 
     this.deathCheck(pos);
@@ -208,18 +208,22 @@ export class SnakeController extends Component {
   }
   private snakePositions: Array<{ x: number; y: number }>;
 
-  private savePositions(): void {
-    if (this.snakeInside.length < 1 || this.blockMove) {
+  private savePositions(launcher: string): void {
+    if (this.snakeInside.length < 1) {
       return;
     }
+
     this.snakePositions = [{ x: this.headPos.x, y: this.headPos.y }];
+    let index = 0;
     for (let snakePart of this.snakeInside) {
+      // console.log(snakePart,this.snakeInside);
+      index++;
       this.snakePositions.push({
         x: snakePart.getPosition().clone().x,
         y: snakePart.getPosition().clone().y,
       });
+      console.log(index, launcher, "Position", this.snakePositions[index]);
     }
-    console.log(this.snakePositions);
   }
 
   private bodyMovement(adjust?: boolean): void {
@@ -266,43 +270,48 @@ export class SnakeController extends Component {
     //this.audioSource.play();
 
     const part = this.spawnBody(ball);
+
     if (this.snakeInside.length >= 3) {
-      this.matchCheck(part);
+      if (!this.matchCheck(part)) {
+        this.blockMove = true;
+      }
+    } else {
+      this.blockMove = true;
     }
   }
 
-  private matchCheck(part: Node): void {
-    const index = this.snakeInside.indexOf(part);
+  private matchCheck(part: Node): boolean {
     const type1 = part.getComponent(Sprite).spriteFrame.name;
-    const type2 =
-      this.snakeInside[index + 1].getComponent(Sprite).spriteFrame.name;
-    const type3 =
-      this.snakeInside[index + 2].getComponent(Sprite).spriteFrame.name;
+    const type2 = this.snakeInside[1].getComponent(Sprite).spriteFrame.name;
+    const type3 = this.snakeInside[2].getComponent(Sprite).spriteFrame.name;
 
-    if (type1 == type2 && type2 == type3) {
+    const condition = type1 == type2 && type2 == type3;
+    if (condition) {
       console.log("MATCH 3!!!");
 
       part.destroy();
-      this.snakeInside[index + 1].destroy();
-      this.snakeInside[index + 2].destroy();
+      this.snakeInside[1].destroy();
+      this.snakeInside[2].destroy();
 
-      this.snakeInside.splice(index, 3);
+      this.snakeInside.splice(0, 3);
 
-      let gameManager = this.node.parent.parent.getComponent(GameManager);
+      // let gameManager = this.node.parent.parent.getComponent(GameManager);
 
-      gameManager.multiplier += gameManager.multiplier;
-      gameManager.points += 800 * gameManager.multiplier;
-      find("Canvas/UI/Multiplier").getComponent(Label).string =
-        "x" + gameManager.multiplier;
+      // gameManager.multiplier += gameManager.multiplier;
+      // gameManager.points += 800 * gameManager.multiplier;
+      // find("Canvas/UI/Multiplier").getComponent(Label).string =
+      //   "x" + gameManager.multiplier;
 
-        console.log("Head pos",this.node.getPosition().clone() );
-        
+      console.log("Head pos", this.node.getPosition().clone());
+
       for (let i = 0; i < this.snakeInside.length; i++) {
         const newPos = this.snakePositions[i];
         this.snakeInside[i].setPosition(new Vec3(newPos.x, newPos.y, 0));
-        console.log("NEW POS", newPos.x, newPos.y);
+        console.log("NEW POS", newPos);
       }
+      this.savePositions("Match");
     }
+    return condition;
   }
 
   private spawnBody(color: number): Node {
@@ -315,7 +324,6 @@ export class SnakeController extends Component {
     pos = new Vec3(Math.round(pos.x), Math.round(pos.y), 0);
     snekPart.setPosition(pos);
     snekPart.active = false;
-    this.blockMove = true;
     return snekPart;
   }
 
@@ -334,6 +342,12 @@ export class SnakeController extends Component {
       this.snakeInside[index].destroy();
       this.snakeInside.splice(index, 1);
     }
+
+    for (let i = 0; i < this.snakeInside.length; i++) {
+      const newPos = this.snakePositions[i];
+      this.snakeInside[i].setPosition(new Vec3(newPos.x, newPos.y, 0));
+    }
+    this.savePositions("bomb");
 
     find("Canvas/UI/Points").getComponent(Label).string = (find(
       "Canvas"
