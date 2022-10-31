@@ -35,6 +35,7 @@ export class SnakeController extends Component {
 
   private velocitySeconds: number = 0.4;
   public movementCount: number = 0;
+  public matchCount: number = 0;
 
   private firstMove: boolean = true;
   private direction: Direction;
@@ -273,12 +274,14 @@ export class SnakeController extends Component {
 
       this.snakeInside.splice(0, 3);
 
-      // let gameManager = this.node.parent.parent.getComponent(GameManager);
+      let gameManager = this.node.parent.parent.getComponent(GameManager);
 
-      // gameManager.multiplier += gameManager.multiplier;
-      // gameManager.points += 800 * gameManager.multiplier;
-      // find("Canvas/UI/Multiplier").getComponent(Label).string =
-      //   "x" + gameManager.multiplier;
+      gameManager.multiplier += gameManager.multiplier;
+      gameManager.points += 800 * gameManager.multiplier;
+      find("Canvas/UI/Multiplier").getComponent(Label).string =
+        "x" + gameManager.multiplier;
+
+      this.matchCount++;
 
       for (let i = 0; i < this.snakeInside.length; i++) {
         const newPos = this.snakePositions[i];

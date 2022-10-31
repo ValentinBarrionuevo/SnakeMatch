@@ -38,9 +38,13 @@ export class GameManager extends Component {
   private rndmBall: Prefab;
 
   private snake: Prefab = null;
-  
+
   private movementCount: number;
-  private movementsNeededVoid: number = 50;
+  private voidSpawnNeeded: number = 75;
+
+  private matchCount: number;
+  private maxMatch: number;
+  private voidDestroyNeeded: number = 2;
 
   private spawnedArray: Array<number> = [];
 
@@ -76,8 +80,17 @@ export class GameManager extends Component {
 
     this.movementCount =
       find("Canvas/Snake/Head").getComponent(SnakeController).movementCount;
+    this.matchCount =
+      find("Canvas/Snake/Head").getComponent(SnakeController).matchCount;
 
-    if (this.movementCount % this.movementsNeededVoid == 0) {
+    if (
+      this.matchCount / this.voidDestroyNeeded == 1 &&
+      this.matchCount != this.maxMatch
+    ) {
+      this.maxMatch = this.matchCount;
+      this.voidDestroy();
+    }
+    if (this.movementCount % this.voidSpawnNeeded == 0) {
       this.spawnByType(this.void);
     }
     if (this.justAte == true) {
@@ -86,6 +99,15 @@ export class GameManager extends Component {
     while (this.spawnedArray.length < 3) {
       this.spawnByType(this.ball);
     }
+  }
+
+  private voidDestroy(): void {
+    const voids = find("Canvas/Voids").children;
+    if (voids.length < 1) {
+      return;
+    }
+    const rndNum = Math.round((voids.length - 1) * Math.random());
+    voids[rndNum].destroy();
   }
 
   private checkCol(snakePos: Vec2, type: Prefab) {
