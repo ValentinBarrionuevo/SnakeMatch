@@ -1,7 +1,11 @@
 {
   "modules": {
     "cce:/internal/x/cc": {
+<<<<<<< Updated upstream
       "mTimestamp": 10619.446700006723,
+=======
+      "mTimestamp": 9845.992899894714,
+>>>>>>> Stashed changes
       "chunkId": "909f786ffe128f06f5aa1b4e1e3fbbd65262915e",
       "imports": [
         {
@@ -409,8 +413,13 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
+<<<<<<< Updated upstream
       "mTimestamp": 15366122.980500013,
       "chunkId": "07fb1dcca2f4fad0c5a0bf7f0aa6ba570dd5ef4e",
+=======
+      "mTimestamp": 12279709.944299936,
+      "chunkId": "52e8a9e14f500a509b526e3a9f1d96810f76ca10",
+>>>>>>> Stashed changes
       "imports": [
         {
           "value": "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts",
@@ -545,10 +554,10 @@
     },
     "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/SnakeController.ts": {
       "mTimestamp": {
-        "mtime": 1667261587616.6445,
+        "mtime": 1667346696011.6873,
         "uuid": "b24c5641-ca34-4917-a30d-80fde2732bc3"
       },
-      "chunkId": "d9b19e947f577df05d288fde39b24c14b012cd5e",
+      "chunkId": "a609c716bff3814b06dea25df05052f59f181d1f",
       "imports": [
         {
           "value": "cce:/internal/code-quality/cr.mjs",
@@ -973,7 +982,11 @@
       ]
     },
     "cce:/internal/code-quality/cr.mjs": {
+<<<<<<< Updated upstream
       "mTimestamp": 1667324257460,
+=======
+      "mTimestamp": 1667334425747,
+>>>>>>> Stashed changes
       "chunkId": "3a1fd7b13056478820ebedd306d3446d1aa408cc",
       "imports": [],
       "type": "esm",
@@ -1849,10 +1862,10 @@
     },
     "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/GameManager.ts": {
       "mTimestamp": {
-        "mtime": 1667244998776.5935,
+        "mtime": 1667338261438.3574,
         "uuid": "c77d4ec5-b15d-4103-aca6-1e42c5168c98"
       },
-      "chunkId": "29218cf8b7712895430140f4500a9f20c913c69d",
+      "chunkId": "77cccae90dea6a93e42d98c22e5cc699a2d4834e",
       "imports": [
         {
           "value": "cce:/internal/code-quality/cr.mjs",

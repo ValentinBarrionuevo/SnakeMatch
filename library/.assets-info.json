@@ -11,7 +11,7 @@
     "time": 1664226108545.9746
   },
   "C:\\Users\\agukp\\Snake Match\\assets\\Scenes\\GameScene.scene": {
-    "time": 1667244989691.9956,
+    "time": 1667345790079.019,
     "uuid": "4f9cb534-2952-40d3-a4ee-2c12e7477bd7",
     "missing": false
   },
@@ -27,7 +27,7 @@
     "time": 1664226108547.9753
   },
   "C:\\Users\\agukp\\Snake Match\\assets\\Scripts\\SnakeController.ts": {
-    "time": 1667261587616.6445,
+    "time": 1667346696011.6873,
     "uuid": "b24c5641-ca34-4917-a30d-80fde2732bc3",
     "missing": false
   },
@@ -35,7 +35,7 @@
     "time": 1664226108548.9758
   },
   "C:\\Users\\agukp\\Snake Match\\assets\\Sprites": {
-    "time": 1666823292940.2317,
+    "time": 1667334314798.6113,
     "uuid": "551e98be-3100-41d8-89ea-74b05c76309e",
     "missing": false
   },
@@ -62,7 +62,7 @@
     "time": 1664314452914.9917
   },
   "C:\\Users\\agukp\\Snake Match\\assets\\Prefab": {
-    "time": 1666823292889.2212,
+    "time": 1667339002470.0823,
     "uuid": "7557c6c6-d0ab-4024-8624-bf9e330d6e97",
     "missing": false
   },
@@ -1237,7 +1237,7 @@
     "missing": false
   },
   "C:\\Users\\agukp\\Snake Match\\assets\\Scripts\\GameManager.ts": {
-    "time": 1667244998776.5935,
+    "time": 1667338261438.3574,
     "uuid": "c77d4ec5-b15d-4103-aca6-1e42c5168c98",
     "missing": false
   },
@@ -1419,7 +1419,7 @@
     "missing": false
   },
   "C:\\Users\\agukp\\Snake Match\\assets\\Sprites\\snakeHead.png": {
-    "time": 1666208640016.7185,
+    "time": 1667324240473.718,
     "uuid": "1a2513bc-5c5d-470b-98c9-c24413bc1501",
     "missing": false
   },
@@ -1525,6 +1525,7 @@
     "time": 1666823292937.73
   },
   "C:\\Users\\agukp\\Snake Match\\assets\\Sprites\\snakeHead.png.meta": {
+<<<<<<< Updated upstream
     "time": 1666823292938.7297
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\AD_Banner.png.meta": {
@@ -1677,6 +1678,24 @@
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Scripts\\GlobalVariables.ts": {
     "time": 1667337106142.9941,
     "uuid": "3bb43066-5bd8-4bc1-82d8-022bd59ced26",
+=======
+    "time": 1667334314821.6155
+  },
+  "C:\\Users\\agukp\\Snake Match\\assets\\Sprites\\snakeTail.png.meta": {
+    "time": 1667337903973.9766
+  },
+  "C:\\Users\\agukp\\Snake Match\\assets\\Sprites\\snakeTail.png": {
+    "time": 1667324270469.7273,
+    "uuid": "1ea5aaae-29ea-4c5e-803c-6103cf615b1d",
+    "missing": false
+  },
+  "C:\\Users\\agukp\\Snake Match\\assets\\Prefab\\snakeTail.prefab.meta": {
+    "time": 1667339002476.584
+  },
+  "C:\\Users\\agukp\\Snake Match\\assets\\Prefab\\snakeTail.prefab": {
+    "time": 1667339002474.1196,
+    "uuid": "875fb283-277c-4008-a3b8-1d67bb5f8bf0",
+>>>>>>> Stashed changes
     "missing": false
   }
 }

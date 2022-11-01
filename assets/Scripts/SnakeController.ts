@@ -33,6 +33,11 @@ export class SnakeController extends Component {
   @property(Prefab)
   private bodyPrefab: Prefab;
 
+  @property(Prefab)
+  private tailPrefab: Prefab;
+
+  private tail: Node;
+
   private velocitySeconds: number = 0.4;
   public movementCount: number = 0;
   public matchCount: number = 0;
@@ -63,7 +68,8 @@ export class SnakeController extends Component {
   private _touchStartPos: import("cc").math.Vec2;
 
   public onLoad(): void {
-    this.character = this.node.getComponent(RigidBody2D);
+    this.tail = instantiate(this.tailPrefab);
+    this.node.parent.addChild(this.tail);
 
     input.on(Input.EventType.KEY_DOWN, this.onKeyDown, this);
     input.on(Input.EventType.TOUCH_START, this.touchStart, this);
@@ -161,12 +167,17 @@ export class SnakeController extends Component {
           break;
       }
     }
+    if (event.keyCode == 90) {
+      this.unscheduleAllCallbacks();
+      this.firstMove = true;
+    }
 
     if (this.firstMove == true && this.keyWhiteList.includes(event.keyCode)) {
       this.firstMove = false;
       this.startTicker();
     }
   }
+
   private startTicker(): void {
     this.schedule(() => {
       this.headMovement();
@@ -198,6 +209,7 @@ export class SnakeController extends Component {
     this.node.setPosition(pos);
     this.movementCount++;
     this.savePositions();
+    this.tailMovement();
     this.bodyMovement();
 
     this.deathCheck(pos);
@@ -206,12 +218,48 @@ export class SnakeController extends Component {
 
   }
 
+  private tailMovement(): void {
+    const tailPos = this.snakePositions[this.snakeInside.length];
+    if (!this.blockBody) {
+      this.tail.setPosition(tailPos.x, tailPos.y, 0);
+    }
+
+    const objective =
+      this.snakeInside.length < 1
+        ? this.node.position
+        : this.snakePositions[this.snakeInside.length - 1];
+
+    const difX = this.tail.position.x - objective.x;
+    const difY = this.tail.position.y - objective.y;
+
+    if (difX != 0) {
+      if (difX == 30) {
+        this.tail.angle = 90;
+        console.log("LEFT");
+      } else {
+        this.tail.angle = 270;
+        console.log("RIGHT");
+      }
+    }
+
+    if (difY != 0) {
+      if (difY == 30) {
+        this.tail.angle = 180;
+        console.log("DOWN");
+      } else {
+        this.tail.angle = 0;
+        console.log("UP");
+      }
+    }
+  }
+
   private savePositions(): void {
+    this.snakePositions = [{ x: this.oldPos.x, y: this.oldPos.y }];
+
     if (this.snakeInside.length < 1) {
       return;
     }
 
-    this.snakePositions = [{ x: this.oldPos.x, y: this.oldPos.y }];
     for (let snakePart of this.snakeInside) {
       this.snakePositions.push({
         x: snakePart.getPosition().clone().x,

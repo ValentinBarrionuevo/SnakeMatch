@@ -23,6 +23,7 @@
         "5b879615-5b5d-4864-bf8d-7b89a8a39331@f9941",
         "7559aa24-dcc5-4b24-b28b-3ec7c6e0283b@f9941",
         "2f766b69-1f8f-4272-a33e-57b4ae3a3be5",
+        "875fb283-277c-4008-a3b8-1d67bb5f8bf0",
         "baf4cd63-f444-45f7-9c99-41a5a922680c",
         "aed9f1b6-ba94-4693-beb9-777795e891cd@f9941",
         "aed9f1b6-ba94-4693-beb9-777795e891cd@f9941",
@@ -930,6 +931,7 @@
       ]
     }
   },
+<<<<<<< Updated upstream
   "691b2a22-eb8f-4fa7-b44e-cb8233a9b443": {
     "url": "db://assets/Sprites/AD_Banner.png",
     "value": {
@@ -1153,11 +1155,15 @@
     }
   },
   "0792778e-16b7-4e97-a515-9a5ee5d8477c": {
+=======
+  "1ea5aaae-29ea-4c5e-803c-6103cf615b1d": {
+>>>>>>> Stashed changes
     "url": "db://assets/Sprites/snakeTail.png",
     "value": {
       "depends": []
     }
   },
+<<<<<<< Updated upstream
   "9135aa5a-4b36-466c-a412-bd5f4ab0bab2@6c48a": {
     "url": "db://assets/Sprites/no.png@6c48a",
     "value": {
@@ -1333,5 +1339,50 @@
   "3bb43066-5bd8-4bc1-82d8-022bd59ced26": {
     "url": "db://assets/Scripts/GlobalVariables.ts",
     "value": {}
+=======
+  "1ea5aaae-29ea-4c5e-803c-6103cf615b1d@6c48a": {
+    "url": "db://assets/Sprites/snakeTail.png@6c48a",
+    "value": {
+      "depends": [
+        "1ea5aaae-29ea-4c5e-803c-6103cf615b1d"
+      ]
+    }
+  },
+  "1ea5aaae-29ea-4c5e-803c-6103cf615b1d@f9941": {
+    "url": "db://assets/Sprites/snakeTail.png@f9941",
+    "value": {
+      "depends": [
+        "1ea5aaae-29ea-4c5e-803c-6103cf615b1d@6c48a"
+      ]
+    }
+  },
+  "e2a7cd85-ba81-49ef-b279-c73de0ebe964": {
+    "url": "db://assets/Sprites/GAME_SnakeHEAD.png",
+    "value": {}
+  },
+  "e2a7cd85-ba81-49ef-b279-c73de0ebe964@6c48a": {
+    "url": "db://assets/Sprites/GAME_SnakeHEAD.png@6c48a",
+    "value": {
+      "depends": [
+        "e2a7cd85-ba81-49ef-b279-c73de0ebe964"
+      ]
+    }
+  },
+  "e2a7cd85-ba81-49ef-b279-c73de0ebe964@f9941": {
+    "url": "db://assets/Sprites/GAME_SnakeHEAD.png@f9941",
+    "value": {
+      "depends": [
+        "e2a7cd85-ba81-49ef-b279-c73de0ebe964@6c48a"
+      ]
+    }
+  },
+  "875fb283-277c-4008-a3b8-1d67bb5f8bf0": {
+    "url": "db://assets/Prefab/snakeTail.prefab",
+    "value": {
+      "depends": [
+        "1ea5aaae-29ea-4c5e-803c-6103cf615b1d@f9941"
+      ]
+    }
+>>>>>>> Stashed changes
   }
 }
