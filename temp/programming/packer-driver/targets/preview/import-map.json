@@ -2,11 +2,11 @@
   "imports": {
     "cce:/internal/x/cc": "./chunks/90/909f786ffe128f06f5aa1b4e1e3fbbd65262915e.js",
     "cce:/internal/x/prerequisite-imports": "./chunks/52/52e8a9e14f500a509b526e3a9f1d96810f76ca10.js",
-    "file:///C:/Users/Agu/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts": "./chunks/7c/7cdf0da9c847a45e75af3873f56db0d1baba821e.js",
-    "file:///C:/Users/Agu/Desktop/SnakeMatch/assets/Scripts/MainMenu.ts": "./chunks/8f/8fe1e17e8b1e2cea85a31032a163d5db36d49593.js",
-    "file:///C:/Users/Agu/Desktop/SnakeMatch/assets/Scripts/UIController.ts": "./chunks/e8/e8bd8a0a0ddc1ab3bfc5be56a995ab54ecfce1a5.js",
-    "file:///C:/Users/Agu/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts": "./chunks/18/18e1fa9ff9a47c66dde652a1cbb3de520dc4362b.js",
-    "file:///C:/Users/Agu/Desktop/SnakeMatch/assets/Scripts/GameManager.ts": "./chunks/1c/1cd0dfba07748a0e183293659ee7d96c0d412bdb.js"
+    "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/ButtonMethods.ts": "./chunks/cb/cbb44ab928d1545706e2a81339368484cae26f14.js",
+    "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/GameManager.ts": "./chunks/29/29218cf8b7712895430140f4500a9f20c913c69d.js",
+    "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/MainMenu.ts": "./chunks/85/859267bbc5bfb80d66580802913f5f9b6cc8e19e.js",
+    "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/UIController.ts": "./chunks/eb/eb8f91edb2f17a72d69ef85f7f56fcd2aebed2a4.js",
+    "file:///C:/Users/agukp/Snake%20Match/assets/Scripts/SnakeController.ts": "./chunks/d9/d9b19e947f577df05d288fde39b24c14b012cd5e.js"
   },
   "scopes": {
     "./chunks/90/909f786ffe128f06f5aa1b4e1e3fbbd65262915e.js": {
@@ -31,29 +31,29 @@
       "__unresolved_9": "cce:/internal/x/cc-fu/physics-2d-box2d"
     },
     "./chunks/52/52e8a9e14f500a509b526e3a9f1d96810f76ca10.js": {
-      "__unresolved_0": "./chunks/7c/7cdf0da9c847a45e75af3873f56db0d1baba821e.js",
-      "__unresolved_1": "./chunks/1c/1cd0dfba07748a0e183293659ee7d96c0d412bdb.js",
-      "__unresolved_2": "./chunks/8f/8fe1e17e8b1e2cea85a31032a163d5db36d49593.js",
-      "__unresolved_3": "./chunks/18/18e1fa9ff9a47c66dde652a1cbb3de520dc4362b.js",
-      "__unresolved_4": "./chunks/e8/e8bd8a0a0ddc1ab3bfc5be56a995ab54ecfce1a5.js"
+      "__unresolved_0": "./chunks/cb/cbb44ab928d1545706e2a81339368484cae26f14.js",
+      "__unresolved_1": "./chunks/29/29218cf8b7712895430140f4500a9f20c913c69d.js",
+      "__unresolved_2": "./chunks/85/859267bbc5bfb80d66580802913f5f9b6cc8e19e.js",
+      "__unresolved_3": "./chunks/d9/d9b19e947f577df05d288fde39b24c14b012cd5e.js",
+      "__unresolved_4": "./chunks/eb/eb8f91edb2f17a72d69ef85f7f56fcd2aebed2a4.js"
     },
-    "./chunks/e8/e8bd8a0a0ddc1ab3bfc5be56a995ab54ecfce1a5.js": {
+    "./chunks/eb/eb8f91edb2f17a72d69ef85f7f56fcd2aebed2a4.js": {
       "cc": "./chunks/90/909f786ffe128f06f5aa1b4e1e3fbbd65262915e.js"
     },
-    "./chunks/18/18e1fa9ff9a47c66dde652a1cbb3de520dc4362b.js": {
+    "./chunks/d9/d9b19e947f577df05d288fde39b24c14b012cd5e.js": {
       "__unresolved_0": "./chunks/3a/3a1fd7b13056478820ebedd306d3446d1aa408cc.js",
-      "__unresolved_1": "./chunks/1c/1cd0dfba07748a0e183293659ee7d96c0d412bdb.js",
+      "__unresolved_1": "./chunks/29/29218cf8b7712895430140f4500a9f20c913c69d.js",
       "cc": "./chunks/90/909f786ffe128f06f5aa1b4e1e3fbbd65262915e.js"
     },
-    "./chunks/1c/1cd0dfba07748a0e183293659ee7d96c0d412bdb.js": {
+    "./chunks/29/29218cf8b7712895430140f4500a9f20c913c69d.js": {
       "__unresolved_0": "./chunks/3a/3a1fd7b13056478820ebedd306d3446d1aa408cc.js",
-      "__unresolved_1": "./chunks/18/18e1fa9ff9a47c66dde652a1cbb3de520dc4362b.js",
+      "__unresolved_1": "./chunks/d9/d9b19e947f577df05d288fde39b24c14b012cd5e.js",
       "cc": "./chunks/90/909f786ffe128f06f5aa1b4e1e3fbbd65262915e.js"
     },
-    "./chunks/8f/8fe1e17e8b1e2cea85a31032a163d5db36d49593.js": {
+    "./chunks/85/859267bbc5bfb80d66580802913f5f9b6cc8e19e.js": {
       "cc": "./chunks/90/909f786ffe128f06f5aa1b4e1e3fbbd65262915e.js"
     },
-    "./chunks/7c/7cdf0da9c847a45e75af3873f56db0d1baba821e.js": {
+    "./chunks/cb/cbb44ab928d1545706e2a81339368484cae26f14.js": {
       "cc": "./chunks/90/909f786ffe128f06f5aa1b4e1e3fbbd65262915e.js"
     }
   }
