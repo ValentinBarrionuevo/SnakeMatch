@@ -1,8 +1,12 @@
 import { _decorator, Component, Node, input, Input, director, EventTouch, find, Sprite, SpriteFrame, Vec2, AudioSource, assert } from "cc";
+import { GlobalVariables } from "./GlobalVariables";
 const { ccclass, property } = _decorator;
 
 @ccclass("MainMenu")
 export class MainMenu extends Component {
+
+  @property(SpriteFrame)
+  private muteArray: Array<SpriteFrame> = new Array<SpriteFrame>(2);
 
   private audioSource: AudioSource = null!;
 
@@ -12,6 +16,7 @@ export class MainMenu extends Component {
   private ads: Node;
 
   onLoad() {
+
     this.play = find("Canvas/background/Play")
     this.mute = find("Canvas/background/Mute")
     this.shop = find("Canvas/background/Shop")
@@ -36,6 +41,11 @@ export class MainMenu extends Component {
         director.loadScene("GameScene");
         break;
       case "Mute":
+        if (e.target.getComponent(Sprite).spriteFrame == this.muteArray[0]) {
+          e.target.getComponent(Sprite).spriteFrame = this.muteArray[1];
+        } else {
+          e.target.getComponent(Sprite).spriteFrame = this.muteArray[0];
+        }
         this.muteAll();
         break;
       case "Shop":
@@ -43,6 +53,7 @@ export class MainMenu extends Component {
         break;
       case "Ads":
         find("Canvas/background/adSpace").active = false;
+        GlobalVariables.saveData.disabledAds = true;
         break;
     }
   }

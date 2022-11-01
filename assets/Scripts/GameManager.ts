@@ -14,6 +14,7 @@ import {
   SpriteFrame,
   Sprite,
 } from "cc";
+import { GlobalVariables } from "./GlobalVariables";
 import { SnakeController } from "./SnakeController";
 const { ccclass, property } = _decorator;
 
@@ -56,8 +57,16 @@ export class GameManager extends Component {
 
   private justAte: boolean = false;
 
-  onLoad() {}
+  onLoad() { }
+
   start() {
+
+    if (GlobalVariables.saveData.disabledAds == false) {
+      this.node.children[7].children[4].active = true;
+    }
+
+
+
     this.spawnByType(this.ball);
     this.spawnByType(this.ball);
     this.spawnByType(this.ball);
@@ -139,9 +148,16 @@ export class GameManager extends Component {
             this.spawnByType(this.coin);
           }
 
-          const prob = math.randomRangeInt(0, 11);
+          const prob = math.randomRangeInt(0, 21);
           if (prob >= 1 && prob <= 3) {
-            this.spawnByType(this.bomb);
+            if (find("Canvas/Bombs").children.length < 1) {
+              this.spawnByType(this.bomb);
+            }
+          }
+          if (prob >= 4 && prob <= 10) {
+            if (find("Canvas/Random").children.length < 1) {
+              this.spawnByType(this.rndmBall);
+            }
           }
         }
         break;
@@ -238,6 +254,17 @@ export class GameManager extends Component {
       }
 
       const node = this.spawn(type, newParent, pos);
+
+      if (type == this.bomb) {
+        this.scheduleOnce(() => {
+
+          if (find("Canvas/Bombs").children[0] != null) {
+            find("Canvas/Bombs").children[0].destroy();
+          }
+
+        }, 10)
+      }
+
 
       if (type == this.ball) {
         let rndmIndex = math.randomRangeInt(0, 4);

@@ -78,7 +78,6 @@ export class SnakeController extends Component {
     input.off(Input.EventType.KEY_DOWN, this.onKeyDown, this);
     input.off(Input.EventType.TOUCH_START, this.touchStart, this);
     input.off(Input.EventType.TOUCH_END, this.touchEnd, this);
-    find("Canvas/UI/Death").active = true;
   }
 
   public touchStart(e: EventTouch): void {
@@ -204,6 +203,7 @@ export class SnakeController extends Component {
     this.deathCheck(pos);
 
     find("Canvas").getComponent(GameManager).checkGameState();
+
   }
 
   private savePositions(): void {
@@ -237,15 +237,42 @@ export class SnakeController extends Component {
 
   private deathCheck(pos: Vec3): void {
     if (pos.x > 150 || pos.x < -150) {
-      this.node.destroy();
+      find("Canvas/UI/Death/Points").getComponent(Label).string =
+        find("Canvas").getComponent(GameManager).points.toString();
+
+      find("Canvas/UI/Death").active = true;
+      this.unscheduleAllCallbacks();
       return;
     }
 
     if (pos.y > 241 || pos.y < -241) {
-      this.node.destroy();
+      find("Canvas/UI/Death/Points").getComponent(Label).string =
+        find("Canvas").getComponent(GameManager).points.toString();
+
+      find("Canvas/UI/Death").active = true;
+      this.unscheduleAllCallbacks();
       return;
     }
   }
+
+  public restartAD(): void {
+    this.node.setPosition(new Vec3(0, 0, 0));
+    this.node.angle = 0;
+
+    this.snakeInside.forEach(body => {
+      body.destroy();
+    });
+
+
+    this.snakeInside.splice(0, this.snakeInside.length);
+    this.direction = "DOWN"
+    this.headMovement();
+    this.direction = "UP"
+    this.headMovement();
+    this.firstMove = true;
+  }
+
+
 
   public eatBall(ball: number): void {
     //this.audioSource.play();
