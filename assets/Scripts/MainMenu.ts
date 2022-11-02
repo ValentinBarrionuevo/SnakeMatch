@@ -49,7 +49,7 @@ export class MainMenu extends Component {
         this.muteAll();
         break;
       case "Shop":
-        director.loadScene("Shop");
+        director.loadScene("Store");
         break;
       case "Ads":
         find("Canvas/background/adSpace").active = false;

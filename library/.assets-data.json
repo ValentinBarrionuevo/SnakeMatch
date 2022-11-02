@@ -22,8 +22,22 @@
         "f5392916-fdbc-4c13-86e2-27379960bf8b@f9941",
         "5b879615-5b5d-4864-bf8d-7b89a8a39331@f9941",
         "7559aa24-dcc5-4b24-b28b-3ec7c6e0283b@f9941",
+        "712d2d5e-4247-4107-8ea8-f0230b559fdd@f9941",
+        "65f0b805-f09a-4957-8ec3-c5c01427420b@f9941",
+        "f5b45395-01b9-4324-806a-1f230fb19dcf@f9941",
+        "75a2a294-cfa3-4289-98e0-d41f501ad249@f9941",
+        "23f47642-ec57-43f6-aac7-019b549ce2ba@f9941",
+        "c131209f-2202-430a-adde-4ea77423b111@f9941",
+        "af9ade3e-2cdd-45af-b15f-5f0c8017eaec@f9941",
+        "b46fcd06-c497-4503-bba1-75b7db37546d@f9941",
         "2f766b69-1f8f-4272-a33e-57b4ae3a3be5",
         "875fb283-277c-4008-a3b8-1d67bb5f8bf0",
+        "1a2513bc-5c5d-470b-98c9-c24413bc1501@f9941",
+        "3f9bae63-c73e-405b-9064-67eaf7eb62c9@f9941",
+        "342ecdbb-a603-4e8e-a09d-047f75a793a2@f9941",
+        "0792778e-16b7-4e97-a515-9a5ee5d8477c@f9941",
+        "59359806-7967-49c4-822a-e88cfd9a6cc3@f9941",
+        "9545a8a0-c180-49de-b699-fe34eb09e4e7@f9941",
         "baf4cd63-f444-45f7-9c99-41a5a922680c",
         "aed9f1b6-ba94-4693-beb9-777795e891cd@f9941",
         "aed9f1b6-ba94-4693-beb9-777795e891cd@f9941",
@@ -931,7 +945,6 @@
       ]
     }
   },
-<<<<<<< Updated upstream
   "691b2a22-eb8f-4fa7-b44e-cb8233a9b443": {
     "url": "db://assets/Sprites/AD_Banner.png",
     "value": {
@@ -1155,15 +1168,11 @@
     }
   },
   "0792778e-16b7-4e97-a515-9a5ee5d8477c": {
-=======
-  "1ea5aaae-29ea-4c5e-803c-6103cf615b1d": {
->>>>>>> Stashed changes
     "url": "db://assets/Sprites/snakeTail.png",
     "value": {
       "depends": []
     }
   },
-<<<<<<< Updated upstream
   "9135aa5a-4b36-466c-a412-bd5f4ab0bab2@6c48a": {
     "url": "db://assets/Sprites/no.png@6c48a",
     "value": {
@@ -1339,50 +1348,461 @@
   "3bb43066-5bd8-4bc1-82d8-022bd59ced26": {
     "url": "db://assets/Scripts/GlobalVariables.ts",
     "value": {}
-=======
-  "1ea5aaae-29ea-4c5e-803c-6103cf615b1d@6c48a": {
-    "url": "db://assets/Sprites/snakeTail.png@6c48a",
-    "value": {
-      "depends": [
-        "1ea5aaae-29ea-4c5e-803c-6103cf615b1d"
-      ]
-    }
   },
-  "1ea5aaae-29ea-4c5e-803c-6103cf615b1d@f9941": {
-    "url": "db://assets/Sprites/snakeTail.png@f9941",
-    "value": {
-      "depends": [
-        "1ea5aaae-29ea-4c5e-803c-6103cf615b1d@6c48a"
-      ]
-    }
-  },
-  "e2a7cd85-ba81-49ef-b279-c73de0ebe964": {
-    "url": "db://assets/Sprites/GAME_SnakeHEAD.png",
+  "180d53bd-bea0-426e-9f32-efbe2d627527": {
+    "url": "db://assets/Scenes/Shop.scene",
     "value": {}
-  },
-  "e2a7cd85-ba81-49ef-b279-c73de0ebe964@6c48a": {
-    "url": "db://assets/Sprites/GAME_SnakeHEAD.png@6c48a",
-    "value": {
-      "depends": [
-        "e2a7cd85-ba81-49ef-b279-c73de0ebe964"
-      ]
-    }
-  },
-  "e2a7cd85-ba81-49ef-b279-c73de0ebe964@f9941": {
-    "url": "db://assets/Sprites/GAME_SnakeHEAD.png@f9941",
-    "value": {
-      "depends": [
-        "e2a7cd85-ba81-49ef-b279-c73de0ebe964@6c48a"
-      ]
-    }
   },
   "875fb283-277c-4008-a3b8-1d67bb5f8bf0": {
     "url": "db://assets/Prefab/snakeTail.prefab",
     "value": {
       "depends": [
-        "1ea5aaae-29ea-4c5e-803c-6103cf615b1d@f9941"
+        "0792778e-16b7-4e97-a515-9a5ee5d8477c@f9941"
       ]
     }
->>>>>>> Stashed changes
+  },
+  "f56178ef-1d4e-4476-a51f-e2edf9bdbaf8": {
+    "url": "db://assets/Sprites/GAME_SnakeYEL.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "f56178ef-1d4e-4476-a51f-e2edf9bdbaf8@6c48a": {
+    "url": "db://assets/Sprites/GAME_SnakeYEL.png@6c48a",
+    "value": {
+      "depends": [
+        "f56178ef-1d4e-4476-a51f-e2edf9bdbaf8"
+      ]
+    }
+  },
+  "f56178ef-1d4e-4476-a51f-e2edf9bdbaf8@f9941": {
+    "url": "db://assets/Sprites/GAME_SnakeYEL.png@f9941",
+    "value": {
+      "depends": [
+        "f56178ef-1d4e-4476-a51f-e2edf9bdbaf8@6c48a"
+      ]
+    }
+  },
+  "464094bb-a0e9-4119-9a11-cc4d251826c2": {
+    "url": "db://assets/Scenes/Store.scene",
+    "value": {
+      "depends": [
+        "464094bb-a0e9-4119-9a11-cc4d251826c2",
+        "31f00a15-f596-4b5c-9e17-e6862c270312@f9941",
+        "31f00a15-f596-4b5c-9e17-e6862c270312@f9941",
+        "31f00a15-f596-4b5c-9e17-e6862c270312@f9941",
+        "cf37ac2a-5277-41df-8936-58f7f375b0b7@f9941",
+        "cf37ac2a-5277-41df-8936-58f7f375b0b7@f9941",
+        "cf37ac2a-5277-41df-8936-58f7f375b0b7@f9941",
+        "691b2a22-eb8f-4fa7-b44e-cb8233a9b443@f9941",
+        "cdefd935-1ec8-4753-a484-3ad5c0c6930f@f9941",
+        "fbc97e46-e8f6-4176-8acf-8b7e78105ea3@f9941",
+        "e2e4ce11-0300-4365-9cdc-58daad2477fd@f9941"
+      ]
+    }
+  },
+  "660f9591-b90a-4441-ac8d-41d20a25ba08": {
+    "url": "db://assets/Scripts/MainMenu-001.ts",
+    "value": {}
+  },
+  "b8e5b78d-fa1b-49bd-9919-64af07e011a8": {
+    "url": "db://assets/Scripts/Store.ts",
+    "value": {}
+  },
+  "cf37ac2a-5277-41df-8936-58f7f375b0b7": {
+    "url": "db://assets/Sprites/check.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "fbc97e46-e8f6-4176-8acf-8b7e78105ea3": {
+    "url": "db://assets/Sprites/coinsCount.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "31f00a15-f596-4b5c-9e17-e6862c270312": {
+    "url": "db://assets/Sprites/price.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "cdefd935-1ec8-4753-a484-3ad5c0c6930f": {
+    "url": "db://assets/Sprites/storeBack.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "31f00a15-f596-4b5c-9e17-e6862c270312@6c48a": {
+    "url": "db://assets/Sprites/price.png@6c48a",
+    "value": {
+      "depends": [
+        "31f00a15-f596-4b5c-9e17-e6862c270312"
+      ]
+    }
+  },
+  "fbc97e46-e8f6-4176-8acf-8b7e78105ea3@6c48a": {
+    "url": "db://assets/Sprites/coinsCount.png@6c48a",
+    "value": {
+      "depends": [
+        "fbc97e46-e8f6-4176-8acf-8b7e78105ea3"
+      ]
+    }
+  },
+  "cdefd935-1ec8-4753-a484-3ad5c0c6930f@6c48a": {
+    "url": "db://assets/Sprites/storeBack.png@6c48a",
+    "value": {
+      "depends": [
+        "cdefd935-1ec8-4753-a484-3ad5c0c6930f"
+      ]
+    }
+  },
+  "cf37ac2a-5277-41df-8936-58f7f375b0b7@6c48a": {
+    "url": "db://assets/Sprites/check.png@6c48a",
+    "value": {
+      "depends": [
+        "cf37ac2a-5277-41df-8936-58f7f375b0b7"
+      ]
+    }
+  },
+  "31f00a15-f596-4b5c-9e17-e6862c270312@f9941": {
+    "url": "db://assets/Sprites/price.png@f9941",
+    "value": {
+      "depends": [
+        "31f00a15-f596-4b5c-9e17-e6862c270312@6c48a"
+      ]
+    }
+  },
+  "fbc97e46-e8f6-4176-8acf-8b7e78105ea3@f9941": {
+    "url": "db://assets/Sprites/coinsCount.png@f9941",
+    "value": {
+      "depends": [
+        "fbc97e46-e8f6-4176-8acf-8b7e78105ea3@6c48a"
+      ]
+    }
+  },
+  "cf37ac2a-5277-41df-8936-58f7f375b0b7@f9941": {
+    "url": "db://assets/Sprites/check.png@f9941",
+    "value": {
+      "depends": [
+        "cf37ac2a-5277-41df-8936-58f7f375b0b7@6c48a"
+      ]
+    }
+  },
+  "cdefd935-1ec8-4753-a484-3ad5c0c6930f@f9941": {
+    "url": "db://assets/Sprites/storeBack.png@f9941",
+    "value": {
+      "depends": [
+        "cdefd935-1ec8-4753-a484-3ad5c0c6930f@6c48a"
+      ]
+    }
+  },
+  "e2e4ce11-0300-4365-9cdc-58daad2477fd": {
+    "url": "db://assets/Sprites/backStore.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "e2e4ce11-0300-4365-9cdc-58daad2477fd@6c48a": {
+    "url": "db://assets/Sprites/backStore.png@6c48a",
+    "value": {
+      "depends": [
+        "e2e4ce11-0300-4365-9cdc-58daad2477fd"
+      ]
+    }
+  },
+  "e2e4ce11-0300-4365-9cdc-58daad2477fd@f9941": {
+    "url": "db://assets/Sprites/backStore.png@f9941",
+    "value": {
+      "depends": [
+        "e2e4ce11-0300-4365-9cdc-58daad2477fd@6c48a"
+      ]
+    }
+  },
+  "342ecdbb-a603-4e8e-a09d-047f75a793a2": {
+    "url": "db://assets/Sprites/snakeHeadGrey.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "3f9bae63-c73e-405b-9064-67eaf7eb62c9": {
+    "url": "db://assets/Sprites/snakeHeadOrange.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "9545a8a0-c180-49de-b699-fe34eb09e4e7": {
+    "url": "db://assets/Sprites/snakeTailGrey.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "59359806-7967-49c4-822a-e88cfd9a6cc3": {
+    "url": "db://assets/Sprites/snakeTailOrange.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "9545a8a0-c180-49de-b699-fe34eb09e4e7@6c48a": {
+    "url": "db://assets/Sprites/snakeTailGrey.png@6c48a",
+    "value": {
+      "depends": [
+        "9545a8a0-c180-49de-b699-fe34eb09e4e7"
+      ]
+    }
+  },
+  "342ecdbb-a603-4e8e-a09d-047f75a793a2@6c48a": {
+    "url": "db://assets/Sprites/snakeHeadGrey.png@6c48a",
+    "value": {
+      "depends": [
+        "342ecdbb-a603-4e8e-a09d-047f75a793a2"
+      ]
+    }
+  },
+  "59359806-7967-49c4-822a-e88cfd9a6cc3@6c48a": {
+    "url": "db://assets/Sprites/snakeTailOrange.png@6c48a",
+    "value": {
+      "depends": [
+        "59359806-7967-49c4-822a-e88cfd9a6cc3"
+      ]
+    }
+  },
+  "3f9bae63-c73e-405b-9064-67eaf7eb62c9@6c48a": {
+    "url": "db://assets/Sprites/snakeHeadOrange.png@6c48a",
+    "value": {
+      "depends": [
+        "3f9bae63-c73e-405b-9064-67eaf7eb62c9"
+      ]
+    }
+  },
+  "342ecdbb-a603-4e8e-a09d-047f75a793a2@f9941": {
+    "url": "db://assets/Sprites/snakeHeadGrey.png@f9941",
+    "value": {
+      "depends": [
+        "342ecdbb-a603-4e8e-a09d-047f75a793a2@6c48a"
+      ]
+    }
+  },
+  "9545a8a0-c180-49de-b699-fe34eb09e4e7@f9941": {
+    "url": "db://assets/Sprites/snakeTailGrey.png@f9941",
+    "value": {
+      "depends": [
+        "9545a8a0-c180-49de-b699-fe34eb09e4e7@6c48a"
+      ]
+    }
+  },
+  "59359806-7967-49c4-822a-e88cfd9a6cc3@f9941": {
+    "url": "db://assets/Sprites/snakeTailOrange.png@f9941",
+    "value": {
+      "depends": [
+        "59359806-7967-49c4-822a-e88cfd9a6cc3@6c48a"
+      ]
+    }
+  },
+  "3f9bae63-c73e-405b-9064-67eaf7eb62c9@f9941": {
+    "url": "db://assets/Sprites/snakeHeadOrange.png@f9941",
+    "value": {
+      "depends": [
+        "3f9bae63-c73e-405b-9064-67eaf7eb62c9@6c48a"
+      ]
+    }
+  },
+  "712d2d5e-4247-4107-8ea8-f0230b559fdd": {
+    "url": "db://assets/Sprites/snakeBodyBlueOrange.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "65f0b805-f09a-4957-8ec3-c5c01427420b": {
+    "url": "db://assets/Sprites/snakeBodyPinkOrange.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "f5b45395-01b9-4324-806a-1f230fb19dcf": {
+    "url": "db://assets/Sprites/snakeBodyRedOrange.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "75a2a294-cfa3-4289-98e0-d41f501ad249": {
+    "url": "db://assets/Sprites/snakeBodyYellowOrange.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "f5b45395-01b9-4324-806a-1f230fb19dcf@6c48a": {
+    "url": "db://assets/Sprites/snakeBodyRedOrange.png@6c48a",
+    "value": {
+      "depends": [
+        "f5b45395-01b9-4324-806a-1f230fb19dcf"
+      ]
+    }
+  },
+  "75a2a294-cfa3-4289-98e0-d41f501ad249@6c48a": {
+    "url": "db://assets/Sprites/snakeBodyYellowOrange.png@6c48a",
+    "value": {
+      "depends": [
+        "75a2a294-cfa3-4289-98e0-d41f501ad249"
+      ]
+    }
+  },
+  "65f0b805-f09a-4957-8ec3-c5c01427420b@6c48a": {
+    "url": "db://assets/Sprites/snakeBodyPinkOrange.png@6c48a",
+    "value": {
+      "depends": [
+        "65f0b805-f09a-4957-8ec3-c5c01427420b"
+      ]
+    }
+  },
+  "712d2d5e-4247-4107-8ea8-f0230b559fdd@6c48a": {
+    "url": "db://assets/Sprites/snakeBodyBlueOrange.png@6c48a",
+    "value": {
+      "depends": [
+        "712d2d5e-4247-4107-8ea8-f0230b559fdd"
+      ]
+    }
+  },
+  "f5b45395-01b9-4324-806a-1f230fb19dcf@f9941": {
+    "url": "db://assets/Sprites/snakeBodyRedOrange.png@f9941",
+    "value": {
+      "depends": [
+        "f5b45395-01b9-4324-806a-1f230fb19dcf@6c48a"
+      ]
+    }
+  },
+  "75a2a294-cfa3-4289-98e0-d41f501ad249@f9941": {
+    "url": "db://assets/Sprites/snakeBodyYellowOrange.png@f9941",
+    "value": {
+      "depends": [
+        "75a2a294-cfa3-4289-98e0-d41f501ad249@6c48a"
+      ]
+    }
+  },
+  "65f0b805-f09a-4957-8ec3-c5c01427420b@f9941": {
+    "url": "db://assets/Sprites/snakeBodyPinkOrange.png@f9941",
+    "value": {
+      "depends": [
+        "65f0b805-f09a-4957-8ec3-c5c01427420b@6c48a"
+      ]
+    }
+  },
+  "712d2d5e-4247-4107-8ea8-f0230b559fdd@f9941": {
+    "url": "db://assets/Sprites/snakeBodyBlueOrange.png@f9941",
+    "value": {
+      "depends": [
+        "712d2d5e-4247-4107-8ea8-f0230b559fdd@6c48a"
+      ]
+    }
+  },
+  "23f47642-ec57-43f6-aac7-019b549ce2ba": {
+    "url": "db://assets/Sprites/snakeBodyBlueGrey.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "c131209f-2202-430a-adde-4ea77423b111": {
+    "url": "db://assets/Sprites/snakeBodyPinkGrey.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "af9ade3e-2cdd-45af-b15f-5f0c8017eaec": {
+    "url": "db://assets/Sprites/snakeBodyRedGrey.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "b46fcd06-c497-4503-bba1-75b7db37546d": {
+    "url": "db://assets/Sprites/snakeBodyYellowGrey.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "c131209f-2202-430a-adde-4ea77423b111@6c48a": {
+    "url": "db://assets/Sprites/snakeBodyPinkGrey.png@6c48a",
+    "value": {
+      "depends": [
+        "c131209f-2202-430a-adde-4ea77423b111"
+      ]
+    }
+  },
+  "23f47642-ec57-43f6-aac7-019b549ce2ba@6c48a": {
+    "url": "db://assets/Sprites/snakeBodyBlueGrey.png@6c48a",
+    "value": {
+      "depends": [
+        "23f47642-ec57-43f6-aac7-019b549ce2ba"
+      ]
+    }
+  },
+  "af9ade3e-2cdd-45af-b15f-5f0c8017eaec@6c48a": {
+    "url": "db://assets/Sprites/snakeBodyRedGrey.png@6c48a",
+    "value": {
+      "depends": [
+        "af9ade3e-2cdd-45af-b15f-5f0c8017eaec"
+      ]
+    }
+  },
+  "b46fcd06-c497-4503-bba1-75b7db37546d@6c48a": {
+    "url": "db://assets/Sprites/snakeBodyYellowGrey.png@6c48a",
+    "value": {
+      "depends": [
+        "b46fcd06-c497-4503-bba1-75b7db37546d"
+      ]
+    }
+  },
+  "c131209f-2202-430a-adde-4ea77423b111@f9941": {
+    "url": "db://assets/Sprites/snakeBodyPinkGrey.png@f9941",
+    "value": {
+      "depends": [
+        "c131209f-2202-430a-adde-4ea77423b111@6c48a"
+      ]
+    }
+  },
+  "af9ade3e-2cdd-45af-b15f-5f0c8017eaec@f9941": {
+    "url": "db://assets/Sprites/snakeBodyRedGrey.png@f9941",
+    "value": {
+      "depends": [
+        "af9ade3e-2cdd-45af-b15f-5f0c8017eaec@6c48a"
+      ]
+    }
+  },
+  "23f47642-ec57-43f6-aac7-019b549ce2ba@f9941": {
+    "url": "db://assets/Sprites/snakeBodyBlueGrey.png@f9941",
+    "value": {
+      "depends": [
+        "23f47642-ec57-43f6-aac7-019b549ce2ba@6c48a"
+      ]
+    }
+  },
+  "b46fcd06-c497-4503-bba1-75b7db37546d@f9941": {
+    "url": "db://assets/Sprites/snakeBodyYellowGrey.png@f9941",
+    "value": {
+      "depends": [
+        "b46fcd06-c497-4503-bba1-75b7db37546d@6c48a"
+      ]
+    }
+  },
+  "b4051877-beb5-47b4-a27a-2659ad63c208": {
+    "url": "db://assets/Sprites/Gameplay_FondoGRIS.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "b4051877-beb5-47b4-a27a-2659ad63c208@6c48a": {
+    "url": "db://assets/Sprites/Gameplay_FondoGRIS.png@6c48a",
+    "value": {
+      "depends": [
+        "b4051877-beb5-47b4-a27a-2659ad63c208"
+      ]
+    }
+  },
+  "b4051877-beb5-47b4-a27a-2659ad63c208@f9941": {
+    "url": "db://assets/Sprites/Gameplay_FondoGRIS.png@f9941",
+    "value": {
+      "depends": [
+        "b4051877-beb5-47b4-a27a-2659ad63c208@6c48a"
+      ]
+    }
   }
 }

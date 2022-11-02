@@ -1,0 +1,134 @@
+{
+  "ver": "1.0.24",
+  "importer": "image",
+  "imported": true,
+  "uuid": "f56178ef-1d4e-4476-a51f-e2edf9bdbaf8",
+  "files": [
+    ".json",
+    ".png"
+  ],
+  "subMetas": {
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "f56178ef-1d4e-4476-a51f-e2edf9bdbaf8@6c48a",
+      "displayName": "GAME_SnakeYEL",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "clamp-to-edge",
+        "wrapModeT": "clamp-to-edge",
+        "imageUuidOrDatabaseUri": "f56178ef-1d4e-4476-a51f-e2edf9bdbaf8",
+        "isUuid": true,
+        "visible": false,
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f9941": {
+      "importer": "sprite-frame",
+      "uuid": "f56178ef-1d4e-4476-a51f-e2edf9bdbaf8@f9941",
+      "displayName": "GAME_SnakeYEL",
+      "id": "f9941",
+      "name": "spriteFrame",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 3,
+        "trimY": 3,
+        "width": 20,
+        "height": 20,
+        "rawWidth": 26,
+        "rawHeight": 26,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [
+            -10,
+            -10,
+            0,
+            10,
+            -10,
+            0,
+            -10,
+            10,
+            0,
+            10,
+            10,
+            0
+          ],
+          "indexes": [
+            0,
+            1,
+            2,
+            2,
+            1,
+            3
+          ],
+          "uv": [
+            3,
+            23,
+            23,
+            23,
+            3,
+            3,
+            23,
+            3
+          ],
+          "nuv": [
+            0.11538461538461539,
+            0.11538461538461539,
+            0.8846153846153846,
+            0.11538461538461539,
+            0.11538461538461539,
+            0.8846153846153846,
+            0.8846153846153846,
+            0.8846153846153846
+          ],
+          "minPos": [
+            -10,
+            -10,
+            0
+          ],
+          "maxPos": [
+            10,
+            10,
+            0
+          ]
+        },
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "f56178ef-1d4e-4476-a51f-e2edf9bdbaf8@6c48a",
+        "atlasUuid": ""
+      },
+      "ver": "1.0.11",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "sprite-frame",
+    "fixAlphaTransparencyArtifacts": true,
+    "hasAlpha": true,
+    "redirect": "f56178ef-1d4e-4476-a51f-e2edf9bdbaf8@f9941"
+  }
+}

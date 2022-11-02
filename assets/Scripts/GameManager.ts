@@ -41,7 +41,7 @@ export class GameManager extends Component {
   private snake: Prefab = null;
 
   private movementCount: number;
-  private voidSpawnNeeded: number = 75;
+  private voidSpawnNeeded: number = 50;
 
   private matchCount: number;
   private maxMatch: number;
@@ -108,6 +108,11 @@ export class GameManager extends Component {
     while (this.spawnedArray.length < 3) {
       this.spawnByType(this.ball);
     }
+
+    find("Canvas/UI/Points").getComponent(Label).string = this.points.toString();
+    find("Canvas/UI/Multiplier").getComponent(Label).string = "x" + this.multiplier.toString();
+
+
   }
 
   private voidDestroy(): void {
@@ -178,7 +183,7 @@ export class GameManager extends Component {
         parent = find("Canvas/Voids");
         array = this.check(parent, snakePos);
         if (array.length > 0) {
-          find("Canvas/Snake").destroy();
+          find("Canvas/Snake").getComponent(SnakeController).death();
         }
         break;
       case this.snake:
@@ -186,7 +191,7 @@ export class GameManager extends Component {
           parent = find("Canvas/Snake");
           array = this.check(parent, snakePos);
           if (array.length > 1) {
-            find("Canvas/Snake").destroy();
+            find("Canvas/Snake/Head").getComponent(SnakeController).death();
           }
         }
         break;
