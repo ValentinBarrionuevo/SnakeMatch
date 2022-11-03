@@ -6,11 +6,12 @@ import {
   Prefab,
   math,
   Vec2,
-
   Label,
   Node,
   SpriteFrame,
   Sprite,
+  AudioSource,
+  AudioClip,
 } from "cc";
 import { GlobalVariables } from "./GlobalVariables";
 import { SnakeController } from "./SnakeController";
@@ -36,10 +37,13 @@ export class GameManager extends Component {
   @property(Prefab)
   private rndmBall: Prefab;
 
+  @property(AudioClip)
+  private coinSound: AudioClip;
+
   private snake: Prefab = null;
 
   private movementCount: number;
-  private voidSpawnNeeded: number = 50;
+  private voidSpawnNeeded: number = 75;
 
   private matchCount: number;
   private maxMatch: number;
@@ -54,16 +58,16 @@ export class GameManager extends Component {
   private coins: number = 0;
 
   private justAte: boolean = false;
+  private audioSource: AudioSource = null;
 
-  onLoad() { }
+  onLoad() {
+    this.audioSource = this.getComponent(AudioSource);
+  }
 
   start() {
-
     if (GlobalVariables.saveData.disabledAds == false) {
       this.node.children[7].children[4].active = true;
     }
-
-
 
     this.spawnByType(this.ball);
     this.spawnByType(this.ball);
@@ -107,10 +111,10 @@ export class GameManager extends Component {
       this.spawnByType(this.ball);
     }
 
-    find("Canvas/UI/Points").getComponent(Label).string = this.points.toString();
-    find("Canvas/UI/Multiplier").getComponent(Label).string = "x" + this.multiplier.toString();
-
-
+    find("Canvas/UI/Points").getComponent(Label).string =
+      this.points.toString();
+    find("Canvas/UI/Multiplier").getComponent(Label).string =
+      "x" + this.multiplier.toString();
   }
 
   private voidDestroy(): void {
@@ -159,10 +163,9 @@ export class GameManager extends Component {
               this.spawnByType(this.rndmBall);
             }
           }
-          if (prob >= 0.51 && prob <= 0.90) {
+          if (prob >= 0.51 && prob <= 0.9) {
             this.spawnByType(this.coin);
           }
-
         }
         break;
       case this.coin:
@@ -170,6 +173,7 @@ export class GameManager extends Component {
         array = this.check(parent, snakePos);
         if (array.length > 0) {
           array[0].destroy();
+          this.audioSource.playOneShot(this.coinSound);
           this.points += 500 * this.multiplier;
           this.coins += 1;
           find("Canvas/UI/Coins").getComponent(Label).string =
@@ -261,14 +265,11 @@ export class GameManager extends Component {
 
       if (type == this.bomb) {
         this.scheduleOnce(() => {
-
           if (find("Canvas/Bombs").children[0] != null) {
             find("Canvas/Bombs").children[0].destroy();
           }
-
-        }, 10)
+        }, 10);
       }
-
 
       if (type == this.ball) {
         let rndmIndex = math.randomRangeInt(0, 4);

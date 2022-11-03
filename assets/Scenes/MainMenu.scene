@@ -1257,10 +1257,14 @@
         "__expectedType__": "cc.SpriteFrame"
       }
     ],
+    "introMelody": {
+      "__uuid__": "bf9cd669-2e2d-4eb8-b4a4-c14a0f548d90",
+      "__expectedType__": "cc.AudioClip"
+    },
     "_id": "b3ErHVmMVL7JCLb2HhRH5n"
   },
   {
-    "__type__": "79b5fhaprVJnrDO31zyPk/4",
+    "__type__": "cc.AudioSource",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -1268,7 +1272,14 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "_id": "9bKAdMv1xL4q1Tr4zWwEFR"
+    "_clip": {
+      "__uuid__": "bf9cd669-2e2d-4eb8-b4a4-c14a0f548d90",
+      "__expectedType__": "cc.AudioClip"
+    },
+    "_loop": false,
+    "_playOnAwake": false,
+    "_volume": 1,
+    "_id": "bfbbDRw4FIkJpWCX0/Lr0B"
   },
   {
     "__type__": "cc.SceneGlobals",

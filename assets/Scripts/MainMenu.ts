@@ -1,12 +1,27 @@
-import { _decorator, Component, Node, Input, director, EventTouch, find, Sprite, SpriteFrame, AudioSource, assert } from "cc";
+import {
+  _decorator,
+  Component,
+  Node,
+  Input,
+  director,
+  EventTouch,
+  find,
+  Sprite,
+  SpriteFrame,
+  AudioSource,
+  assert,
+  AudioClip,
+} from "cc";
 import { GlobalVariables } from "./GlobalVariables";
 const { ccclass, property } = _decorator;
 
 @ccclass("MainMenu")
 export class MainMenu extends Component {
-
   @property(SpriteFrame)
   private muteArray: Array<SpriteFrame> = new Array<SpriteFrame>(2);
+
+  @property(AudioClip)
+  private introMelody: AudioClip;
 
   private audioSource: AudioSource = null!;
 
@@ -18,11 +33,10 @@ export class MainMenu extends Component {
   private credits: Node;
 
   onLoad() {
-
-    this.play = find("Canvas/background/Play")
-    this.mute = find("Canvas/background/Mute")
-    this.shop = find("Canvas/background/Shop")
-    this.ads = find("Canvas/background/Ads")
+    this.play = find("Canvas/background/Play");
+    this.mute = find("Canvas/background/Mute");
+    this.shop = find("Canvas/background/Shop");
+    this.ads = find("Canvas/background/Ads");
     this.tutorial = find("Canvas/background/Tutorial")
     this.credits = find("Canvas/background/Credits")
 
@@ -34,11 +48,16 @@ export class MainMenu extends Component {
     this.credits.on(Input.EventType.TOUCH_END, this.touchStart, this);
 
 
-    const audioSource = this.getComponent(AudioSource)!;
-    assert(audioSource);
+    const audioSource = this.getComponent(AudioSource);
     this.audioSource = audioSource;
   }
 
+  start() {
+    if (!GlobalVariables.saveData.firstStart) {
+      this.audioSource.playOneShot(this.introMelody);
+      GlobalVariables.saveData.firstStart = true;
+    }
+  }
 
   public touchStart(e: EventTouch): void {
 
@@ -73,5 +92,4 @@ export class MainMenu extends Component {
   private muteAll() {
     this.audioSource.enabled = !this.audioSource.enabled;
   }
-
 }

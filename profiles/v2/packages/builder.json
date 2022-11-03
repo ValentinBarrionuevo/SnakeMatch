@@ -1,6 +1,6 @@
 {
   "log": {
-    "level": 3
+    "level": 4
   },
   "common": {
     "polyfills": {

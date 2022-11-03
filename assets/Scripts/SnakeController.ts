@@ -62,8 +62,8 @@ export class SnakeController extends Component {
   public snakeInside: Array<Node> = new Array();
   private snakePositions: Array<{ x: number; y: number }>;
   private oldPos: Vec3;
-  private hasMatch: boolean = false;
 
+  private hasMatch: boolean = false;
   private tileSize = 30;
 
   @property(AudioClip)
@@ -74,6 +74,9 @@ export class SnakeController extends Component {
 
   @property(AudioClip)
   private deathSound: AudioClip = null;
+
+  @property(AudioClip)
+  private bombSound: AudioClip = null;
 
   private audioSource: AudioSource = null;
   private gameManager: GameManager;
@@ -334,6 +337,8 @@ export class SnakeController extends Component {
   }
 
   public death() {
+    this.audioSource.playOneShot(this.deathSound);
+
     find("Canvas/UI/Death/Points").getComponent(Label).string = find("Canvas")
       .getComponent(GameManager)
       .points.toString();
@@ -456,6 +461,11 @@ export class SnakeController extends Component {
       this.snakeInside[index].destroy();
       this.snakeInside.splice(index, 1);
     }
+
+    if (filtered.length > 1) {
+      this.audioSource.playOneShot(this.bombSound);
+    }
+
     this.bodyMovement(true);
     this.savePositions();
 
