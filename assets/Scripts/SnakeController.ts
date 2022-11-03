@@ -19,6 +19,7 @@ import {
   AudioClip,
 } from "cc";
 import { GameManager } from "./GameManager";
+import { GlobalVariables } from "./GlobalVariables";
 const { ccclass, property } = _decorator;
 
 type Direction = "UP" | "DOWN" | "LEFT" | "RIGHT";
@@ -30,11 +31,22 @@ export class SnakeController extends Component {
   @property(SpriteFrame)
   private spriteArray: Array<SpriteFrame> = new Array<SpriteFrame>(4);
 
+  @property(SpriteFrame)
+  private spriteArrayOrange: Array<SpriteFrame> = new Array<SpriteFrame>(4);
+
+  @property(SpriteFrame)
+  private spriteArrayGrey: Array<SpriteFrame> = new Array<SpriteFrame>(4);
+
   @property(Prefab)
   private bodyPrefab: Prefab;
 
   @property(Prefab)
   private tailPrefab: Prefab;
+
+  @property(SpriteFrame)
+  private headArray: Array<SpriteFrame> = new Array<SpriteFrame>(3);
+  @property(SpriteFrame)
+  private tailArray: Array<SpriteFrame> = new Array<SpriteFrame>(3);
 
   private tail: Node;
 
@@ -64,6 +76,7 @@ export class SnakeController extends Component {
   private deathSound: AudioClip = null;
 
   private audioSource: AudioSource = null;
+  private gameManager: GameManager;
 
   private keyWhiteList: Array<KeyCode> = new Array(
     KeyCode.KEY_W,
@@ -88,6 +101,26 @@ export class SnakeController extends Component {
     this.audioSource = this.getComponent(AudioSource);
     //assert(eatSource);
     //this.eat = eatSource;
+    // const audioSource = this.getComponent(AudioSource)!;
+    // assert(audioSource);
+    // this.audioSource = audioSource;
+
+    this.gameManager = find("Canvas").getComponent(GameManager);
+
+    switch (GlobalVariables.saveData.skin) {
+      case 0:
+        this.node.getComponent(Sprite).spriteFrame = this.headArray[0];
+        this.tail.getComponent(Sprite).spriteFrame = this.tailArray[0];
+        break;
+      case 1:
+        this.node.getComponent(Sprite).spriteFrame = this.headArray[1];
+        this.tail.getComponent(Sprite).spriteFrame = this.tailArray[1];
+        break;
+      case 2:
+        this.node.getComponent(Sprite).spriteFrame = this.headArray[2];
+        this.tail.getComponent(Sprite).spriteFrame = this.tailArray[2];
+        break;
+    }
   }
 
   public onDestroy(): void {
@@ -290,24 +323,28 @@ export class SnakeController extends Component {
 
   private deathCheck(pos: Vec3): void {
     if (pos.x > 150 || pos.x < -150) {
-      find("Canvas/UI/Death/Points").getComponent(Label).string = find("Canvas")
-        .getComponent(GameManager)
-        .points.toString();
-
-      find("Canvas/UI/Death").active = true;
-      this.unscheduleAllCallbacks();
+      this.death();
       return;
     }
 
     if (pos.y > 241 || pos.y < -241) {
-      find("Canvas/UI/Death/Points").getComponent(Label).string = find("Canvas")
-        .getComponent(GameManager)
-        .points.toString();
-
-      find("Canvas/UI/Death").active = true;
-      this.unscheduleAllCallbacks();
+      this.death();
       return;
     }
+  }
+
+  public death() {
+    find("Canvas/UI/Death/Points").getComponent(Label).string = find("Canvas")
+      .getComponent(GameManager)
+      .points.toString();
+
+    find("Canvas/UI/Death").active = true;
+
+    GlobalVariables.saveData.coins += Math.floor(
+      find("Canvas").getComponent(GameManager).points / 500
+    );
+
+    this.unscheduleAllCallbacks();
   }
 
   public restartAD(): void {
@@ -362,6 +399,15 @@ export class SnakeController extends Component {
       this.hasMatch = true;
 
       this.audioSource.playOneShot(this.matchSound);
+
+      this.gameManager.multiplier = this.gameManager.multiplier * 2;
+      if (this.gameManager.multiplier > 1) {
+        this.scheduleOnce(() => {
+          if (this.gameManager.multiplier !== this.gameManager.multiplier * 2) {
+            this.gameManager.multiplier = 1;
+          }
+        });
+      }
     }
 
     if (index < this.snakeInside.length - 1) {
@@ -375,6 +421,20 @@ export class SnakeController extends Component {
     this.snakeInside.unshift(snekPart);
 
     snekPart.getComponent(Sprite).spriteFrame = this.spriteArray[color];
+
+    switch (GlobalVariables.saveData.skin) {
+      case 0:
+        snekPart.getComponent(Sprite).spriteFrame = this.spriteArray[color];
+        break;
+      case 1:
+        snekPart.getComponent(Sprite).spriteFrame =
+          this.spriteArrayOrange[color];
+        break;
+      case 2:
+        snekPart.getComponent(Sprite).spriteFrame = this.spriteArrayGrey[color];
+        break;
+    }
+
     let pos = this.node.getPosition().clone();
     pos = new Vec3(Math.round(pos.x), Math.round(pos.y), 0);
     snekPart.setPosition(pos);
@@ -401,11 +461,7 @@ export class SnakeController extends Component {
 
     this.matchCheck(0);
 
-    find("Canvas/UI/Points").getComponent(Label).string = (find(
-      "Canvas"
-    ).getComponent(GameManager).points +=
-      filtered.length *
-      300 *
-      find("Canvas").getComponent(GameManager).multiplier).toString();
+    this.gameManager.points +=
+      filtered.length * 300 * this.gameManager.multiplier;
   }
 }
