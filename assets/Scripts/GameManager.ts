@@ -149,21 +149,22 @@ export class GameManager extends Component {
           while (this.spawnedArray.length < 3) {
             this.spawnByType(this.ball);
           }
-          while (find("Canvas/Coins").children.length < 2) {
-            this.spawnByType(this.coin);
-          }
 
-          const prob = math.randomRangeInt(0, 21);
-          if (prob >= 1 && prob <= 3) {
+          const prob = math.randomRange(0, 1);
+          if (prob >= 0 && prob <= 0.25) {
             if (find("Canvas/Bombs").children.length < 1) {
               this.spawnByType(this.bomb);
             }
           }
-          if (prob >= 4 && prob <= 10) {
+          if (prob >= 0.26 && prob <= 0.5) {
             if (find("Canvas/Random").children.length < 1) {
               this.spawnByType(this.rndmBall);
             }
           }
+          if (prob >= 0.51 && prob <= 0.90) {
+            this.spawnByType(this.coin);
+          }
+
         }
         break;
       case this.coin:

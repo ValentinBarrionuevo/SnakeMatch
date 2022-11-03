@@ -15,6 +15,7 @@ export class Store extends Component {
   private checks: Node;
 
   onLoad() {
+
     this.back = find("Canvas/background/back");
     this.item1 = find("Canvas/background/Items/Item1");
     this.item2 = find("Canvas/background/Items/Item2");
