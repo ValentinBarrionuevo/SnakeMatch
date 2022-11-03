@@ -21,11 +21,11 @@
     "_active": true,
     "_components": [],
     "_prefab": {
-      "__id__": 101
+      "__id__": 100
     },
     "autoReleaseAssets": false,
     "_globals": {
-      "__id__": 102
+      "__id__": 101
     },
     "_id": "4f9cb534-2952-40d3-a4ee-2c12e7477bd7"
   },
@@ -84,9 +84,6 @@
       },
       {
         "__id__": 99
-      },
-      {
-        "__id__": 100
       }
     ],
     "_prefab": null,
@@ -2648,6 +2645,14 @@
       "__uuid__": "875fb283-277c-4008-a3b8-1d67bb5f8bf0",
       "__expectedType__": "cc.Prefab"
     },
+    "matchSound": {
+      "__uuid__": "5d79a637-7d2e-4fd6-8fa2-8bafaefcbadb",
+      "__expectedType__": "cc.AudioClip"
+    },
+    "eatSound": {
+      "__uuid__": "d7d02b88-f440-4ce7-9ad5-49e7d7432526",
+      "__expectedType__": "cc.AudioClip"
+    },
     "_id": "705AKuVRFN57J2uvJaVfC4"
   },
   {
@@ -2687,13 +2692,13 @@
     "_enabled": true,
     "__prefab": null,
     "_clip": {
-      "__uuid__": "baf4cd63-f444-45f7-9c99-41a5a922680c",
+      "__uuid__": "d7d02b88-f440-4ce7-9ad5-49e7d7432526",
       "__expectedType__": "cc.AudioClip"
     },
     "_loop": false,
     "_playOnAwake": false,
     "_volume": 1,
-    "_id": "4cOXC4KD9L3JggJukXUixP"
+    "_id": "25HlUlawVJVKNcTp/TBSiD"
   },
   {
     "__type__": "cc.UITransform",
@@ -3474,36 +3479,25 @@
     "_id": "11DhOa1DdOP7qYy2JTWJtZ"
   },
   {
-    "__type__": "79b5fhaprVJnrDO31zyPk/4",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 2
-    },
-    "_enabled": true,
-    "__prefab": null,
-    "_id": "22fQcIFjZGcJ6rK9ql3Rhh"
-  },
-  {
     "__type__": "cc.PrefabInfo",
     "fileId": "4f9cb534-2952-40d3-a4ee-2c12e7477bd7"
   },
   {
     "__type__": "cc.SceneGlobals",
     "ambient": {
-      "__id__": 103
+      "__id__": 102
     },
     "shadows": {
-      "__id__": 104
+      "__id__": 103
     },
     "_skybox": {
-      "__id__": 105
+      "__id__": 104
     },
     "fog": {
-      "__id__": 106
+      "__id__": 105
     },
     "octree": {
-      "__id__": 107
+      "__id__": 106
     }
   },
   {

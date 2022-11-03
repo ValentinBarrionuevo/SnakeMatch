@@ -15,8 +15,8 @@ import {
   Node,
   EventTouch,
   AudioSource,
-  assert,
   Label,
+  AudioClip,
 } from "cc";
 import { GameManager } from "./GameManager";
 const { ccclass, property } = _decorator;
@@ -50,10 +50,20 @@ export class SnakeController extends Component {
   public snakeInside: Array<Node> = new Array();
   private snakePositions: Array<{ x: number; y: number }>;
   private oldPos: Vec3;
+  private hasMatch: boolean = false;
 
   private tileSize = 30;
 
-  private audioSource: AudioSource = null!;
+  @property(AudioClip)
+  private matchSound: AudioClip = null;
+
+  @property(AudioClip)
+  private eatSound: AudioClip = null;
+
+  @property(AudioClip)
+  private deathSound: AudioClip = null;
+
+  private audioSource: AudioSource = null;
 
   private keyWhiteList: Array<KeyCode> = new Array(
     KeyCode.KEY_W,
@@ -75,9 +85,9 @@ export class SnakeController extends Component {
     input.on(Input.EventType.TOUCH_START, this.touchStart, this);
     input.on(Input.EventType.TOUCH_END, this.touchEnd, this);
 
-    const audioSource = this.getComponent(AudioSource)!;
-    assert(audioSource);
-    this.audioSource = audioSource;
+    this.audioSource = this.getComponent(AudioSource);
+    //assert(eatSource);
+    //this.eat = eatSource;
   }
 
   public onDestroy(): void {
@@ -215,7 +225,6 @@ export class SnakeController extends Component {
     this.deathCheck(pos);
 
     find("Canvas").getComponent(GameManager).checkGameState();
-
   }
 
   private tailMovement(): void {
@@ -235,20 +244,16 @@ export class SnakeController extends Component {
     if (difX != 0) {
       if (difX == 30) {
         this.tail.angle = 90;
-        console.log("LEFT");
       } else {
         this.tail.angle = 270;
-        console.log("RIGHT");
       }
     }
 
     if (difY != 0) {
       if (difY == 30) {
         this.tail.angle = 180;
-        console.log("DOWN");
       } else {
         this.tail.angle = 0;
-        console.log("UP");
       }
     }
   }
@@ -285,8 +290,9 @@ export class SnakeController extends Component {
 
   private deathCheck(pos: Vec3): void {
     if (pos.x > 150 || pos.x < -150) {
-      find("Canvas/UI/Death/Points").getComponent(Label).string =
-        find("Canvas").getComponent(GameManager).points.toString();
+      find("Canvas/UI/Death/Points").getComponent(Label).string = find("Canvas")
+        .getComponent(GameManager)
+        .points.toString();
 
       find("Canvas/UI/Death").active = true;
       this.unscheduleAllCallbacks();
@@ -294,8 +300,9 @@ export class SnakeController extends Component {
     }
 
     if (pos.y > 241 || pos.y < -241) {
-      find("Canvas/UI/Death/Points").getComponent(Label).string =
-        find("Canvas").getComponent(GameManager).points.toString();
+      find("Canvas/UI/Death/Points").getComponent(Label).string = find("Canvas")
+        .getComponent(GameManager)
+        .points.toString();
 
       find("Canvas/UI/Death").active = true;
       this.unscheduleAllCallbacks();
@@ -307,29 +314,29 @@ export class SnakeController extends Component {
     this.node.setPosition(new Vec3(0, 0, 0));
     this.node.angle = 0;
 
-    this.snakeInside.forEach(body => {
+    this.snakeInside.forEach((body) => {
       body.destroy();
     });
 
-
     this.snakeInside.splice(0, this.snakeInside.length);
-    this.direction = "DOWN"
+    this.direction = "DOWN";
     this.headMovement();
-    this.direction = "UP"
+    this.direction = "UP";
     this.headMovement();
     this.firstMove = true;
   }
 
-
-
   public eatBall(ball: number): void {
-    //this.audioSource.play();
-
     this.spawnBody(ball);
 
     this.blockBody = true;
     if (this.snakeInside.length >= 3) {
       this.matchCheck(0);
+    }
+    if (!this.hasMatch) {
+      this.audioSource.playOneShot(this.eatSound);
+    } else {
+      this.hasMatch = false;
     }
   }
 
@@ -352,6 +359,9 @@ export class SnakeController extends Component {
       }
       this.bodyMovement(true);
       this.savePositions();
+      this.hasMatch = true;
+
+      this.audioSource.playOneShot(this.matchSound);
     }
 
     if (index < this.snakeInside.length - 1) {
