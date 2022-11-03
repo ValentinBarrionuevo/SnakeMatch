@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, input, Input, director, EventTouch, find, Sprite, SpriteFrame, Vec2, AudioSource, assert } from "cc";
+import { _decorator, Component, Node, Input, director, EventTouch, find, Sprite, SpriteFrame, AudioSource, assert } from "cc";
 import { GlobalVariables } from "./GlobalVariables";
 const { ccclass, property } = _decorator;
 
@@ -14,6 +14,8 @@ export class MainMenu extends Component {
   private mute: Node;
   private shop: Node;
   private ads: Node;
+  private tutorial: Node;
+  private credits: Node;
 
   onLoad() {
 
@@ -21,11 +23,16 @@ export class MainMenu extends Component {
     this.mute = find("Canvas/background/Mute")
     this.shop = find("Canvas/background/Shop")
     this.ads = find("Canvas/background/Ads")
+    this.tutorial = find("Canvas/background/Tutorial")
+    this.credits = find("Canvas/background/Credits")
 
     this.play.on(Input.EventType.TOUCH_END, this.touchStart, this);
     this.mute.on(Input.EventType.TOUCH_END, this.touchStart, this);
     this.shop.on(Input.EventType.TOUCH_END, this.touchStart, this);
     this.ads.on(Input.EventType.TOUCH_END, this.touchStart, this);
+    this.tutorial.on(Input.EventType.TOUCH_END, this.touchStart, this);
+    this.credits.on(Input.EventType.TOUCH_END, this.touchStart, this);
+
 
     const audioSource = this.getComponent(AudioSource)!;
     assert(audioSource);
@@ -34,7 +41,6 @@ export class MainMenu extends Component {
 
 
   public touchStart(e: EventTouch): void {
-    console.log(e.target.name)
 
     switch (e.target.name) {
       case "Play":
@@ -54,6 +60,12 @@ export class MainMenu extends Component {
       case "Ads":
         find("Canvas/background/adSpace").active = false;
         GlobalVariables.saveData.disabledAds = true;
+        break;
+      case "Tutorial":
+        director.loadScene("Tutorial");
+        break;
+      case "Credits":
+        director.loadScene("Credits");
         break;
     }
   }

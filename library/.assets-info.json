@@ -109,17 +109,17 @@
     "missing": false
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Scenes": {
-    "time": 1667506748176.209,
+    "time": 1667509288989.7834,
     "uuid": "cfe81fa7-2026-4f8d-9c37-8ac047012f4d",
     "missing": false
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Scripts": {
-    "time": 1667505709475.5166,
+    "time": 1667513468748.1555,
     "uuid": "35f29723-0d84-42ea-a386-d77e5f26744b",
     "missing": false
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites": {
-    "time": 1667506809955.5613,
+    "time": 1667512861918.8171,
     "uuid": "551e98be-3100-41d8-89ea-74b05c76309e",
     "missing": false
   },
@@ -152,12 +152,12 @@
     "time": 1664226108547.9753
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Scenes\\GameScene.scene": {
-    "time": 1667506696103.6401,
+    "time": 1667512961913.3901,
     "uuid": "4f9cb534-2952-40d3-a4ee-2c12e7477bd7",
     "missing": false
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Scenes\\MainMenu.scene": {
-    "time": 1667431759647.3755,
+    "time": 1667512961194.1853,
     "uuid": "ccf8fd25-bb4a-4256-a492-78f1fa0b3372",
     "missing": false
   },
@@ -187,7 +187,7 @@
     "time": 1664318805761.8342
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Scripts\\GameManager.ts": {
-    "time": 1667506004856.771,
+    "time": 1667510908176.292,
     "uuid": "c77d4ec5-b15d-4103-aca6-1e42c5168c98",
     "missing": false
   },
@@ -264,7 +264,7 @@
     "time": 1667325809765.0662
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\play.png.meta": {
-    "time": 1667325809773.067
+    "time": 1667512799452.9165
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\shop.png.meta": {
     "time": 1667325809779.069
@@ -315,7 +315,7 @@
     "missing": false
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\play.png": {
-    "time": 1667324444346.5703,
+    "time": 1667512791003.9746,
     "uuid": "e53b2665-7d8e-478b-b185-78de111822cb",
     "missing": false
   },
@@ -371,7 +371,7 @@
     "time": 1665776655258.8652
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Scripts\\MainMenu.ts": {
-    "time": 1667422895530.015,
+    "time": 1667513521227.2837,
     "uuid": "1230ca0a-1ade-4e2a-b078-a710b41bbe20",
     "missing": false
   },
@@ -400,10 +400,10 @@
     "missing": false
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\coin.png.meta": {
-    "time": 1666301479686.3098
+    "time": 1667512080443.3716
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\coin.png": {
-    "time": 1666122061048.9895,
+    "time": 1667512075004.5112,
     "uuid": "84f66f5c-d934-4a3b-9232-3c4bdf017f18",
     "missing": false
   },
@@ -411,16 +411,8 @@
     "time": 1666122089296.592
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Prefab\\coinPrefab.prefab": {
-    "time": 1667418991218.834,
+    "time": 1667512127882.2668,
     "uuid": "73ea69a0-fb49-41dd-a36a-b08ae381f0f8",
-    "missing": false
-  },
-  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\back.png.meta": {
-    "time": 1666301479679.3083
-  },
-  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\back.png": {
-    "time": 1667419272752.6135,
-    "uuid": "8ea7c1b5-5860-4d6b-afbf-ff11ed036a90",
     "missing": false
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Prefab\\ball.prefab.meta": {
@@ -1605,7 +1597,7 @@
     "missing": false
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\mainMenuBg.png": {
-    "time": 1667324116781.7214,
+    "time": 1667511659796.615,
     "uuid": "81c878fd-dedb-4f09-a39d-a3fbcd6fffdb",
     "missing": false
   },
@@ -1680,7 +1672,7 @@
     "missing": false
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\GAME_SnakeYEL.png.meta": {
-    "time": 1667419510972.5933
+    "time": 1667513212993.906
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\GAME_SnakeYEL.png": {
     "time": 1667309878000,
@@ -1699,21 +1691,21 @@
     "time": 1667426559607.411
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Scripts\\Store.ts": {
-    "time": 1667507081744.5452,
+    "time": 1667513518312.0952,
     "uuid": "b8e5b78d-fa1b-49bd-9919-64af07e011a8",
     "missing": false
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\check.png.meta": {
-    "time": 1667426781977.045
+    "time": 1667513212989.9055
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\coinsCount.png.meta": {
-    "time": 1667426781974.0435
+    "time": 1667513212990.905
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\price.png.meta": {
-    "time": 1667426781971.042
+    "time": 1667513212996.907
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\storeBack.png.meta": {
-    "time": 1667426781977.045
+    "time": 1667513213010.9102
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\price.png": {
     "time": 1667426749280.98,
@@ -1736,7 +1728,7 @@
     "missing": false
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\backStore.png.meta": {
-    "time": 1667426928709.9343
+    "time": 1667513212988.9048
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\backStore.png": {
     "time": 1667431442218.403,
@@ -1744,16 +1736,16 @@
     "missing": false
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\snakeHeadGrey.png.meta": {
-    "time": 1667431652650.4102
+    "time": 1667513213006.909
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\snakeHeadOrange.png.meta": {
-    "time": 1667431652655.4124
+    "time": 1667513213007.9084
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\snakeTailGrey.png.meta": {
-    "time": 1667431652651.4104
+    "time": 1667513213008.9094
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\snakeTailOrange.png.meta": {
-    "time": 1667431652652.4111
+    "time": 1667513213009.91
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\snakeHeadGrey.png": {
     "time": 1667431522031.8274,
@@ -1776,16 +1768,16 @@
     "missing": false
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\snakeBodyBlueOrange.png.meta": {
-    "time": 1667432100371.927
+    "time": 1667513212998.9072
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\snakeBodyPinkOrange.png.meta": {
-    "time": 1667432100370.926
+    "time": 1667513213000.9077
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\snakeBodyRedOrange.png.meta": {
-    "time": 1667432100366.9255
+    "time": 1667513213002.9075
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\snakeBodyYellowOrange.png.meta": {
-    "time": 1667432100367.925
+    "time": 1667513213005.9087
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\snakeBodyRedOrange.png": {
     "time": 1667414534000,
@@ -1808,16 +1800,16 @@
     "missing": false
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\snakeBodyBlueGrey.png.meta": {
-    "time": 1667432196376.009
+    "time": 1667513212998.9072
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\snakeBodyPinkGrey.png.meta": {
-    "time": 1667432196373.0085
+    "time": 1667513212999.9077
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\snakeBodyRedGrey.png.meta": {
-    "time": 1667432196375.009
+    "time": 1667513213001.907
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\snakeBodyYellowGrey.png.meta": {
-    "time": 1667432196376.009
+    "time": 1667513213004.909
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\snakeBodyPinkGrey.png": {
     "time": 1667414692000,
@@ -1840,7 +1832,7 @@
     "missing": false
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\Gameplay_FondoGRIS.png.meta": {
-    "time": 1667432345752.3645
+    "time": 1667513212995.9058
   },
   "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\Gameplay_FondoGRIS.png": {
     "time": 1667432337930.95,
@@ -1895,20 +1887,76 @@
     "uuid": "5d79a637-7d2e-4fd6-8fa2-8bafaefcbadb",
     "missing": false
   },
-  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Scenes\\Credits.scene.meta": {
+  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\credits.png.meta": {
+    "time": 1667513212991.9055
+  },
+  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\credits.png": {
+    "time": 1667513130289.5344,
+    "uuid": "dcf68177-aeb0-449e-bcf3-a975bf59c8f1",
+    "missing": false
+  },
+  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Scripts\\Tutorial.ts.meta": {
+    "time": 1667507922137.8186
+  },
+  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Scripts\\Tutorial.ts": {
+    "time": 1667513541404.9324,
+    "uuid": "e0d6771a-ecca-457a-b9a2-0a5f843ce628",
+    "missing": false
+  },
+  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Scenes\\Tutorial.scene.meta": {
     "time": 1667506740626.5176
   },
-  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Scenes\\Credits.scene": {
-    "time": 1667507050287.0178,
+  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Scenes\\Tutorial.scene": {
+    "time": 1667510477150.8027,
     "uuid": "10a75dd5-c532-4c84-a507-60b5b6d5e9d0",
     "missing": false
   },
-  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\credits.png.meta": {
-    "time": 1667506810016.5752
+  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Scenes\\Credits.scene.meta": {
+    "time": 1667507231129.928
   },
-  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\credits.png": {
-    "time": 1667506783223.6282,
-    "uuid": "dcf68177-aeb0-449e-bcf3-a975bf59c8f1",
+  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Scenes\\Credits.scene": {
+    "time": 1667513536763.6567,
+    "uuid": "75ac3aec-e287-48fd-b804-52ddb521dc0f",
+    "missing": false
+  },
+  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\back.png.meta": {
+    "time": 1667513212987.904
+  },
+  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\back.png": {
+    "time": 1667511222369.8306,
+    "uuid": "991ee2a6-0f9a-4d1c-942d-0bda0f2108ed",
+    "missing": false
+  },
+  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\tutorial.png.meta": {
+    "time": 1667513213011.9104
+  },
+  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\tutorial.png": {
+    "time": 1667511282309.2053,
+    "uuid": "4d354378-2d67-405c-ac8c-fd2d15248ffc",
+    "missing": false
+  },
+  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\retry.png.meta": {
+    "time": 1667513212996.907
+  },
+  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\retry.png": {
+    "time": 1667511542231.0513,
+    "uuid": "4a0cd421-907f-48d8-a815-855b1b13c0e6",
+    "missing": false
+  },
+  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\creditsButt.png.meta": {
+    "time": 1667513212992.9053
+  },
+  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Sprites\\creditsButt.png": {
+    "time": 1667512858225.9888,
+    "uuid": "be198b9f-4bde-4ee7-a095-496f858cabb7",
+    "missing": false
+  },
+  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Scripts\\Credits.ts.meta": {
+    "time": 1667513468750.1565
+  },
+  "C:\\Users\\Valentin\\Desktop\\SnakeMatch\\assets\\Scripts\\Credits.ts": {
+    "time": 1667513513950.0935,
+    "uuid": "20f3c1c5-00cb-444d-9ac5-8565a426ca1a",
     "missing": false
   }
 }

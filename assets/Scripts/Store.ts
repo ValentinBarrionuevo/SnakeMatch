@@ -1,6 +1,6 @@
-import { _decorator, Component, Node, input, Input, director, EventTouch, find, Sprite, SpriteFrame, Vec2, AudioSource, assert, Label } from "cc";
+import { _decorator, Component, Node, Input, director, EventTouch, find, Label } from "cc";
 import { GlobalVariables } from "./GlobalVariables";
-const { ccclass, property } = _decorator;
+const { ccclass } = _decorator;
 
 @ccclass("Store")
 export class Store extends Component {
@@ -17,6 +17,8 @@ export class Store extends Component {
   onLoad() {
 
     this.back = find("Canvas/background/back");
+    this.back.on(Input.EventType.TOUCH_END, this.touchStart, this);
+
     this.item1 = find("Canvas/background/Items/Item1");
     this.item2 = find("Canvas/background/Items/Item2");
     this.item3 = find("Canvas/background/Items/Item3");
@@ -42,7 +44,6 @@ export class Store extends Component {
     this.coinsCheck();
     this.changeCheck(GlobalVariables.saveData.skin);
 
-    this.back.on(Input.EventType.TOUCH_END, this.touchStart, this);
     this.item1.on(Input.EventType.TOUCH_END, this.touchStart, this);
     this.item2.on(Input.EventType.TOUCH_END, this.touchStart, this);
     this.item3.on(Input.EventType.TOUCH_END, this.touchStart, this);
@@ -55,7 +56,6 @@ export class Store extends Component {
 
 
   public touchStart(e: EventTouch): void {
-    console.log(e.target.name)
 
     switch (e.target.name) {
       case "back":
@@ -75,7 +75,7 @@ export class Store extends Component {
           GlobalVariables.saveData.skinsBuyed[1] = true
           GlobalVariables.saveData.coins -= 20
           this.item2.active = false
-          this.changeCheck(1);
+          this.coinsCheck();
         } else
           if (GlobalVariables.saveData.skin != 1 && GlobalVariables.saveData.skinsBuyed[1] == true) {
             GlobalVariables.saveData.skin = 1

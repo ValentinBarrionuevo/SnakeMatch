@@ -4,7 +4,7 @@
     "value": {
       "depends": [
         "4f9cb534-2952-40d3-a4ee-2c12e7477bd7",
-        "8ea7c1b5-5860-4d6b-afbf-ff11ed036a90@f9941",
+        "991ee2a6-0f9a-4d1c-942d-0bda0f2108ed@f9941",
         "4b6b6f18-fddb-4645-a41d-7cf2706dbd89@f9941",
         "691b2a22-eb8f-4fa7-b44e-cb8233a9b443@f9941",
         "3568c281-73da-48b0-aa4a-4b0321ee3878@f9941",
@@ -15,7 +15,7 @@
         "e9101c49-59df-433f-ba17-370119159b8e@f9941",
         "3b16e0db-1637-4153-acc9-0ecc49615af7@f9941",
         "314c2ef7-dbc3-4e52-b103-0ab8bbf21306@f9941",
-        "72a61936-aafa-455b-a1f0-431dfb0ba2a5@f9941",
+        "4a0cd421-907f-48d8-a815-855b1b13c0e6@f9941",
         "a334d7c1-94b5-4cb9-a1a7-84b42b7e3bd3@f9941",
         "1a2513bc-5c5d-470b-98c9-c24413bc1501@f9941",
         "90ddc7e9-d68e-4562-ba48-0e6dda6be1a1@f9941",
@@ -140,6 +140,8 @@
         "8e5170e5-4392-49a0-922b-10734c4ed134@f9941",
         "e53b2665-7d8e-478b-b185-78de111822cb@f9941",
         "691b2a22-eb8f-4fa7-b44e-cb8233a9b443@f9941",
+        "4d354378-2d67-405c-ac8c-fd2d15248ffc@f9941",
+        "be198b9f-4bde-4ee7-a095-496f858cabb7@f9941",
         "81c878fd-dedb-4f09-a39d-a3fbcd6fffdb@f9941",
         "8e5170e5-4392-49a0-922b-10734c4ed134@f9941",
         "5491902c-da7e-4aec-aaa2-114a1854a52e@f9941"
@@ -862,9 +864,7 @@
   },
   "8ea7c1b5-5860-4d6b-afbf-ff11ed036a90": {
     "url": "db://assets/Sprites/back.png",
-    "value": {
-      "depends": []
-    }
+    "value": {}
   },
   "8ea7c1b5-5860-4d6b-afbf-ff11ed036a90@6c48a": {
     "url": "db://assets/Sprites/back.png@6c48a",
@@ -1843,12 +1843,21 @@
     }
   },
   "10a75dd5-c532-4c84-a507-60b5b6d5e9d0": {
-    "url": "db://assets/Scenes/Credits.scene",
+    "url": "db://assets/Scenes/Tutorial.scene",
     "value": {
       "depends": [
         "10a75dd5-c532-4c84-a507-60b5b6d5e9d0",
         "cdefd935-1ec8-4753-a484-3ad5c0c6930f@f9941",
-        "dcf68177-aeb0-449e-bcf3-a975bf59c8f1@f9941"
+        "f3dd6253-1b4e-457f-9328-8944f0b8a1a2@f9941",
+        "529ab94b-a38c-404f-af4d-61f0ad0677d8@f9941",
+        "ece5c36d-d702-4a9f-9447-880aedc47bb6@f9941",
+        "ece5c36d-d702-4a9f-9447-880aedc47bb6@f9941",
+        "320a0066-2fca-4af2-97c4-0fc89a8b06da@f9941",
+        "18971ee9-67c9-4e75-b755-1ef6f895c871@f9941",
+        "73df78ea-89db-4dda-a45a-e55b34078ada@f9941",
+        "4842fd6f-9a14-4094-9009-7a2ede70cc04@f9941",
+        "47c69252-1448-4744-bb7b-f2822e2105af@f9941",
+        "3932fc1b-2dbb-4661-b08f-0a4deaf88e4d@f9941"
       ]
     }
   },
@@ -1873,5 +1882,319 @@
         "dcf68177-aeb0-449e-bcf3-a975bf59c8f1@6c48a"
       ]
     }
+  },
+  "75ac3aec-e287-48fd-b804-52ddb521dc0f": {
+    "url": "db://assets/Scenes/Credits.scene",
+    "value": {
+      "depends": [
+        "75ac3aec-e287-48fd-b804-52ddb521dc0f",
+        "cdefd935-1ec8-4753-a484-3ad5c0c6930f@f9941",
+        "dcf68177-aeb0-449e-bcf3-a975bf59c8f1@f9941"
+      ]
+    }
+  },
+  "eb31db0e-31bb-47cd-8e57-23276aea1ecc": {
+    "url": "db://assets/Scripts/Store-001.ts",
+    "value": {}
+  },
+  "e0d6771a-ecca-457a-b9a2-0a5f843ce628": {
+    "url": "db://assets/Scripts/Tutorial.ts",
+    "value": {}
+  },
+  "ece5c36d-d702-4a9f-9447-880aedc47bb6": {
+    "url": "db://assets/Sprites/tutorial1.png",
+    "value": {}
+  },
+  "320a0066-2fca-4af2-97c4-0fc89a8b06da": {
+    "url": "db://assets/Sprites/tutorial2.png",
+    "value": {}
+  },
+  "18971ee9-67c9-4e75-b755-1ef6f895c871": {
+    "url": "db://assets/Sprites/tutorial3.png",
+    "value": {}
+  },
+  "73df78ea-89db-4dda-a45a-e55b34078ada": {
+    "url": "db://assets/Sprites/tutorial4.png",
+    "value": {}
+  },
+  "4842fd6f-9a14-4094-9009-7a2ede70cc04": {
+    "url": "db://assets/Sprites/tutorial5.png",
+    "value": {}
+  },
+  "73df78ea-89db-4dda-a45a-e55b34078ada@6c48a": {
+    "url": "db://assets/Sprites/tutorial4.png@6c48a",
+    "value": {
+      "depends": [
+        "73df78ea-89db-4dda-a45a-e55b34078ada"
+      ]
+    }
+  },
+  "ece5c36d-d702-4a9f-9447-880aedc47bb6@6c48a": {
+    "url": "db://assets/Sprites/tutorial1.png@6c48a",
+    "value": {
+      "depends": [
+        "ece5c36d-d702-4a9f-9447-880aedc47bb6"
+      ]
+    }
+  },
+  "18971ee9-67c9-4e75-b755-1ef6f895c871@6c48a": {
+    "url": "db://assets/Sprites/tutorial3.png@6c48a",
+    "value": {
+      "depends": [
+        "18971ee9-67c9-4e75-b755-1ef6f895c871"
+      ]
+    }
+  },
+  "320a0066-2fca-4af2-97c4-0fc89a8b06da@6c48a": {
+    "url": "db://assets/Sprites/tutorial2.png@6c48a",
+    "value": {
+      "depends": [
+        "320a0066-2fca-4af2-97c4-0fc89a8b06da"
+      ]
+    }
+  },
+  "73df78ea-89db-4dda-a45a-e55b34078ada@f9941": {
+    "url": "db://assets/Sprites/tutorial4.png@f9941",
+    "value": {
+      "depends": [
+        "73df78ea-89db-4dda-a45a-e55b34078ada@6c48a"
+      ]
+    }
+  },
+  "18971ee9-67c9-4e75-b755-1ef6f895c871@f9941": {
+    "url": "db://assets/Sprites/tutorial3.png@f9941",
+    "value": {
+      "depends": [
+        "18971ee9-67c9-4e75-b755-1ef6f895c871@6c48a"
+      ]
+    }
+  },
+  "47c69252-1448-4744-bb7b-f2822e2105af": {
+    "url": "db://assets/Sprites/tutorial6.png",
+    "value": {}
+  },
+  "3932fc1b-2dbb-4661-b08f-0a4deaf88e4d": {
+    "url": "db://assets/Sprites/tutorial7.png",
+    "value": {}
+  },
+  "ece5c36d-d702-4a9f-9447-880aedc47bb6@f9941": {
+    "url": "db://assets/Sprites/tutorial1.png@f9941",
+    "value": {
+      "depends": [
+        "ece5c36d-d702-4a9f-9447-880aedc47bb6@6c48a"
+      ]
+    }
+  },
+  "320a0066-2fca-4af2-97c4-0fc89a8b06da@f9941": {
+    "url": "db://assets/Sprites/tutorial2.png@f9941",
+    "value": {
+      "depends": [
+        "320a0066-2fca-4af2-97c4-0fc89a8b06da@6c48a"
+      ]
+    }
+  },
+  "4842fd6f-9a14-4094-9009-7a2ede70cc04@6c48a": {
+    "url": "db://assets/Sprites/tutorial5.png@6c48a",
+    "value": {
+      "depends": [
+        "4842fd6f-9a14-4094-9009-7a2ede70cc04"
+      ]
+    }
+  },
+  "4842fd6f-9a14-4094-9009-7a2ede70cc04@f9941": {
+    "url": "db://assets/Sprites/tutorial5.png@f9941",
+    "value": {
+      "depends": [
+        "4842fd6f-9a14-4094-9009-7a2ede70cc04@6c48a"
+      ]
+    }
+  },
+  "47c69252-1448-4744-bb7b-f2822e2105af@6c48a": {
+    "url": "db://assets/Sprites/tutorial6.png@6c48a",
+    "value": {
+      "depends": [
+        "47c69252-1448-4744-bb7b-f2822e2105af"
+      ]
+    }
+  },
+  "3932fc1b-2dbb-4661-b08f-0a4deaf88e4d@6c48a": {
+    "url": "db://assets/Sprites/tutorial7.png@6c48a",
+    "value": {
+      "depends": [
+        "3932fc1b-2dbb-4661-b08f-0a4deaf88e4d"
+      ]
+    }
+  },
+  "47c69252-1448-4744-bb7b-f2822e2105af@f9941": {
+    "url": "db://assets/Sprites/tutorial6.png@f9941",
+    "value": {
+      "depends": [
+        "47c69252-1448-4744-bb7b-f2822e2105af@6c48a"
+      ]
+    }
+  },
+  "3932fc1b-2dbb-4661-b08f-0a4deaf88e4d@f9941": {
+    "url": "db://assets/Sprites/tutorial7.png@f9941",
+    "value": {
+      "depends": [
+        "3932fc1b-2dbb-4661-b08f-0a4deaf88e4d@6c48a"
+      ]
+    }
+  },
+  "529ab94b-a38c-404f-af4d-61f0ad0677d8": {
+    "url": "db://assets/Sprites/exit.png",
+    "value": {}
+  },
+  "1ae2f8be-cad7-4623-a09f-138f03f4b291": {
+    "url": "db://assets/Sprites/tutorial.png",
+    "value": {}
+  },
+  "529ab94b-a38c-404f-af4d-61f0ad0677d8@6c48a": {
+    "url": "db://assets/Sprites/exit.png@6c48a",
+    "value": {
+      "depends": [
+        "529ab94b-a38c-404f-af4d-61f0ad0677d8"
+      ]
+    }
+  },
+  "1ae2f8be-cad7-4623-a09f-138f03f4b291@6c48a": {
+    "url": "db://assets/Sprites/tutorial.png@6c48a",
+    "value": {
+      "depends": [
+        "1ae2f8be-cad7-4623-a09f-138f03f4b291"
+      ]
+    }
+  },
+  "529ab94b-a38c-404f-af4d-61f0ad0677d8@f9941": {
+    "url": "db://assets/Sprites/exit.png@f9941",
+    "value": {
+      "depends": [
+        "529ab94b-a38c-404f-af4d-61f0ad0677d8@6c48a"
+      ]
+    }
+  },
+  "1ae2f8be-cad7-4623-a09f-138f03f4b291@f9941": {
+    "url": "db://assets/Sprites/tutorial.png@f9941",
+    "value": {
+      "depends": [
+        "1ae2f8be-cad7-4623-a09f-138f03f4b291@6c48a"
+      ]
+    }
+  },
+  "f3dd6253-1b4e-457f-9328-8944f0b8a1a2": {
+    "url": "db://assets/Sprites/forward.png",
+    "value": {}
+  },
+  "f3dd6253-1b4e-457f-9328-8944f0b8a1a2@6c48a": {
+    "url": "db://assets/Sprites/forward.png@6c48a",
+    "value": {
+      "depends": [
+        "f3dd6253-1b4e-457f-9328-8944f0b8a1a2"
+      ]
+    }
+  },
+  "f3dd6253-1b4e-457f-9328-8944f0b8a1a2@f9941": {
+    "url": "db://assets/Sprites/forward.png@f9941",
+    "value": {
+      "depends": [
+        "f3dd6253-1b4e-457f-9328-8944f0b8a1a2@6c48a"
+      ]
+    }
+  },
+  "991ee2a6-0f9a-4d1c-942d-0bda0f2108ed": {
+    "url": "db://assets/Sprites/back.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "991ee2a6-0f9a-4d1c-942d-0bda0f2108ed@6c48a": {
+    "url": "db://assets/Sprites/back.png@6c48a",
+    "value": {
+      "depends": [
+        "991ee2a6-0f9a-4d1c-942d-0bda0f2108ed"
+      ]
+    }
+  },
+  "991ee2a6-0f9a-4d1c-942d-0bda0f2108ed@f9941": {
+    "url": "db://assets/Sprites/back.png@f9941",
+    "value": {
+      "depends": [
+        "991ee2a6-0f9a-4d1c-942d-0bda0f2108ed@6c48a"
+      ]
+    }
+  },
+  "4d354378-2d67-405c-ac8c-fd2d15248ffc": {
+    "url": "db://assets/Sprites/tutorial.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "4d354378-2d67-405c-ac8c-fd2d15248ffc@6c48a": {
+    "url": "db://assets/Sprites/tutorial.png@6c48a",
+    "value": {
+      "depends": [
+        "4d354378-2d67-405c-ac8c-fd2d15248ffc"
+      ]
+    }
+  },
+  "4d354378-2d67-405c-ac8c-fd2d15248ffc@f9941": {
+    "url": "db://assets/Sprites/tutorial.png@f9941",
+    "value": {
+      "depends": [
+        "4d354378-2d67-405c-ac8c-fd2d15248ffc@6c48a"
+      ]
+    }
+  },
+  "4a0cd421-907f-48d8-a815-855b1b13c0e6": {
+    "url": "db://assets/Sprites/retry.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "4a0cd421-907f-48d8-a815-855b1b13c0e6@6c48a": {
+    "url": "db://assets/Sprites/retry.png@6c48a",
+    "value": {
+      "depends": [
+        "4a0cd421-907f-48d8-a815-855b1b13c0e6"
+      ]
+    }
+  },
+  "4a0cd421-907f-48d8-a815-855b1b13c0e6@f9941": {
+    "url": "db://assets/Sprites/retry.png@f9941",
+    "value": {
+      "depends": [
+        "4a0cd421-907f-48d8-a815-855b1b13c0e6@6c48a"
+      ]
+    }
+  },
+  "be198b9f-4bde-4ee7-a095-496f858cabb7": {
+    "url": "db://assets/Sprites/creditsButt.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "be198b9f-4bde-4ee7-a095-496f858cabb7@6c48a": {
+    "url": "db://assets/Sprites/creditsButt.png@6c48a",
+    "value": {
+      "depends": [
+        "be198b9f-4bde-4ee7-a095-496f858cabb7"
+      ]
+    }
+  },
+  "be198b9f-4bde-4ee7-a095-496f858cabb7@f9941": {
+    "url": "db://assets/Sprites/creditsButt.png@f9941",
+    "value": {
+      "depends": [
+        "be198b9f-4bde-4ee7-a095-496f858cabb7@6c48a"
+      ]
+    }
+  },
+  "e2bbb65a-37d6-4e99-aec2-7f1e1dd5cc12": {
+    "url": "db://assets/Scripts/Store-001.ts",
+    "value": {}
+  },
+  "20f3c1c5-00cb-444d-9ac5-8565a426ca1a": {
+    "url": "db://assets/Scripts/Credits.ts",
+    "value": {}
   }
 }

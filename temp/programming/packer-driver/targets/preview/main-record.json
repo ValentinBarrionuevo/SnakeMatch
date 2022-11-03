@@ -409,8 +409,8 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 2935439.2236,
-      "chunkId": "7cbb3ed998b1973f492af7954527f9c68c4a8e96",
+      "mTimestamp": 9407047.317200005,
+      "chunkId": "6411f90c4190295b67aabbf0e2b7e84f48230598",
       "imports": [
         {
           "value": "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts",
@@ -427,7 +427,7 @@
           }
         },
         {
-          "value": "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GameManager.ts",
+          "value": "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/Credits.ts",
           "resolved": "__unresolved_1",
           "loc": {
             "start": {
@@ -436,12 +436,12 @@
             },
             "end": {
               "line": 5,
-              "column": 83
+              "column": 79
             }
           }
         },
         {
-          "value": "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GlobalVariables.ts",
+          "value": "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GameManager.ts",
           "resolved": "__unresolved_2",
           "loc": {
             "start": {
@@ -450,12 +450,12 @@
             },
             "end": {
               "line": 6,
-              "column": 87
+              "column": 83
             }
           }
         },
         {
-          "value": "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/MainMenu.ts",
+          "value": "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GlobalVariables.ts",
           "resolved": "__unresolved_3",
           "loc": {
             "start": {
@@ -464,12 +464,12 @@
             },
             "end": {
               "line": 7,
-              "column": 80
+              "column": 87
             }
           }
         },
         {
-          "value": "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts",
+          "value": "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/MainMenu.ts",
           "resolved": "__unresolved_4",
           "loc": {
             "start": {
@@ -478,12 +478,12 @@
             },
             "end": {
               "line": 8,
-              "column": 87
+              "column": 80
             }
           }
         },
         {
-          "value": "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/Store.ts",
+          "value": "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts",
           "resolved": "__unresolved_5",
           "loc": {
             "start": {
@@ -492,12 +492,12 @@
             },
             "end": {
               "line": 9,
-              "column": 77
+              "column": 87
             }
           }
         },
         {
-          "value": "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/UIController.ts",
+          "value": "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/Store.ts",
           "resolved": "__unresolved_6",
           "loc": {
             "start": {
@@ -506,6 +506,34 @@
             },
             "end": {
               "line": 10,
+              "column": 77
+            }
+          }
+        },
+        {
+          "value": "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/Tutorial.ts",
+          "resolved": "__unresolved_7",
+          "loc": {
+            "start": {
+              "line": 11,
+              "column": 7
+            },
+            "end": {
+              "line": 11,
+              "column": 80
+            }
+          }
+        },
+        {
+          "value": "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/UIController.ts",
+          "resolved": "__unresolved_8",
+          "loc": {
+            "start": {
+              "line": 12,
+              "column": 7
+            },
+            "end": {
+              "line": 12,
               "column": 84
             }
           }
@@ -517,6 +545,13 @@
           "resolved": {
             "type": "module",
             "url": "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/Credits.ts"
           },
           "messages": []
         },
@@ -552,6 +587,13 @@
           "resolved": {
             "type": "module",
             "url": "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/Store.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/Tutorial.ts"
           },
           "messages": []
         },
@@ -911,10 +953,10 @@
     },
     "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GameManager.ts": {
       "mTimestamp": {
-        "mtime": 1667506004856.771,
+        "mtime": 1667510908176.292,
         "uuid": "c77d4ec5-b15d-4103-aca6-1e42c5168c98"
       },
-      "chunkId": "6a60efc060eb3b12d655cc6f935617b33f1bc89c",
+      "chunkId": "7ee1fde3d28dbcec3fbcb1d7c2d342f1a3b9eb27",
       "imports": [
         {
           "value": "cce:/internal/code-quality/cr.mjs",
@@ -930,11 +972,11 @@
           "value": "cc",
           "loc": {
             "start": {
-              "line": 16,
+              "line": 14,
               "column": 7
             },
             "end": {
-              "line": 16,
+              "line": 14,
               "column": 11
             }
           }
@@ -944,11 +986,11 @@
           "resolved": "__unresolved_1",
           "loc": {
             "start": {
-              "line": 17,
+              "line": 15,
               "column": 32
             },
             "end": {
-              "line": 17,
+              "line": 15,
               "column": 51
             }
           }
@@ -958,11 +1000,11 @@
           "resolved": "__unresolved_2",
           "loc": {
             "start": {
-              "line": 18,
+              "line": 16,
               "column": 32
             },
             "end": {
-              "line": 18,
+              "line": 16,
               "column": 51
             }
           }
@@ -1075,10 +1117,10 @@
     },
     "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/MainMenu.ts": {
       "mTimestamp": {
-        "mtime": 1667422895530.015,
+        "mtime": 1667513521227.2837,
         "uuid": "1230ca0a-1ade-4e2a-b078-a710b41bbe20"
       },
-      "chunkId": "c2e44a41c756c3b154bd9e06ab54be077fc9b12b",
+      "chunkId": "db2df8f8f10bf2f9eaff07cbc51aaa613cf259a1",
       "imports": [
         {
           "value": "cce:/internal/code-quality/cr.mjs",
@@ -1095,11 +1137,11 @@
           "loc": {
             "start": {
               "line": 1,
-              "column": 134
+              "column": 121
             },
             "end": {
               "line": 1,
-              "column": 138
+              "column": 125
             }
           }
         },
@@ -2237,10 +2279,10 @@
     },
     "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/Store.ts": {
       "mTimestamp": {
-        "mtime": 1667507081744.5452,
+        "mtime": 1667513518312.0952,
         "uuid": "b8e5b78d-fa1b-49bd-9919-64af07e011a8"
       },
-      "chunkId": "6e6c5a880082e13e556e78e275ab1dcfb2157f59",
+      "chunkId": "2f5cdd9659c7a2cd5773fbd9836b8f510588b82e",
       "imports": [
         {
           "value": "cce:/internal/code-quality/cr.mjs",
@@ -2257,11 +2299,11 @@
           "loc": {
             "start": {
               "line": 1,
-              "column": 141
+              "column": 86
             },
             "end": {
               "line": 1,
-              "column": 145
+              "column": 90
             }
           }
         },
@@ -2314,6 +2356,194 @@
           "resolved": {
             "type": "module",
             "url": "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GlobalVariables.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/Store-001.ts": {
+      "mTimestamp": {
+        "mtime": 1667510926853.041,
+        "uuid": "e2bbb65a-37d6-4e99-aec2-7f1e1dd5cc12"
+      },
+      "chunkId": "7541912b9323db8eca877698155f9353a3a7fe61",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 86
+            },
+            "end": {
+              "line": 1,
+              "column": 90
+            }
+          }
+        },
+        {
+          "value": "./GlobalVariables",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 32
+            },
+            "end": {
+              "line": 2,
+              "column": 51
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GlobalVariables.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/Tutorial.ts": {
+      "mTimestamp": {
+        "mtime": 1667513541404.9324,
+        "uuid": "e0d6771a-ecca-457a-b9a2-0a5f843ce628"
+      },
+      "chunkId": "9bdb621d8c6b0f7074868275b620df50457ddb80",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 100
+            },
+            "end": {
+              "line": 1,
+              "column": 104
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/Credits.ts": {
+      "mTimestamp": {
+        "mtime": 1667513513950.0935,
+        "uuid": "20f3c1c5-00cb-444d-9ac5-8565a426ca1a"
+      },
+      "chunkId": "b4dfd1e89cd07f7a0dcc40081e773a1245adefd5",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 79
+            },
+            "end": {
+              "line": 1,
+              "column": 83
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
           },
           "messages": []
         }

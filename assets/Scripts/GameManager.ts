@@ -6,9 +6,7 @@ import {
   Prefab,
   math,
   Vec2,
-  input,
-  Input,
-  director,
+
   Label,
   Node,
   SpriteFrame,
