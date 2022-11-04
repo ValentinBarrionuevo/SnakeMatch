@@ -1,7 +1,6 @@
 import {
   _decorator,
   Component,
-  find,
   instantiate,
   Prefab,
   math,
@@ -39,6 +38,36 @@ export class GameManager extends Component {
 
   @property(AudioClip)
   private coinSound: AudioClip;
+
+  @property(Node)
+  private snakeHead: Node;
+
+  @property(Node)
+  private voidsNode: Node;
+
+  @property(Node)
+  private coinsNode: Node;
+
+  @property(Node)
+  private ballsNode: Node;
+
+  @property(Node)
+  private bombsNode: Node;
+
+  @property(Node)
+  private rndmBallsNode: Node;
+
+  @property(Node)
+  private pointsNode: Node;
+
+  @property(Node)
+  private multiplierNode: Node;
+
+  @property(Node)
+  private snakeNode: Node;
+
+  @property(Node)
+  private UICoins: Node;
 
   private snake: Prefab = null;
 
@@ -78,8 +107,8 @@ export class GameManager extends Component {
 
   public checkGameState(): void {
     let snakePos = new Vec2(
-      Math.round(find("Canvas/Snake/Head").getPosition().x),
-      Math.round(find("Canvas/Snake/Head").getPosition().y)
+      Math.round(this.snakeHead.getPosition().x),
+      Math.round(this.snakeHead.getPosition().y)
     );
 
     this.checkCol(snakePos, this.ball);
@@ -90,9 +119,9 @@ export class GameManager extends Component {
     this.checkCol(snakePos, this.snake);
 
     this.movementCount =
-      find("Canvas/Snake/Head").getComponent(SnakeController).movementCount;
+      this.snakeHead.getComponent(SnakeController).movementCount;
     this.matchCount =
-      find("Canvas/Snake/Head").getComponent(SnakeController).matchCount;
+      this.snakeHead.getComponent(SnakeController).matchCount;
 
     if (
       this.matchCount / this.voidDestroyNeeded == 1 &&
@@ -111,14 +140,14 @@ export class GameManager extends Component {
       this.spawnByType(this.ball);
     }
 
-    find("Canvas/UI/Points").getComponent(Label).string =
+    this.pointsNode.getComponent(Label).string =
       this.points.toString();
-    find("Canvas/UI/Multiplier").getComponent(Label).string =
+    this.multiplierNode.getComponent(Label).string =
       "x" + this.multiplier.toString();
   }
 
   private voidDestroy(): void {
-    const voids = find("Canvas/Voids").children;
+    const voids = this.voidsNode.children;
     if (voids.length < 1) {
       return;
     }
@@ -132,18 +161,18 @@ export class GameManager extends Component {
 
     switch (type) {
       case this.ball:
-        parent = find("Canvas/Balls");
+        parent = this.ballsNode;
         array = this.check(parent, snakePos);
         if (array.length > 0) {
-          let index = find("Canvas/Balls").children.indexOf(array[0]);
-          find("Canvas/Snake/Head")
+          let index = this.ballsNode.children.indexOf(array[0]);
+          this.snakeHead
             .getComponent(SnakeController)
             .eatBall(this.spawnedArray[index]);
           this.spawnedArray.splice(index, 1);
           array[0].destroy();
 
           this.points += 100 * this.multiplier;
-          find("Canvas/UI/Points").getComponent(Label).string =
+          this.pointsNode.getComponent(Label).string =
             this.points.toString();
 
           this.justAte = true;
@@ -154,12 +183,12 @@ export class GameManager extends Component {
 
           const prob = math.randomRange(0, 1);
           if (prob >= 0 && prob <= 0.25) {
-            if (find("Canvas/Bombs").children.length < 1) {
+            if (this.bombsNode.children.length < 1) {
               this.spawnByType(this.bomb);
             }
           }
           if (prob >= 0.26 && prob <= 0.5) {
-            if (find("Canvas/Random").children.length < 1) {
+            if (this.rndmBallsNode.children.length < 1) {
               this.spawnByType(this.rndmBall);
             }
           }
@@ -169,50 +198,50 @@ export class GameManager extends Component {
         }
         break;
       case this.coin:
-        parent = find("Canvas/Coins");
+        parent = this.coinsNode;
         array = this.check(parent, snakePos);
         if (array.length > 0) {
           array[0].destroy();
           this.audioSource.playOneShot(this.coinSound);
           this.points += 500 * this.multiplier;
           this.coins += 1;
-          find("Canvas/UI/Coins").getComponent(Label).string =
+          this.UICoins.getComponent(Label).string =
             "x" + this.coins.toString();
-          find("Canvas/UI/Points").getComponent(Label).string =
+          this.pointsNode.getComponent(Label).string =
             this.points.toString();
         }
         break;
       case this.void:
-        parent = find("Canvas/Voids");
+        parent = this.voidsNode;
         array = this.check(parent, snakePos);
         if (array.length > 0) {
-          find("Canvas/Snake").getComponent(SnakeController).death();
+          this.snakeNode.getComponent(SnakeController).death();
         }
         break;
       case this.snake:
         if (!this.justAte) {
-          parent = find("Canvas/Snake");
+          parent = this.snakeNode;
           array = this.check(parent, snakePos);
           if (array.length > 1) {
-            find("Canvas/Snake/Head").getComponent(SnakeController).death();
+            this.snakeHead.getComponent(SnakeController).death();
           }
         }
         break;
       case this.bomb:
-        parent = find("Canvas/Bombs");
+        parent = this.bombsNode;
         array = this.check(parent, snakePos);
         if (array.length > 0) {
           array[0].destroy();
-          find("Canvas/Snake/Head").getComponent(SnakeController).eatBomb();
+          this.snakeHead.getComponent(SnakeController).eatBomb();
         }
         break;
       case this.rndmBall:
-        parent = find("Canvas/Random");
+        parent = this.rndmBallsNode;
         array = this.check(parent, snakePos);
         if (array.length > 0) {
           array[0].destroy();
           this.spawnedArray.splice(0);
-          find("Canvas/Balls").destroyAllChildren();
+          this.ballsNode.destroyAllChildren();
 
           this.spawnByType(this.ball);
           this.spawnByType(this.ball);
@@ -245,19 +274,19 @@ export class GameManager extends Component {
 
       switch (type) {
         case this.ball:
-          newParent = find("Canvas/Balls");
+          newParent = this.ballsNode;
           break;
         case this.void:
-          newParent = find("Canvas/Voids");
+          newParent = this.voidsNode;
           break;
         case this.coin:
-          newParent = find("Canvas/Coins");
+          newParent = this.coinsNode;
           break;
         case this.bomb:
-          newParent = find("Canvas/Bombs");
+          newParent = this.bombsNode;
           break;
         case this.rndmBall:
-          newParent = find("Canvas/Random");
+          newParent = this.rndmBallsNode;
           break;
       }
 
@@ -265,8 +294,8 @@ export class GameManager extends Component {
 
       if (type == this.bomb) {
         this.scheduleOnce(() => {
-          if (find("Canvas/Bombs").children[0] != null) {
-            find("Canvas/Bombs").children[0].destroy();
+          if (this.bombsNode.children[0] != null) {
+            this.bombsNode.children[0].destroy();
           }
         }, 10);
       }
@@ -289,10 +318,10 @@ export class GameManager extends Component {
 
   private checkSpawn(randomPosX: number, randomPosY: number): boolean {
     if (
-      this.posChecker(randomPosX, randomPosY, find("Canvas/Snake").children) ||
-      this.posChecker(randomPosX, randomPosY, find("Canvas/Coins").children) ||
-      this.posChecker(randomPosX, randomPosY, find("Canvas/Voids").children) ||
-      this.posChecker(randomPosX, randomPosY, find("Canvas/Balls").children)
+      this.posChecker(randomPosX, randomPosY, this.snakeNode.children) ||
+      this.posChecker(randomPosX, randomPosY, this.coinsNode.children) ||
+      this.posChecker(randomPosX, randomPosY, this.voidsNode.children) ||
+      this.posChecker(randomPosX, randomPosY, this.ballsNode.children)
     ) {
       return true;
     }

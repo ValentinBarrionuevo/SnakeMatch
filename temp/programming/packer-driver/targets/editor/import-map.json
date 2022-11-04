@@ -2,15 +2,15 @@
   "imports": {
     "cce:/internal/x/cc": "./chunks/ca/ca4374a3008ca85000d465787e739a302e4e4ac6.js",
     "cce:/internal/x/prerequisite-imports": "./chunks/74/7445ff4758084772bd924d4fde9f2179dae8a9aa.js",
-    "file:///C:/Users/Killa/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts": "./chunks/ab/ab7c9c553e05e0aa6f63ae44399af350c581a4d7.js",
-    "file:///C:/Users/Killa/Desktop/SnakeMatch/assets/Scripts/Credits.ts": "./chunks/5c/5c4448aa5351e5570ad3e804cad090ed24966733.js",
-    "file:///C:/Users/Killa/Desktop/SnakeMatch/assets/Scripts/GlobalVariables.ts": "./chunks/6e/6eeb4892ea17609babe3c38143d18d004430fae7.js",
-    "file:///C:/Users/Killa/Desktop/SnakeMatch/assets/Scripts/MainMenu.ts": "./chunks/6a/6a912f34db9c446961b5c3d6341ebeb32e107b5d.js",
-    "file:///C:/Users/Killa/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts": "./chunks/50/5014ee1df5bc93acb3f84ec948b3a6fc81fd94c7.js",
-    "file:///C:/Users/Killa/Desktop/SnakeMatch/assets/Scripts/Store.ts": "./chunks/96/96cb1b936f55b6d03e10a760253255ebf2727b3e.js",
-    "file:///C:/Users/Killa/Desktop/SnakeMatch/assets/Scripts/Tutorial.ts": "./chunks/99/991f4a46edb51809f467c0eea23c1dbe878c099c.js",
-    "file:///C:/Users/Killa/Desktop/SnakeMatch/assets/Scripts/UIController.ts": "./chunks/06/06fa62a7c4faf7fe876672ffc0235bb539f31704.js",
-    "file:///C:/Users/Killa/Desktop/SnakeMatch/assets/Scripts/GameManager.ts": "./chunks/e6/e6c7507e2be8365371e0f2f429834323ce70293f.js"
+    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/ButtonMethods.ts": "./chunks/92/92fd57f85e53a92bb4d7c944bb282a0dca3096b8.js",
+    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/Credits.ts": "./chunks/cd/cd8144ad40297e49f89ca99578a55a5711075702.js",
+    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GlobalVariables.ts": "./chunks/f2/f20dbad5d1e3ed43c4487aa24ef2b41a2c8a2ee1.js",
+    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/Store.ts": "./chunks/b7/b7b08440c4725e2b68eaeb2b94f61ee07d899706.js",
+    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/Tutorial.ts": "./chunks/eb/eb86ebfe344e5d554ed2c5cb19de0c3b1ddc9f62.js",
+    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/UIController.ts": "./chunks/7e/7efd44c710edd22fe8e7b45d9d0d584d56dfdd35.js",
+    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/SnakeController.ts": "./chunks/66/667bb1e0aecab8d9de6f359105cca870be945fa0.js",
+    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/GameManager.ts": "./chunks/ea/eab601f228638bb8760ff6ec3b4f75b3182c9914.js",
+    "file:///C:/Users/Valentin/Desktop/SnakeMatch/assets/Scripts/MainMenu.ts": "./chunks/c1/c187e9d520206ebaed03f737825ebaf16858c31d.js"
   },
   "scopes": {
     "./chunks/ca/ca4374a3008ca85000d465787e739a302e4e4ac6.js": {
@@ -41,53 +41,53 @@
       "__unresolved_9": "cce:/internal/x/cc-fu/particle-2d"
     },
     "./chunks/74/7445ff4758084772bd924d4fde9f2179dae8a9aa.js": {
-      "__unresolved_0": "./chunks/ab/ab7c9c553e05e0aa6f63ae44399af350c581a4d7.js",
-      "__unresolved_1": "./chunks/5c/5c4448aa5351e5570ad3e804cad090ed24966733.js",
-      "__unresolved_2": "./chunks/e6/e6c7507e2be8365371e0f2f429834323ce70293f.js",
-      "__unresolved_3": "./chunks/6e/6eeb4892ea17609babe3c38143d18d004430fae7.js",
-      "__unresolved_4": "./chunks/6a/6a912f34db9c446961b5c3d6341ebeb32e107b5d.js",
-      "__unresolved_5": "./chunks/50/5014ee1df5bc93acb3f84ec948b3a6fc81fd94c7.js",
-      "__unresolved_6": "./chunks/96/96cb1b936f55b6d03e10a760253255ebf2727b3e.js",
-      "__unresolved_7": "./chunks/99/991f4a46edb51809f467c0eea23c1dbe878c099c.js",
-      "__unresolved_8": "./chunks/06/06fa62a7c4faf7fe876672ffc0235bb539f31704.js"
+      "__unresolved_0": "./chunks/92/92fd57f85e53a92bb4d7c944bb282a0dca3096b8.js",
+      "__unresolved_1": "./chunks/cd/cd8144ad40297e49f89ca99578a55a5711075702.js",
+      "__unresolved_2": "./chunks/ea/eab601f228638bb8760ff6ec3b4f75b3182c9914.js",
+      "__unresolved_3": "./chunks/f2/f20dbad5d1e3ed43c4487aa24ef2b41a2c8a2ee1.js",
+      "__unresolved_4": "./chunks/c1/c187e9d520206ebaed03f737825ebaf16858c31d.js",
+      "__unresolved_5": "./chunks/66/667bb1e0aecab8d9de6f359105cca870be945fa0.js",
+      "__unresolved_6": "./chunks/b7/b7b08440c4725e2b68eaeb2b94f61ee07d899706.js",
+      "__unresolved_7": "./chunks/eb/eb86ebfe344e5d554ed2c5cb19de0c3b1ddc9f62.js",
+      "__unresolved_8": "./chunks/7e/7efd44c710edd22fe8e7b45d9d0d584d56dfdd35.js"
     },
-    "./chunks/06/06fa62a7c4faf7fe876672ffc0235bb539f31704.js": {
+    "./chunks/7e/7efd44c710edd22fe8e7b45d9d0d584d56dfdd35.js": {
       "__unresolved_0": "./chunks/84/84741ad843cea9a440c5d8c2d379669b6551400d.js",
-      "__unresolved_1": "./chunks/50/5014ee1df5bc93acb3f84ec948b3a6fc81fd94c7.js",
+      "__unresolved_1": "./chunks/66/667bb1e0aecab8d9de6f359105cca870be945fa0.js",
       "cc": "./chunks/ca/ca4374a3008ca85000d465787e739a302e4e4ac6.js"
     },
-    "./chunks/50/5014ee1df5bc93acb3f84ec948b3a6fc81fd94c7.js": {
+    "./chunks/66/667bb1e0aecab8d9de6f359105cca870be945fa0.js": {
       "__unresolved_0": "./chunks/84/84741ad843cea9a440c5d8c2d379669b6551400d.js",
-      "__unresolved_1": "./chunks/e6/e6c7507e2be8365371e0f2f429834323ce70293f.js",
-      "__unresolved_2": "./chunks/6e/6eeb4892ea17609babe3c38143d18d004430fae7.js",
+      "__unresolved_1": "./chunks/ea/eab601f228638bb8760ff6ec3b4f75b3182c9914.js",
+      "__unresolved_2": "./chunks/f2/f20dbad5d1e3ed43c4487aa24ef2b41a2c8a2ee1.js",
       "cc": "./chunks/ca/ca4374a3008ca85000d465787e739a302e4e4ac6.js"
     },
-    "./chunks/6e/6eeb4892ea17609babe3c38143d18d004430fae7.js": {
+    "./chunks/f2/f20dbad5d1e3ed43c4487aa24ef2b41a2c8a2ee1.js": {
       "cc": "./chunks/ca/ca4374a3008ca85000d465787e739a302e4e4ac6.js"
     },
-    "./chunks/e6/e6c7507e2be8365371e0f2f429834323ce70293f.js": {
+    "./chunks/ea/eab601f228638bb8760ff6ec3b4f75b3182c9914.js": {
       "__unresolved_0": "./chunks/84/84741ad843cea9a440c5d8c2d379669b6551400d.js",
-      "__unresolved_1": "./chunks/6e/6eeb4892ea17609babe3c38143d18d004430fae7.js",
-      "__unresolved_2": "./chunks/50/5014ee1df5bc93acb3f84ec948b3a6fc81fd94c7.js",
+      "__unresolved_1": "./chunks/f2/f20dbad5d1e3ed43c4487aa24ef2b41a2c8a2ee1.js",
+      "__unresolved_2": "./chunks/66/667bb1e0aecab8d9de6f359105cca870be945fa0.js",
       "cc": "./chunks/ca/ca4374a3008ca85000d465787e739a302e4e4ac6.js"
     },
-    "./chunks/99/991f4a46edb51809f467c0eea23c1dbe878c099c.js": {
+    "./chunks/eb/eb86ebfe344e5d554ed2c5cb19de0c3b1ddc9f62.js": {
       "cc": "./chunks/ca/ca4374a3008ca85000d465787e739a302e4e4ac6.js"
     },
-    "./chunks/96/96cb1b936f55b6d03e10a760253255ebf2727b3e.js": {
+    "./chunks/b7/b7b08440c4725e2b68eaeb2b94f61ee07d899706.js": {
       "__unresolved_0": "./chunks/84/84741ad843cea9a440c5d8c2d379669b6551400d.js",
-      "__unresolved_1": "./chunks/6e/6eeb4892ea17609babe3c38143d18d004430fae7.js",
+      "__unresolved_1": "./chunks/f2/f20dbad5d1e3ed43c4487aa24ef2b41a2c8a2ee1.js",
       "cc": "./chunks/ca/ca4374a3008ca85000d465787e739a302e4e4ac6.js"
     },
-    "./chunks/6a/6a912f34db9c446961b5c3d6341ebeb32e107b5d.js": {
+    "./chunks/c1/c187e9d520206ebaed03f737825ebaf16858c31d.js": {
       "__unresolved_0": "./chunks/84/84741ad843cea9a440c5d8c2d379669b6551400d.js",
-      "__unresolved_1": "./chunks/6e/6eeb4892ea17609babe3c38143d18d004430fae7.js",
+      "__unresolved_1": "./chunks/f2/f20dbad5d1e3ed43c4487aa24ef2b41a2c8a2ee1.js",
       "cc": "./chunks/ca/ca4374a3008ca85000d465787e739a302e4e4ac6.js"
     },
-    "./chunks/5c/5c4448aa5351e5570ad3e804cad090ed24966733.js": {
+    "./chunks/cd/cd8144ad40297e49f89ca99578a55a5711075702.js": {
       "cc": "./chunks/ca/ca4374a3008ca85000d465787e739a302e4e4ac6.js"
     },
-    "./chunks/ab/ab7c9c553e05e0aa6f63ae44399af350c581a4d7.js": {
+    "./chunks/92/92fd57f85e53a92bb4d7c944bb282a0dca3096b8.js": {
       "cc": "./chunks/ca/ca4374a3008ca85000d465787e739a302e4e4ac6.js"
     }
   }

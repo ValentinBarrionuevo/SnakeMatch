@@ -423,7 +423,7 @@
     },
     "_type": 0,
     "_fillType": 0,
-    "_sizeMode": 2,
+    "_sizeMode": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -528,7 +528,7 @@
     },
     "_type": 0,
     "_fillType": 0,
-    "_sizeMode": 2,
+    "_sizeMode": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -582,7 +582,7 @@
       "a": 255
     },
     "_spriteFrame": {
-      "__uuid__": "ece5c36d-d702-4a9f-9447-880aedc47bb6@f9941",
+      "__uuid__": "d95f5279-ba68-4922-9db2-197e8c641053@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_type": 0,
@@ -676,31 +676,31 @@
     "__prefab": null,
     "sprites": [
       {
-        "__uuid__": "ece5c36d-d702-4a9f-9447-880aedc47bb6@f9941",
+        "__uuid__": "d95f5279-ba68-4922-9db2-197e8c641053@f9941",
         "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "320a0066-2fca-4af2-97c4-0fc89a8b06da@f9941",
+        "__uuid__": "a14bf618-3035-43ed-bf96-bdd61dd64eda@f9941",
         "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "18971ee9-67c9-4e75-b755-1ef6f895c871@f9941",
+        "__uuid__": "aa029970-ada0-44a9-a85c-e78c1f9ab70d@f9941",
         "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "73df78ea-89db-4dda-a45a-e55b34078ada@f9941",
+        "__uuid__": "18aa5008-87f9-4473-9da7-72adab4e3b8e@f9941",
         "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "4842fd6f-9a14-4094-9009-7a2ede70cc04@f9941",
+        "__uuid__": "54b0283a-272a-48ac-82f5-fce783147613@f9941",
         "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "47c69252-1448-4744-bb7b-f2822e2105af@f9941",
+        "__uuid__": "62b1dd42-88ce-4f06-a2ac-983eab92e3e1@f9941",
         "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "3932fc1b-2dbb-4661-b08f-0a4deaf88e4d@f9941",
+        "__uuid__": "aa8a0596-a788-46fa-b978-ee4aaa7abcae@f9941",
         "__expectedType__": "cc.SpriteFrame"
       }
     ],

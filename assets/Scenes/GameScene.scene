@@ -2870,12 +2870,6 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "snakeNode": {
-      "__id__": 17
-    },
-    "balls": {
-      "__id__": 6
-    },
     "sprites": [
       {
         "__uuid__": "aed9f1b6-ba94-4693-beb9-777795e891cd@f9941",
@@ -2917,6 +2911,36 @@
     "coinSound": {
       "__uuid__": "ba1ac6f3-7d68-411f-a57b-6d8a543fe264",
       "__expectedType__": "cc.AudioClip"
+    },
+    "snakeHead": {
+      "__id__": 17
+    },
+    "voidsNode": {
+      "__id__": 8
+    },
+    "coinsNode": {
+      "__id__": 10
+    },
+    "ballsNode": {
+      "__id__": 6
+    },
+    "bombsNode": {
+      "__id__": 12
+    },
+    "rndmBallsNode": {
+      "__id__": 14
+    },
+    "pointsNode": {
+      "__id__": 26
+    },
+    "multiplierNode": {
+      "__id__": 29
+    },
+    "snakeNode": {
+      "__id__": 16
+    },
+    "UICoins": {
+      "__id__": 32
     },
     "_id": "9dPWpq27pOVadWvQX1U/NL"
   },

@@ -9,7 +9,6 @@ import {
   Sprite,
   SpriteFrame,
   AudioSource,
-  assert,
   AudioClip,
 } from "cc";
 import { GlobalVariables } from "./GlobalVariables";
