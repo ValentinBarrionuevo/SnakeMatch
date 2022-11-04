@@ -27,6 +27,10 @@ type Direction = "UP" | "DOWN" | "LEFT" | "RIGHT";
 @ccclass("SnakeController")
 export class SnakeController extends Component {
   public character: RigidBody2D = null;
+  @property(Node)
+  private canvas: Node;
+
+  private gameManager: GameManager;
 
   @property(SpriteFrame)
   private spriteArray: Array<SpriteFrame> = new Array<SpriteFrame>(4);
@@ -79,7 +83,6 @@ export class SnakeController extends Component {
   private bombSound: AudioClip = null;
 
   private audioSource: AudioSource = null;
-  private gameManager: GameManager;
 
   private keyWhiteList: Array<KeyCode> = new Array(
     KeyCode.KEY_W,
@@ -108,7 +111,7 @@ export class SnakeController extends Component {
     // assert(audioSource);
     // this.audioSource = audioSource;
 
-    this.gameManager = find("Canvas").getComponent(GameManager);
+    this.gameManager = this.canvas.getComponent(GameManager);
 
     switch (GlobalVariables.saveData.skin) {
       case 0:
@@ -260,7 +263,7 @@ export class SnakeController extends Component {
 
     this.deathCheck(pos);
 
-    find("Canvas").getComponent(GameManager).checkGameState();
+    this.gameManager.checkGameState();
   }
 
   private tailMovement(): void {
@@ -339,15 +342,12 @@ export class SnakeController extends Component {
   public death() {
     this.audioSource.playOneShot(this.deathSound);
 
-    find("Canvas/UI/Death/Points").getComponent(Label).string = find("Canvas")
-      .getComponent(GameManager)
-      .points.toString();
+    find("Canvas/UI/Death/Points").getComponent(Label).string =
+      this.gameManager.points.toString();
 
     find("Canvas/UI/Death").active = true;
 
-    GlobalVariables.saveData.coins += Math.floor(
-      find("Canvas").getComponent(GameManager).points / 500
-    );
+    GlobalVariables.saveData.coins += Math.floor(this.gameManager.points / 500);
 
     this.unscheduleAllCallbacks();
   }
