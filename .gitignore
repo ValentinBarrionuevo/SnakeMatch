@@ -22,8 +22,3 @@ node_modules/
 # WebStorm
 #//////////////////////////
 .idea/
-temp/programming/packer-driver/logs/debug.log
-local/logs/project.log
-temp/programming/packer-driver/logs/debug.log
-local/logs/project.log
-temp/programming/packer-driver/logs/debug.log
