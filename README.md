@@ -18,7 +18,7 @@ You can download the APK for **Snake Match** from the [releases section](https:/
 4. Tap the APK to start the installation process.
 5. If prompted, allow the installation from unknown sources in your device settings.
 
-> **Note**: Olympic Runner was developed for an earlier version of Android and may not fully support the latest versions of the operating system.
+> **Note**: SnakeMatch was developed for an earlier version of Android and may not fully support the latest versions of the operating system.
 
 ## Development
 This game was developed using the following tools:
